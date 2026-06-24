@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, .font-fun {
+  font-family: 'Fredoka', sans-serif;
+}

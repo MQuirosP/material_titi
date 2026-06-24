@@ -1,0 +1,132 @@
+{
+  "C:\\Users\\mquir\\Proyectos\\rioja\\package.json": {
+    "mtime": 1782262239.7620468,
+    "ast_hash": "e3f7095b2a897f444fee4238c3592b5f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\vite.config.js": {
+    "mtime": 1782262241.7613578,
+    "ast_hash": "31e20d366b3235222d3c1ed17b1cc78b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\hub\\main.js": {
+    "mtime": 1782262844.969436,
+    "ast_hash": "62f9f5dff210a01a864a6b58d0edafe4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\flashcards.js": {
+    "mtime": 1782262328.1711347,
+    "ast_hash": "84f2662793df0a94fc707804f7f48f54",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\quiz.js": {
+    "mtime": 1782262330.1886077,
+    "ast_hash": "7e72609e669c09788ef91be26337afc8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\tabs.js": {
+    "mtime": 1782262296.903728,
+    "ast_hash": "371a5bba78370594644e8641b56d95c1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\state\\store.js": {
+    "mtime": 1782262268.6850302,
+    "ast_hash": "d620725417fe95dac5d30163980f85b3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\main.js": {
+    "mtime": 1782262849.5977552,
+    "ast_hash": "58ed56d0bf5619a5463c76f54e6886b2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\data\\quiz-practico.js": {
+    "mtime": 1782262642.6986291,
+    "ast_hash": "2dff5ae2d14c8f3d9a527f10fc385155",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\data\\quiz-teorico.js": {
+    "mtime": 1782262639.1747801,
+    "ast_hash": "364f252389fd580bbd7ef1cb60dd2eef",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\labs\\divisores.js": {
+    "mtime": 1782262372.1869893,
+    "ast_hash": "a50d8c3a43612e12af40fa97e5b97b7f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\labs\\fracciones.js": {
+    "mtime": 1782262374.20966,
+    "ast_hash": "d55c759930597519ab47b5070ab0ad57",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\labs\\geometria.js": {
+    "mtime": 1782262468.9969268,
+    "ast_hash": "3a398af871c7abf65ae68be1ba73e05a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\labs\\multiplos.js": {
+    "mtime": 1782262358.5875711,
+    "ast_hash": "5a31c46dfc5c7c91fe16e531dd1292ef",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\labs\\pulperia.js": {
+    "mtime": 1782262399.1497784,
+    "ast_hash": "8c3dd6cc2f48d328e5c56501670310d5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\index.html": {
+    "mtime": 1782263445.4431572,
+    "ast_hash": "ff389b0f8277134266b024e110705c7f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\rules\\graphify.md": {
+    "mtime": 1782260996.830672,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\rules\\riomate.md": {
+    "mtime": 1782261076.0063279,
+    "ast_hash": "aa0c16aa7c9057cbe7ab7e708e2207b0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-add-quiz-questions.md": {
+    "mtime": 1782261096.266912,
+    "ast_hash": "e6308baa7988941670400f60b84c4056",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-clone-materia.md": {
+    "mtime": 1782261183.0997577,
+    "ast_hash": "317bae871c938267cca4d591f2fae4e0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-debug-checklist.md": {
+    "mtime": 1782261216.4957807,
+    "ast_hash": "f9dcca4f4eca78b8d0dd28903415a8b5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-new-flashcard.md": {
+    "mtime": 1782261152.6201665,
+    "ast_hash": "12c73f58c18ff0297fadbd5f01c1c74e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-new-lab.md": {
+    "mtime": 1782261124.9963045,
+    "ast_hash": "3cf7d53ce1f4113cc50a4dc23cc11d62",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\workflows\\graphify.md": {
+    "mtime": 1782260996.8326836,
+    "ast_hash": "84de69efd46ab0b8430393bd4188f8f2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\.github\\workflows\\deploy.yml": {
+    "mtime": 1782262644.8213432,
+    "ast_hash": "0b7be1b43645f1e86bfbef1ad8431660",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\matematicas\\index.html": {
+    "mtime": 1782263395.7529848,
+    "ast_hash": "0efdb0351f89fcccdc80fa1d0b85c448",
+    "semantic_hash": ""
+  }
+}

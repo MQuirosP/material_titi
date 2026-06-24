@@ -1,0 +1,2971 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package_json",
+      "community": 2,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "rioja_package_name",
+      "community": 2,
+      "norm_label": "name"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "rioja_package_private",
+      "community": 2,
+      "norm_label": "private"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "rioja_package_scripts",
+      "community": 2,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "rioja_package_scripts_dev",
+      "community": 2,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "rioja_package_scripts_build",
+      "community": 2,
+      "norm_label": "build"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "rioja_package_scripts_preview",
+      "community": 2,
+      "norm_label": "preview"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "id": "rioja_package_devdependencies",
+      "community": 2,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "id": "rioja_package_devdependencies_vite",
+      "community": 2,
+      "norm_label": "vite"
+    },
+    {
+      "label": "@tailwindcss/vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "id": "rioja_package_devdependencies_tailwindcss_vite",
+      "community": 2,
+      "norm_label": "@tailwindcss/vite"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "id": "rioja_package_devdependencies_tailwindcss",
+      "community": 2,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "id": "rioja_package_dependencies",
+      "community": 2,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "canvas-confetti",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "rioja_package_dependencies_canvas_confetti",
+      "community": 2,
+      "norm_label": "canvas-confetti"
+    },
+    {
+      "label": "vite.config.js",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": "L1",
+      "id": "vite_config_js",
+      "community": 11,
+      "norm_label": "vite.config.js"
+    },
+    {
+      "label": "__dirname",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": "L5",
+      "id": "rioja_vite_config_dirname",
+      "community": 11,
+      "norm_label": "__dirname"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "src/hub/main.js",
+      "source_location": "L1",
+      "id": "src_hub_main_js",
+      "community": 13,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "flashcards.js",
+      "file_type": "code",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L1",
+      "id": "src_shared_modules_flashcards_js",
+      "community": 0,
+      "norm_label": "flashcards.js"
+    },
+    {
+      "label": "toggleCard()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L6",
+      "id": "modules_flashcards_togglecard",
+      "community": 0,
+      "norm_label": "togglecard()"
+    },
+    {
+      "label": "updateTheoryProgress()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L14",
+      "id": "modules_flashcards_updatetheoryprogress",
+      "community": 0,
+      "norm_label": "updatetheoryprogress()"
+    },
+    {
+      "label": "updateBadges()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L26",
+      "id": "modules_flashcards_updatebadges",
+      "community": 0,
+      "norm_label": "updatebadges()"
+    },
+    {
+      "label": "quiz.js",
+      "file_type": "code",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L1",
+      "id": "src_shared_modules_quiz_js",
+      "community": 0,
+      "norm_label": "quiz.js"
+    },
+    {
+      "label": "startQuiz()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L6",
+      "id": "modules_quiz_startquiz",
+      "community": 0,
+      "norm_label": "startquiz()"
+    },
+    {
+      "label": "renderQuestion()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L22",
+      "id": "modules_quiz_renderquestion",
+      "community": 0,
+      "norm_label": "renderquestion()"
+    },
+    {
+      "label": "selectOption()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L62",
+      "id": "modules_quiz_selectoption",
+      "community": 0,
+      "norm_label": "selectoption()"
+    },
+    {
+      "label": "nextQuestion()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L121",
+      "id": "modules_quiz_nextquestion",
+      "community": 0,
+      "norm_label": "nextquestion()"
+    },
+    {
+      "label": "resetQuiz()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L166",
+      "id": "modules_quiz_resetquiz",
+      "community": 0,
+      "norm_label": "resetquiz()"
+    },
+    {
+      "label": "tabs.js",
+      "file_type": "code",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L1",
+      "id": "src_shared_modules_tabs_js",
+      "community": 3,
+      "norm_label": "tabs.js"
+    },
+    {
+      "label": "labInitCallbacks",
+      "file_type": "code",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L4",
+      "id": "modules_tabs_labinitcallbacks",
+      "community": 3,
+      "norm_label": "labinitcallbacks"
+    },
+    {
+      "label": "onLabInit()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L10",
+      "id": "modules_tabs_onlabinit",
+      "community": 3,
+      "norm_label": "onlabinit()"
+    },
+    {
+      "label": "switchTab()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L15",
+      "id": "modules_tabs_switchtab",
+      "community": 3,
+      "norm_label": "switchtab()"
+    },
+    {
+      "label": "switchLabSubTab()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L55",
+      "id": "modules_tabs_switchlabsubtab",
+      "community": 3,
+      "norm_label": "switchlabsubtab()"
+    },
+    {
+      "label": "store.js",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L1",
+      "id": "src_shared_state_store_js",
+      "community": 3,
+      "norm_label": "store.js"
+    },
+    {
+      "label": "studiedCards",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L7",
+      "id": "state_store_studiedcards",
+      "community": 0,
+      "norm_label": "studiedcards"
+    },
+    {
+      "label": "setUserHasUsedLab()",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L11",
+      "id": "state_store_setuserhasusedlab",
+      "community": 3,
+      "norm_label": "setuserhasusedlab()"
+    },
+    {
+      "label": "setActiveTab()",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L15",
+      "id": "state_store_setactivetab",
+      "community": 3,
+      "norm_label": "setactivetab()"
+    },
+    {
+      "label": "quizState",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L18",
+      "id": "state_store_quizstate",
+      "community": 0,
+      "norm_label": "quizstate"
+    },
+    {
+      "label": "pulper\u00edaCart",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L36",
+      "id": "state_store_pulper\u00edacart",
+      "community": 3,
+      "norm_label": "pulperiacart"
+    },
+    {
+      "label": "pulper\u00edaPrices",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L44",
+      "id": "state_store_pulper\u00edaprices",
+      "community": 3,
+      "norm_label": "pulperiaprices"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L1",
+      "id": "src_subjects_matematicas_main_js",
+      "community": 0,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "quiz-practico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/data/quiz-practico.js",
+      "source_location": "L1",
+      "id": "src_subjects_matematicas_data_quiz_practico_js",
+      "community": 0,
+      "norm_label": "quiz-practico.js"
+    },
+    {
+      "label": "quizPracticoQuestions",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/data/quiz-practico.js",
+      "source_location": "L2",
+      "id": "data_quiz_practico_quizpracticoquestions",
+      "community": 0,
+      "norm_label": "quizpracticoquestions"
+    },
+    {
+      "label": "quiz-teorico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/data/quiz-teorico.js",
+      "source_location": "L1",
+      "id": "src_subjects_matematicas_data_quiz_teorico_js",
+      "community": 0,
+      "norm_label": "quiz-teorico.js"
+    },
+    {
+      "label": "quizTeoricoQuestions",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/data/quiz-teorico.js",
+      "source_location": "L2",
+      "id": "data_quiz_teorico_quizteoricoquestions",
+      "community": 0,
+      "norm_label": "quizteoricoquestions"
+    },
+    {
+      "label": "divisores.js",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/divisores.js",
+      "source_location": "L1",
+      "id": "src_subjects_matematicas_labs_divisores_js",
+      "community": 0,
+      "norm_label": "divisores.js"
+    },
+    {
+      "label": "updateDivisoresLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/divisores.js",
+      "source_location": "L2",
+      "id": "labs_divisores_updatedivisoreslab",
+      "community": 0,
+      "norm_label": "updatedivisoreslab()"
+    },
+    {
+      "label": "fracciones.js",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/fracciones.js",
+      "source_location": "L1",
+      "id": "src_subjects_matematicas_labs_fracciones_js",
+      "community": 0,
+      "norm_label": "fracciones.js"
+    },
+    {
+      "label": "updateFraccionesLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/fracciones.js",
+      "source_location": "L2",
+      "id": "labs_fracciones_updatefraccioneslab",
+      "community": 0,
+      "norm_label": "updatefraccioneslab()"
+    },
+    {
+      "label": "geometria.js",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L1",
+      "id": "src_subjects_matematicas_labs_geometria_js",
+      "community": 8,
+      "norm_label": "geometria.js"
+    },
+    {
+      "label": "figurePresets",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L2",
+      "id": "labs_geometria_figurepresets",
+      "community": 8,
+      "norm_label": "figurepresets"
+    },
+    {
+      "label": "onLabFigureChange()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L50",
+      "id": "labs_geometria_onlabfigurechange",
+      "community": 8,
+      "norm_label": "onlabfigurechange()"
+    },
+    {
+      "label": "onLabSliderInput()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L78",
+      "id": "labs_geometria_onlabsliderinput",
+      "community": 8,
+      "norm_label": "onlabsliderinput()"
+    },
+    {
+      "label": "drawAndCalculate()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L85",
+      "id": "labs_geometria_drawandcalculate",
+      "community": 8,
+      "norm_label": "drawandcalculate()"
+    },
+    {
+      "label": "_svgEl()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L231",
+      "id": "labs_geometria_svgel",
+      "community": 8,
+      "norm_label": "_svgel()"
+    },
+    {
+      "label": "_svgLine()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L235",
+      "id": "labs_geometria_svgline",
+      "community": 8,
+      "norm_label": "_svgline()"
+    },
+    {
+      "label": "_svgRightAngle()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L244",
+      "id": "labs_geometria_svgrightangle",
+      "community": 8,
+      "norm_label": "_svgrightangle()"
+    },
+    {
+      "label": "addSvgText()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L252",
+      "id": "labs_geometria_addsvgtext",
+      "community": 8,
+      "norm_label": "addsvgtext()"
+    },
+    {
+      "label": "multiplos.js",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/multiplos.js",
+      "source_location": "L1",
+      "id": "src_subjects_matematicas_labs_multiplos_js",
+      "community": 0,
+      "norm_label": "multiplos.js"
+    },
+    {
+      "label": "updateMultiplesLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/multiplos.js",
+      "source_location": "L2",
+      "id": "labs_multiplos_updatemultipleslab",
+      "community": 0,
+      "norm_label": "updatemultipleslab()"
+    },
+    {
+      "label": "pulperia.js",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L1",
+      "id": "src_subjects_matematicas_labs_pulperia_js",
+      "community": 3,
+      "norm_label": "pulperia.js"
+    },
+    {
+      "label": "changePulper\u00edaQty()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L4",
+      "id": "labs_pulperia_changepulper\u00edaqty",
+      "community": 3,
+      "norm_label": "changepulperiaqty()"
+    },
+    {
+      "label": "calculatePulper\u00eda()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L12",
+      "id": "labs_pulperia_calculatepulper\u00eda",
+      "community": 3,
+      "norm_label": "calculatepulperia()"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L1",
+      "id": "agents_rules_graphify_md",
+      "community": 10,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "id": "rules_graphify_graphify",
+      "community": 10,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "riomate.md",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L1",
+      "id": "agents_rules_riomate_md",
+      "community": 5,
+      "norm_label": "riomate.md"
+    },
+    {
+      "label": "\ud83c\udde8\ud83c\uddf7 R\u00edoMate \u2014 Reglas de Desarrollo (Manual Oficial)",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L8",
+      "id": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "community": 5,
+      "norm_label": "\ud83c\udde8\ud83c\uddf7 riomate \u2014 reglas de desarrollo (manual oficial)"
+    },
+    {
+      "label": "ARQUITECTURA: Single-File Mandate",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L10",
+      "id": "rules_riomate_arquitectura_single_file_mandate",
+      "community": 5,
+      "norm_label": "arquitectura: single-file mandate"
+    },
+    {
+      "label": "NOTACI\u00d3N MATEM\u00c1TICA \u2014 PROHIBICI\u00d3N ABSOLUTA",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L19",
+      "id": "rules_riomate_notaci\u00f3n_matem\u00e1tica_prohibici\u00f3n_absoluta",
+      "community": 5,
+      "norm_label": "notacion matematica \u2014 prohibicion absoluta"
+    },
+    {
+      "label": "UX/UI \u2014 Mobile-First Obligatorio",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L38",
+      "id": "rules_riomate_ux_ui_mobile_first_obligatorio",
+      "community": 5,
+      "norm_label": "ux/ui \u2014 mobile-first obligatorio"
+    },
+    {
+      "label": "SIMULADORES INTERACTIVOS \u2014 Reglas de Laboratorio",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L46",
+      "id": "rules_riomate_simuladores_interactivos_reglas_de_laboratorio",
+      "community": 5,
+      "norm_label": "simuladores interactivos \u2014 reglas de laboratorio"
+    },
+    {
+      "label": "ESQUEMA DE PREGUNTAS (Quiz) \u2014 Formato Estricto",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L52",
+      "id": "rules_riomate_esquema_de_preguntas_quiz_formato_estricto",
+      "community": 5,
+      "norm_label": "esquema de preguntas (quiz) \u2014 formato estricto"
+    },
+    {
+      "label": "code:js (const quizQuestions = [)",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L54",
+      "id": "rules_riomate_codeblock_1",
+      "community": 5,
+      "norm_label": "code:js (const quizquestions = [)"
+    },
+    {
+      "label": "CONTEXTO DEL PROYECTO",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L73",
+      "id": "rules_riomate_contexto_del_proyecto",
+      "community": 5,
+      "norm_label": "contexto del proyecto"
+    },
+    {
+      "label": "ESCALABILIDAD \u2014 Blueprint de Nuevas Materias",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L80",
+      "id": "rules_riomate_escalabilidad_blueprint_de_nuevas_materias",
+      "community": 5,
+      "norm_label": "escalabilidad \u2014 blueprint de nuevas materias"
+    },
+    {
+      "label": "riomate-add-quiz-questions.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_add_quiz_questions_md",
+      "community": 6,
+      "norm_label": "riomate-add-quiz-questions.md"
+    },
+    {
+      "label": "Skill: Agregar Preguntas al Quiz de R\u00edoMate",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L8",
+      "id": "skills_riomate_add_quiz_questions_skill_agregar_preguntas_al_quiz_de_r\u00edomate",
+      "community": 6,
+      "norm_label": "skill: agregar preguntas al quiz de riomate"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L10",
+      "id": "skills_riomate_add_quiz_questions_cu\u00e1ndo_usar_este_skill",
+      "community": 6,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "Procedimiento",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L17",
+      "id": "skills_riomate_add_quiz_questions_procedimiento",
+      "community": 6,
+      "norm_label": "procedimiento"
+    },
+    {
+      "label": "1. Verificar destino",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L19",
+      "id": "skills_riomate_add_quiz_questions_1_verificar_destino",
+      "community": 6,
+      "norm_label": "1. verificar destino"
+    },
+    {
+      "label": "2. Estructura obligatoria de cada pregunta",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L23",
+      "id": "skills_riomate_add_quiz_questions_2_estructura_obligatoria_de_cada_pregunta",
+      "community": 6,
+      "norm_label": "2. estructura obligatoria de cada pregunta"
+    },
+    {
+      "label": "code:js ({)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L25",
+      "id": "skills_riomate_add_quiz_questions_codeblock_1",
+      "community": 6,
+      "norm_label": "code:js ({)"
+    },
+    {
+      "label": "3. Reglas de calidad",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L54",
+      "id": "skills_riomate_add_quiz_questions_3_reglas_de_calidad",
+      "community": 6,
+      "norm_label": "3. reglas de calidad"
+    },
+    {
+      "label": "4. Inserci\u00f3n en el archivo",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L65",
+      "id": "skills_riomate_add_quiz_questions_4_inserci\u00f3n_en_el_archivo",
+      "community": 6,
+      "norm_label": "4. insercion en el archivo"
+    },
+    {
+      "label": "5. Verificaci\u00f3n post-inserci\u00f3n",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L71",
+      "id": "skills_riomate_add_quiz_questions_5_verificaci\u00f3n_post_inserci\u00f3n",
+      "community": 6,
+      "norm_label": "5. verificacion post-insercion"
+    },
+    {
+      "label": "riomate-clone-materia.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_clone_materia_md",
+      "community": 7,
+      "norm_label": "riomate-clone-materia.md"
+    },
+    {
+      "label": "Skill: Clonar R\u00edoMate para una Nueva Materia",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L8",
+      "id": "skills_riomate_clone_materia_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "community": 7,
+      "norm_label": "skill: clonar riomate para una nueva materia"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L10",
+      "id": "skills_riomate_clone_materia_cu\u00e1ndo_usar_este_skill",
+      "community": 7,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "Principio: Caparaz\u00f3n + Relleno",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L17",
+      "id": "skills_riomate_clone_materia_principio_caparaz\u00f3n_relleno",
+      "community": 7,
+      "norm_label": "principio: caparazon + relleno"
+    },
+    {
+      "label": "Blueprints por Materia",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L34",
+      "id": "skills_riomate_clone_materia_blueprints_por_materia",
+      "community": 7,
+      "norm_label": "blueprints por materia"
+    },
+    {
+      "label": "\ud83c\udf0d Estudios Sociales",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L36",
+      "id": "skills_riomate_clone_materia_estudios_sociales",
+      "community": 7,
+      "norm_label": "\ud83c\udf0d estudios sociales"
+    },
+    {
+      "label": "\ud83d\udd2c Ciencias",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L48",
+      "id": "skills_riomate_clone_materia_ciencias",
+      "community": 7,
+      "norm_label": "\ud83d\udd2c ciencias"
+    },
+    {
+      "label": "\ud83d\udcda Espa\u00f1ol / Gram\u00e1tica",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L60",
+      "id": "skills_riomate_clone_materia_espa\u00f1ol_gram\u00e1tica",
+      "community": 7,
+      "norm_label": "\ud83d\udcda espanol / gramatica"
+    },
+    {
+      "label": "Pasos para clonar",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L72",
+      "id": "skills_riomate_clone_materia_pasos_para_clonar",
+      "community": 7,
+      "norm_label": "pasos para clonar"
+    },
+    {
+      "label": "Restricciones al clonar",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L83",
+      "id": "skills_riomate_clone_materia_restricciones_al_clonar",
+      "community": 7,
+      "norm_label": "restricciones al clonar"
+    },
+    {
+      "label": "riomate-debug-checklist.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_debug_checklist_md",
+      "community": 4,
+      "norm_label": "riomate-debug-checklist.md"
+    },
+    {
+      "label": "Skill: Diagn\u00f3stico y Depuraci\u00f3n de R\u00edoMate",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L8",
+      "id": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "community": 4,
+      "norm_label": "skill: diagnostico y depuracion de riomate"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L10",
+      "id": "skills_riomate_debug_checklist_cu\u00e1ndo_usar_este_skill",
+      "community": 4,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "1. Errores de Notaci\u00f3n Matem\u00e1tica",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L20",
+      "id": "skills_riomate_debug_checklist_1_errores_de_notaci\u00f3n_matem\u00e1tica",
+      "community": 4,
+      "norm_label": "1. errores de notacion matematica"
+    },
+    {
+      "label": "code:block1 ($ \\frac \\times \\approx \\div \\cdot \\Delta \\text{)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L25",
+      "id": "skills_riomate_debug_checklist_codeblock_1",
+      "community": 4,
+      "norm_label": "code:block1 ($ \\frac \\times \\approx \\div \\cdot \\delta \\text{)"
+    },
+    {
+      "label": "2. Flashcards no se voltean",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L33",
+      "id": "skills_riomate_debug_checklist_2_flashcards_no_se_voltean",
+      "community": 4,
+      "norm_label": "2. flashcards no se voltean"
+    },
+    {
+      "label": "3. Quiz no funciona / preguntas no aparecen",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L50",
+      "id": "skills_riomate_debug_checklist_3_quiz_no_funciona_preguntas_no_aparecen",
+      "community": 4,
+      "norm_label": "3. quiz no funciona / preguntas no aparecen"
+    },
+    {
+      "label": "4. Laboratorio de geometr\u00eda SVG se desborda / solapamiento de etiquetas",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L62",
+      "id": "skills_riomate_debug_checklist_4_laboratorio_de_geometr\u00eda_svg_se_desborda_solapamiento_de_etiquetas",
+      "community": 4,
+      "norm_label": "4. laboratorio de geometria svg se desborda / solapamiento de etiquetas"
+    },
+    {
+      "label": "5. Pulper\u00eda / c\u00e1lculo de vuelto incorrecto",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L73",
+      "id": "skills_riomate_debug_checklist_5_pulper\u00eda_c\u00e1lculo_de_vuelto_incorrecto",
+      "community": 4,
+      "norm_label": "5. pulperia / calculo de vuelto incorrecto"
+    },
+    {
+      "label": "6. Progreso y badges no se actualizan",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L83",
+      "id": "skills_riomate_debug_checklist_6_progreso_y_badges_no_se_actualizan",
+      "community": 4,
+      "norm_label": "6. progreso y badges no se actualizan"
+    },
+    {
+      "label": "7. Problema de responsive / scroll horizontal",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L94",
+      "id": "skills_riomate_debug_checklist_7_problema_de_responsive_scroll_horizontal",
+      "community": 4,
+      "norm_label": "7. problema de responsive / scroll horizontal"
+    },
+    {
+      "label": "8. Proceso de verificaci\u00f3n r\u00e1pida",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L105",
+      "id": "skills_riomate_debug_checklist_8_proceso_de_verificaci\u00f3n_r\u00e1pida",
+      "community": 4,
+      "norm_label": "8. proceso de verificacion rapida"
+    },
+    {
+      "label": "riomate-new-flashcard.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_new_flashcard_md",
+      "community": 9,
+      "norm_label": "riomate-new-flashcard.md"
+    },
+    {
+      "label": "Skill: Flashcards de Teor\u00eda en R\u00edoMate",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L8",
+      "id": "skills_riomate_new_flashcard_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "community": 9,
+      "norm_label": "skill: flashcards de teoria en riomate"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L10",
+      "id": "skills_riomate_new_flashcard_cu\u00e1ndo_usar_este_skill",
+      "community": 9,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "Estructura HTML de una Flashcard",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L16",
+      "id": "skills_riomate_new_flashcard_estructura_html_de_una_flashcard",
+      "community": 9,
+      "norm_label": "estructura html de una flashcard"
+    },
+    {
+      "label": "code:html (<!-- Tarjeta N: {T\u00edtulo del Tema} -->)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L18",
+      "id": "skills_riomate_new_flashcard_codeblock_1",
+      "community": 9,
+      "norm_label": "code:html (<!-- tarjeta n: {titulo del tema} -->)"
+    },
+    {
+      "label": "Paleta de colores por tarjeta existente",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L56",
+      "id": "skills_riomate_new_flashcard_paleta_de_colores_por_tarjeta_existente",
+      "community": 9,
+      "norm_label": "paleta de colores por tarjeta existente"
+    },
+    {
+      "label": "Pasos al agregar una tarjeta nueva",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L68",
+      "id": "skills_riomate_new_flashcard_pasos_al_agregar_una_tarjeta_nueva",
+      "community": 9,
+      "norm_label": "pasos al agregar una tarjeta nueva"
+    },
+    {
+      "label": "Reglas de contenido",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L76",
+      "id": "skills_riomate_new_flashcard_reglas_de_contenido",
+      "community": 9,
+      "norm_label": "reglas de contenido"
+    },
+    {
+      "label": "riomate-new-lab.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_new_lab_md",
+      "community": 1,
+      "norm_label": "riomate-new-lab.md"
+    },
+    {
+      "label": "Skill: Nuevo Laboratorio Interactivo en R\u00edoMate",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L8",
+      "id": "skills_riomate_new_lab_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "community": 1,
+      "norm_label": "skill: nuevo laboratorio interactivo en riomate"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L10",
+      "id": "skills_riomate_new_lab_cu\u00e1ndo_usar_este_skill",
+      "community": 1,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "Anatom\u00eda de un Laboratorio (Patr\u00f3n existente)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L16",
+      "id": "skills_riomate_new_lab_anatom\u00eda_de_un_laboratorio_patr\u00f3n_existente",
+      "community": 1,
+      "norm_label": "anatomia de un laboratorio (patron existente)"
+    },
+    {
+      "label": "code:block1 (1. Sub-tab button en la barra de navegaci\u00f3n (.agents/rules/r)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L20",
+      "id": "skills_riomate_new_lab_codeblock_1",
+      "community": 1,
+      "norm_label": "code:block1 (1. sub-tab button en la barra de navegacion (.agents/rules/r)"
+    },
+    {
+      "label": "Pasos de implementaci\u00f3n",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L28",
+      "id": "skills_riomate_new_lab_pasos_de_implementaci\u00f3n",
+      "community": 1,
+      "norm_label": "pasos de implementacion"
+    },
+    {
+      "label": "Paso 1 \u2014 Bot\u00f3n sub-pesta\u00f1a",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L30",
+      "id": "skills_riomate_new_lab_paso_1_bot\u00f3n_sub_pesta\u00f1a",
+      "community": 1,
+      "norm_label": "paso 1 \u2014 boton sub-pestana"
+    },
+    {
+      "label": "code:html (<button onclick=\"switchLabSubTab('{nombre}')\" id=\"subtab-{no)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L34",
+      "id": "skills_riomate_new_lab_codeblock_2",
+      "community": 1,
+      "norm_label": "code:html (<button onclick=\"switchlabsubtab('{nombre}')\" id=\"subtab-{no)"
+    },
+    {
+      "label": "Paso 2 \u2014 Estructura HTML del laboratorio",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L41",
+      "id": "skills_riomate_new_lab_paso_2_estructura_html_del_laboratorio",
+      "community": 1,
+      "norm_label": "paso 2 \u2014 estructura html del laboratorio"
+    },
+    {
+      "label": "code:html (<!-- SUB-CONTENIDO: LABORATORIO DE {NOMBRE EN MAY\u00daSCULAS} --)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L43",
+      "id": "skills_riomate_new_lab_codeblock_3",
+      "community": 1,
+      "norm_label": "code:html (<!-- sub-contenido: laboratorio de {nombre en mayusculas} --)"
+    },
+    {
+      "label": "Paso 3 \u2014 Funci\u00f3n JavaScript",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L72",
+      "id": "skills_riomate_new_lab_paso_3_funci\u00f3n_javascript",
+      "community": 1,
+      "norm_label": "paso 3 \u2014 funcion javascript"
+    },
+    {
+      "label": "code:js (// ==========================================)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L74",
+      "id": "skills_riomate_new_lab_codeblock_4",
+      "community": 1,
+      "norm_label": "code:js (// ==========================================)"
+    },
+    {
+      "label": "Paso 4 \u2014 Registrar en switchTab y window.onload",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L95",
+      "id": "skills_riomate_new_lab_paso_4_registrar_en_switchtab_y_window_onload",
+      "community": 1,
+      "norm_label": "paso 4 \u2014 registrar en switchtab y window.onload"
+    },
+    {
+      "label": "code:js (update{Nombre}Lab(); // agregar junto a los otros update*Lab)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L98",
+      "id": "skills_riomate_new_lab_codeblock_5",
+      "community": 1,
+      "norm_label": "code:js (update{nombre}lab(); // agregar junto a los otros update*lab)"
+    },
+    {
+      "label": "code:js (update{Nombre}Lab(); // agregar junto a los otros)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L103",
+      "id": "skills_riomate_new_lab_codeblock_6",
+      "community": 1,
+      "norm_label": "code:js (update{nombre}lab(); // agregar junto a los otros)"
+    },
+    {
+      "label": "Paleta de colores por tem\u00e1tica",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L107",
+      "id": "skills_riomate_new_lab_paleta_de_colores_por_tem\u00e1tica",
+      "community": 1,
+      "norm_label": "paleta de colores por tematica"
+    },
+    {
+      "label": "Restricciones t\u00e9cnicas",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L119",
+      "id": "skills_riomate_new_lab_restricciones_t\u00e9cnicas",
+      "community": 1,
+      "norm_label": "restricciones tecnicas"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L1",
+      "id": "agents_workflows_graphify_md",
+      "community": 12,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "Workflow: graphify",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "id": "workflows_graphify_workflow_graphify",
+      "community": 12,
+      "norm_label": "workflow: graphify"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "rioja_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "rioja_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "rioja_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "rioja_package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "rioja_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "rioja_package_scripts",
+      "target": "rioja_package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "rioja_package_scripts",
+      "target": "rioja_package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "rioja_package_scripts",
+      "target": "rioja_package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "rioja_package_devdependencies",
+      "target": "rioja_package_devdependencies_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "rioja_package_devdependencies",
+      "target": "rioja_package_devdependencies_tailwindcss_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "rioja_package_devdependencies",
+      "target": "rioja_package_devdependencies_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "rioja_package_dependencies",
+      "target": "rioja_package_dependencies_canvas_confetti",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vite.config.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "vite_config_js",
+      "target": "rioja_vite_config_dirname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_shared_modules_flashcards_js",
+      "target": "src_shared_state_store_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_shared_modules_flashcards_js",
+      "target": "state_store_studiedcards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_shared_modules_flashcards_js",
+      "target": "state_store_quizstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_shared_modules_flashcards_js",
+      "target": "modules_flashcards_togglecard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_shared_modules_flashcards_js",
+      "target": "modules_flashcards_updatetheoryprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_shared_modules_flashcards_js",
+      "target": "modules_flashcards_updatebadges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "src_shared_modules_flashcards_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_shared_modules_flashcards_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "modules_flashcards_togglecard",
+      "target": "modules_flashcards_updatetheoryprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "modules_flashcards_togglecard",
+      "target": "modules_flashcards_updatebadges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_flashcards_togglecard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_flashcards_updatetheoryprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "modules_flashcards_updatebadges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_flashcards_updatebadges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "modules_quiz_nextquestion",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "src_shared_state_store_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "state_store_quizstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "modules_quiz_startquiz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "modules_quiz_renderquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "modules_quiz_selectoption",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "modules_quiz_nextquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "modules_quiz_resetquiz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_shared_modules_quiz_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "modules_quiz_startquiz",
+      "target": "modules_quiz_renderquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_quiz_startquiz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "modules_quiz_nextquestion",
+      "target": "modules_quiz_renderquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_quiz_renderquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_quiz_selectoption",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_quiz_nextquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_quiz_resetquiz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_shared_modules_tabs_js",
+      "target": "src_shared_state_store_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_shared_modules_tabs_js",
+      "target": "state_store_setactivetab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_shared_modules_tabs_js",
+      "target": "state_store_setuserhasusedlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_shared_modules_tabs_js",
+      "target": "modules_tabs_labinitcallbacks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_shared_modules_tabs_js",
+      "target": "modules_tabs_onlabinit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_shared_modules_tabs_js",
+      "target": "modules_tabs_switchtab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "src_shared_modules_tabs_js",
+      "target": "modules_tabs_switchlabsubtab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_shared_modules_tabs_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_tabs_onlabinit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_tabs_switchtab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "modules_tabs_switchtab",
+      "target": "state_store_setactivetab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "modules_tabs_switchtab",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_tabs_switchlabsubtab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_studiedcards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_setuserhasusedlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_setactivetab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_quizstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_pulper\u00edacart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_pulper\u00edaprices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_shared_state_store_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_pulperia_js",
+      "target": "src_shared_state_store_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "state_store_quizstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_pulperia_js",
+      "target": "state_store_pulper\u00edacart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_pulperia_js",
+      "target": "state_store_pulper\u00edaprices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_matematicas_labs_multiplos_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_multiplos_updatemultipleslab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_matematicas_labs_divisores_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_divisores_updatedivisoreslab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_matematicas_labs_fracciones_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_fracciones_updatefraccioneslab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_matematicas_labs_pulperia_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_changepulper\u00edaqty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_calculatepulper\u00eda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_matematicas_labs_geometria_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_geometria_onlabfigurechange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_geometria_onlabsliderinput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_matematicas_data_quiz_teorico_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_teorico_quizteoricoquestions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_matematicas_data_quiz_practico_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_practico_quizpracticoquestions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/data/quiz-practico.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_data_quiz_practico_js",
+      "target": "data_quiz_practico_quizpracticoquestions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/data/quiz-teorico.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_data_quiz_teorico_js",
+      "target": "data_quiz_teorico_quizteoricoquestions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/divisores.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_divisores_js",
+      "target": "labs_divisores_updatedivisoreslab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/fracciones.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_fracciones_js",
+      "target": "labs_fracciones_updatefraccioneslab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "labs_geometria_figurepresets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "labs_geometria_onlabfigurechange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "labs_geometria_onlabsliderinput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "labs_geometria_drawandcalculate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "labs_geometria_svgel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L235",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "labs_geometria_svgline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L244",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "labs_geometria_svgrightangle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L252",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "labs_geometria_addsvgtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "labs_geometria_onlabfigurechange",
+      "target": "labs_geometria_drawandcalculate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "labs_geometria_onlabsliderinput",
+      "target": "labs_geometria_drawandcalculate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "labs_geometria_drawandcalculate",
+      "target": "labs_geometria_svgel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "labs_geometria_drawandcalculate",
+      "target": "labs_geometria_addsvgtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "labs_geometria_drawandcalculate",
+      "target": "labs_geometria_svgline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "labs_geometria_drawandcalculate",
+      "target": "labs_geometria_svgrightangle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "labs_geometria_svgline",
+      "target": "labs_geometria_svgel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "labs_geometria_svgrightangle",
+      "target": "labs_geometria_svgel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "labs_geometria_addsvgtext",
+      "target": "labs_geometria_svgel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/multiplos.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_multiplos_js",
+      "target": "labs_multiplos_updatemultipleslab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_pulperia_js",
+      "target": "labs_pulperia_changepulper\u00edaqty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_pulperia_js",
+      "target": "labs_pulperia_calculatepulper\u00eda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "labs_pulperia_changepulper\u00edaqty",
+      "target": "labs_pulperia_calculatepulper\u00eda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "agents_rules_graphify_md",
+      "target": "rules_graphify_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "agents_rules_riomate_md",
+      "target": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "target": "rules_riomate_arquitectura_single_file_mandate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "target": "rules_riomate_notaci\u00f3n_matem\u00e1tica_prohibici\u00f3n_absoluta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "target": "rules_riomate_ux_ui_mobile_first_obligatorio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "target": "rules_riomate_simuladores_interactivos_reglas_de_laboratorio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "target": "rules_riomate_esquema_de_preguntas_quiz_formato_estricto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "target": "rules_riomate_contexto_del_proyecto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "target": "rules_riomate_escalabilidad_blueprint_de_nuevas_materias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "rules_riomate_esquema_de_preguntas_quiz_formato_estricto",
+      "target": "rules_riomate_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "agents_skills_riomate_add_quiz_questions_md",
+      "target": "skills_riomate_add_quiz_questions_skill_agregar_preguntas_al_quiz_de_r\u00edomate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "skills_riomate_add_quiz_questions_skill_agregar_preguntas_al_quiz_de_r\u00edomate",
+      "target": "skills_riomate_add_quiz_questions_cu\u00e1ndo_usar_este_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "skills_riomate_add_quiz_questions_skill_agregar_preguntas_al_quiz_de_r\u00edomate",
+      "target": "skills_riomate_add_quiz_questions_procedimiento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "skills_riomate_add_quiz_questions_procedimiento",
+      "target": "skills_riomate_add_quiz_questions_1_verificar_destino",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "skills_riomate_add_quiz_questions_procedimiento",
+      "target": "skills_riomate_add_quiz_questions_2_estructura_obligatoria_de_cada_pregunta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "skills_riomate_add_quiz_questions_procedimiento",
+      "target": "skills_riomate_add_quiz_questions_3_reglas_de_calidad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "skills_riomate_add_quiz_questions_procedimiento",
+      "target": "skills_riomate_add_quiz_questions_4_inserci\u00f3n_en_el_archivo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "skills_riomate_add_quiz_questions_procedimiento",
+      "target": "skills_riomate_add_quiz_questions_5_verificaci\u00f3n_post_inserci\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "skills_riomate_add_quiz_questions_2_estructura_obligatoria_de_cada_pregunta",
+      "target": "skills_riomate_add_quiz_questions_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "agents_skills_riomate_clone_materia_md",
+      "target": "skills_riomate_clone_materia_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "skills_riomate_clone_materia_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "target": "skills_riomate_clone_materia_cu\u00e1ndo_usar_este_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "skills_riomate_clone_materia_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "target": "skills_riomate_clone_materia_principio_caparaz\u00f3n_relleno",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "skills_riomate_clone_materia_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "target": "skills_riomate_clone_materia_blueprints_por_materia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "skills_riomate_clone_materia_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "target": "skills_riomate_clone_materia_pasos_para_clonar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "skills_riomate_clone_materia_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "target": "skills_riomate_clone_materia_restricciones_al_clonar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "skills_riomate_clone_materia_blueprints_por_materia",
+      "target": "skills_riomate_clone_materia_estudios_sociales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "skills_riomate_clone_materia_blueprints_por_materia",
+      "target": "skills_riomate_clone_materia_ciencias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "skills_riomate_clone_materia_blueprints_por_materia",
+      "target": "skills_riomate_clone_materia_espa\u00f1ol_gram\u00e1tica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "agents_skills_riomate_debug_checklist_md",
+      "target": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "skills_riomate_debug_checklist_cu\u00e1ndo_usar_este_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "skills_riomate_debug_checklist_1_errores_de_notaci\u00f3n_matem\u00e1tica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "skills_riomate_debug_checklist_2_flashcards_no_se_voltean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "skills_riomate_debug_checklist_3_quiz_no_funciona_preguntas_no_aparecen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "skills_riomate_debug_checklist_4_laboratorio_de_geometr\u00eda_svg_se_desborda_solapamiento_de_etiquetas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "skills_riomate_debug_checklist_5_pulper\u00eda_c\u00e1lculo_de_vuelto_incorrecto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "skills_riomate_debug_checklist_6_progreso_y_badges_no_se_actualizan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "skills_riomate_debug_checklist_7_problema_de_responsive_scroll_horizontal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "skills_riomate_debug_checklist_8_proceso_de_verificaci\u00f3n_r\u00e1pida",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "skills_riomate_debug_checklist_1_errores_de_notaci\u00f3n_matem\u00e1tica",
+      "target": "skills_riomate_debug_checklist_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "agents_skills_riomate_new_flashcard_md",
+      "target": "skills_riomate_new_flashcard_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "skills_riomate_new_flashcard_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "target": "skills_riomate_new_flashcard_cu\u00e1ndo_usar_este_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "skills_riomate_new_flashcard_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "target": "skills_riomate_new_flashcard_estructura_html_de_una_flashcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "skills_riomate_new_flashcard_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "target": "skills_riomate_new_flashcard_paleta_de_colores_por_tarjeta_existente",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "skills_riomate_new_flashcard_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "target": "skills_riomate_new_flashcard_pasos_al_agregar_una_tarjeta_nueva",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "skills_riomate_new_flashcard_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "target": "skills_riomate_new_flashcard_reglas_de_contenido",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "skills_riomate_new_flashcard_estructura_html_de_una_flashcard",
+      "target": "skills_riomate_new_flashcard_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "agents_skills_riomate_new_lab_md",
+      "target": "skills_riomate_new_lab_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "target": "skills_riomate_new_lab_cu\u00e1ndo_usar_este_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "target": "skills_riomate_new_lab_anatom\u00eda_de_un_laboratorio_patr\u00f3n_existente",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "target": "skills_riomate_new_lab_pasos_de_implementaci\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "target": "skills_riomate_new_lab_paleta_de_colores_por_tem\u00e1tica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "target": "skills_riomate_new_lab_restricciones_t\u00e9cnicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_anatom\u00eda_de_un_laboratorio_patr\u00f3n_existente",
+      "target": "skills_riomate_new_lab_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_pasos_de_implementaci\u00f3n",
+      "target": "skills_riomate_new_lab_paso_1_bot\u00f3n_sub_pesta\u00f1a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_pasos_de_implementaci\u00f3n",
+      "target": "skills_riomate_new_lab_paso_2_estructura_html_del_laboratorio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_pasos_de_implementaci\u00f3n",
+      "target": "skills_riomate_new_lab_paso_3_funci\u00f3n_javascript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_pasos_de_implementaci\u00f3n",
+      "target": "skills_riomate_new_lab_paso_4_registrar_en_switchtab_y_window_onload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_paso_1_bot\u00f3n_sub_pesta\u00f1a",
+      "target": "skills_riomate_new_lab_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_paso_2_estructura_html_del_laboratorio",
+      "target": "skills_riomate_new_lab_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_paso_3_funci\u00f3n_javascript",
+      "target": "skills_riomate_new_lab_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_paso_4_registrar_en_switchtab_y_window_onload",
+      "target": "skills_riomate_new_lab_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "skills_riomate_new_lab_paso_4_registrar_en_switchtab_y_window_onload",
+      "target": "skills_riomate_new_lab_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "agents_workflows_graphify_md",
+      "target": "workflows_graphify_workflow_graphify",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "08b0084b4c5d219d780f2bbcf5507429f789c0a9"
+}
