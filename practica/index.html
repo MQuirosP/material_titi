@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/material_titi/assets/matematicas-BZkB5DlZ.js"></script>
-  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-BSeDzNAY.js">
-  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-CTbX8J2R.css">
-  <link rel="stylesheet" crossorigin href="/material_titi/assets/matematicas-DDx4YGlw.css">
+  <script type="module" crossorigin src="/material_titi/assets/practica-Dkjw4gl3.js"></script>
+  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-Djxf13-b.js">
+  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-CeE_rCDR.css">
+  <link rel="stylesheet" crossorigin href="/material_titi/assets/practica-DDx4YGlw.css">
 </head>
 
 <body class="bg-gradient-to-br from-indigo-50 via-teal-50 to-amber-50 min-h-screen text-slate-800 pb-12">
@@ -778,15 +778,23 @@
                                 </div>
                             </div>
 
-                            <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-6 bg-slate-900 text-white min-h-[320px]">
+                            <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-5 bg-white text-slate-800">
                                 <div>
-                                    <h4 class="font-bold text-slate-300 text-xs mb-3 uppercase tracking-wider font-fun">Simulación Visual de Grupos:</h4>
-                                    <div id="lab-div-visualization" class="flex flex-wrap gap-4 items-center justify-center p-4 min-h-[160px] bg-slate-950 rounded-xl border border-slate-800">
-                                        <!-- Dinámico en JS -->
+                                    <h4 class="font-bold text-slate-700 text-sm mb-1 uppercase font-fun">Vista del Agrupamiento Matemático:</h4>
+                                    <p id="lab-div-status-text" class="text-sm font-semibold mb-4 text-slate-500"></p>
+                                    
+                                    <!-- Caja de grupos -->
+                                    <div id="lab-div-groups-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 min-h-[120px] p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                                        <!-- Dinámico -->
                                     </div>
                                 </div>
-                                <div id="lab-div-result-alert" class="mt-4 p-4 rounded-xl text-center text-sm font-bold transition-all">
-                                    <!-- Alerta dinámica -->
+
+                                <!-- Caja de sobrantes -->
+                                <div class="mt-4 p-3 bg-red-50/50 border border-red-100 rounded-xl">
+                                    <h5 class="text-xs font-bold text-red-700 uppercase mb-2">🔴 Caja de Estudiantes Sobrantes (Residuo):</h5>
+                                    <div id="lab-div-leftovers" class="flex flex-wrap gap-1.5 min-h-[30px]">
+                                        <!-- Dinámico -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -817,21 +825,27 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bg-white/80 p-3 rounded-xl border border-amber-100 mt-4 text-xs text-amber-900 leading-relaxed">
-                                    <p class="font-bold">Notación Mixta Equivalente:</p>
-                                    <p id="lab-frac-mixta-txt" class="font-extrabold text-amber-700 mt-1 text-base font-fun"></p>
+                                <div class="bg-white/80 p-3 rounded-xl border border-amber-100 mt-4 text-xs text-amber-900">
+                                    <p class="font-bold text-amber-800 uppercase text-[10px] tracking-wide">Clasificación Teórica:</p>
+                                    <p id="lab-frac-type-txt" class="font-extrabold text-sm text-slate-800 mt-0.5"></p>
                                 </div>
                             </div>
 
-                            <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-6 bg-white shadow-sm min-h-[320px]">
+                            <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-5">
                                 <div>
-                                    <h4 class="font-bold text-slate-700 text-xs mb-3 uppercase tracking-wider font-fun">Representación Visual en Chocolates:</h4>
-                                    <div id="lab-frac-visualization" class="flex flex-col gap-6 items-center justify-center p-4 min-h-[160px] bg-slate-50 rounded-xl border border-slate-200">
-                                        <!-- Dinámico en JS -->
+                                    <h4 class="font-bold text-slate-700 text-sm mb-4 uppercase font-fun">Tus Chocolates en la Vida Real:</h4>
+                                    <div id="lab-frac-visual-container" class="space-y-4 p-4 bg-slate-50 border border-slate-200 rounded-xl min-h-[160px] flex flex-col justify-center">
+                                        <!-- Se generarán dinámicamente barras de chocolate SVG -->
                                     </div>
                                 </div>
-                                <div id="lab-frac-type-badge" class="mt-4 p-3 rounded-xl text-center text-sm font-bold transition-all uppercase tracking-wider font-fun">
-                                    <!-- Badge dinámico -->
+
+                                <div class="mt-4 p-4 bg-amber-500/10 border border-amber-200 rounded-xl text-center">
+                                    <span class="text-xs font-bold text-amber-700 uppercase">Conversión a Notación Mixta:</span>
+                                    <div class="flex justify-center items-center gap-3 mt-1.5 font-fun">
+                                        <span class="text-3xl font-extrabold text-slate-800" id="lab-frac-math-impropia">7/4</span>
+                                        <span class="text-xl text-slate-400">➔</span>
+                                        <span class="text-3xl font-extrabold text-amber-600" id="lab-frac-math-mixta">1 y 3/4</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
