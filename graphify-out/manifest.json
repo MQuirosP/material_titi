@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\vite.config.js": {
-    "mtime": 1782264436.9396138,
-    "ast_hash": "4bee83b9a4f042d43091c40c93ae04c9",
+    "mtime": 1782327274.9785066,
+    "ast_hash": "c429c914c3497c795d4e837eca967594",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\hub\\main.js": {
@@ -75,13 +75,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\index.html": {
-    "mtime": 1782317065.0030687,
-    "ast_hash": "d1af84fcbc9b408f38186271988adb09",
+    "mtime": 1782327270.6810555,
+    "ast_hash": "35f577ad125020f55126eb3765dbd60a",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\rules\\graphify.md": {
-    "mtime": 1782260996.830672,
-    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "mtime": 1782327008.9829009,
+    "ast_hash": "5cf431ba35bbe8b4a201e13f7c523666",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\rules\\riomate.md": {
@@ -124,11 +124,6 @@
     "ast_hash": "0b7be1b43645f1e86bfbef1ad8431660",
     "semantic_hash": ""
   },
-  "C:\\Users\\mquir\\Proyectos\\rioja\\matematicas\\index.html": {
-    "mtime": 1782317031.848152,
-    "ast_hash": "677c99417a61b6052f7c645438865fc7",
-    "semantic_hash": ""
-  },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\audio.js": {
     "mtime": 1782316876.7508578,
     "ast_hash": "4f5202688e12e41c87bc55993e5b7d11",
@@ -140,8 +135,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\data\\quiz-teorico.js": {
-    "mtime": 1782316857.855723,
-    "ast_hash": "2411f7b9792155e8df25f59cd39bed0b",
+    "mtime": 1782326206.701756,
+    "ast_hash": "e1b4e65992948ece21e2f7705b9b1a36",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\labs\\decisiones-medicas.js": {
@@ -152,6 +147,11 @@
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\labs\\filtro-renal.js": {
     "mtime": 1782316902.7457561,
     "ast_hash": "0d73708e2bb3e49df6f6938c11538828",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\practica\\index.html": {
+    "mtime": 1782318870.5195115,
+    "ast_hash": "cfbb2cd3f119ee665d1657f85d9fd4b7",
     "semantic_hash": ""
   }
 }

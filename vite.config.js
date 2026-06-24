@@ -10,8 +10,8 @@ export default {
   build: {
     rollupOptions: {
       input: {
-        main:        resolve(__dirname, 'index.html'),
-        matematicas: resolve(__dirname, 'matematicas/index.html'),
+        main:     resolve(__dirname, 'index.html'),
+        practica: resolve(__dirname, 'practica/index.html'),
         // ciencias:    resolve(__dirname, 'ciencias/index.html'),
         // espanol:     resolve(__dirname, 'espanol/index.html'),
       },
