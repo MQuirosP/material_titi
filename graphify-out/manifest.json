@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\main.js": {
-    "mtime": 1782317056.0857635,
-    "ast_hash": "849243525c3c01af1db92261348e2365",
+    "mtime": 1782328218.4236414,
+    "ast_hash": "598156f9b4486e6347d6a412d89a1c44",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\data\\quiz-practico.js": {
@@ -119,11 +119,6 @@
     "ast_hash": "84de69efd46ab0b8430393bd4188f8f2",
     "semantic_hash": ""
   },
-  "C:\\Users\\mquir\\Proyectos\\rioja\\.github\\workflows\\deploy.yml": {
-    "mtime": 1782262644.8213432,
-    "ast_hash": "0b7be1b43645f1e86bfbef1ad8431660",
-    "semantic_hash": ""
-  },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\audio.js": {
     "mtime": 1782316876.7508578,
     "ast_hash": "4f5202688e12e41c87bc55993e5b7d11",
@@ -150,8 +145,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\practica\\index.html": {
-    "mtime": 1782318870.5195115,
-    "ast_hash": "cfbb2cd3f119ee665d1657f85d9fd4b7",
+    "mtime": 1782328207.8571887,
+    "ast_hash": "c4e8c17f8c2aed5787620ee9a4335a7c",
     "semantic_hash": ""
   }
 }

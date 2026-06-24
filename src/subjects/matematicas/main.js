@@ -77,15 +77,9 @@ export function switchSubject(subject) {
   const labContentsMath = document.getElementById('lab-contents-math');
   const labContentsScience = document.getElementById('lab-contents-science');
 
-  // Botones Pills
-  const btnMath = document.getElementById('subject-btn-matematicas');
-  const btnScience = document.getElementById('subject-btn-ciencias');
-
   if (subject === 'ciencias') {
     // 1. Cambiar Estilos / Temas
     body.className = "bg-gradient-to-br from-emerald-50 via-teal-50 to-green-50 min-h-screen text-slate-800 pb-12 transition-all duration-500";
-    if (btnScience) btnScience.className = "px-6 py-3 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-emerald-600 text-white shadow-md font-fun";
-    if (btnMath) btnMath.className = "px-6 py-3 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-white text-slate-700 hover:bg-indigo-50 border border-slate-200 font-fun";
 
     if (title) title.textContent = "RíoCiencias 5º";
     if (subtitle) subtitle.textContent = "Escuela Riojalandia · II Pruebas de Ciencias · Secciones 5-1 y 5-2";
@@ -121,8 +115,6 @@ export function switchSubject(subject) {
   } else {
     // 1. Cambiar Estilos / Temas
     body.className = "bg-gradient-to-br from-indigo-50 via-teal-50 to-amber-50 min-h-screen text-slate-800 pb-12 transition-all duration-500";
-    if (btnMath) btnMath.className = "px-6 py-3 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-indigo-600 text-white shadow-md font-fun";
-    if (btnScience) btnScience.className = "px-6 py-3 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-white text-slate-700 hover:bg-emerald-50 border border-slate-200 font-fun";
 
     if (title) title.textContent = "RíoMate 5º";
     if (subtitle) subtitle.textContent = "Escuela Riojalandia · II Pruebas de Matemáticas · Secciones 5-1 y 5-2";
