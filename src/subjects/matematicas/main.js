@@ -77,9 +77,13 @@ export function switchSubject(subject) {
   const labContentsMath = document.getElementById('lab-contents-math');
   const labContentsScience = document.getElementById('lab-contents-science');
 
+  const favicon = document.getElementById('favicon');
+
   if (subject === 'ciencias') {
     // 1. Cambiar Estilos / Temas
     body.className = "bg-gradient-to-br from-emerald-50 via-teal-50 to-green-50 min-h-screen text-slate-800 pb-12 transition-all duration-500";
+    document.title = "RíoCiencias 5° — Ciencias (Escuela Riojalandia)";
+    if (favicon) favicon.href = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>";
 
     if (title) title.textContent = "RíoCiencias 5º";
     if (subtitle) subtitle.textContent = "Escuela Riojalandia · II Pruebas de Ciencias · Secciones 5-1 y 5-2";
@@ -115,6 +119,8 @@ export function switchSubject(subject) {
   } else {
     // 1. Cambiar Estilos / Temas
     body.className = "bg-gradient-to-br from-indigo-50 via-teal-50 to-amber-50 min-h-screen text-slate-800 pb-12 transition-all duration-500";
+    document.title = "RíoMate 5° — Matemáticas (Escuela Riojalandia)";
+    if (favicon) favicon.href = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>";
 
     if (title) title.textContent = "RíoMate 5º";
     if (subtitle) subtitle.textContent = "Escuela Riojalandia · II Pruebas de Matemáticas · Secciones 5-1 y 5-2";
