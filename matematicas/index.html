@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/material_titi/assets/matematicas-DHud8Ny4.js"></script>
-  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-DLKwu-Qg.js">
-  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-DAz_MDx3.css">
+  <script type="module" crossorigin src="/material_titi/assets/matematicas-BZkB5DlZ.js"></script>
+  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-BSeDzNAY.js">
+  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-CTbX8J2R.css">
   <link rel="stylesheet" crossorigin href="/material_titi/assets/matematicas-DDx4YGlw.css">
 </head>
 
@@ -26,13 +26,13 @@
                 </div>
                 <div>
                     <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider font-fun">Primer Semestre 2026</span>
-                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-1">RíoMate 5º</h1>
-                    <p class="text-sm text-slate-500 font-medium">Escuela Riojalandia · II Pruebas de Matemáticas · Secciones 5-1 y 5-2</p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-1" id="main-title">RíoMate 5º</h1>
+                    <p class="text-sm text-slate-500 font-medium" id="main-subtitle">Escuela Riojalandia · II Pruebas de Matemáticas · Secciones 5-1 y 5-2</p>
                 </div>
             </div>
             <div class="bg-slate-100 p-3 rounded-2xl text-center md:text-right border border-slate-200">
                 <p class="text-xs text-slate-500 font-bold uppercase">Fecha del Examen</p>
-                <p class="text-lg font-bold text-indigo-700 font-fun">Miércoles 24 de Junio, 2026</p>
+                <p class="text-lg font-bold text-indigo-700 font-fun" id="exam-date">Miércoles 24 de Junio, 2026</p>
                 <p class="text-xs text-emerald-600 font-semibold flex items-center justify-center md:justify-end gap-1">
                     <span>👩‍🏫 Maestra: Florisel Olmazo López</span>
                 </p>
@@ -42,25 +42,35 @@
 
     <!-- Contenedor Principal -->
     <main class="max-w-5xl mx-auto px-4 mt-8">
+
+        <!-- Selector de Materia (Pills) -->
+        <div class="flex justify-center gap-4 mb-6">
+            <button id="subject-btn-matematicas" onclick="switchSubject('matematicas')" class="px-6 py-3 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-indigo-600 text-white shadow-md font-fun">
+                🧮 Matemáticas
+            </button>
+            <button id="subject-btn-ciencias" onclick="switchSubject('ciencias')" class="px-6 py-3 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-white text-slate-700 hover:bg-emerald-50 border border-slate-200 font-fun">
+                🔬 Ciencias
+            </button>
+        </div>
         
         <!-- Pestañas de Navegación -->
         <div class="flex flex-wrap gap-2 mb-8 justify-center bg-white p-2 rounded-2xl shadow-sm border border-slate-200">
             <a href="../" class="px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-rose-600 hover:bg-rose-50 font-fun">
                 🚪 Menú Principal
             </a>
-            <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-indigo-600 text-white">
+            <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-indigo-600 text-white font-fun">
                 🏠 Inicio
             </button>
-            <button onclick="switchTab('teoria')" id="tab-teoria" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+            <button onclick="switchTab('teoria')" id="tab-teoria" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100 font-fun">
                 📚 Teoría Interactiva
             </button>
-            <button onclick="switchTab('laboratorio')" id="tab-laboratorio" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100">
-                🧪 Súper Laboratorios (5)
+            <button onclick="switchTab('laboratorio')" id="tab-laboratorio" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100 font-fun">
+                🧪 Súper Laboratorios
             </button>
-            <button onclick="switchTab('quiz-teorico')" id="tab-quiz-teorico" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+            <button onclick="switchTab('quiz-teorico')" id="tab-quiz-teorico" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100 font-fun">
                 ✏️ Examen Teórico
             </button>
-            <button onclick="switchTab('quiz-practico')" id="tab-quiz-practico" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+            <button onclick="switchTab('quiz-practico')" id="tab-quiz-practico" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100 font-fun">
                 🧮 Examen Práctico
             </button>
         </div>
@@ -72,16 +82,36 @@
                 <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 md:col-span-2">
                     <span class="text-4xl">👋</span>
                     <h2 class="text-3xl font-bold text-slate-900 mt-4 mb-2">¡Hola, campeona!</h2>
-                    <p class="text-slate-600 leading-relaxed text-lg mb-6">
-                        Bienvenida a tu compañero de estudio de matemáticas. Aquí vas a repasar toda la teoría del examen de forma divertida, visual e interactiva. No te limites a memorizar las respuestas: comprende los conceptos y practica con los números para ganarte esa nota máxima el miércoles.
-                    </p>
-                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-4 flex gap-4 items-start">
-                        <span class="text-2xl mt-1">💡</span>
-                        <div>
-                            <h4 class="font-bold text-indigo-900">¿Cómo usar RíoMate?</h4>
-                            <p class="text-sm text-indigo-700 leading-relaxed mt-1">
-                                Explora las pestañas superiores. Lee las tarjetas interactivas de teoría, juega con las figuras geométricas en el laboratorio de fórmulas para ver cómo cambian sus áreas, y luego ponte a prueba en los exámenes de teoría y práctica.
-                            </p>
+                    
+                    <!-- Bienvenida Matemáticas -->
+                    <div id="welcome-math" class="block">
+                        <p class="text-slate-600 leading-relaxed text-lg mb-6">
+                            Bienvenida a tu compañero de estudio de matemáticas. Aquí vas a repasar toda la teoría del examen de forma divertida, visual e interactiva. No te limites a memorizar las respuestas: comprende los conceptos y practica con los números para ganarte esa nota máxima el miércoles.
+                        </p>
+                        <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-4 flex gap-4 items-start">
+                            <span class="text-2xl mt-1">💡</span>
+                            <div>
+                                <h4 class="font-bold text-indigo-900">¿Cómo usar RíoMate?</h4>
+                                <p class="text-sm text-indigo-700 leading-relaxed mt-1">
+                                    Explora las pestañas superiores. Lee las tarjetas interactivas de teoría, juega con las figuras geométricas en el laboratorio de fórmulas para ver cómo cambian sus áreas, y luego ponte a prueba en los exámenes de teoría y práctica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bienvenida Ciencias -->
+                    <div id="welcome-science" class="hidden">
+                        <p class="text-slate-600 leading-relaxed text-lg mb-6">
+                            Bienvenida a tu compañero de estudio de ciencias. Aquí vas a repasar el funcionamiento del sistema urinario, la excreción celular en la piel y pulmones, los fascinantes avances tecnológicos de la medicina y la biodiversidad de Costa Rica de manera interactiva.
+                        </p>
+                        <div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-4 flex gap-4 items-start">
+                            <span class="text-2xl mt-1">💡</span>
+                            <div>
+                                <h4 class="font-bold text-emerald-900">¿Cómo usar RíoCiencias?</h4>
+                                <p class="text-sm text-emerald-700 leading-relaxed mt-1">
+                                    Explora las pestañas superiores. Revisa las tarjetas interactivas de teoría de los seres vivos y la salud, experimenta con el simulador de filtrado renal y pon a prueba tus conocimientos médicos clínicos en el laboratorio de decisiones clínicas.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,7 +119,7 @@
                 <!-- Tu Progreso General -->
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-4 font-fun">Tu Progreso de Estudio</h3>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4 font-fun" id="progress-title">Tu Progreso de Estudio</h3>
                         <div class="space-y-4">
                             <div>
                                 <div class="flex justify-between text-xs font-bold text-slate-500 uppercase mb-1">
@@ -97,7 +127,7 @@
                                     <span id="progreso-teoria-porcentaje">0%</span>
                                 </div>
                                 <div class="w-full bg-slate-100 rounded-full h-3">
-                                    <div id="progreso-teoria-bar" class="bg-teal-500 h-3 rounded-full transition-all duration-500" style="width: 0%"></div>
+                                    <div id="progreso-teoria-bar" class="bg-teal-50 h-3 rounded-full transition-all duration-500" style="width: 0%"></div>
                                 </div>
                             </div>
                             <div>
@@ -123,7 +153,7 @@
 
                     <!-- Insignias a Ganar -->
                     <div class="mt-6 pt-4 border-t border-slate-100">
-                        <h4 class="text-sm font-bold text-slate-600 uppercase mb-3 font-fun">Tus Medallas RíoMate</h4>
+                        <h4 class="text-sm font-bold text-slate-600 uppercase mb-3 font-fun" id="badges-title">Tus Medallas RíoMate</h4>
                         <div class="flex gap-2 justify-center">
                             <span id="badge-teoria" class="opacity-30 grayscale text-3xl filter transition-all duration-300" title="Medalla de Teoría (Completa toda la teoría)">🎓</span>
                             <span id="badge-formulas" class="opacity-30 grayscale text-3xl filter transition-all duration-300" title="Maestra Geómetra (Usa el laboratorio de fórmulas)">📐</span>
@@ -139,7 +169,9 @@
                 <h3 class="text-2xl font-bold text-slate-900 mb-6 font-fun flex items-center gap-2">
                     <span>📋</span> ¿Qué viene exactamente en el examen?
                 </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <!-- Temario Matemáticas -->
+                <div id="temario-math" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="p-4 rounded-2xl bg-indigo-50 border border-indigo-100">
                         <span class="text-xs font-bold text-indigo-700 bg-indigo-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 1</span>
                         <h4 class="font-bold text-slate-800 mt-2 text-base">Múltiplos, Pares e Impares</h4>
@@ -171,6 +203,40 @@
                         <p class="text-xs text-slate-500 mt-1">Problemas complejos que involucran el cálculo de áreas y perímetros combinados de figuras planas.</p>
                     </div>
                 </div>
+
+                <!-- Temario Ciencias -->
+                <div id="temario-science" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 1 & 2</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">El Sistema Urinario y Riñones</h4>
+                        <p class="text-xs text-slate-500 mt-1">Filtración de la sangre y eliminación de impurezas. Anatomía renal básica y formación de la orina.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-teal-50 border border-teal-100">
+                        <span class="text-xs font-bold text-teal-700 bg-teal-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 3 & 4</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Conductos Excretores y Vejiga</h4>
+                        <p class="text-xs text-slate-500 mt-1">Uréteres, almacenamiento de orina en la vejiga urinaria y expulsión al exterior por la uretra.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-lime-50 border border-lime-100">
+                        <span class="text-xs font-bold text-lime-700 bg-lime-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 5 & 6</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Piel, Pulmones y Excreción</h4>
+                        <p class="text-xs text-slate-500 mt-1">La excreción cutánea de sales a través del sudor e interrelación respiratoria con el dióxido de carbono.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-cyan-50 border border-cyan-100">
+                        <span class="text-xs font-bold text-cyan-700 bg-cyan-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 7 & 8</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Avances Médicos y Diagnósticos</h4>
+                        <p class="text-xs text-slate-500 mt-1">Uso preventivo de vacunas, antibióticos para bacterias, diagnóstico por Rayos X y trasplantes.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-emerald-950/5 border border-emerald-950/10">
+                        <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 9</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Bioética de Laboratorio</h4>
+                        <p class="text-xs text-slate-500 mt-1">Trato digno y humanitario para animales en experimentación, prohibición del dolor y sufrimiento.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-green-50 border border-green-100">
+                        <span class="text-xs font-bold text-green-700 bg-green-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 10</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Biodiversidad en Costa Rica</h4>
+                        <p class="text-xs text-slate-500 mt-1">El término de biodiversidad, el 5 por ciento mundial local, taxonomía y conservación.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -179,14 +245,14 @@
             <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-2">
                     <div>
-                        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 font-fun">📚 Tarjetas de Estudio Teórico</h2>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 font-fun" id="theory-title">📚 Tarjetas de Estudio Teórico</h2>
                         <p class="text-slate-500 text-sm">Haz clic en cada tarjeta para "voltearla" y repasar las definiciones, fórmulas y secretos del examen.</p>
                     </div>
                     <span id="theory-counter" class="bg-indigo-100 text-indigo-700 text-sm font-bold px-4 py-2 rounded-2xl font-fun">0 de 6 Tarjetas Estudiadas</span>
                 </div>
 
-                <!-- Tarjetas -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Bloque de Tarjetas de Matemáticas -->
+                <div id="theory-math" class="block grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Tarjeta 1: Múltiplos, pares e impares -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 1)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-indigo-100 duration-500">
@@ -397,6 +463,204 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Bloque de Tarjetas de Ciencias -->
+                <div id="theory-science" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Tarjeta 1: Sistema Urinario -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 1)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Tema 1</span>
+                                    <span class="text-2xl">🔬</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">El Sistema Urinario</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cuál es su rol en la excreción y cómo mantiene el equilibrio en nuestro cuerpo?</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">La Teoría Esencial:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Excreción:</strong> Proceso por el cual el cuerpo filtra y desecha sustancias tóxicas del metabolismo celular.</li>
+                                        <li><strong class="text-white">Función principal:</strong> Filtrar la sangre para eliminar desechos líquidos celulares en forma de orina.</li>
+                                        <li><strong class="text-white">Desechos eliminados:</strong> Urea, exceso de sales y residuos de medicamentos del plasma sanguíneo.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-emerald-200">El sistema urinario no digiere comida (digestivo) ni oxigena (respiratorio), solo limpia fluidos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2: Anatomía Renal -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 2)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Tema 2</span>
+                                    <span class="text-2xl">🍒</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Los Riñones</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Nuestros coladores naturales de sangre. ¿Cómo funcionan y qué es la nefrona?</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Los Riñones:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Órganos gemelos:</strong> Dos estructuras en forma de frijol situadas en la parte lumbar.</li>
+                                        <li><strong class="text-white">Nefrona:</strong> Unidad funcional y microscópica del riñón que filtra la sangre y forma la orina.</li>
+                                        <li><strong class="text-white">Cuidado renal:</strong> Consumir agua potable ayuda a que los riñones diluyan solutos sin sobrecargarse de sal.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-2.5 rounded-xl border border-teal-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">El exceso de sal (sodio) obliga a los riñones a realizar un esfuerzo excesivo y daña capilares.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: Vías Urinarias -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 3)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Tema 3</span>
+                                    <span class="text-2xl">🔌</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Uréteres, Vejiga y Uretra</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cuáles son los conductos que transportan, almacenan y expulsan la orina?</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Conductos Urinarios:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Uréteres:</strong> Dos conductos delgados que llevan la orina desde los riñones a la vejiga.</li>
+                                        <li><strong class="text-white">Vejiga urinaria:</strong> Bolsa muscular elástica que almacena la orina.</li>
+                                        <li><strong class="text-white">Uretra:</strong> Conducto único que expulsa la orina al exterior.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-emerald-200">Retener la orina por horas facilita que las bacterias se multipliquen y causen infecciones.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4: Avances Médicos I -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 4)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Tema 4</span>
+                                    <span class="text-2xl">💉</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Vacunas y Antibióticos</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cómo previenen y curan las enfermedades estos maravillosos avances?</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Ciencia Médica:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Vacunas:</strong> Preparan al sistema inmune enseñándole a crear anticuerpos antes de enfermar. Previenen virus y bacterias.</li>
+                                        <li><strong class="text-white">Antibióticos:</strong> Combaten de forma exclusiva infecciones causadas por bacterias.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-2.5 rounded-xl border border-teal-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">Los antibióticos no curan la gripe ni los resfriados comunes porque estos son causados por VIRUS.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 5: Avances Médicos II -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 5)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Tema 5</span>
+                                    <span class="text-2xl">📸</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Rayos X y Trasplantes</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Tecnología de diagnóstico por imágenes y cirugías complejas que salvan vidas.</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Tecnología Médica:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Rayos X:</strong> Radiación electromagnética que permite tomar imágenes del interior duro (huesos) sin cirugías.</li>
+                                        <li><strong class="text-white">Trasplante:</strong> Reemplazo quirúrgico de un órgano enfermo irreversible por uno sano de un donante compatible.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-emerald-200">Los Rayos X revelan fracturas óseas. Los trasplantes se usan ante fallas orgánicas severas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 6: Biodiversidad y Ética -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 6)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Tema 6</span>
+                                    <span class="text-2xl">🌱</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Biodiversidad y Bioética</h3>
+                                    <p class="text-slate-500 text-sm mt-1">La increíble riqueza de Costa Rica y el respeto a los seres vivos en laboratorios.</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Ética y Naturaleza:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Biodiversidad:</strong> La variedad y abundancia de formas de vida en un territorio. Costa Rica alberga el 5% mundial.</li>
+                                        <li><strong class="text-white">Taxonomía:</strong> Clasificación biológica de animales por rasgos observables para preservarlos.</li>
+                                        <li><strong class="text-white">Bioética:</strong> Garantizar el trato digno e impedir sufrimiento a animales en laboratorios.</li>
+                                    </ul>
+                                <div class="bg-teal-900/60 p-2.5 rounded-xl border border-teal-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">La conservación biológica protege especies de la extinción mediante áreas silvestres protegidas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -404,12 +668,12 @@
         <section id="content-laboratorio" class="tab-content hidden">
             <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200">
                 <div class="mb-6">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 font-fun">🧪 Súper Laboratorios Interactivos</h2>
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 font-fun" id="labs-title">🧪 Súper Laboratorios Interactivos</h2>
                     <p class="text-slate-500 text-sm">Practica jugando con cada uno de los temas del examen utilizando estos simuladores educativos interactivos.</p>
                 </div>
 
-                <!-- Sub-pestañas internas de los laboratorios -->
-                <div class="flex flex-wrap gap-2 mb-8 justify-center bg-slate-50 p-2 rounded-2xl border border-slate-200">
+                <!-- Sub-pestañas internas de los laboratorios (Matemáticas) -->
+                <div id="subtabs-math" class="block flex flex-wrap gap-2 mb-8 justify-center bg-slate-50 p-2 rounded-2xl border border-slate-200">
                     <button onclick="switchLabSubTab('multiplos')" id="subtab-multiplos" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 bg-teal-500 text-white shadow-sm">
                         🔢 Múltiplos, Pares e Impares
                     </button>
@@ -427,318 +691,407 @@
                     </button>
                 </div>
 
-                <!-- SUB-CONTENIDO: LABORATORIO DE MÚLTIPLOS -->
-                <div id="lab-sub-content-multiplos" class="lab-sub-content block">
-                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-                        <div class="md:col-span-4 bg-teal-50 p-5 rounded-2xl border border-teal-100 flex flex-col justify-between">
-                            <div>
-                                <h3 class="font-bold text-teal-900 text-lg font-fun mb-2">🔢 Explorador de Múltiplos</h3>
-                                <p class="text-xs text-teal-800 leading-relaxed mb-4">Ajusta el número base para ver iluminadas de color dorado las casillas de sus múltiplos. También puedes marcar filtros para distinguir pares e impares.</p>
-                                
-                                <div class="space-y-4 pt-2 border-t border-teal-200/50">
-                                    <div>
-                                        <div class="flex justify-between text-xs font-bold text-teal-900 uppercase">
-                                            <span>Número Base:</span>
-                                            <span id="lab-mult-base-val" class="text-teal-600 text-sm">3</span>
-                                        </div>
-                                        <input type="range" id="lab-mult-base" min="2" max="10" value="3" oninput="updateMultiplesLab()" class="w-full h-2 bg-teal-200 rounded-lg cursor-pointer accent-teal-600 mt-1">
-                                    </div>
-
-                                    <div class="space-y-2 pt-2">
-                                        <p class="text-xs font-bold text-teal-900 uppercase">Filtros de Color:</p>
-                                        <label class="flex items-center gap-2 text-xs font-semibold text-teal-800 cursor-pointer">
-                                            <input type="checkbox" id="lab-mult-even" onchange="updateMultiplesLab()" class="rounded text-teal-600 focus:ring-teal-500 w-4 h-4">
-                                            <span>Borde Azul en Números Pares</span>
-                                        </label>
-                                        <label class="flex items-center gap-2 text-xs font-semibold text-teal-800 cursor-pointer">
-                                            <input type="checkbox" id="lab-mult-odd" onchange="updateMultiplesLab()" class="rounded text-teal-600 focus:ring-teal-500 w-4 h-4">
-                                            <span>Borde Rosado en Números Impares</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white/80 p-3 rounded-xl border border-teal-100 mt-4 text-xs text-teal-900 leading-relaxed">
-                                💡 <strong>Aprende:</strong> Un múltiplo siempre termina en una posición exacta de su tabla de multiplicar. ¡Los múltiplos de 5 siempre terminan en 0 o 5!
-                            </div>
-                        </div>
-
-                        <div class="md:col-span-8">
-                            <h4 class="font-bold text-slate-700 text-sm mb-3 uppercase font-fun">Tabla Interactiva (1 al 50):</h4>
-                            <div id="lab-multiples-grid" class="grid grid-cols-5 sm:grid-cols-10 gap-2">
-                                <!-- Se generará dinámicamente -->
-                            </div>
-                        </div>
-                    </div>
+                <!-- Sub-pestañas internas de los laboratorios (Ciencias) -->
+                <div id="subtabs-science" class="hidden flex flex-wrap gap-2 mb-8 justify-center bg-slate-50 p-2 rounded-2xl border border-slate-200">
+                    <button onclick="switchLabSubTab('filtro-renal')" id="subtab-filtro-renal" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 bg-emerald-600 text-white shadow-sm">
+                        🔬 Filtro Renal
+                    </button>
+                    <button onclick="switchLabSubTab('decisiones-medicas')" id="subtab-decisiones-medicas" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
+                        📋 Decisiones Médicas
+                    </button>
                 </div>
 
-                <!-- SUB-CONTENIDO: LABORATORIO DE DIVISORES -->
-                <div id="lab-sub-content-divisores" class="lab-sub-content hidden">
-                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-                        <div class="md:col-span-4 bg-emerald-50 p-5 rounded-2xl border border-emerald-100 flex flex-col justify-between">
-                            <div>
-                                <h3 class="font-bold text-emerald-900 text-lg font-fun mb-2">✂️ Fábrica de Divisores</h3>
-                                <p class="text-xs text-emerald-800 leading-relaxed mb-4">Elige una cantidad total de objetos y luego elige un divisor a probar para ver si se pueden agrupar en partes completamente exactas (Residuo = 0).</p>
-                                
-                                <div class="space-y-4 pt-2 border-t border-emerald-200/50">
-                                    <div>
-                                        <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase">
-                                            <span>Estudiantes Totales (Número):</span>
-                                            <span id="lab-div-num-val" class="text-emerald-600 text-sm">12</span>
-                                        </div>
-                                        <input type="range" id="lab-div-num" min="4" max="30" value="12" oninput="updateDivisoresLab()" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600 mt-1">
-                                    </div>
-                                    <div>
-                                        <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase">
-                                            <span>Estudiantes por grupo (Divisor):</span>
-                                            <span id="lab-div-test-val" class="text-emerald-600 text-sm">4</span>
-                                        </div>
-                                        <input type="range" id="lab-div-test" min="1" max="15" value="4" oninput="updateDivisoresLab()" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600 mt-1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white/80 p-3 rounded-xl border border-emerald-100 mt-4 text-xs text-emerald-900">
-                                <p class="font-bold">Divisores reales encontrados de este número:</p>
-                                <p id="lab-div-list-txt" class="font-bold text-emerald-700 mt-1 text-sm"></p>
-                            </div>
-                        </div>
-
-                        <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-5">
-                            <div>
-                                <h4 class="font-bold text-slate-700 text-sm mb-1 uppercase font-fun">Vista del Agrupamiento Matemático:</h4>
-                                <p id="lab-div-status-text" class="text-sm font-semibold mb-4 text-slate-500"></p>
-                                
-                                <!-- Caja de grupos -->
-                                <div id="lab-div-groups-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 min-h-[120px] p-3 bg-slate-50 border border-slate-200 rounded-xl">
-                                    <!-- Dinámico -->
-                                </div>
-                            </div>
-
-                            <!-- Caja de sobrantes -->
-                            <div class="mt-4 p-3 bg-red-50/50 border border-red-100 rounded-xl">
-                                <h5 class="text-xs font-bold text-red-700 uppercase mb-2">🔴 Caja de Estudiantes Sobrantes (Residuo):</h5>
-                                <div id="lab-div-leftovers" class="flex flex-wrap gap-1.5 min-h-[30px]">
-                                    <!-- Dinámico -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SUB-CONTENIDO: LABORATORIO DE FRACCIONES -->
-                <div id="lab-sub-content-fracciones" class="lab-sub-content hidden">
-                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-                        <div class="md:col-span-4 bg-amber-50 p-5 rounded-2xl border border-amber-100 flex flex-col justify-between">
-                            <div>
-                                <h3 class="font-bold text-amber-900 text-lg font-fun mb-2">🍕 Cortadora de Fracciones</h3>
-                                <p class="text-xs text-amber-800 leading-relaxed mb-4">Ajusta el numerador (arriba) y el denominador (abajo). Mira cómo las "Barras de Chocolate" se dividen en partes y se colorean. Verás al instante la conversión a número mixto.</p>
-                                
-                                <div class="space-y-4 pt-2 border-t border-amber-200/50">
-                                    <div>
-                                        <div class="flex justify-between text-xs font-bold text-amber-900 uppercase">
-                                            <span>Numerador (Slices Coloreados):</span>
-                                            <span id="lab-frac-num-val" class="text-amber-600 text-sm">7</span>
-                                        </div>
-                                        <input type="range" id="lab-frac-num" min="1" max="15" value="7" oninput="updateFraccionesLab()" class="w-full h-2 bg-amber-200 rounded-lg cursor-pointer accent-amber-600 mt-1">
-                                    </div>
-                                    <div>
-                                        <div class="flex justify-between text-xs font-bold text-amber-900 uppercase">
-                                            <span>Denominador (Divisiones de cada Barra):</span>
-                                            <span id="lab-frac-den-val" class="text-amber-600 text-sm">4</span>
-                                        </div>
-                                        <input type="range" id="lab-frac-den" min="2" max="8" value="4" oninput="updateFraccionesLab()" class="w-full h-2 bg-amber-200 rounded-lg cursor-pointer accent-amber-600 mt-1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white/80 p-3 rounded-xl border border-amber-100 mt-4 text-xs text-amber-900">
-                                <p class="font-bold text-amber-800 uppercase text-[10px] tracking-wide">Clasificación Teórica:</p>
-                                <p id="lab-frac-type-txt" class="font-extrabold text-sm text-slate-800 mt-0.5"></p>
-                            </div>
-                        </div>
-
-                        <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-5">
-                            <div>
-                                <h4 class="font-bold text-slate-700 text-sm mb-4 uppercase font-fun">Tus Chocolates en la Vida Real:</h4>
-                                <div id="lab-frac-visual-container" class="space-y-4 p-4 bg-slate-50 border border-slate-200 rounded-xl min-h-[160px] flex flex-col justify-center">
-                                    <!-- Se generarán dinámicamente barras de chocolate SVG -->
-                                </div>
-                            </div>
-
-                            <div class="mt-4 p-4 bg-amber-500/10 border border-amber-200 rounded-xl text-center">
-                                <span class="text-xs font-bold text-amber-700 uppercase">Conversión a Notación Mixta:</span>
-                                <div class="flex justify-center items-center gap-3 mt-1.5 font-fun">
-                                    <span class="text-3xl font-extrabold text-slate-800" id="lab-frac-math-impropia">7/4</span>
-                                    <span class="text-xl text-slate-400">➔</span>
-                                    <span class="text-3xl font-extrabold text-amber-600" id="lab-frac-math-mixta">1 y 3/4</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SUB-CONTENIDO: LABORATORIO DE MONEDAS (LA PULPERÍA) -->
-                <div id="lab-sub-content-moneda" class="lab-sub-content hidden">
-                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-                        <!-- Menú de compras -->
-                        <div class="md:col-span-5 bg-rose-50 p-5 rounded-2xl border border-rose-100 flex flex-col justify-between">
-                            <div>
-                                <h3 class="font-bold text-rose-900 text-lg font-fun mb-1">🏪 Pulpería "La Campesina"</h3>
-                                <p class="text-xs text-rose-800 leading-relaxed mb-4">Compra lo que gustes añadiendo artículos con los botones. Luego elige tu billete para ver tu vuelto desglosado en colones reales.</p>
-                                
-                                <div class="space-y-2.5 pt-2 border-t border-rose-200/50">
-                                    <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
-                                        <div>
-                                            <p class="font-bold text-slate-800">🥛 Leche de Caja</p>
-                                            <p class="text-[10px] text-slate-500">₡950 la unidad</p>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <button onclick="changePulperíaQty('leche', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
-                                            <span id="pul-qty-leche" class="font-bold text-sm w-4 text-center">0</span>
-                                            <button onclick="changePulperíaQty('leche', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
-                                        <div>
-                                            <p class="font-bold text-slate-800">🍪 Galleta Chiky</p>
-                                            <p class="text-[10px] text-slate-500">₡650 el paquete</p>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <button onclick="changePulperíaQty('galleta', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
-                                            <span id="pul-qty-galleta" class="font-bold text-sm w-4 text-center">0</span>
-                                            <button onclick="changePulperíaQty('galleta', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
-                                        <div>
-                                            <p class="font-bold text-slate-800">🧃 Refresco Tropical</p>
-                                            <p class="text-[10px] text-slate-500">₡1 200 la unidad</p>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <button onclick="changePulperíaQty('tropical', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
-                                            <span id="pul-qty-tropical" class="font-bold text-sm w-4 text-center">0</span>
-                                            <button onclick="changePulperíaQty('tropical', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
-                                        <div>
-                                            <p class="font-bold text-slate-800">🥟 Empanada de Queso</p>
-                                            <p class="text-[10px] text-slate-500">₡800 la unidad</p>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <button onclick="changePulperíaQty('empanada', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
-                                            <span id="pul-qty-empanada" class="font-bold text-sm w-4 text-center">0</span>
-                                            <button onclick="changePulperíaQty('empanada', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pt-3 mt-4 border-t border-rose-200/50">
-                                <label class="block text-xs font-bold text-rose-900 uppercase mb-1">💵 Pagar con un Billete de:</label>
-                                <select id="pul-pago" onchange="calculatePulpería()" class="w-full bg-white border border-rose-200 rounded-xl p-2.5 font-bold text-slate-800 shadow-sm text-sm">
-                                    <option value="1000">₡1 000 (Rojo, Mil colones)</option>
-                                    <option value="2000" selected>₡2 000 (Azul, Dos mil colones)</option>
-                                    <option value="5000">₡5 000 (Amarillo, Cinco mil colones)</option>
-                                    <option value="10000">₡10 000 (Verde, Diez mil colones)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Recibo y vuelto -->
-                        <div class="md:col-span-7 flex flex-col justify-between border border-slate-200 rounded-2xl p-5 bg-white">
-                            <div>
-                                <h4 class="font-bold text-slate-700 text-sm mb-3 uppercase font-fun">Detalle de tu Compra:</h4>
-                                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-xs space-y-1.5 font-mono">
-                                    <div class="flex justify-between">
-                                        <span>Total Factura:</span>
-                                        <span id="pul-ticket-total" class="font-bold text-slate-800">₡0</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span>Dinero Entregado:</span>
-                                        <span id="pul-ticket-pago" class="font-bold text-slate-800">₡2 000</span>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-300 my-1 pt-1.5 flex justify-between text-sm">
-                                        <span class="font-bold">SU VUELTO:</span>
-                                        <span id="pul-ticket-vuelto" class="font-extrabold text-indigo-700 text-base">₡0</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Alerta de dinero insuficiente -->
-                            <div id="pul-alerta-falta" class="hidden mt-4 p-3 rounded-xl bg-red-100 border border-red-200 text-red-800 text-xs font-bold flex gap-2 items-center">
-                                <span>⚠️</span>
-                                <span>¡Ups! El billete no alcanza para pagar la cuenta. Por favor elige un billete mayor o quita artículos.</span>
-                            </div>
-
-                            <!-- Vuelto visual de billetes y monedas de Costa Rica -->
-                            <div class="mt-4">
-                                <h5 class="text-xs font-bold text-slate-600 uppercase mb-2">💰 Monedas y Billetes que recibes:</h5>
-                                <div id="pul-vuelto-visual" class="flex flex-wrap gap-2.5 min-h-[100px] p-3 border border-dashed border-slate-200 rounded-xl justify-center items-center">
-                                    <!-- Dinámico con mini billetes y monedas realistas -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SUB-CONTENIDO: LABORATORIO DE GEOMETRÍA (Mejorado sin solapamientos) -->
-                <div id="lab-sub-content-geometria" class="lab-sub-content hidden">
-                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-                        <!-- Selector y Controles -->
-                        <div class="md:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
-                            <div>
-                                <label class="block text-sm font-bold text-slate-600 uppercase tracking-wider mb-2 font-fun">1. Elige una Figura:</label>
-                                <select id="lab-figura" onchange="onLabFigureChange()" class="w-full bg-white border border-slate-300 rounded-xl p-3 font-bold text-slate-800 shadow-sm focus:ring-2 focus:ring-teal-500 focus:outline-none mb-6">
-                                    <option value="cuadrado">⭐ Cuadrado</option>
-                                    <option value="rectangulo">📏 Rectángulo</option>
-                                    <option value="triangulo">🔺 Triángulo (Asimétrico)</option>
-                                    <option value="paralelogramo">🔷 Paralelogramo (Altura Central)</option>
-                                    <option value="trapecio">🪵 Trapecio (Altura Central)</option>
-                                </select>
-
-                                <div class="border-t border-slate-200 pt-4">
-                                    <label class="block text-sm font-bold text-slate-600 uppercase tracking-wider mb-4 font-fun">2. Ajusta las Medidas (cm):</label>
+                <!-- CONTENEDORES DE LABS DE MATEMÁTICAS -->
+                <div id="lab-contents-math" class="block">
+                    <!-- SUB-CONTENIDO: LABORATORIO DE MÚLTIPLOS -->
+                    <div id="lab-sub-content-multiplos" class="lab-sub-content block">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                            <div class="md:col-span-4 bg-teal-50 p-5 rounded-2xl border border-teal-100 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-bold text-teal-900 text-lg font-fun mb-2">🔢 Explorador de Múltiplos</h3>
+                                    <p class="text-xs text-teal-800 leading-relaxed mb-4">Ajusta el número base para ver iluminadas de color dorado las casillas de sus múltiplos. También puedes marcar filtros para distinguir pares e impares.</p>
                                     
-                                    <!-- Sliders Dinámicos -->
-                                    <div id="sliders-container" class="space-y-4">
-                                        <!-- Se generarán dinámicamente con JavaScript -->
+                                    <div class="space-y-4 pt-2 border-t border-teal-200/50">
+                                        <div>
+                                            <div class="flex justify-between text-xs font-bold text-teal-900 uppercase">
+                                                <span>Número Base:</span>
+                                                <span id="lab-mult-base-val" class="text-teal-600 text-sm">3</span>
+                                            </div>
+                                            <input type="range" id="lab-mult-base" min="2" max="10" value="3" oninput="updateMultiplesLab()" class="w-full h-2 bg-teal-200 rounded-lg cursor-pointer accent-teal-600 mt-1">
+                                        </div>
+
+                                        <div class="space-y-2 pt-2">
+                                            <p class="text-xs font-bold text-teal-900 uppercase">Filtros de Color:</p>
+                                            <label class="flex items-center gap-2 text-xs font-semibold text-teal-800 cursor-pointer">
+                                                <input type="checkbox" id="lab-mult-even" onchange="updateMultiplesLab()" class="rounded text-teal-600 focus:ring-teal-500 w-4 h-4">
+                                                <span>Borde Azul en Números Pares</span>
+                                            </label>
+                                            <label class="flex items-center gap-2 text-xs font-semibold text-teal-800 cursor-pointer">
+                                                <input type="checkbox" id="lab-mult-odd" onchange="updateMultiplesLab()" class="rounded text-teal-600 focus:ring-teal-500 w-4 h-4">
+                                                <span>Borde Rosado en Números Impares</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white/80 p-3 rounded-xl border border-teal-100 mt-4 text-xs text-teal-900 leading-relaxed">
+                                    💡 <strong>Aprende:</strong> Un múltiplo siempre termina en una posición exacta de su tabla de multiplicar. ¡Los múltiplos de 5 siempre terminan en 0 o 5!
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-8">
+                                <h4 class="font-bold text-slate-700 text-sm mb-3 uppercase font-fun">Tabla Interactiva (1 al 50):</h4>
+                                <div id="lab-multiples-grid" class="grid grid-cols-5 sm:grid-cols-10 gap-2">
+                                    <!-- Se generará dinámicamente -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUB-CONTENIDO: LABORATORIO DE DIVISORES -->
+                    <div id="lab-sub-content-divisores" class="lab-sub-content hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                            <div class="md:col-span-4 bg-emerald-50 p-5 rounded-2xl border border-emerald-100 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-bold text-emerald-900 text-lg font-fun mb-2">✂️ Fábrica de Divisores</h3>
+                                    <p class="text-xs text-emerald-800 leading-relaxed mb-4">Elige una cantidad total de objetos y luego elige un divisor a probar para ver si se pueden agrupar en partes completamente exactas (Residuo = 0).</p>
+                                    
+                                    <div class="space-y-4 pt-2 border-t border-emerald-200/50">
+                                        <div>
+                                            <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase">
+                                                <span>Estudiantes Totales (Número):</span>
+                                                <span id="lab-div-num-val" class="text-emerald-600 text-sm">12</span>
+                                            </div>
+                                            <input type="range" id="lab-div-num" min="4" max="30" value="12" oninput="updateDivisoresLab()" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600 mt-1">
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase">
+                                                <span>Estudiantes por grupo (Divisor):</span>
+                                                <span id="lab-div-test-val" class="text-emerald-600 text-sm">4</span>
+                                            </div>
+                                            <input type="range" id="lab-div-test" min="1" max="15" value="4" oninput="updateDivisoresLab()" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600 mt-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white/80 p-3 rounded-xl border border-emerald-100 mt-4 text-xs text-emerald-900">
+                                    <p class="font-bold">Divisores reales encontrados de este número:</p>
+                                    <p id="lab-div-list-txt" class="font-bold text-emerald-700 mt-1 text-sm"></p>
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-6 bg-slate-900 text-white min-h-[320px]">
+                                <div>
+                                    <h4 class="font-bold text-slate-300 text-xs mb-3 uppercase tracking-wider font-fun">Simulación Visual de Grupos:</h4>
+                                    <div id="lab-div-visualization" class="flex flex-wrap gap-4 items-center justify-center p-4 min-h-[160px] bg-slate-950 rounded-xl border border-slate-800">
+                                        <!-- Dinámico en JS -->
+                                    </div>
+                                </div>
+                                <div id="lab-div-result-alert" class="mt-4 p-4 rounded-xl text-center text-sm font-bold transition-all">
+                                    <!-- Alerta dinámica -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUB-CONTENIDO: LABORATORIO DE FRACCIONES -->
+                    <div id="lab-sub-content-fracciones" class="lab-sub-content hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                            <div class="md:col-span-4 bg-amber-50 p-5 rounded-2xl border border-amber-100 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-bold text-amber-900 text-lg font-fun mb-2">🍕 Constructor de Fracciones</h3>
+                                    <p class="text-xs text-amber-800 leading-relaxed mb-4">Ajusta el numerador y denominador. Si el de arriba es mayor o igual al de abajo, verás cómo necesitas más de un chocolate entero para armar la fracción (Impropia).</p>
+                                    
+                                    <div class="space-y-4 pt-2 border-t border-amber-200/50">
+                                        <div>
+                                            <div class="flex justify-between text-xs font-bold text-amber-900 uppercase">
+                                                <span>Numerador (Partes coloreadas):</span>
+                                                <span id="lab-frac-num-val" class="text-amber-600 text-sm">7</span>
+                                            </div>
+                                            <input type="range" id="lab-frac-num" min="1" max="15" value="7" oninput="updateFraccionesLab()" class="w-full h-2 bg-amber-200 rounded-lg cursor-pointer accent-amber-600 mt-1">
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-between text-xs font-bold text-amber-900 uppercase">
+                                                <span>Denominador (Tamaño del chocolate):</span>
+                                                <span id="lab-frac-den-val" class="text-amber-600 text-sm">4</span>
+                                            </div>
+                                            <input type="range" id="lab-frac-den" min="2" max="8" value="4" oninput="updateFraccionesLab()" class="w-full h-2 bg-amber-200 rounded-lg cursor-pointer accent-amber-600 mt-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white/80 p-3 rounded-xl border border-amber-100 mt-4 text-xs text-amber-900 leading-relaxed">
+                                    <p class="font-bold">Notación Mixta Equivalente:</p>
+                                    <p id="lab-frac-mixta-txt" class="font-extrabold text-amber-700 mt-1 text-base font-fun"></p>
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-6 bg-white shadow-sm min-h-[320px]">
+                                <div>
+                                    <h4 class="font-bold text-slate-700 text-xs mb-3 uppercase tracking-wider font-fun">Representación Visual en Chocolates:</h4>
+                                    <div id="lab-frac-visualization" class="flex flex-col gap-6 items-center justify-center p-4 min-h-[160px] bg-slate-50 rounded-xl border border-slate-200">
+                                        <!-- Dinámico en JS -->
+                                    </div>
+                                </div>
+                                <div id="lab-frac-type-badge" class="mt-4 p-3 rounded-xl text-center text-sm font-bold transition-all uppercase tracking-wider font-fun">
+                                    <!-- Badge dinámico -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUB-CONTENIDO: LABORATORIO DE LA PULPERÍA -->
+                    <div id="lab-sub-content-moneda" class="lab-sub-content hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                            <!-- Productos y controles -->
+                            <div class="md:col-span-5 bg-rose-50 p-5 rounded-2xl border border-rose-100 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-bold text-rose-900 text-lg font-fun mb-2">🏪 Pulpería "La Rioja"</h3>
+                                    <p class="text-xs text-rose-800 leading-relaxed mb-4">Haz clic para agregar o quitar alimentos de la canasta. Luego, elige con qué billete vas a pagar y calcula tu vuelto en colones.</p>
+                                    
+                                    <div class="space-y-3 pt-2 border-t border-rose-200/50">
+                                        <!-- Leche -->
+                                        <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
+                                            <div>
+                                                <p class="font-bold text-slate-800">🥛 Caja de Leche</p>
+                                                <p class="text-[10px] text-slate-500">₡950 la unidad</p>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <button onclick="changePulperíaQty('leche', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
+                                                <span id="pul-qty-leche" class="font-bold text-sm w-4 text-center">0</span>
+                                                <button onclick="changePulperíaQty('leche', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
+                                            <div>
+                                                <p class="font-bold text-slate-800">🍪 Paquete de Galletas</p>
+                                                <p class="text-[10px] text-slate-500">₡650 la unidad</p>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <button onclick="changePulperíaQty('galleta', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
+                                                <span id="pul-qty-galleta" class="font-bold text-sm w-4 text-center">0</span>
+                                                <button onclick="changePulperíaQty('galleta', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
+                                            <div>
+                                                <p class="font-bold text-slate-800">🧃 Refresco Tropical</p>
+                                                <p class="text-[10px] text-slate-500">₡1 200 la unidad</p>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <button onclick="changePulperíaQty('tropical', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
+                                                <span id="pul-qty-tropical" class="font-bold text-sm w-4 text-center">0</span>
+                                                <button onclick="changePulperíaQty('tropical', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
+                                            <div>
+                                                <p class="font-bold text-slate-800">🥟 Empanada de Queso</p>
+                                                <p class="text-[10px] text-slate-500">₡800 la unidad</p>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <button onclick="changePulperíaQty('empanada', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
+                                                <span id="pul-qty-empanada" class="font-bold text-sm w-4 text-center">0</span>
+                                                <button onclick="changePulperíaQty('empanada', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pt-3 mt-4 border-t border-rose-200/50">
+                                    <label class="block text-xs font-bold text-rose-900 uppercase mb-1">💵 Pagar con un Billete de:</label>
+                                    <select id="pul-pago" onchange="calculatePulpería()" class="w-full bg-white border border-rose-200 rounded-xl p-2.5 font-bold text-slate-800 shadow-sm text-sm">
+                                        <option value="1000">₡1 000 (Rojo, Mil colones)</option>
+                                        <option value="2000" selected>₡2 000 (Azul, Dos mil colones)</option>
+                                        <option value="5000">₡5 000 (Amarillo, Cinco mil colones)</option>
+                                        <option value="10000">₡10 000 (Verde, Diez mil colones)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Recibo y vuelto -->
+                            <div class="md:col-span-7 flex flex-col justify-between border border-slate-200 rounded-2xl p-5 bg-white">
+                                <div>
+                                    <h4 class="font-bold text-slate-700 text-sm mb-3 uppercase font-fun">Detalle de tu Compra:</h4>
+                                    <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-xs space-y-1.5 font-mono">
+                                        <div class="flex justify-between">
+                                            <span>Total Factura:</span>
+                                            <span id="pul-ticket-total" class="font-bold text-slate-800">₡0</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>Dinero Entregado:</span>
+                                            <span id="pul-ticket-pago" class="font-bold text-slate-800">₡2 000</span>
+                                        </div>
+                                        <div class="border-t border-dashed border-slate-300 my-1 pt-1.5 flex justify-between text-sm">
+                                            <span class="font-bold">SU VUELTO:</span>
+                                            <span id="pul-ticket-vuelto" class="font-extrabold text-indigo-700 text-base">₡0</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Alerta de dinero insuficiente -->
+                                <div id="pul-alerta-falta" class="hidden mt-4 p-3 rounded-xl bg-red-100 border border-red-200 text-red-800 text-xs font-bold flex gap-2 items-center">
+                                    <span>⚠️</span>
+                                    <span>¡Ups! El billete no alcanza para pagar la cuenta. Por favor elige un billete mayor o quita artículos.</span>
+                                </div>
+
+                                <!-- Vuelto visual de billetes y monedas de Costa Rica -->
+                                <div class="mt-4">
+                                    <h5 class="text-xs font-bold text-slate-600 uppercase mb-2">💰 Monedas y Billetes que recibes:</h5>
+                                    <div id="pul-vuelto-visual" class="flex flex-wrap gap-2.5 min-h-[100px] p-3 border border-dashed border-slate-200 rounded-xl justify-center items-center">
+                                        <!-- Dinámico con mini billetes y monedas realistas -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUB-CONTENIDO: LABORATORIO DE GEOMETRÍA -->
+                    <div id="lab-sub-content-geometria" class="lab-sub-content hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                            <!-- Selector y Controles -->
+                            <div class="md:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                                <div>
+                                    <label class="block text-sm font-bold text-slate-600 uppercase tracking-wider mb-2 font-fun">1. Elige una Figura:</label>
+                                    <select id="lab-figura" onchange="onLabFigureChange()" class="w-full bg-white border border-slate-300 rounded-xl p-3 font-bold text-slate-800 shadow-sm focus:ring-2 focus:ring-teal-500 focus:outline-none mb-6">
+                                        <option value="cuadrado">⭐ Cuadrado</option>
+                                        <option value="rectangulo">📏 Rectángulo</option>
+                                        <option value="triangulo">🔺 Triángulo (Asimétrico)</option>
+                                        <option value="paralelogramo">🔷 Paralelogramo (Altura Central)</option>
+                                        <option value="trapecio">🪵 Trapecio (Altura Central)</option>
+                                    </select>
+
+                                    <div class="border-t border-slate-200 pt-4">
+                                        <label class="block text-sm font-bold text-slate-600 uppercase tracking-wider mb-4 font-fun">2. Ajusta las Medidas (cm):</label>
+                                        
+                                        <!-- Sliders Dinámicos -->
+                                        <div id="sliders-container" class="space-y-4">
+                                            <!-- Se generarán dinámicamente con JavaScript -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fórmulas Explicadas en el Panel de Control -->
+                                <div class="bg-teal-50 border border-teal-100 p-4 rounded-xl mt-6 text-sm text-teal-800">
+                                    <h4 class="font-bold font-fun mb-1">📝 Fórmulas de esta figura:</h4>
+                                    <p class="text-xs" id="lab-formulas-txt"></p>
+                                </div>
+                            </div>
+
+                            <!-- Representación Gráfica e Info -->
+                            <div class="md:col-span-7 flex flex-col justify-between border border-slate-200 rounded-2xl p-6">
+                                <!-- Dibujo de la figura SVG -->
+                                <div class="bg-slate-900 rounded-2xl p-4 h-64 flex items-center justify-center relative overflow-hidden shadow-inner">
+                                    <div class="absolute top-2 left-2 text-[10px] text-slate-500 font-mono">Simulador Visual en Tiempo Real</div>
+                                    <svg id="lab-svg" class="w-full h-full max-h-56" viewBox="0 0 200 200">
+                                        <!-- El elemento SVG se insertará mediante JS -->
+                                    </svg>
+                                </div>
+
+                                <!-- Pasos del Cálculo Matemático -->
+                                <div class="mt-6 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                                    <h4 class="font-bold text-slate-700 font-fun border-b border-slate-200 pb-2 mb-3">🔢 Cálculo paso a paso:</h4>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                                        <div>
+                                            <span class="text-xs font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded-full uppercase">Perímetro (Borde)</span>
+                                            <p class="font-bold text-slate-800 mt-2 text-base" id="lab-calc-p-proceso"></p>
+                                            <p class="text-lg font-bold text-indigo-600 mt-1 font-fun" id="lab-calc-p-resultado"></p>
+                                        </div>
+                                        <div>
+                                            <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full uppercase">Área (Superficie)</span>
+                                            <p class="font-bold text-slate-800 mt-2 text-base" id="lab-calc-a-proceso"></p>
+                                            <p class="text-lg font-bold text-emerald-600 mt-1 font-fun" id="lab-calc-a-resultado"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENEDORES DE LABS DE CIENCIAS -->
+                <div id="lab-contents-science" class="hidden">
+                    <!-- SUB-CONTENIDO: LABORATORIO DEL FILTRO RENAL (Canvas) -->
+                    <div id="lab-sub-content-filtro-renal" class="lab-sub-content hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                            <div class="md:col-span-4 bg-emerald-50 p-5 rounded-2xl border border-emerald-100 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-bold text-emerald-900 text-lg font-fun mb-2">🔬 Filtro Renal</h3>
+                                    <p class="text-xs text-emerald-800 leading-relaxed mb-4">Ajusta el slider de hidratación para ver cómo fluyen las toxinas amarillas pequeñas por la membrana del riñón, mientras que los nutrientes rojos grandes se mantienen en la sangre.</p>
+                                    
+                                    <div class="space-y-4 pt-2 border-t border-emerald-200/50">
+                                        <div>
+                                            <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase">
+                                                <span>Estado de Hidratación:</span>
+                                            </div>
+                                            <input type="range" id="filtro-renal-slider" min="1" max="3" value="2" step="1" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600 mt-1">
+                                            <div class="flex justify-between text-[10px] text-slate-500 px-1 mt-1 font-bold">
+                                                <span>Poco (1)</span>
+                                                <span>Regular (2)</span>
+                                                <span>Súper (3)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="filtro-renal-flow-container" class="mt-4 p-4 rounded-2xl bg-teal-50 border border-teal-100 transition-colors">
+                                            <p id="filtro-renal-status" class="text-sm font-bold text-teal-600">Hidratación Regular 👍 (Flujo saludable)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white/80 p-3 rounded-xl border border-emerald-100 mt-4 text-xs text-emerald-900 leading-relaxed">
+                                    💡 <strong>Aprende:</strong> Las nefronas actúan como coladores. Si bebes poca agua, las toxinas se acumulan y fluyen de manera obstruida y lenta.
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-8 flex flex-col items-center">
+                                <h4 class="font-bold text-slate-700 text-sm mb-3 uppercase font-fun self-start">Vista Microscópica de la Nefrona:</h4>
+                                <div class="bg-slate-950 rounded-2xl p-4 w-full flex items-center justify-center relative overflow-hidden shadow-inner border-2 border-slate-800">
+                                    <canvas id="filtro-renal-canvas" class="w-full h-auto max-w-[600px] aspect-[2/1]"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUB-CONTENIDO: LABORATORIO DE DECISIONES MÉDICAS -->
+                    <div id="lab-sub-content-decisiones-medicas" class="lab-sub-content hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                            <div class="md:col-span-5 bg-emerald-50 p-6 rounded-2xl border border-emerald-200 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-bold text-emerald-900 text-lg font-fun mb-2">📋 Decisiones Médicas</h3>
+                                    <p class="text-xs text-emerald-800 leading-relaxed mb-4">Lee el caso sintomático de la derecha y presiona la herramienta médica correcta para diagnosticar o tratar al paciente.</p>
+                                    
+                                    <div class="space-y-4 pt-2 border-t border-emerald-200/50">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <button onclick="chooseMedicalTool('Vacunas', this)" data-tool="Vacunas" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
+                                                <span class="text-3xl">💉</span>
+                                                <span>Vacunas</span>
+                                            </button>
+                                            <button onclick="chooseMedicalTool('Antibióticos', this)" data-tool="Antibióticos" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
+                                                <span class="text-3xl">💊</span>
+                                                <span>Antibióticos</span>
+                                            </button>
+                                            <button onclick="chooseMedicalTool('Rayos X', this)" data-tool="Rayos X" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
+                                                <span class="text-3xl">📸</span>
+                                                <span>Rayos X</span>
+                                            </button>
+                                            <button onclick="chooseMedicalTool('Trasplantes', this)" data-tool="Trasplantes" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
+                                                <span class="text-3xl">🫁</span>
+                                                <span>Trasplantes</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Fórmulas Explicadas en el Panel de Control -->
-                            <div class="bg-teal-50 border border-teal-100 p-4 rounded-xl mt-6 text-sm text-teal-800">
-                                <h4 class="font-bold font-fun mb-1">📝 Fórmulas de esta figura:</h4>
-                                <p class="text-xs" id="lab-formulas-txt"></p>
-                            </div>
-                        </div>
-
-                        <!-- Representación Gráfica e Info -->
-                        <div class="md:col-span-7 flex flex-col justify-between border border-slate-200 rounded-2xl p-6">
-                            <!-- Dibujo de la figura SVG -->
-                            <div class="bg-slate-900 rounded-2xl p-4 h-64 flex items-center justify-center relative overflow-hidden shadow-inner">
-                                <div class="absolute top-2 left-2 text-[10px] text-slate-500 font-mono">Simulador Visual en Tiempo Real</div>
-                                <svg id="lab-svg" class="w-full h-full max-h-56" viewBox="0 0 200 200">
-                                    <!-- El elemento SVG se insertará mediante JS -->
-                                </svg>
-                            </div>
-
-                            <!-- Pasos del Cálculo Matemático -->
-                            <div class="mt-6 bg-slate-50 p-4 rounded-xl border border-slate-200">
-                                <h4 class="font-bold text-slate-700 font-fun border-b border-slate-200 pb-2 mb-3">🔢 Cálculo paso a paso:</h4>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                                    <div>
-                                        <span class="text-xs font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded-full uppercase">Perímetro (Borde)</span>
-                                        <p class="font-bold text-slate-800 mt-2 text-base" id="lab-calc-p-proceso"></p>
-                                        <p class="text-lg font-bold text-indigo-600 mt-1 font-fun" id="lab-calc-p-resultado"></p>
+                            <div class="md:col-span-7 flex flex-col justify-between border border-slate-200 rounded-2xl p-6 bg-white shadow-sm">
+                                <div>
+                                    <h4 class="font-bold text-slate-700 text-sm mb-3 uppercase font-fun">Caso Clínico en el Hospital Río:</h4>
+                                    <div class="bg-emerald-50/50 border border-emerald-100 p-5 rounded-2xl min-h-[100px] flex items-center justify-center">
+                                        <p id="clinical-case-text" class="text-base text-slate-800 font-medium text-center leading-relaxed font-nunito"></p>
                                     </div>
-                                    <div>
-                                        <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full uppercase">Área (Superficie)</span>
-                                        <p class="font-bold text-slate-800 mt-2 text-base" id="lab-calc-a-proceso"></p>
-                                        <p class="text-lg font-bold text-emerald-600 mt-1 font-fun" id="lab-calc-a-resultado"></p>
-                                    </div>
+                                </div>
+
+                                <div id="clinical-case-feedback" class="hidden mt-6 p-5 rounded-2xl border transition-all duration-300">
+                                    <!-- Feedback de acierto/error dinámico -->
                                 </div>
                             </div>
                         </div>
