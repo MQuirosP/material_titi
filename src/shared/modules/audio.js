@@ -6,35 +6,47 @@ export function playSound(type) {
         const ctx = new AudioContext();
         
         if (type === 'correct') {
-            // Sonido alegre tipo moneda "retro" (Dos tonos ascendentes rápidos)
-            const osc = ctx.createOscillator();
-            const gain = ctx.createGain();
-            osc.connect(gain);
-            gain.connect(ctx.destination);
+            // Sonido alegre de campana / arpegio ascendente brillante (C5 -> E5 -> G5)
+            const playNote = (freq, startTime, duration) => {
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, startTime);
+                
+                gain.gain.setValueAtTime(0.12, startTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+                
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start(startTime);
+                osc.stop(startTime + duration);
+            };
             
-            osc.type = 'sine';
-            gain.gain.setValueAtTime(0.1, ctx.currentTime);
-            
-            osc.frequency.setValueAtTime(523.25, ctx.currentTime); // Nota C5
-            osc.frequency.setValueAtTime(659.25, ctx.currentTime + 0.1); // Nota E5
-            
-            osc.start();
-            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
-            osc.stop(ctx.currentTime + 0.3);
+            const start = ctx.currentTime;
+            playNote(523.25, start, 0.25);       // C5
+            playNote(659.25, start + 0.07, 0.25); // E5
+            playNote(783.99, start + 0.14, 0.35); // G5
         } else if (type === 'incorrect') {
-            // Sonido tipo "buzzer" de error (Frecuencia baja y distorsionada)
-            const osc = ctx.createOscillator();
-            const gain = ctx.createGain();
-            osc.connect(gain);
-            gain.connect(ctx.destination);
+            // Sonido doble sutil descendente, no invasivo ("oh-oh" / "slide-down")
+            const playLowNote = (startFreq, endFreq, startTime, duration) => {
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.type = 'triangle'; // Onda triangular para que sea más suave que la sierra
+                osc.frequency.setValueAtTime(startFreq, startTime);
+                osc.frequency.exponentialRampToValueAtTime(endFreq, startTime + duration);
+                
+                gain.gain.setValueAtTime(0.15, startTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+                
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start(startTime);
+                osc.stop(startTime + duration);
+            };
             
-            osc.type = 'sawtooth';
-            gain.gain.setValueAtTime(0.15, ctx.currentTime);
-            osc.frequency.setValueAtTime(130.81, ctx.currentTime); // Nota C3 baja
-            
-            osc.start();
-            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.4);
-            osc.stop(ctx.currentTime + 0.4);
+            const start = ctx.currentTime;
+            playLowNote(220, 150, start, 0.14);       // Primer tono descendente
+            playLowNote(180, 110, start + 0.11, 0.22); // Segundo tono más bajo y descendente
         }
     } catch (e) {
         console.log("Audio no soportado o bloqueado por el navegador", e);

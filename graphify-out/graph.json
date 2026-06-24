@@ -189,34 +189,43 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L1",
       "id": "src_shared_modules_flashcards_js",
-      "community": 3,
+      "community": 0,
       "norm_label": "flashcards.js"
+    },
+    {
+      "label": "playSwissSound()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L6",
+      "id": "modules_flashcards_playswisssound",
+      "community": 0,
+      "norm_label": "playswisssound()"
     },
     {
       "label": "toggleCard()",
       "file_type": "code",
       "source_file": "src/shared/modules/flashcards.js",
-      "source_location": "L6",
+      "source_location": "L50",
       "id": "modules_flashcards_togglecard",
-      "community": 3,
+      "community": 0,
       "norm_label": "togglecard()"
     },
     {
       "label": "updateTheoryProgress()",
       "file_type": "code",
       "source_file": "src/shared/modules/flashcards.js",
-      "source_location": "L14",
+      "source_location": "L59",
       "id": "modules_flashcards_updatetheoryprogress",
-      "community": 3,
+      "community": 0,
       "norm_label": "updatetheoryprogress()"
     },
     {
       "label": "updateBadges()",
       "file_type": "code",
       "source_file": "src/shared/modules/flashcards.js",
-      "source_location": "L26",
+      "source_location": "L71",
       "id": "modules_flashcards_updatebadges",
-      "community": 3,
+      "community": 0,
       "norm_label": "updatebadges()"
     },
     {
@@ -270,7 +279,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L176",
       "id": "modules_quiz_resetquiz",
-      "community": 14,
+      "community": 0,
       "norm_label": "resetquiz()"
     },
     {
@@ -315,7 +324,7 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L68",
       "id": "modules_tabs_switchlabsubtab",
-      "community": 3,
+      "community": 0,
       "norm_label": "switchlabsubtab()"
     },
     {
@@ -333,7 +342,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L8",
       "id": "state_store_setactivesubject",
-      "community": 3,
+      "community": 0,
       "norm_label": "setactivesubject()"
     },
     {
@@ -360,7 +369,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L18",
       "id": "state_store_syncstudiedcardsset",
-      "community": 3,
+      "community": 0,
       "norm_label": "syncstudiedcardsset()"
     },
     {
@@ -396,7 +405,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L53",
       "id": "state_store_pulper\u00edacart",
-      "community": 0,
+      "community": 3,
       "norm_label": "pulperiacart"
     },
     {
@@ -405,7 +414,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L61",
       "id": "state_store_pulper\u00edaprices",
-      "community": 0,
+      "community": 3,
       "norm_label": "pulperiaprices"
     },
     {
@@ -567,7 +576,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L217",
       "id": "labs_filtro_renal_stopfiltrorenal",
-      "community": 15,
+      "community": 0,
       "norm_label": "stopfiltrorenal()"
     },
     {
@@ -585,7 +594,7 @@
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L48",
       "id": "matematicas_main_switchsubject",
-      "community": 3,
+      "community": 0,
       "norm_label": "switchsubject()"
     },
     {
@@ -774,7 +783,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_pulperia_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "pulperia.js"
     },
     {
@@ -783,7 +792,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L4",
       "id": "labs_pulperia_changepulper\u00edaqty",
-      "community": 0,
+      "community": 3,
       "norm_label": "changepulperiaqty()"
     },
     {
@@ -792,7 +801,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L12",
       "id": "labs_pulperia_calculatepulper\u00eda",
-      "community": 0,
+      "community": 3,
       "norm_label": "calculatepulperia()"
     },
     {
@@ -1710,6 +1719,16 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L6",
       "weight": 1.0,
+      "source": "src_shared_modules_flashcards_js",
+      "target": "modules_flashcards_playswisssound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L6",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_shared_modules_flashcards_js",
       "target": "modules_flashcards_togglecard"
@@ -1755,6 +1774,17 @@
       "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
       "target": "src_shared_modules_flashcards_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "modules_flashcards_togglecard",
+      "target": "modules_flashcards_playswisssound",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3757,5 +3787,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0b812f34d70b63caa68ebe9aad503ca7e5d42d94"
+  "built_at_commit": "1ce6b62ba6e026912f0a2bee9353ea0140044043"
 }

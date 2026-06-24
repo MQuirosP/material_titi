@@ -1,16 +1,16 @@
 # Graph Report - rioja  (2026-06-24)
 
 ## Corpus Check
-- 28 files · ~24,908 words
+- 28 files · ~25,076 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 160 nodes · 222 edges · 16 communities (13 shown, 3 thin omitted)
+- 161 nodes · 224 edges · 16 communities (13 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0b812f34`
+- Built from commit: `1ce6b62b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -46,20 +46,20 @@
 ## Surprising Connections (you probably didn't know these)
 - `nextQuestion()` --calls--> `updateBadges()`  [EXTRACTED]
   src/shared/modules/quiz.js → src/shared/modules/flashcards.js
-- `switchSubject()` --calls--> `resetQuiz()`  [EXTRACTED]
-  src/subjects/matematicas/main.js → src/shared/modules/quiz.js
-- `switchSubject()` --calls--> `stopFiltroRenal()`  [EXTRACTED]
-  src/subjects/matematicas/main.js → src/subjects/ciencias/labs/filtro-renal.js
+- `switchSubject()` --calls--> `switchTab()`  [EXTRACTED]
+  src/subjects/matematicas/main.js → src/shared/modules/tabs.js
 - `selectOption()` --calls--> `playSound()`  [EXTRACTED]
   src/shared/modules/quiz.js → src/shared/modules/audio.js
 - `chooseMedicalTool()` --calls--> `playSound()`  [EXTRACTED]
   src/subjects/ciencias/labs/decisiones-medicas.js → src/shared/modules/audio.js
+- `switchSubject()` --calls--> `updateTheoryProgress()`  [EXTRACTED]
+  src/subjects/matematicas/main.js → src/shared/modules/flashcards.js
 
 ## Communities (16 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.14
-Nodes (12): quizPracticoCiencias, quizPracticoQuestions, quizTeoricoCiencias, quizTeoricoQuestions, updateDivisoresLab(), updateFraccionesLab(), updateMultiplesLab(), calculatePulpería() (+4 more)
+Cohesion: 0.13
+Nodes (18): quizPracticoCiencias, quizPracticoQuestions, quizTeoricoCiencias, quizTeoricoQuestions, updateDivisoresLab(), stopFiltroRenal(), updateFraccionesLab(), updateMultiplesLab() (+10 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.12
@@ -71,7 +71,7 @@ Nodes (14): dependencies, canvas-confetti, devDependencies, gh-pages, tailwindcs
 
 ### Community 3 - "Community 3"
 Cohesion: 0.18
-Nodes (16): switchSubject(), toggleCard(), updateBadges(), updateTheoryProgress(), labInitCallbacks, onLabInit(), switchLabSubTab(), switchTab() (+8 more)
+Nodes (13): calculatePulpería(), changePulperíaQty(), labInitCallbacks, onLabInit(), switchTab(), pulperíaCart, pulperíaPrices, quizState (+5 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.17
@@ -98,12 +98,12 @@ Cohesion: 0.25
 Nodes (7): code:html (<!-- Tarjeta N: {Título del Tema} -->), Cuándo usar este skill, Estructura HTML de una Flashcard, Paleta de colores por tarjeta existente, Pasos al agregar una tarjeta nueva, Reglas de contenido, Skill: Flashcards de Teoría en RíoMate
 
 ### Community 14 - "Community 14"
-Cohesion: 0.24
-Nodes (10): casosMedicosLab, chooseMedicalTool(), initDecisionesMedicas(), renderCaso(), playSound(), nextQuestion(), renderQuestion(), resetQuiz() (+2 more)
+Cohesion: 0.27
+Nodes (9): casosMedicosLab, chooseMedicalTool(), initDecisionesMedicas(), renderCaso(), playSound(), nextQuestion(), renderQuestion(), selectOption() (+1 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.25
-Nodes (5): initFiltroRenal(), Particle, particles, stopFiltroRenal(), tick()
+Cohesion: 0.29
+Nodes (4): initFiltroRenal(), Particle, particles, tick()
 
 ## Knowledge Gaps
 - **64 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+59 more)
@@ -116,7 +116,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **What connects `name`, `private`, `dev` to the rest of the system?**
   _64 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.13105413105413105 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
