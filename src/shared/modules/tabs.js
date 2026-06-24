@@ -1,4 +1,5 @@
 import { setActiveTab, setUserHasUsedLab, activeSubject } from '../state/store.js';
+import { playSound } from './audio.js';
 
 // Callbacks que los labs registran para inicializarse cuando se activa su tab
 const labInitCallbacks = [];
@@ -13,6 +14,7 @@ export function onLabInit(fn) {
 
 /** Cambia la pestaña principal visible */
 export function switchTab(tabId) {
+  playSound('tab_click');
   setActiveTab(tabId);
 
   // Actualizar estilos de los botones de pestaña
@@ -66,6 +68,7 @@ export function switchTab(tabId) {
 
 /** Cambia la sub-pestaña activa dentro del laboratorio */
 export function switchLabSubTab(subTabId) {
+  playSound('tab_click');
   document.querySelectorAll('.lab-sub-content').forEach(el => {
     el.classList.add('hidden');
     el.classList.remove('block');

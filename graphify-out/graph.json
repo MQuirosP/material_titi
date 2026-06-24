@@ -166,6 +166,33 @@
       "norm_label": "main.js"
     },
     {
+      "label": "playHooraySound()",
+      "file_type": "code",
+      "source_file": "src/hub/main.js",
+      "source_location": "L4",
+      "id": "hub_main_playhooraysound",
+      "community": 13,
+      "norm_label": "playhooraysound()"
+    },
+    {
+      "label": "cards",
+      "file_type": "code",
+      "source_file": "src/hub/main.js",
+      "source_location": "L70",
+      "id": "hub_main_cards",
+      "community": 13,
+      "norm_label": "cards"
+    },
+    {
+      "label": "destination",
+      "file_type": "code",
+      "source_file": "src/hub/main.js",
+      "source_location": "L74",
+      "id": "hub_main_destination",
+      "community": 13,
+      "norm_label": "destination"
+    },
+    {
       "label": "audio.js",
       "file_type": "code",
       "source_file": "src/shared/modules/audio.js",
@@ -1616,6 +1643,36 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/hub/main.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_hub_main_js",
+      "target": "hub_main_playhooraysound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hub/main.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "src_hub_main_js",
+      "target": "hub_main_cards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hub/main.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "src_hub_main_js",
+      "target": "hub_main_destination",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L2",
       "weight": 1.0,
@@ -1629,9 +1686,9 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_shared_modules_audio_js",
-      "target": "modules_audio_playtickwiththrottle",
-      "confidence_score": 1.0
+      "target": "modules_audio_playtickwiththrottle"
     },
     {
       "relation": "imports_from",
@@ -1662,9 +1719,9 @@
       "source_file": "src/subjects/matematicas/labs/divisores.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_divisores_js",
-      "target": "src_shared_modules_audio_js",
-      "confidence_score": 1.0
+      "target": "src_shared_modules_audio_js"
     },
     {
       "relation": "imports_from",
@@ -1673,9 +1730,9 @@
       "source_file": "src/subjects/matematicas/labs/fracciones.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_fracciones_js",
-      "target": "src_shared_modules_audio_js",
-      "confidence_score": 1.0
+      "target": "src_shared_modules_audio_js"
     },
     {
       "relation": "imports_from",
@@ -1684,9 +1741,9 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_geometria_js",
-      "target": "src_shared_modules_audio_js",
-      "confidence_score": 1.0
+      "target": "src_shared_modules_audio_js"
     },
     {
       "relation": "imports_from",
@@ -1695,9 +1752,9 @@
       "source_file": "src/subjects/matematicas/labs/multiplos.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_multiplos_js",
-      "target": "src_shared_modules_audio_js",
-      "confidence_score": 1.0
+      "target": "src_shared_modules_audio_js"
     },
     {
       "relation": "imports_from",
@@ -1706,9 +1763,9 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_pulperia_js",
-      "target": "src_shared_modules_audio_js",
-      "confidence_score": 1.0
+      "target": "src_shared_modules_audio_js"
     },
     {
       "relation": "calls",
@@ -1717,9 +1774,9 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "modules_audio_playtickwiththrottle",
-      "target": "modules_audio_playsound",
-      "confidence_score": 1.0
+      "target": "modules_audio_playsound"
     },
     {
       "relation": "imports",
@@ -1772,9 +1829,9 @@
       "source_file": "src/subjects/matematicas/labs/divisores.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_divisores_js",
-      "target": "modules_audio_playtickwiththrottle",
-      "confidence_score": 1.0
+      "target": "modules_audio_playtickwiththrottle"
     },
     {
       "relation": "imports",
@@ -1783,9 +1840,9 @@
       "source_file": "src/subjects/matematicas/labs/fracciones.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_fracciones_js",
-      "target": "modules_audio_playtickwiththrottle",
-      "confidence_score": 1.0
+      "target": "modules_audio_playtickwiththrottle"
     },
     {
       "relation": "imports",
@@ -1794,9 +1851,9 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_geometria_js",
-      "target": "modules_audio_playtickwiththrottle",
-      "confidence_score": 1.0
+      "target": "modules_audio_playtickwiththrottle"
     },
     {
       "relation": "imports",
@@ -1805,9 +1862,9 @@
       "source_file": "src/subjects/matematicas/labs/multiplos.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_multiplos_js",
-      "target": "modules_audio_playtickwiththrottle",
-      "confidence_score": 1.0
+      "target": "modules_audio_playtickwiththrottle"
     },
     {
       "relation": "imports",
@@ -1816,9 +1873,9 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_pulperia_js",
-      "target": "modules_audio_playtickwiththrottle",
-      "confidence_score": 1.0
+      "target": "modules_audio_playtickwiththrottle"
     },
     {
       "relation": "calls",
@@ -3982,5 +4039,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "19eb4b91e512b2b8a0157f061da732bc7531cc68"
+  "built_at_commit": "9a2f06d53215c144da1551f8287a37e92ce54ade"
 }

@@ -1,16 +1,16 @@
 # Graph Report - rioja  (2026-06-24)
 
 ## Corpus Check
-- 28 files · ~25,327 words
+- 28 files · ~25,633 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 162 nodes · 241 edges · 16 communities (13 shown, 3 thin omitted)
+- 165 nodes · 244 edges · 16 communities (12 shown, 4 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `19eb4b91`
+- Built from commit: `9a2f06d5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -28,6 +28,7 @@
 - [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
 - [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
 
@@ -55,7 +56,7 @@
 - `updateDivisoresLab()` --calls--> `playTickWithThrottle()`  [EXTRACTED]
   src/subjects/matematicas/labs/divisores.js → src/shared/modules/audio.js
 
-## Communities (16 total, 3 thin omitted)
+## Communities (16 total, 4 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.13
@@ -106,15 +107,15 @@ Cohesion: 0.25
 Nodes (5): initFiltroRenal(), Particle, particles, stopFiltroRenal(), tick()
 
 ## Knowledge Gaps
-- **64 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+59 more)
+- **66 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+61 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `name`, `private`, `dev` to the rest of the system?**
-  _64 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _66 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.12773109243697478 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

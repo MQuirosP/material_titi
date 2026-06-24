@@ -160,13 +160,16 @@ export function nextQuestion(type) {
   if (finalGrade >= 90) {
     if (summaryEl) summaryEl.textContent = '¡Wao! Eres toda una experta en esta materia. ¡La maestra Florisel va a quedar asombrada!';
     if (emojiEl)   emojiEl.textContent   = '🏆✨';
+    playSound('score_excellent');
     confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
   } else if (finalGrade >= 70) {
     if (summaryEl) summaryEl.textContent = '¡Buen trabajo! Tienes un excelente dominio de estos temas. Repasa los errores y asegurarás el 100.';
     if (emojiEl)   emojiEl.textContent   = '⭐😊';
+    playSound('score_good');
   } else {
     if (summaryEl) summaryEl.textContent = '¡Sigue estudiando! Revisa la teoría interactiva y vuelve a intentarlo. ¡Tú eres capaz de lograrlo!';
     if (emojiEl)   emojiEl.textContent   = '💪📚';
+    playSound('score_retry');
   }
 
   updateBadges();

@@ -8,6 +8,7 @@ import '../../shared/css/flashcards.css';
 import { switchTab, switchLabSubTab, onLabInit } from '../../shared/modules/tabs.js';
 import { toggleCard, updateTheoryProgress, updateBadges } from '../../shared/modules/flashcards.js';
 import { startQuiz, renderQuestion, selectOption, nextQuestion, resetQuiz } from '../../shared/modules/quiz.js';
+import { playSound } from '../../shared/modules/audio.js';
 
 import { updateMultiplesLab }               from './labs/multiplos.js';
 import { updateDivisoresLab }               from './labs/divisores.js';
@@ -193,6 +194,18 @@ window.addEventListener('load', () => {
   // Asegurar que el body tenga el ID
   document.body.id = 'main-body';
   
+  // Interceptar el clic de "Menú Principal" para reproducir sonido de salida
+  const exitLink = document.querySelector('a[href="../"]');
+  if (exitLink) {
+    exitLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      playSound('tab_click');
+      setTimeout(() => {
+        window.location.href = exitLink.getAttribute('href');
+      }, 150);
+    });
+  }
+
   // Revisar si viene parámetro ?subject=ciencias o ?materia=ciencias
   const urlParams = new URLSearchParams(window.location.search);
   const subjectParam = urlParams.get('subject') || urlParams.get('materia');
