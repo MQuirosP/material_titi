@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RíoMate 5° — Matemáticas (Escuela Riojalandia)</title>
+    <meta name="description" content="Guía interactiva de matemáticas para II Pruebas de 5° grado, Escuela Riojalandia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/rioja/assets/matematicas-DHud8Ny4.js"></script>
+  <link rel="modulepreload" crossorigin href="/rioja/assets/base-DLKwu-Qg.js">
+  <link rel="stylesheet" crossorigin href="/rioja/assets/base-DAz_MDx3.css">
+  <link rel="stylesheet" crossorigin href="/rioja/assets/matematicas-DDx4YGlw.css">
+</head>
+
+<body class="bg-gradient-to-br from-indigo-50 via-teal-50 to-amber-50 min-h-screen text-slate-800 pb-12">
+
+    <!-- Encabezado con los colores patrios de Costa Rica 🇨🇷 -->
+    <header class="bg-white shadow-md border-b-4 border-red-600 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
+        <div class="max-w-5xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+                <div class="bg-teal-500 text-white p-3 rounded-2xl shadow-md rotate-[-3deg]">
+                    <span class="text-3xl">🇨🇷</span>
+                </div>
+                <div>
+                    <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider font-fun">Primer Semestre 2026</span>
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-1">RíoMate 5º</h1>
+                    <p class="text-sm text-slate-500 font-medium">Escuela Riojalandia · II Pruebas de Matemáticas · Secciones 5-1 y 5-2</p>
+                </div>
+            </div>
+            <div class="bg-slate-100 p-3 rounded-2xl text-center md:text-right border border-slate-200">
+                <p class="text-xs text-slate-500 font-bold uppercase">Fecha del Examen</p>
+                <p class="text-lg font-bold text-indigo-700 font-fun">Miércoles 24 de Junio, 2026</p>
+                <p class="text-xs text-emerald-600 font-semibold flex items-center justify-center md:justify-end gap-1">
+                    <span>👩‍🏫 Maestra: Florisel Olmazo López</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="max-w-5xl mx-auto px-4 mt-8">
+        
+        <!-- Pestañas de Navegación -->
+        <div class="flex flex-wrap gap-2 mb-8 justify-center bg-white p-2 rounded-2xl shadow-sm border border-slate-200">
+            <a href="../" class="px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-rose-600 hover:bg-rose-50 font-fun">
+                🚪 Menú Principal
+            </a>
+            <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-indigo-600 text-white">
+                🏠 Inicio
+            </button>
+            <button onclick="switchTab('teoria')" id="tab-teoria" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+                📚 Teoría Interactiva
+            </button>
+            <button onclick="switchTab('laboratorio')" id="tab-laboratorio" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+                🧪 Súper Laboratorios (5)
+            </button>
+            <button onclick="switchTab('quiz-teorico')" id="tab-quiz-teorico" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+                ✏️ Examen Teórico
+            </button>
+            <button onclick="switchTab('quiz-practico')" id="tab-quiz-practico" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+                🧮 Examen Práctico
+            </button>
+        </div>
+
+        <!-- SECCIÓN: INICIO -->
+        <section id="content-inicio" class="tab-content block">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tarjeta de Bienvenida -->
+                <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 md:col-span-2">
+                    <span class="text-4xl">👋</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mt-4 mb-2">¡Hola, campeona!</h2>
+                    <p class="text-slate-600 leading-relaxed text-lg mb-6">
+                        Bienvenida a tu compañero de estudio de matemáticas. Aquí vas a repasar toda la teoría del examen de forma divertida, visual e interactiva. No te limites a memorizar las respuestas: comprende los conceptos y practica con los números para ganarte esa nota máxima el miércoles.
+                    </p>
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-4 flex gap-4 items-start">
+                        <span class="text-2xl mt-1">💡</span>
+                        <div>
+                            <h4 class="font-bold text-indigo-900">¿Cómo usar RíoMate?</h4>
+                            <p class="text-sm text-indigo-700 leading-relaxed mt-1">
+                                Explora las pestañas superiores. Lee las tarjetas interactivas de teoría, juega con las figuras geométricas en el laboratorio de fórmulas para ver cómo cambian sus áreas, y luego ponte a prueba en los exámenes de teoría y práctica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tu Progreso General -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4 font-fun">Tu Progreso de Estudio</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs font-bold text-slate-500 uppercase mb-1">
+                                    <span>Teoría Estudiada</span>
+                                    <span id="progreso-teoria-porcentaje">0%</span>
+                                </div>
+                                <div class="w-full bg-slate-100 rounded-full h-3">
+                                    <div id="progreso-teoria-bar" class="bg-teal-500 h-3 rounded-full transition-all duration-500" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-bold text-slate-500 uppercase mb-1">
+                                    <span>Examen Teórico</span>
+                                    <span id="score-teorico-txt">Pendiente</span>
+                                </div>
+                                <div class="w-full bg-slate-100 rounded-full h-3">
+                                    <div id="score-teorico-bar" class="bg-blue-500 h-3 rounded-full transition-all duration-500" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-bold text-slate-500 uppercase mb-1">
+                                    <span>Examen Práctico</span>
+                                    <span id="score-practico-txt">Pendiente</span>
+                                </div>
+                                <div class="w-full bg-slate-100 rounded-full h-3">
+                                    <div id="score-practico-bar" class="bg-amber-500 h-3 rounded-full transition-all duration-500" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insignias a Ganar -->
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <h4 class="text-sm font-bold text-slate-600 uppercase mb-3 font-fun">Tus Medallas RíoMate</h4>
+                        <div class="flex gap-2 justify-center">
+                            <span id="badge-teoria" class="opacity-30 grayscale text-3xl filter transition-all duration-300" title="Medalla de Teoría (Completa toda la teoría)">🎓</span>
+                            <span id="badge-formulas" class="opacity-30 grayscale text-3xl filter transition-all duration-300" title="Maestra Geómetra (Usa el laboratorio de fórmulas)">📐</span>
+                            <span id="badge-quiz-t" class="opacity-30 grayscale text-3xl filter transition-all duration-300" title="Experta en Conceptos (Saca más de 80% en el test teórico)">🧠</span>
+                            <span id="badge-quiz-p" class="opacity-30 grayscale text-3xl filter transition-all duration-300" title="Resolutora Estrella (Saca más de 80% en el test práctico)">⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Temario Oficial del Examen -->
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 mt-8">
+                <h3 class="text-2xl font-bold text-slate-900 mb-6 font-fun flex items-center gap-2">
+                    <span>📋</span> ¿Qué viene exactamente en el examen?
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-2xl bg-indigo-50 border border-indigo-100">
+                        <span class="text-xs font-bold text-indigo-700 bg-indigo-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 1</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Múltiplos, Pares e Impares</h4>
+                        <p class="text-xs text-slate-500 mt-1">Identificar múltiplos, determinar números pares e impares y resolver problemas de organización de colecciones.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-teal-50 border border-teal-100">
+                        <span class="text-xs font-bold text-teal-700 bg-teal-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 2</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Divisores de un Número</h4>
+                        <p class="text-xs text-slate-500 mt-1">Reconocer los números que dividen exactamente a un número natural sin dejar residuo.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-amber-50 border border-amber-100">
+                        <span class="text-xs font-bold text-amber-700 bg-amber-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 3 & 4</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Fracciones Impropias y Mixtas</h4>
+                        <p class="text-xs text-slate-500 mt-1">Identificar fracciones mayores que la unidad y convertirlas a mixtas y viceversa en contextos reales.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-rose-50 border border-rose-100">
+                        <span class="text-xs font-bold text-rose-700 bg-rose-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 5</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Sistema Monetario Nacional</h4>
+                        <p class="text-xs text-slate-500 mt-1">Resolver problemas prácticos de compras, sumando gastos en colones y calculando el vuelto necesario.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-purple-50 border border-purple-100">
+                        <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 6</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Perímetro y Área por Fórmulas</h4>
+                        <p class="text-xs text-slate-500 mt-1">Aplicar fórmulas directas en triángulos, cuadrados, rectángulos, paralelogramos y trapecios.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-sky-50 border border-sky-100">
+                        <span class="text-xs font-bold text-sky-700 bg-sky-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 7</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Resolución de Problemas Geométricos</h4>
+                        <p class="text-xs text-slate-500 mt-1">Problemas complejos que involucran el cálculo de áreas y perímetros combinados de figuras planas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: TEORÍA INTERACTIVA -->
+        <section id="content-teoria" class="tab-content hidden">
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-2">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 font-fun">📚 Tarjetas de Estudio Teórico</h2>
+                        <p class="text-slate-500 text-sm">Haz clic en cada tarjeta para "voltearla" y repasar las definiciones, fórmulas y secretos del examen.</p>
+                    </div>
+                    <span id="theory-counter" class="bg-indigo-100 text-indigo-700 text-sm font-bold px-4 py-2 rounded-2xl font-fun">0 de 6 Tarjetas Estudiadas</span>
+                </div>
+
+                <!-- Tarjetas -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Tarjeta 1: Múltiplos, pares e impares -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 1)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-indigo-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-indigo-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-indigo-700 bg-indigo-100 px-3 py-1 rounded-full uppercase font-fun">Tema 1</span>
+                                    <span class="text-2xl">🔢</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Múltiplos, Pares e Impares</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Qué son los múltiplos de un número y cómo se identifican los números pares e impares?</p>
+                                </div>
+                                <div class="text-center text-xs text-indigo-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría y fórmulas!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-indigo-900 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-indigo-200 text-sm uppercase tracking-wider font-fun">La Teoría Esencial:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-indigo-100">
+                                        <li><strong class="text-white">Múltiplo:</strong> Es el resultado de multiplicar un número por cualquier número natural (0, 1, 2, 3...).</li>
+                                        <li><strong class="text-white">Números Pares:</strong> Números que terminan en <strong class="text-amber-300">0, 2, 4, 6 u 8</strong>. Se dividen exactamente entre 2.</li>
+                                        <li><strong class="text-white">Números Impares:</strong> Terminan en <strong class="text-amber-300">1, 3, 5, 7 o 9</strong>. Siempre sobra 1 al dividirlos entre 2.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-indigo-800/60 p-2.5 rounded-xl border border-indigo-700/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-indigo-200">Los múltiplos son infinitos. ¡Solo repasa la tabla de multiplicar de cada número!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2: Divisores -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 2)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Tema 2</span>
+                                    <span class="text-2xl">✂️</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Divisores de un Número</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Qué es un divisor, cómo se calculan y qué reglas clave debes saber de memoria?</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría y fórmulas!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">La Teoría Esencial:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Divisor:</strong> Es todo número que divide exactamente a otro (es decir, el <strong class="text-amber-300">residuo es cero</strong>).</li>
+                                        <li><strong class="text-white">Regla de Oro:</strong> El <strong class="text-white">1</strong> es divisor de TODOS los números.</li>
+                                        <li><strong class="text-white">El mismo número:</strong> Todo número es divisor de sí mismo (ej. 15 ÷ 15 = 1).</li>
+                                        <li><strong class="text-white">Finitos:</strong> Al contrario de los múltiplos, los divisores son una cantidad limitada de números.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-2.5 rounded-xl border border-teal-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">Busca parejas que multiplicadas den el número. Para el 12: 1 × 12, 2 × 6, 3 × 4. ¡Y listo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: Fracciones Impropias -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 3)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-amber-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-amber-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1 rounded-full uppercase font-fun">Tema 3</span>
+                                    <span class="text-2xl">🍕</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Identificar Fracciones Impropias</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cómo saber de un vistazo que una fracción es impropia y qué significa en la vida real?</p>
+                                </div>
+                                <div class="text-center text-xs text-amber-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría y fórmulas!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-amber-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-amber-200 text-sm uppercase tracking-wider font-fun">La Teoría Esencial:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-amber-100">
+                                        <li><strong class="text-white">Fracción Propia:</strong> El de arriba es menor (como 2/5). Representa menos de una unidad.</li>
+                                        <li><strong class="text-white">Fracción Impropia:</strong> El de arriba (numerador) es <strong class="text-amber-300">mayor o igual</strong> al de abajo (denominador). Ejemplo: 7/3.</li>
+                                        <li><strong class="text-white">Significado:</strong> Representan una cantidad <strong class="text-white">mayor o igual que la unidad entera (1)</strong>. Necesitas más de un objeto entero para representarla.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-amber-900/60 p-2.5 rounded-xl border border-amber-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-amber-200">Si el número de arriba es "gordo" (más grande o igual) comparado con el de abajo, ¡es impropia!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4: Conversión de Fracciones -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 4)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-rose-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-rose-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-rose-700 bg-rose-100 px-3 py-1 rounded-full uppercase font-fun">Tema 4</span>
+                                    <span class="text-2xl">🔄</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Pasar de Impropia a Mixta y Viceversa</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cuáles son las operaciones matemáticas para cambiar el formato de tus fracciones?</p>
+                                </div>
+                                <div class="text-center text-xs text-rose-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría y fórmulas!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-rose-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-rose-200 text-sm uppercase tracking-wider font-fun">Fórmulas y Procedimientos:</h4>
+                                    <ul class="text-xs mt-1 space-y-2 text-rose-100">
+                                        <li><strong class="text-white">De Impropia a Mixta:</strong> Divide el numerador entre el denominador.
+                                            <div class="bg-rose-900/40 p-1.5 rounded mt-1 text-[11px] font-mono">
+                                                Ejemplo: 7 ÷ 3 = 2 (cociente es entero) y sobra 1 (residuo es numerador). Resultado: 2 y 1/3.
+                                            </div>
+                                        </li>
+                                        <li><strong class="text-white">De Mixta a Impropia:</strong> Multiplica el entero por el denominador, y sumas el numerador.
+                                            <div class="bg-rose-900/40 p-1.5 rounded mt-1 text-[11px] font-mono">
+                                                Ejemplo: 3 y 2/5 -> (3 × 5) + 2 = 17 (nuevo numerador). Conserva el 5 abajo. Resultado: 17/5.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-rose-900/60 p-2 rounded-xl border border-rose-800/50 mt-1">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-rose-200">El número de abajo (el denominador) NUNCA cambia al convertir. ¡Se queda igualito!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 5: Sistema Monetario -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 5)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Tema 5</span>
+                                    <span class="text-2xl">💵</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">El Sistema Monetario Nacional</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Nuestra moneda: El Colón (₡). ¿Cómo se resuelven situaciones de compras, vueltos y billetes?</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría y fórmulas!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">La Teoría Esencial:</h4>
+                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Denominaciones:</strong> Billetes comunes de ₡1 000, ₡2 000, ₡5 000, ₡10 000, ₡20 000. Monedas comunes de ₡5, ₡10, ₡25, ₡50, ₡100, ₡500.</li>
+                                        <li><strong class="text-white">Suma de Gastos:</strong> Para saber cuánto gastamos, sumamos todos los artículos comprados.</li>
+                                        <li><strong class="text-white">Cálculo del Vuelto:</strong> Restamos el total de nuestros gastos al billete con el que pagamos:
+                                            <strong class="text-amber-300">Vuelto = Pago - Gasto Total</strong>.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-emerald-200">Alinea bien los números al hacer sumas y restas con colones para no equivocarte de columna.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 6: Perímetro y Área -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 6)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-purple-100 duration-500">
+                            <!-- Frente -->
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-purple-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-purple-700 bg-purple-100 px-3 py-1 rounded-full uppercase font-fun">Tema 6 & 7</span>
+                                    <span class="text-2xl">📐</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Perímetros y Áreas (Conceptos)</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cuál es la diferencia teórica entre perímetro y área, y cuáles son las fórmulas oficiales?</p>
+                                </div>
+                                <div class="text-center text-xs text-purple-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría y fórmulas!</div>
+                            </div>
+                            <!-- Dorso -->
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-purple-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-purple-200 text-sm uppercase tracking-wider font-fun">Diferencia Clave y Fórmulas:</h4>
+                                    <ul class="text-xs mt-1 space-y-1.5 text-purple-100">
+                                        <li><strong class="text-white">Perímetro (P):</strong> La longitud del contorno o borde. Se mide en unidades lineales (m, cm). <strong class="text-amber-300">¡Se suman todos sus lados!</strong></li>
+                                        <li><strong class="text-white">Área (A):</strong> El espacio plano que ocupa el interior. Se mide en unidades cuadradas (cm², m²).</li>
+                                        <li><strong class="text-white">Triángulo:</strong> Área = (Base × Altura) ÷ 2</li>
+                                        <li><strong class="text-white">Cuadrado:</strong> Área = Lado × Lado</li>
+                                        <li><strong class="text-white">Rectángulo y Paralelogramo:</strong> Área = Base × Altura</li>
+                                        <li><strong class="text-white">Trapecio:</strong> Área = [(Base Mayor + Base Menor) × Altura] ÷ 2</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-purple-900/60 p-2 rounded-xl border border-purple-800/50">
+                                    <p class="text-[11px] font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-[11px] text-purple-200">El perímetro suma longitudes (orilla). El área multiplica dimensiones (espacio interior).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: LABORATORIOS INTERACTIVOS COMPLETOS (5) -->
+        <section id="content-laboratorio" class="tab-content hidden">
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200">
+                <div class="mb-6">
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 font-fun">🧪 Súper Laboratorios Interactivos</h2>
+                    <p class="text-slate-500 text-sm">Practica jugando con cada uno de los temas del examen utilizando estos simuladores educativos interactivos.</p>
+                </div>
+
+                <!-- Sub-pestañas internas de los laboratorios -->
+                <div class="flex flex-wrap gap-2 mb-8 justify-center bg-slate-50 p-2 rounded-2xl border border-slate-200">
+                    <button onclick="switchLabSubTab('multiplos')" id="subtab-multiplos" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 bg-teal-500 text-white shadow-sm">
+                        🔢 Múltiplos, Pares e Impares
+                    </button>
+                    <button onclick="switchLabSubTab('divisores')" id="subtab-divisores" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
+                        ✂️ Divisores
+                    </button>
+                    <button onclick="switchLabSubTab('fracciones')" id="subtab-fracciones" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
+                        🍕 Fracciones
+                    </button>
+                    <button onclick="switchLabSubTab('moneda')" id="subtab-moneda" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
+                        💵 Pulpería ₡
+                    </button>
+                    <button onclick="switchLabSubTab('geometria')" id="subtab-geometria" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
+                        📐 Geometría
+                    </button>
+                </div>
+
+                <!-- SUB-CONTENIDO: LABORATORIO DE MÚLTIPLOS -->
+                <div id="lab-sub-content-multiplos" class="lab-sub-content block">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                        <div class="md:col-span-4 bg-teal-50 p-5 rounded-2xl border border-teal-100 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-teal-900 text-lg font-fun mb-2">🔢 Explorador de Múltiplos</h3>
+                                <p class="text-xs text-teal-800 leading-relaxed mb-4">Ajusta el número base para ver iluminadas de color dorado las casillas de sus múltiplos. También puedes marcar filtros para distinguir pares e impares.</p>
+                                
+                                <div class="space-y-4 pt-2 border-t border-teal-200/50">
+                                    <div>
+                                        <div class="flex justify-between text-xs font-bold text-teal-900 uppercase">
+                                            <span>Número Base:</span>
+                                            <span id="lab-mult-base-val" class="text-teal-600 text-sm">3</span>
+                                        </div>
+                                        <input type="range" id="lab-mult-base" min="2" max="10" value="3" oninput="updateMultiplesLab()" class="w-full h-2 bg-teal-200 rounded-lg cursor-pointer accent-teal-600 mt-1">
+                                    </div>
+
+                                    <div class="space-y-2 pt-2">
+                                        <p class="text-xs font-bold text-teal-900 uppercase">Filtros de Color:</p>
+                                        <label class="flex items-center gap-2 text-xs font-semibold text-teal-800 cursor-pointer">
+                                            <input type="checkbox" id="lab-mult-even" onchange="updateMultiplesLab()" class="rounded text-teal-600 focus:ring-teal-500 w-4 h-4">
+                                            <span>Borde Azul en Números Pares</span>
+                                        </label>
+                                        <label class="flex items-center gap-2 text-xs font-semibold text-teal-800 cursor-pointer">
+                                            <input type="checkbox" id="lab-mult-odd" onchange="updateMultiplesLab()" class="rounded text-teal-600 focus:ring-teal-500 w-4 h-4">
+                                            <span>Borde Rosado en Números Impares</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white/80 p-3 rounded-xl border border-teal-100 mt-4 text-xs text-teal-900 leading-relaxed">
+                                💡 <strong>Aprende:</strong> Un múltiplo siempre termina en una posición exacta de su tabla de multiplicar. ¡Los múltiplos de 5 siempre terminan en 0 o 5!
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-8">
+                            <h4 class="font-bold text-slate-700 text-sm mb-3 uppercase font-fun">Tabla Interactiva (1 al 50):</h4>
+                            <div id="lab-multiples-grid" class="grid grid-cols-5 sm:grid-cols-10 gap-2">
+                                <!-- Se generará dinámicamente -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-CONTENIDO: LABORATORIO DE DIVISORES -->
+                <div id="lab-sub-content-divisores" class="lab-sub-content hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                        <div class="md:col-span-4 bg-emerald-50 p-5 rounded-2xl border border-emerald-100 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-emerald-900 text-lg font-fun mb-2">✂️ Fábrica de Divisores</h3>
+                                <p class="text-xs text-emerald-800 leading-relaxed mb-4">Elige una cantidad total de objetos y luego elige un divisor a probar para ver si se pueden agrupar en partes completamente exactas (Residuo = 0).</p>
+                                
+                                <div class="space-y-4 pt-2 border-t border-emerald-200/50">
+                                    <div>
+                                        <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase">
+                                            <span>Estudiantes Totales (Número):</span>
+                                            <span id="lab-div-num-val" class="text-emerald-600 text-sm">12</span>
+                                        </div>
+                                        <input type="range" id="lab-div-num" min="4" max="30" value="12" oninput="updateDivisoresLab()" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600 mt-1">
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase">
+                                            <span>Estudiantes por grupo (Divisor):</span>
+                                            <span id="lab-div-test-val" class="text-emerald-600 text-sm">4</span>
+                                        </div>
+                                        <input type="range" id="lab-div-test" min="1" max="15" value="4" oninput="updateDivisoresLab()" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600 mt-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white/80 p-3 rounded-xl border border-emerald-100 mt-4 text-xs text-emerald-900">
+                                <p class="font-bold">Divisores reales encontrados de este número:</p>
+                                <p id="lab-div-list-txt" class="font-bold text-emerald-700 mt-1 text-sm"></p>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-5">
+                            <div>
+                                <h4 class="font-bold text-slate-700 text-sm mb-1 uppercase font-fun">Vista del Agrupamiento Matemático:</h4>
+                                <p id="lab-div-status-text" class="text-sm font-semibold mb-4 text-slate-500"></p>
+                                
+                                <!-- Caja de grupos -->
+                                <div id="lab-div-groups-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 min-h-[120px] p-3 bg-slate-50 border border-slate-200 rounded-xl">
+                                    <!-- Dinámico -->
+                                </div>
+                            </div>
+
+                            <!-- Caja de sobrantes -->
+                            <div class="mt-4 p-3 bg-red-50/50 border border-red-100 rounded-xl">
+                                <h5 class="text-xs font-bold text-red-700 uppercase mb-2">🔴 Caja de Estudiantes Sobrantes (Residuo):</h5>
+                                <div id="lab-div-leftovers" class="flex flex-wrap gap-1.5 min-h-[30px]">
+                                    <!-- Dinámico -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-CONTENIDO: LABORATORIO DE FRACCIONES -->
+                <div id="lab-sub-content-fracciones" class="lab-sub-content hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                        <div class="md:col-span-4 bg-amber-50 p-5 rounded-2xl border border-amber-100 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-amber-900 text-lg font-fun mb-2">🍕 Cortadora de Fracciones</h3>
+                                <p class="text-xs text-amber-800 leading-relaxed mb-4">Ajusta el numerador (arriba) y el denominador (abajo). Mira cómo las "Barras de Chocolate" se dividen en partes y se colorean. Verás al instante la conversión a número mixto.</p>
+                                
+                                <div class="space-y-4 pt-2 border-t border-amber-200/50">
+                                    <div>
+                                        <div class="flex justify-between text-xs font-bold text-amber-900 uppercase">
+                                            <span>Numerador (Slices Coloreados):</span>
+                                            <span id="lab-frac-num-val" class="text-amber-600 text-sm">7</span>
+                                        </div>
+                                        <input type="range" id="lab-frac-num" min="1" max="15" value="7" oninput="updateFraccionesLab()" class="w-full h-2 bg-amber-200 rounded-lg cursor-pointer accent-amber-600 mt-1">
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between text-xs font-bold text-amber-900 uppercase">
+                                            <span>Denominador (Divisiones de cada Barra):</span>
+                                            <span id="lab-frac-den-val" class="text-amber-600 text-sm">4</span>
+                                        </div>
+                                        <input type="range" id="lab-frac-den" min="2" max="8" value="4" oninput="updateFraccionesLab()" class="w-full h-2 bg-amber-200 rounded-lg cursor-pointer accent-amber-600 mt-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white/80 p-3 rounded-xl border border-amber-100 mt-4 text-xs text-amber-900">
+                                <p class="font-bold text-amber-800 uppercase text-[10px] tracking-wide">Clasificación Teórica:</p>
+                                <p id="lab-frac-type-txt" class="font-extrabold text-sm text-slate-800 mt-0.5"></p>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-8 flex flex-col justify-between border border-slate-200 rounded-2xl p-5">
+                            <div>
+                                <h4 class="font-bold text-slate-700 text-sm mb-4 uppercase font-fun">Tus Chocolates en la Vida Real:</h4>
+                                <div id="lab-frac-visual-container" class="space-y-4 p-4 bg-slate-50 border border-slate-200 rounded-xl min-h-[160px] flex flex-col justify-center">
+                                    <!-- Se generarán dinámicamente barras de chocolate SVG -->
+                                </div>
+                            </div>
+
+                            <div class="mt-4 p-4 bg-amber-500/10 border border-amber-200 rounded-xl text-center">
+                                <span class="text-xs font-bold text-amber-700 uppercase">Conversión a Notación Mixta:</span>
+                                <div class="flex justify-center items-center gap-3 mt-1.5 font-fun">
+                                    <span class="text-3xl font-extrabold text-slate-800" id="lab-frac-math-impropia">7/4</span>
+                                    <span class="text-xl text-slate-400">➔</span>
+                                    <span class="text-3xl font-extrabold text-amber-600" id="lab-frac-math-mixta">1 y 3/4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-CONTENIDO: LABORATORIO DE MONEDAS (LA PULPERÍA) -->
+                <div id="lab-sub-content-moneda" class="lab-sub-content hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                        <!-- Menú de compras -->
+                        <div class="md:col-span-5 bg-rose-50 p-5 rounded-2xl border border-rose-100 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-rose-900 text-lg font-fun mb-1">🏪 Pulpería "La Campesina"</h3>
+                                <p class="text-xs text-rose-800 leading-relaxed mb-4">Compra lo que gustes añadiendo artículos con los botones. Luego elige tu billete para ver tu vuelto desglosado en colones reales.</p>
+                                
+                                <div class="space-y-2.5 pt-2 border-t border-rose-200/50">
+                                    <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
+                                        <div>
+                                            <p class="font-bold text-slate-800">🥛 Leche de Caja</p>
+                                            <p class="text-[10px] text-slate-500">₡950 la unidad</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <button onclick="changePulperíaQty('leche', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
+                                            <span id="pul-qty-leche" class="font-bold text-sm w-4 text-center">0</span>
+                                            <button onclick="changePulperíaQty('leche', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
+                                        <div>
+                                            <p class="font-bold text-slate-800">🍪 Galleta Chiky</p>
+                                            <p class="text-[10px] text-slate-500">₡650 el paquete</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <button onclick="changePulperíaQty('galleta', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
+                                            <span id="pul-qty-galleta" class="font-bold text-sm w-4 text-center">0</span>
+                                            <button onclick="changePulperíaQty('galleta', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
+                                        <div>
+                                            <p class="font-bold text-slate-800">🧃 Refresco Tropical</p>
+                                            <p class="text-[10px] text-slate-500">₡1 200 la unidad</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <button onclick="changePulperíaQty('tropical', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
+                                            <span id="pul-qty-tropical" class="font-bold text-sm w-4 text-center">0</span>
+                                            <button onclick="changePulperíaQty('tropical', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-between items-center bg-white p-2 rounded-xl border border-rose-100 text-xs">
+                                        <div>
+                                            <p class="font-bold text-slate-800">🥟 Empanada de Queso</p>
+                                            <p class="text-[10px] text-slate-500">₡800 la unidad</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <button onclick="changePulperíaQty('empanada', -1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">-</button>
+                                            <span id="pul-qty-empanada" class="font-bold text-sm w-4 text-center">0</span>
+                                            <button onclick="changePulperíaQty('empanada', 1)" class="w-7 h-7 bg-rose-100 hover:bg-rose-200 text-rose-700 rounded-lg font-bold transition">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-3 mt-4 border-t border-rose-200/50">
+                                <label class="block text-xs font-bold text-rose-900 uppercase mb-1">💵 Pagar con un Billete de:</label>
+                                <select id="pul-pago" onchange="calculatePulpería()" class="w-full bg-white border border-rose-200 rounded-xl p-2.5 font-bold text-slate-800 shadow-sm text-sm">
+                                    <option value="1000">₡1 000 (Rojo, Mil colones)</option>
+                                    <option value="2000" selected>₡2 000 (Azul, Dos mil colones)</option>
+                                    <option value="5000">₡5 000 (Amarillo, Cinco mil colones)</option>
+                                    <option value="10000">₡10 000 (Verde, Diez mil colones)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Recibo y vuelto -->
+                        <div class="md:col-span-7 flex flex-col justify-between border border-slate-200 rounded-2xl p-5 bg-white">
+                            <div>
+                                <h4 class="font-bold text-slate-700 text-sm mb-3 uppercase font-fun">Detalle de tu Compra:</h4>
+                                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-xs space-y-1.5 font-mono">
+                                    <div class="flex justify-between">
+                                        <span>Total Factura:</span>
+                                        <span id="pul-ticket-total" class="font-bold text-slate-800">₡0</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Dinero Entregado:</span>
+                                        <span id="pul-ticket-pago" class="font-bold text-slate-800">₡2 000</span>
+                                    </div>
+                                    <div class="border-t border-dashed border-slate-300 my-1 pt-1.5 flex justify-between text-sm">
+                                        <span class="font-bold">SU VUELTO:</span>
+                                        <span id="pul-ticket-vuelto" class="font-extrabold text-indigo-700 text-base">₡0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Alerta de dinero insuficiente -->
+                            <div id="pul-alerta-falta" class="hidden mt-4 p-3 rounded-xl bg-red-100 border border-red-200 text-red-800 text-xs font-bold flex gap-2 items-center">
+                                <span>⚠️</span>
+                                <span>¡Ups! El billete no alcanza para pagar la cuenta. Por favor elige un billete mayor o quita artículos.</span>
+                            </div>
+
+                            <!-- Vuelto visual de billetes y monedas de Costa Rica -->
+                            <div class="mt-4">
+                                <h5 class="text-xs font-bold text-slate-600 uppercase mb-2">💰 Monedas y Billetes que recibes:</h5>
+                                <div id="pul-vuelto-visual" class="flex flex-wrap gap-2.5 min-h-[100px] p-3 border border-dashed border-slate-200 rounded-xl justify-center items-center">
+                                    <!-- Dinámico con mini billetes y monedas realistas -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-CONTENIDO: LABORATORIO DE GEOMETRÍA (Mejorado sin solapamientos) -->
+                <div id="lab-sub-content-geometria" class="lab-sub-content hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                        <!-- Selector y Controles -->
+                        <div class="md:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-600 uppercase tracking-wider mb-2 font-fun">1. Elige una Figura:</label>
+                                <select id="lab-figura" onchange="onLabFigureChange()" class="w-full bg-white border border-slate-300 rounded-xl p-3 font-bold text-slate-800 shadow-sm focus:ring-2 focus:ring-teal-500 focus:outline-none mb-6">
+                                    <option value="cuadrado">⭐ Cuadrado</option>
+                                    <option value="rectangulo">📏 Rectángulo</option>
+                                    <option value="triangulo">🔺 Triángulo (Asimétrico)</option>
+                                    <option value="paralelogramo">🔷 Paralelogramo (Altura Central)</option>
+                                    <option value="trapecio">🪵 Trapecio (Altura Central)</option>
+                                </select>
+
+                                <div class="border-t border-slate-200 pt-4">
+                                    <label class="block text-sm font-bold text-slate-600 uppercase tracking-wider mb-4 font-fun">2. Ajusta las Medidas (cm):</label>
+                                    
+                                    <!-- Sliders Dinámicos -->
+                                    <div id="sliders-container" class="space-y-4">
+                                        <!-- Se generarán dinámicamente con JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fórmulas Explicadas en el Panel de Control -->
+                            <div class="bg-teal-50 border border-teal-100 p-4 rounded-xl mt-6 text-sm text-teal-800">
+                                <h4 class="font-bold font-fun mb-1">📝 Fórmulas de esta figura:</h4>
+                                <p class="text-xs" id="lab-formulas-txt"></p>
+                            </div>
+                        </div>
+
+                        <!-- Representación Gráfica e Info -->
+                        <div class="md:col-span-7 flex flex-col justify-between border border-slate-200 rounded-2xl p-6">
+                            <!-- Dibujo de la figura SVG -->
+                            <div class="bg-slate-900 rounded-2xl p-4 h-64 flex items-center justify-center relative overflow-hidden shadow-inner">
+                                <div class="absolute top-2 left-2 text-[10px] text-slate-500 font-mono">Simulador Visual en Tiempo Real</div>
+                                <svg id="lab-svg" class="w-full h-full max-h-56" viewBox="0 0 200 200">
+                                    <!-- El elemento SVG se insertará mediante JS -->
+                                </svg>
+                            </div>
+
+                            <!-- Pasos del Cálculo Matemático -->
+                            <div class="mt-6 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                                <h4 class="font-bold text-slate-700 font-fun border-b border-slate-200 pb-2 mb-3">🔢 Cálculo paso a paso:</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-xs font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded-full uppercase">Perímetro (Borde)</span>
+                                        <p class="font-bold text-slate-800 mt-2 text-base" id="lab-calc-p-proceso"></p>
+                                        <p class="text-lg font-bold text-indigo-600 mt-1 font-fun" id="lab-calc-p-resultado"></p>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full uppercase">Área (Superficie)</span>
+                                        <p class="font-bold text-slate-800 mt-2 text-base" id="lab-calc-a-proceso"></p>
+                                        <p class="text-lg font-bold text-emerald-600 mt-1 font-fun" id="lab-calc-a-resultado"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN: EXAMEN TEÓRICO -->
+        <section id="content-quiz-teorico" class="tab-content hidden">
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200">
+                <!-- Pantalla Inicial del Quiz -->
+                <div id="quiz-t-intro" class="text-center py-8">
+                    <span class="text-5xl">🧠</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mt-4 mb-2 font-fun">Prueba de Conceptos y Teoría (20 Preguntas)</h2>
+                    <p class="text-slate-600 max-w-xl mx-auto mb-6 text-base">
+                        Esta prueba contiene **20 preguntas teóricas**. Evaluará definiciones, propiedades de múltiplos y divisores, tipos de fracciones y la teoría que rodea las fórmulas de perímetros y áreas. ¡Perfecta para asegurar los puntos de teoría en tu examen de 5º grado!
+                    </p>
+                    <button onclick="startQuiz('teorico')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3.5 rounded-2xl shadow-lg shadow-blue-200 hover:shadow-none transition-all duration-300 font-fun text-lg">
+                        🚀 ¡Iniciar Súper Prueba Teórica!
+                    </button>
+                </div>
+
+                <!-- Contenedor de Preguntas del Quiz -->
+                <div id="quiz-t-container" class="hidden">
+                    <!-- Barra de progreso superior -->
+                    <div class="flex items-center justify-between mb-6 gap-4">
+                        <div class="w-full bg-slate-100 rounded-full h-2.5">
+                            <div id="quiz-t-progress-bar" class="bg-blue-500 h-2.5 rounded-full transition-all duration-300" style="width: 5%"></div>
+                        </div>
+                        <span id="quiz-t-counter" class="text-xs font-bold text-slate-500 uppercase tracking-widest whitespace-nowrap">Pregunta 1 de 20</span>
+                    </div>
+
+                    <!-- Enunciado de la Pregunta -->
+                    <div class="bg-blue-50/50 rounded-2xl p-5 border border-blue-100 mb-6">
+                        <span class="text-xs font-bold text-blue-700 uppercase tracking-wider font-fun" id="quiz-t-topic">Categoría Teórica</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1" id="quiz-t-question-text"></h3>
+                    </div>
+
+                    <!-- Opciones de Respuesta -->
+                    <div id="quiz-t-options" class="grid grid-cols-1 gap-3">
+                        <!-- Opciones dinámicas en JS -->
+                    </div>
+
+                    <!-- Retroalimentación / Rationale Explicado -->
+                    <div id="quiz-t-feedback" class="hidden mt-6 p-5 rounded-2xl border transition-all duration-300">
+                        <div class="flex gap-4 items-start">
+                            <span class="text-3xl" id="quiz-t-feedback-icon">🌟</span>
+                            <div>
+                                <h4 class="font-bold text-lg" id="quiz-t-feedback-title">¡Resultado!</h4>
+                                <p class="text-sm mt-1 leading-relaxed" id="quiz-t-feedback-text"></p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex justify-end">
+                            <button onclick="nextQuestion('teorico')" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition-all font-fun">
+                                Siguiente Pregunta ➡️
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pantalla de Resultados del Quiz -->
+                <div id="quiz-t-results" class="hidden text-center py-8">
+                    <span class="text-6xl" id="quiz-t-results-emoji">🏆</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mt-4 mb-1 font-fun">¡Prueba Completada!</h2>
+                    <p class="text-slate-500 text-sm">Has terminado el examen de conocimientos teóricos</p>
+                    
+                    <div class="my-8 max-w-sm mx-auto bg-slate-50 border border-slate-200 rounded-3xl p-6">
+                        <p class="text-xs font-bold text-slate-500 uppercase">Tu Nota Final</p>
+                        <p class="text-5xl font-extrabold text-blue-600 mt-2 font-fun" id="quiz-t-results-score">0 / 100</p>
+                        <p class="text-sm text-slate-600 font-bold mt-2" id="quiz-t-results-summary"></p>
+                    </div>
+
+                    <div class="flex justify-center gap-4">
+                        <button onclick="resetQuiz('teorico')" class="bg-white border-2 border-slate-300 hover:border-slate-400 text-slate-700 font-bold px-6 py-3 rounded-2xl transition-all duration-300 text-sm font-fun">
+                            🔄 Repetir Prueba
+                        </button>
+                        <button onclick="switchTab('quiz-practico')" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3 rounded-2xl shadow-md transition-all duration-300 text-sm font-fun">
+                            🔥 ¡Ir al Examen Práctico!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: EXAMEN PRÁCTICO -->
+        <section id="content-quiz-practico" class="tab-content hidden">
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200">
+                <!-- Pantalla Inicial del Quiz Práctico -->
+                <div id="quiz-p-intro" class="text-center py-8">
+                    <span class="text-5xl">🧮</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mt-4 mb-2 font-fun">Prueba Práctica y de Aplicación</h2>
+                    <p class="text-slate-600 max-w-xl mx-auto mb-6 text-base">
+                        Esta prueba contiene **10 problemas prácticos de aplicación** contextualizados en Costa Rica. Pondrá a prueba tu capacidad de convertir fracciones en recetas y fincas, calcular sumas y vueltos en colones en la pulpería, agrupar colecciones con múltiplos y calcular áreas y perímetros de figuras reales.
+                    </p>
+                    <button onclick="startQuiz('practico')" class="bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3.5 rounded-2xl shadow-lg shadow-amber-200 hover:shadow-none transition-all duration-300 font-fun text-lg">
+                        🚀 ¡Iniciar Prueba Práctica!
+                    </button>
+                </div>
+
+                <!-- Contenedor de Preguntas del Quiz Práctico -->
+                <div id="quiz-p-container" class="hidden">
+                    <!-- Barra de progreso superior -->
+                    <div class="flex items-center justify-between mb-6 gap-4">
+                        <div class="w-full bg-slate-100 rounded-full h-2.5">
+                            <div id="quiz-p-progress-bar" class="bg-amber-500 h-2.5 rounded-full transition-all duration-300" style="width: 10%"></div>
+                        </div>
+                        <span id="quiz-p-counter" class="text-xs font-bold text-slate-500 uppercase tracking-widest whitespace-nowrap">Pregunta 1 de 10</span>
+                    </div>
+
+                    <!-- Enunciado de la Pregunta -->
+                    <div class="bg-amber-50/50 rounded-2xl p-5 border border-amber-100 mb-6">
+                        <span class="text-xs font-bold text-amber-700 uppercase tracking-wider font-fun" id="quiz-p-topic">Situación Práctica</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1" id="quiz-p-question-text"></h3>
+                    </div>
+
+                    <!-- Opciones de Respuesta -->
+                    <div id="quiz-p-options" class="grid grid-cols-1 gap-3">
+                        <!-- Opciones dinámicas en JS -->
+                    </div>
+
+                    <!-- Retroalimentación / Rationale Explicado -->
+                    <div id="quiz-p-feedback" class="hidden mt-6 p-5 rounded-2xl border transition-all duration-300">
+                        <div class="flex gap-4 items-start">
+                            <span class="text-3xl" id="quiz-p-feedback-icon">🌟</span>
+                            <div>
+                                <h4 class="font-bold text-lg" id="quiz-p-feedback-title">¡Resultado!</h4>
+                                <p class="text-sm mt-1 leading-relaxed" id="quiz-p-feedback-text"></p>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex justify-end">
+                            <button onclick="nextQuestion('practico')" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition-all font-fun">
+                                Siguiente Pregunta ➡️
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pantalla de Resultados del Quiz Práctico -->
+                <div id="quiz-p-results" class="hidden text-center py-8">
+                    <span class="text-6xl" id="quiz-p-results-emoji">🎖️</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mt-4 mb-1 font-fun">¡Prueba Práctica Temporada!</h2>
+                    <p class="text-slate-500 text-sm">Has terminado el examen de resolución de problemas</p>
+                    
+                    <div class="my-8 max-w-sm mx-auto bg-slate-50 border border-slate-200 rounded-3xl p-6">
+                        <p class="text-xs font-bold text-slate-500 uppercase">Tu Nota Final</p>
+                        <p class="text-5xl font-extrabold text-amber-500 mt-2 font-fun" id="quiz-p-results-score">0 / 100</p>
+                        <p class="text-sm text-slate-600 font-bold mt-2" id="quiz-p-results-summary"></p>
+                    </div>
+
+                    <div class="flex justify-center gap-4">
+                        <button onclick="resetQuiz('practico')" class="bg-white border-2 border-slate-300 hover:border-slate-400 text-slate-700 font-bold px-6 py-3 rounded-2xl transition-all duration-300 text-sm font-fun">
+                            🔄 Repetir Prueba
+                        </button>
+                        <button onclick="switchTab('inicio')" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-3 rounded-2xl shadow-md transition-all duration-300 text-sm font-fun">
+                            🏠 Volver al Inicio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-5xl mx-auto px-4 mt-12 text-center text-xs text-slate-400 font-medium">
+        <p>RíoMate es una herramienta educativa de práctica libre diseñada para estudiantes de primaria.</p>
+        <p class="mt-1">© 2026 Escuela Riojalandia · Costa Rica · Todos los derechos de aprendizaje reservados.</p>
+    </footer>
+
+    <!-- LÓGICA JAVASCRIPT COMPLETA -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RíoPortal — Escuela Riojalandia</title>
+  <meta name="description" content="Portal de estudio interactivo para estudiantes de la Escuela Riojalandia, Costa Rica. Matemáticas, Ciencias, Español y más.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/rioja/assets/base-DLKwu-Qg.js"></script>
+  <link rel="stylesheet" crossorigin href="/rioja/assets/base-DAz_MDx3.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-50 via-teal-50 to-amber-50 text-slate-800 pb-12">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md border-b-4 border-red-600 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
+    <div class="max-w-5xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <div class="bg-teal-500 text-white p-3 rounded-2xl shadow-md rotate-[-3deg]">
+          <span class="text-3xl">🇨🇷</span>
+        </div>
+        <div>
+          <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider font-fun">Escuela Riojalandia</span>
+          <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-1">RíoPortal</h1>
+          <p class="text-sm text-slate-500 font-medium">Tu portal de estudio interactivo · 5º Grado</p>
+        </div>
+      </div>
+      <div class="bg-slate-100 p-3 rounded-2xl text-center md:text-right border border-slate-200">
+        <p class="text-xs text-slate-500 font-bold uppercase">Primer Semestre 2026</p>
+        <p class="text-sm font-bold text-indigo-700 font-fun">Secciones 5-1 y 5-2</p>
+        <p class="text-xs text-emerald-600 font-semibold">👩‍🏫 Maestra: Florisel Olmazo López</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-5xl mx-auto px-4 mt-12">
+
+    <div class="text-center mb-10">
+      <span class="text-5xl">👋</span>
+      <h2 class="text-3xl font-bold text-slate-900 mt-4 font-fun">¡Hola, campeón!</h2>
+      <p class="text-slate-500 mt-2 text-lg max-w-xl mx-auto">Elige la materia que querés repasar hoy. Cada sección tiene teoría interactiva, laboratorios y exámenes de práctica.</p>
+    </div>
+
+    <!-- Materias disponibles -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Matemáticas -->
+      <a href="./matematicas/" class="group bg-white rounded-3xl shadow-sm border border-indigo-100 p-8 flex flex-col items-center text-center hover:shadow-lg hover:border-indigo-300 transition-all duration-300 hover:-translate-y-1">
+        <span class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🧮</span>
+        <span class="bg-indigo-100 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase font-fun mb-3">Disponible</span>
+        <h3 class="text-xl font-bold text-slate-900 font-fun">Matemáticas</h3>
+        <p class="text-slate-500 text-sm mt-2 leading-relaxed">Múltiplos, divisores, fracciones, sistema monetario y geometría plana.</p>
+        <div class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-2xl font-bold text-sm group-hover:bg-indigo-700 transition-colors">
+          Entrar al estudio →
+        </div>
+      </a>
+
+      <!-- Ciencias (próximamente) -->
+      <div class="bg-white rounded-3xl shadow-sm border border-slate-100 p-8 flex flex-col items-center text-center opacity-60 cursor-not-allowed select-none">
+        <span class="text-5xl mb-4 grayscale">🔬</span>
+        <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full uppercase font-fun mb-3">Próximamente</span>
+        <h3 class="text-xl font-bold text-slate-900 font-fun">Ciencias</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Los seres vivos, la materia y el sistema solar. ¡Muy pronto disponible!</p>
+        <div class="mt-6 w-full bg-slate-200 text-slate-400 py-3 rounded-2xl font-bold text-sm">
+          En construcción...
+        </div>
+      </div>
+
+      <!-- Español (próximamente) -->
+      <div class="bg-white rounded-3xl shadow-sm border border-slate-100 p-8 flex flex-col items-center text-center opacity-60 cursor-not-allowed select-none">
+        <span class="text-5xl mb-4 grayscale">📚</span>
+        <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full uppercase font-fun mb-3">Próximamente</span>
+        <h3 class="text-xl font-bold text-slate-900 font-fun">Español</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Ortografía, gramática y comprensión de lectura. ¡Muy pronto disponible!</p>
+        <div class="mt-6 w-full bg-slate-200 text-slate-400 py-3 rounded-2xl font-bold text-sm">
+          En construcción...
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Info -->
+    <div class="mt-12 bg-white p-6 rounded-3xl shadow-sm border border-slate-200 text-center">
+      <p class="text-slate-500 text-sm">RíoPortal es una herramienta educativa de práctica libre para estudiantes de primaria.</p>
+      <p class="text-slate-400 text-xs mt-1">© 2026 Escuela Riojalandia · Costa Rica · Todos los derechos de aprendizaje reservados.</p>
+    </div>
+  </main>
+
+</body>
+</html>
