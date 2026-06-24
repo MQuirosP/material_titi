@@ -1,7 +1,7 @@
 {
   "C:\\Users\\mquir\\Proyectos\\rioja\\package.json": {
-    "mtime": 1782262239.7620468,
-    "ast_hash": "e3f7095b2a897f444fee4238c3592b5f",
+    "mtime": 1782264171.938145,
+    "ast_hash": "279a1cb7cf0039ace067cb378ff0a42c",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\vite.config.js": {
@@ -75,8 +75,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\index.html": {
-    "mtime": 1782263445.4431572,
-    "ast_hash": "ff389b0f8277134266b024e110705c7f",
+    "mtime": 1782264308.3459806,
+    "ast_hash": "0d51adfc1a69b73970e993077095f0ff",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\rules\\graphify.md": {
@@ -125,8 +125,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\matematicas\\index.html": {
-    "mtime": 1782263395.7529848,
-    "ast_hash": "0efdb0351f89fcccdc80fa1d0b85c448",
+    "mtime": 1782264324.6175795,
+    "ast_hash": "9387bd4c3819b6d855515db9c0ad9aa5",
     "semantic_hash": ""
   }
 }

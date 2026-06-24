@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export default {
-  base: '/rioja/',
+  base: '/material_titi/',
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {

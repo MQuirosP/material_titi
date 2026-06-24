@@ -1,16 +1,16 @@
 # Graph Report - rioja  (2026-06-23)
 
 ## Corpus Check
-- 23 files · ~17,567 words
+- 23 files · ~17,596 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 132 nodes · 171 edges · 14 communities (11 shown, 3 thin omitted)
+- 134 nodes · 173 edges · 14 communities (11 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `08b0084b`
+- Built from commit: `ca173b97`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,9 +37,9 @@
 5. `Skill: Clonar RíoMate para una Nueva Materia` - 6 edges
 6. `Skill: Flashcards de Teoría en RíoMate` - 6 edges
 7. `Skill: Nuevo Laboratorio Interactivo en RíoMate` - 6 edges
-8. `updateBadges()` - 5 edges
-9. `_svgEl()` - 5 edges
-10. `Pasos de implementación` - 5 edges
+8. `scripts` - 5 edges
+9. `updateBadges()` - 5 edges
+10. `_svgEl()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `nextQuestion()` --calls--> `updateBadges()`  [EXTRACTED]
@@ -60,8 +60,8 @@ Cohesion: 0.12
 Nodes (16): Anatomía de un Laboratorio (Patrón existente), code:block1 (1. Sub-tab button en la barra de navegación (.agents/rules/r), code:html (<button onclick="switchLabSubTab('{nombre}')" id="subtab-{no), code:html (<!-- SUB-CONTENIDO: LABORATORIO DE {NOMBRE EN MAYÚSCULAS} --), code:js (// ==========================================), code:js (update{Nombre}Lab(); // agregar junto a los otros update*Lab), code:js (update{Nombre}Lab(); // agregar junto a los otros), Cuándo usar este skill (+8 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.15
-Nodes (12): dependencies, canvas-confetti, devDependencies, tailwindcss, @tailwindcss/vite, vite, name, private (+4 more)
+Cohesion: 0.13
+Nodes (14): dependencies, canvas-confetti, devDependencies, gh-pages, tailwindcss, @tailwindcss/vite, vite, name (+6 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.24
@@ -92,7 +92,7 @@ Cohesion: 0.25
 Nodes (7): code:html (<!-- Tarjeta N: {Título del Tema} -->), Cuándo usar este skill, Estructura HTML de una Flashcard, Paleta de colores por tarjeta existente, Pasos al agregar una tarjeta nueva, Reglas de contenido, Skill: Flashcards de Teoría en RíoMate
 
 ## Knowledge Gaps
-- **57 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+52 more)
+- **59 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+54 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -100,6 +100,8 @@ Nodes (7): code:html (<!-- Tarjeta N: {Título del Tema} -->), Cuándo usar este
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `name`, `private`, `dev` to the rest of the system?**
-  _57 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _59 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
+- **Should `Community 2` be split into smaller, more focused modules?**
+  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
