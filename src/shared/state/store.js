@@ -1,10 +1,27 @@
 // ================================================
-// ESTADO GLOBAL DE RIOMATE
+// ESTADO GLOBAL DE RIOMATE Y RIOCIENCIAS
 // Importar desde los módulos que lo necesiten.
 // ================================================
 
-/** IDs (1-N) de flashcards que el estudiante ha volteado al menos una vez */
-export const studiedCards = new Set();
+/** Materia activa en el sistema: 'matematicas' o 'ciencias' */
+export let activeSubject = 'matematicas';
+export function setActiveSubject(val) { activeSubject = val; }
+
+/** Sets para guardar progreso independiente de tarjetas estudiadas */
+export const studiedCardsMath = new Set();
+export const studiedCardsScience = new Set();
+
+/** IDs (1-N) de flashcards que el estudiante ha volteado al menos una vez (apunta al set de la materia activa) */
+export let studiedCards = studiedCardsMath;
+
+/** Cambia la referencia del set estudiado según la materia activa */
+export function syncStudiedCardsSet(subject) {
+  if (subject === 'matematicas') {
+    studiedCards = studiedCardsMath;
+  } else {
+    studiedCards = studiedCardsScience;
+  }
+}
 
 /** true cuando el estudiante ha visitado la sección de laboratorios */
 export let userHasUsedLab = false;

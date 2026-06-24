@@ -1,4 +1,4 @@
-import { setActiveTab, setUserHasUsedLab } from '../state/store.js';
+import { setActiveTab, setUserHasUsedLab, activeSubject } from '../state/store.js';
 
 // Callbacks que los labs registran para inicializarse cuando se activa su tab
 const labInitCallbacks = [];
@@ -17,19 +17,32 @@ export function switchTab(tabId) {
 
   // Actualizar estilos de los botones de pestaña
   document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.classList.remove('bg-indigo-600', 'bg-blue-600', 'bg-amber-500', 'text-white');
+    btn.classList.remove(
+      'bg-indigo-600', 'bg-blue-600', 'bg-amber-500', 'text-white',
+      'bg-emerald-600', 'bg-teal-600', 'bg-emerald-500'
+    );
     btn.classList.add('text-slate-600', 'hover:bg-slate-100');
   });
 
   const activeBtn = document.getElementById(`tab-${tabId}`);
   if (activeBtn) {
     activeBtn.classList.remove('text-slate-600', 'hover:bg-slate-100');
-    if (tabId === 'quiz-practico') {
-      activeBtn.classList.add('bg-amber-500', 'text-white');
-    } else if (tabId === 'quiz-teorico') {
-      activeBtn.classList.add('bg-blue-600', 'text-white');
+    if (activeSubject === 'ciencias') {
+      if (tabId === 'quiz-practico') {
+        activeBtn.classList.add('bg-emerald-500', 'text-white');
+      } else if (tabId === 'quiz-teorico') {
+        activeBtn.classList.add('bg-teal-600', 'text-white');
+      } else {
+        activeBtn.classList.add('bg-emerald-600', 'text-white');
+      }
     } else {
-      activeBtn.classList.add('bg-indigo-600', 'text-white');
+      if (tabId === 'quiz-practico') {
+        activeBtn.classList.add('bg-amber-500', 'text-white');
+      } else if (tabId === 'quiz-teorico') {
+        activeBtn.classList.add('bg-blue-600', 'text-white');
+      } else {
+        activeBtn.classList.add('bg-indigo-600', 'text-white');
+      }
     }
   }
 
@@ -68,6 +81,7 @@ export function switchLabSubTab(subTabId) {
   });
   const activeBtn = document.getElementById(`subtab-${subTabId}`);
   if (activeBtn) {
-    activeBtn.className = 'subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 bg-teal-500 text-white shadow-sm';
+    const bgClass = activeSubject === 'ciencias' ? 'bg-emerald-600' : 'bg-teal-500';
+    activeBtn.className = `subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 ${bgClass} text-white shadow-sm`;
   }
 }

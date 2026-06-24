@@ -166,12 +166,30 @@
       "norm_label": "main.js"
     },
     {
+      "label": "audio.js",
+      "file_type": "code",
+      "source_file": "src/shared/modules/audio.js",
+      "source_location": "L1",
+      "id": "src_shared_modules_audio_js",
+      "community": 14,
+      "norm_label": "audio.js"
+    },
+    {
+      "label": "playSound()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/audio.js",
+      "source_location": "L2",
+      "id": "modules_audio_playsound",
+      "community": 14,
+      "norm_label": "playsound()"
+    },
+    {
       "label": "flashcards.js",
       "file_type": "code",
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L1",
       "id": "src_shared_modules_flashcards_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "flashcards.js"
     },
     {
@@ -180,7 +198,7 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L6",
       "id": "modules_flashcards_togglecard",
-      "community": 0,
+      "community": 3,
       "norm_label": "togglecard()"
     },
     {
@@ -189,7 +207,7 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L14",
       "id": "modules_flashcards_updatetheoryprogress",
-      "community": 0,
+      "community": 3,
       "norm_label": "updatetheoryprogress()"
     },
     {
@@ -198,7 +216,7 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L26",
       "id": "modules_flashcards_updatebadges",
-      "community": 0,
+      "community": 3,
       "norm_label": "updatebadges()"
     },
     {
@@ -207,52 +225,52 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L1",
       "id": "src_shared_modules_quiz_js",
-      "community": 0,
+      "community": 14,
       "norm_label": "quiz.js"
     },
     {
       "label": "startQuiz()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "modules_quiz_startquiz",
-      "community": 0,
+      "community": 14,
       "norm_label": "startquiz()"
     },
     {
       "label": "renderQuestion()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L22",
+      "source_location": "L23",
       "id": "modules_quiz_renderquestion",
-      "community": 0,
+      "community": 14,
       "norm_label": "renderquestion()"
     },
     {
       "label": "selectOption()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L62",
+      "source_location": "L67",
       "id": "modules_quiz_selectoption",
-      "community": 0,
+      "community": 14,
       "norm_label": "selectoption()"
     },
     {
       "label": "nextQuestion()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L121",
+      "source_location": "L131",
       "id": "modules_quiz_nextquestion",
-      "community": 0,
+      "community": 14,
       "norm_label": "nextquestion()"
     },
     {
       "label": "resetQuiz()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L166",
+      "source_location": "L176",
       "id": "modules_quiz_resetquiz",
-      "community": 0,
+      "community": 14,
       "norm_label": "resetquiz()"
     },
     {
@@ -295,7 +313,7 @@
       "label": "switchLabSubTab()",
       "file_type": "code",
       "source_file": "src/shared/modules/tabs.js",
-      "source_location": "L55",
+      "source_location": "L68",
       "id": "modules_tabs_switchlabsubtab",
       "community": 3,
       "norm_label": "switchlabsubtab()"
@@ -310,19 +328,46 @@
       "norm_label": "store.js"
     },
     {
-      "label": "studiedCards",
+      "label": "setActiveSubject()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L7",
-      "id": "state_store_studiedcards",
-      "community": 0,
-      "norm_label": "studiedcards"
+      "source_location": "L8",
+      "id": "state_store_setactivesubject",
+      "community": 3,
+      "norm_label": "setactivesubject()"
+    },
+    {
+      "label": "studiedCardsMath",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L11",
+      "id": "state_store_studiedcardsmath",
+      "community": 3,
+      "norm_label": "studiedcardsmath"
+    },
+    {
+      "label": "studiedCardsScience",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L12",
+      "id": "state_store_studiedcardsscience",
+      "community": 3,
+      "norm_label": "studiedcardsscience"
+    },
+    {
+      "label": "syncStudiedCardsSet()",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L18",
+      "id": "state_store_syncstudiedcardsset",
+      "community": 3,
+      "norm_label": "syncstudiedcardsset()"
     },
     {
       "label": "setUserHasUsedLab()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L11",
+      "source_location": "L28",
       "id": "state_store_setuserhasusedlab",
       "community": 3,
       "norm_label": "setuserhasusedlab()"
@@ -331,7 +376,7 @@
       "label": "setActiveTab()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L15",
+      "source_location": "L32",
       "id": "state_store_setactivetab",
       "community": 3,
       "norm_label": "setactivetab()"
@@ -340,28 +385,190 @@
       "label": "quizState",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L18",
+      "source_location": "L35",
       "id": "state_store_quizstate",
-      "community": 0,
+      "community": 3,
       "norm_label": "quizstate"
     },
     {
       "label": "pulper\u00edaCart",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L36",
+      "source_location": "L53",
       "id": "state_store_pulper\u00edacart",
-      "community": 3,
+      "community": 0,
       "norm_label": "pulperiacart"
     },
     {
       "label": "pulper\u00edaPrices",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L44",
+      "source_location": "L61",
       "id": "state_store_pulper\u00edaprices",
-      "community": 3,
+      "community": 0,
       "norm_label": "pulperiaprices"
+    },
+    {
+      "label": "quiz-practico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/data/quiz-practico.js",
+      "source_location": "L1",
+      "id": "src_subjects_ciencias_data_quiz_practico_js",
+      "community": 0,
+      "norm_label": "quiz-practico.js"
+    },
+    {
+      "label": "quizPracticoCiencias",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/data/quiz-practico.js",
+      "source_location": "L2",
+      "id": "data_quiz_practico_quizpracticociencias",
+      "community": 0,
+      "norm_label": "quizpracticociencias"
+    },
+    {
+      "label": "quiz-teorico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/data/quiz-teorico.js",
+      "source_location": "L1",
+      "id": "src_subjects_ciencias_data_quiz_teorico_js",
+      "community": 0,
+      "norm_label": "quiz-teorico.js"
+    },
+    {
+      "label": "quizTeoricoCiencias",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/data/quiz-teorico.js",
+      "source_location": "L2",
+      "id": "data_quiz_teorico_quizteoricociencias",
+      "community": 0,
+      "norm_label": "quizteoricociencias"
+    },
+    {
+      "label": "decisiones-medicas.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L1",
+      "id": "src_subjects_ciencias_labs_decisiones_medicas_js",
+      "community": 14,
+      "norm_label": "decisiones-medicas.js"
+    },
+    {
+      "label": "casosMedicosLab",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L5",
+      "id": "labs_decisiones_medicas_casosmedicoslab",
+      "community": 14,
+      "norm_label": "casosmedicoslab"
+    },
+    {
+      "label": "initDecisionesMedicas()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L15",
+      "id": "labs_decisiones_medicas_initdecisionesmedicas",
+      "community": 14,
+      "norm_label": "initdecisionesmedicas()"
+    },
+    {
+      "label": "renderCaso()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L21",
+      "id": "labs_decisiones_medicas_rendercaso",
+      "community": 14,
+      "norm_label": "rendercaso()"
+    },
+    {
+      "label": "chooseMedicalTool()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L44",
+      "id": "labs_decisiones_medicas_choosemedicaltool",
+      "community": 14,
+      "norm_label": "choosemedicaltool()"
+    },
+    {
+      "label": "filtro-renal.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L1",
+      "id": "src_subjects_ciencias_labs_filtro_renal_js",
+      "community": 15,
+      "norm_label": "filtro-renal.js"
+    },
+    {
+      "label": "particles",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L6",
+      "id": "labs_filtro_renal_particles",
+      "community": 15,
+      "norm_label": "particles"
+    },
+    {
+      "label": "Particle",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L8",
+      "id": "labs_filtro_renal_particle",
+      "community": 15,
+      "norm_label": "particle"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L9",
+      "id": "labs_filtro_renal_particle_constructor",
+      "community": 15,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L19",
+      "id": "labs_filtro_renal_particle_update",
+      "community": 15,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".draw()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L79",
+      "id": "labs_filtro_renal_particle_draw",
+      "community": 15,
+      "norm_label": ".draw()"
+    },
+    {
+      "label": "initFiltroRenal()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L106",
+      "id": "labs_filtro_renal_initfiltrorenal",
+      "community": 15,
+      "norm_label": "initfiltrorenal()"
+    },
+    {
+      "label": "tick()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L147",
+      "id": "labs_filtro_renal_tick",
+      "community": 15,
+      "norm_label": "tick()"
+    },
+    {
+      "label": "stopFiltroRenal()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L217",
+      "id": "labs_filtro_renal_stopfiltrorenal",
+      "community": 15,
+      "norm_label": "stopfiltrorenal()"
     },
     {
       "label": "main.js",
@@ -371,6 +578,24 @@
       "id": "src_subjects_matematicas_main_js",
       "community": 0,
       "norm_label": "main.js"
+    },
+    {
+      "label": "switchSubject()",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L48",
+      "id": "matematicas_main_switchsubject",
+      "community": 3,
+      "norm_label": "switchsubject()"
+    },
+    {
+      "label": "urlParams",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L199",
+      "id": "matematicas_main_urlparams",
+      "community": 0,
+      "norm_label": "urlparams"
     },
     {
       "label": "quiz-practico.js",
@@ -549,7 +774,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_pulperia_js",
-      "community": 3,
+      "community": 0,
       "norm_label": "pulperia.js"
     },
     {
@@ -558,7 +783,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L4",
       "id": "labs_pulperia_changepulper\u00edaqty",
-      "community": 3,
+      "community": 0,
       "norm_label": "changepulperiaqty()"
     },
     {
@@ -567,7 +792,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L12",
       "id": "labs_pulperia_calculatepulper\u00eda",
-      "community": 3,
+      "community": 0,
       "norm_label": "calculatepulperia()"
     },
     {
@@ -1208,6 +1433,15 @@
       "id": "workflows_graphify_workflow_graphify",
       "community": 12,
       "norm_label": "workflow: graphify"
+    },
+    {
+      "label": "studiedCards",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L15",
+      "id": "state_store_studiedcards",
+      "community": 3,
+      "norm_label": "studiedcards"
     }
   ],
   "links": [
@@ -1297,9 +1531,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "rioja_package_scripts",
-      "target": "rioja_package_scripts_deploy",
-      "confidence_score": 1.0
+      "target": "rioja_package_scripts_deploy"
     },
     {
       "relation": "contains",
@@ -1317,9 +1551,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "rioja_package_devdependencies",
-      "target": "rioja_package_devdependencies_gh_pages",
-      "confidence_score": 1.0
+      "target": "rioja_package_devdependencies_gh_pages"
     },
     {
       "relation": "contains",
@@ -1360,6 +1594,82 @@
       "confidence_score": 1.0,
       "source": "vite_config_js",
       "target": "rioja_vite_config_dirname"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/audio.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_shared_modules_audio_js",
+      "target": "modules_audio_playsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_decisiones_medicas_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "modules_audio_playsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_decisiones_medicas_js",
+      "target": "modules_audio_playsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "modules_quiz_selectoption",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "labs_decisiones_medicas_choosemedicaltool",
+      "target": "modules_audio_playsound"
     },
     {
       "relation": "imports_from",
@@ -1491,6 +1801,17 @@
       "target": "modules_flashcards_updatetheoryprogress"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "matematicas_main_switchsubject",
+      "target": "modules_flashcards_updatetheoryprogress"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1521,6 +1842,17 @@
       "source_location": "L162",
       "weight": 1.0,
       "source": "modules_quiz_nextquestion",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "matematicas_main_switchsubject",
       "target": "modules_flashcards_updatebadges"
     },
     {
@@ -1684,6 +2016,17 @@
       "target": "modules_quiz_resetquiz"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "matematicas_main_switchsubject",
+      "target": "modules_quiz_resetquiz"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1812,6 +2155,17 @@
       "target": "state_store_setuserhasusedlab"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "matematicas_main_switchsubject",
+      "target": "modules_tabs_switchtab"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1823,14 +2177,55 @@
       "target": "modules_tabs_switchlabsubtab"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "matematicas_main_switchsubject",
+      "target": "modules_tabs_switchlabsubtab"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "src_shared_state_store_js",
-      "target": "state_store_studiedcards"
+      "target": "state_store_setactivesubject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_studiedcardsmath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_studiedcardsscience",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_syncstudiedcardsset",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1905,6 +2300,60 @@
       "target": "src_shared_state_store_js"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_studiedcards"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "state_store_setactivesubject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "matematicas_main_switchsubject",
+      "target": "state_store_setactivesubject"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "state_store_syncstudiedcardsset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "matematicas_main_switchsubject",
+      "target": "state_store_syncstudiedcardsset"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1936,6 +2385,289 @@
       "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_pulperia_js",
       "target": "state_store_pulper\u00edaprices"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/data/quiz-practico.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_data_quiz_practico_js",
+      "target": "data_quiz_practico_quizpracticociencias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ciencias_data_quiz_practico_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_practico_quizpracticociencias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/data/quiz-teorico.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_data_quiz_teorico_js",
+      "target": "data_quiz_teorico_quizteoricociencias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ciencias_data_quiz_teorico_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_teorico_quizteoricociencias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_decisiones_medicas_js",
+      "target": "labs_decisiones_medicas_casosmedicoslab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_decisiones_medicas_js",
+      "target": "labs_decisiones_medicas_initdecisionesmedicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_decisiones_medicas_js",
+      "target": "labs_decisiones_medicas_rendercaso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_decisiones_medicas_js",
+      "target": "labs_decisiones_medicas_choosemedicaltool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ciencias_labs_decisiones_medicas_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "labs_decisiones_medicas_initdecisionesmedicas",
+      "target": "labs_decisiones_medicas_rendercaso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_decisiones_medicas_initdecisionesmedicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_decisiones_medicas_choosemedicaltool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_filtro_renal_js",
+      "target": "labs_filtro_renal_particles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_filtro_renal_js",
+      "target": "labs_filtro_renal_particle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_filtro_renal_js",
+      "target": "labs_filtro_renal_initfiltrorenal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_filtro_renal_js",
+      "target": "labs_filtro_renal_tick",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_labs_filtro_renal_js",
+      "target": "labs_filtro_renal_stopfiltrorenal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ciencias_labs_filtro_renal_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "labs_filtro_renal_particle",
+      "target": "labs_filtro_renal_particle_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "labs_filtro_renal_particle",
+      "target": "labs_filtro_renal_particle_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "labs_filtro_renal_particle",
+      "target": "labs_filtro_renal_particle_draw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "labs_filtro_renal_initfiltrorenal",
+      "target": "labs_filtro_renal_tick",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_filtro_renal_initfiltrorenal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_filtro_renal_stopfiltrorenal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "matematicas_main_switchsubject",
+      "target": "labs_filtro_renal_stopfiltrorenal"
     },
     {
       "relation": "imports_from",
@@ -2112,6 +2844,26 @@
       "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
       "target": "data_quiz_practico_quizpracticoquestions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "matematicas_main_switchsubject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "matematicas_main_urlparams",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3005,5 +3757,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ca173b97c7a4d12954a1503f2bc82261ef19671a"
+  "built_at_commit": "621a484b20bedee43f57cd15e194ca1bee3f2159"
 }

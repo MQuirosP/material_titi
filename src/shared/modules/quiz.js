@@ -1,6 +1,7 @@
 import confetti from 'canvas-confetti';
 import { quizState } from '../state/store.js';
 import { updateBadges } from './flashcards.js';
+import { playSound } from './audio.js';
 
 /** Inicia (o reinicia) un quiz del tipo dado */
 export function startQuiz(type) {
@@ -46,10 +47,14 @@ export function renderQuestion(type) {
   if (!container) return;
   container.innerHTML = '';
 
-  q.options.forEach((opt, idx) => {
+  // Clonar y barajar opciones para evitar memorización
+  const shuffledOptions = [...q.options].sort(() => Math.random() - 0.5);
+
+  shuffledOptions.forEach((opt) => {
     const btn = document.createElement('button');
     btn.className = `option-btn-${pfx} w-full text-left p-4 rounded-2xl border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all duration-200 font-medium text-slate-700 flex justify-between items-center bg-white`;
-    btn.onclick = () => selectOption(type, idx, btn);
+    btn.dataset.isCorrect = opt.isCorrect;
+    btn.onclick = () => selectOption(type, opt, btn);
     btn.innerHTML = `
       <span>${opt.text}</span>
       <span class="circle-icon w-6 h-6 border-2 border-slate-300 rounded-full flex items-center justify-center text-xs font-bold text-slate-400"></span>
@@ -59,11 +64,9 @@ export function renderQuestion(type) {
 }
 
 /** Evalúa la opción elegida por el estudiante */
-export function selectOption(type, optIdx, buttonElement) {
+export function selectOption(type, opt, buttonElement) {
   const state = quizState[type];
-  const q     = state.questions[state.currentIdx];
   const pfx   = type === 'teorico' ? 't' : 'p';
-  const opt   = q.options[optIdx];
 
   // Deshabilitar todos los botones (evita doble clic)
   document.querySelectorAll(`.option-btn-${pfx}`).forEach(btn => {
@@ -79,6 +82,10 @@ export function selectOption(type, optIdx, buttonElement) {
     buttonElement.querySelector('.circle-icon').innerHTML = '✓';
     buttonElement.querySelector('.circle-icon').className =
       'circle-icon w-6 h-6 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xs font-bold';
+    
+    // Sonido de acierto
+    playSound('correct');
+    
     confetti({ particleCount: 30, spread: 40, origin: { y: 0.8 } });
   } else {
     buttonElement.classList.remove('border-slate-200', 'bg-white', 'opacity-60');
@@ -87,13 +94,16 @@ export function selectOption(type, optIdx, buttonElement) {
     buttonElement.querySelector('.circle-icon').className =
       'circle-icon w-6 h-6 bg-rose-500 text-white rounded-full flex items-center justify-center text-xs font-bold';
 
-    // Resaltar la opción correcta en verde
-    const correctIdx = q.options.findIndex(o => o.isCorrect);
-    const correctBtn = document.querySelectorAll(`.option-btn-${pfx}`)[correctIdx];
-    if (correctBtn) {
-      correctBtn.classList.remove('opacity-60');
-      correctBtn.classList.add('border-emerald-500', 'bg-emerald-50', 'text-emerald-800', '!opacity-100');
-    }
+    // Sonido de fallo
+    playSound('incorrect');
+
+    // Resaltar la opción correcta en verde usando dataset
+    document.querySelectorAll(`.option-btn-${pfx}`).forEach(btn => {
+      if (btn.dataset.isCorrect === 'true') {
+        btn.classList.remove('opacity-60');
+        btn.classList.add('border-emerald-500', 'bg-emerald-50', 'text-emerald-800', '!opacity-100');
+      }
+    });
   }
 
   // Mostrar retroalimentación
@@ -148,7 +158,7 @@ export function nextQuestion(type) {
 
   // Mensaje según nota
   if (finalGrade >= 90) {
-    if (summaryEl) summaryEl.textContent = '¡Wao! Eres toda una experta en mate. ¡La maestra Florisel va a quedar asombrada!';
+    if (summaryEl) summaryEl.textContent = '¡Wao! Eres toda una experta en esta materia. ¡La maestra Florisel va a quedar asombrada!';
     if (emojiEl)   emojiEl.textContent   = '🏆✨';
     confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
   } else if (finalGrade >= 70) {
