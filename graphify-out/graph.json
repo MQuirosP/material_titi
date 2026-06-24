@@ -171,7 +171,7 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L1",
       "id": "src_shared_modules_audio_js",
-      "community": 14,
+      "community": 3,
       "norm_label": "audio.js"
     },
     {
@@ -182,6 +182,15 @@
       "id": "modules_audio_playsound",
       "community": 14,
       "norm_label": "playsound()"
+    },
+    {
+      "label": "playTickWithThrottle()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/audio.js",
+      "source_location": "L72",
+      "id": "modules_audio_playtickwiththrottle",
+      "community": 3,
+      "norm_label": "playtickwiththrottle()"
     },
     {
       "label": "flashcards.js",
@@ -234,7 +243,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L1",
       "id": "src_shared_modules_quiz_js",
-      "community": 14,
+      "community": 0,
       "norm_label": "quiz.js"
     },
     {
@@ -243,7 +252,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L7",
       "id": "modules_quiz_startquiz",
-      "community": 14,
+      "community": 0,
       "norm_label": "startquiz()"
     },
     {
@@ -252,7 +261,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L23",
       "id": "modules_quiz_renderquestion",
-      "community": 14,
+      "community": 0,
       "norm_label": "renderquestion()"
     },
     {
@@ -270,7 +279,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L131",
       "id": "modules_quiz_nextquestion",
-      "community": 14,
+      "community": 0,
       "norm_label": "nextquestion()"
     },
     {
@@ -288,7 +297,7 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L1",
       "id": "src_shared_modules_tabs_js",
-      "community": 3,
+      "community": 0,
       "norm_label": "tabs.js"
     },
     {
@@ -297,7 +306,7 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L4",
       "id": "modules_tabs_labinitcallbacks",
-      "community": 3,
+      "community": 0,
       "norm_label": "labinitcallbacks"
     },
     {
@@ -306,7 +315,7 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L10",
       "id": "modules_tabs_onlabinit",
-      "community": 3,
+      "community": 0,
       "norm_label": "onlabinit()"
     },
     {
@@ -315,7 +324,7 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L15",
       "id": "modules_tabs_switchtab",
-      "community": 3,
+      "community": 0,
       "norm_label": "switchtab()"
     },
     {
@@ -333,7 +342,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L1",
       "id": "src_shared_state_store_js",
-      "community": 3,
+      "community": 0,
       "norm_label": "store.js"
     },
     {
@@ -351,7 +360,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L11",
       "id": "state_store_studiedcardsmath",
-      "community": 3,
+      "community": 0,
       "norm_label": "studiedcardsmath"
     },
     {
@@ -360,7 +369,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L12",
       "id": "state_store_studiedcardsscience",
-      "community": 3,
+      "community": 0,
       "norm_label": "studiedcardsscience"
     },
     {
@@ -378,7 +387,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L28",
       "id": "state_store_setuserhasusedlab",
-      "community": 3,
+      "community": 0,
       "norm_label": "setuserhasusedlab()"
     },
     {
@@ -387,7 +396,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L32",
       "id": "state_store_setactivetab",
-      "community": 3,
+      "community": 0,
       "norm_label": "setactivetab()"
     },
     {
@@ -396,7 +405,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L35",
       "id": "state_store_quizstate",
-      "community": 3,
+      "community": 0,
       "norm_label": "quizstate"
     },
     {
@@ -576,7 +585,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L217",
       "id": "labs_filtro_renal_stopfiltrorenal",
-      "community": 0,
+      "community": 15,
       "norm_label": "stopfiltrorenal()"
     },
     {
@@ -648,16 +657,16 @@
       "source_file": "src/subjects/matematicas/labs/divisores.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_divisores_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "divisores.js"
     },
     {
       "label": "updateDivisoresLab()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/divisores.js",
-      "source_location": "L2",
+      "source_location": "L4",
       "id": "labs_divisores_updatedivisoreslab",
-      "community": 0,
+      "community": 3,
       "norm_label": "updatedivisoreslab()"
     },
     {
@@ -666,16 +675,16 @@
       "source_file": "src/subjects/matematicas/labs/fracciones.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_fracciones_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "fracciones.js"
     },
     {
       "label": "updateFraccionesLab()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/fracciones.js",
-      "source_location": "L2",
+      "source_location": "L4",
       "id": "labs_fracciones_updatefraccioneslab",
-      "community": 0,
+      "community": 3,
       "norm_label": "updatefraccioneslab()"
     },
     {
@@ -691,7 +700,7 @@
       "label": "figurePresets",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/geometria.js",
-      "source_location": "L2",
+      "source_location": "L4",
       "id": "labs_geometria_figurepresets",
       "community": 8,
       "norm_label": "figurepresets"
@@ -700,7 +709,7 @@
       "label": "onLabFigureChange()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/geometria.js",
-      "source_location": "L50",
+      "source_location": "L52",
       "id": "labs_geometria_onlabfigurechange",
       "community": 8,
       "norm_label": "onlabfigurechange()"
@@ -709,7 +718,7 @@
       "label": "onLabSliderInput()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/geometria.js",
-      "source_location": "L78",
+      "source_location": "L80",
       "id": "labs_geometria_onlabsliderinput",
       "community": 8,
       "norm_label": "onlabsliderinput()"
@@ -718,7 +727,7 @@
       "label": "drawAndCalculate()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/geometria.js",
-      "source_location": "L85",
+      "source_location": "L88",
       "id": "labs_geometria_drawandcalculate",
       "community": 8,
       "norm_label": "drawandcalculate()"
@@ -727,7 +736,7 @@
       "label": "_svgEl()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/geometria.js",
-      "source_location": "L231",
+      "source_location": "L234",
       "id": "labs_geometria_svgel",
       "community": 8,
       "norm_label": "_svgel()"
@@ -736,7 +745,7 @@
       "label": "_svgLine()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/geometria.js",
-      "source_location": "L235",
+      "source_location": "L238",
       "id": "labs_geometria_svgline",
       "community": 8,
       "norm_label": "_svgline()"
@@ -745,7 +754,7 @@
       "label": "_svgRightAngle()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/geometria.js",
-      "source_location": "L244",
+      "source_location": "L247",
       "id": "labs_geometria_svgrightangle",
       "community": 8,
       "norm_label": "_svgrightangle()"
@@ -754,7 +763,7 @@
       "label": "addSvgText()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/geometria.js",
-      "source_location": "L252",
+      "source_location": "L255",
       "id": "labs_geometria_addsvgtext",
       "community": 8,
       "norm_label": "addsvgtext()"
@@ -765,16 +774,16 @@
       "source_file": "src/subjects/matematicas/labs/multiplos.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_multiplos_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "multiplos.js"
     },
     {
       "label": "updateMultiplesLab()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/multiplos.js",
-      "source_location": "L2",
+      "source_location": "L4",
       "id": "labs_multiplos_updatemultipleslab",
-      "community": 0,
+      "community": 3,
       "norm_label": "updatemultipleslab()"
     },
     {
@@ -790,7 +799,7 @@
       "label": "changePulper\u00edaQty()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
-      "source_location": "L4",
+      "source_location": "L5",
       "id": "labs_pulperia_changepulper\u00edaqty",
       "community": 3,
       "norm_label": "changepulperiaqty()"
@@ -799,7 +808,7 @@
       "label": "calculatePulper\u00eda()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
-      "source_location": "L12",
+      "source_location": "L17",
       "id": "labs_pulperia_calculatepulper\u00eda",
       "community": 3,
       "norm_label": "calculatepulperia()"
@@ -1449,7 +1458,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L15",
       "id": "state_store_studiedcards",
-      "community": 3,
+      "community": 0,
       "norm_label": "studiedcards"
     }
   ],
@@ -1615,6 +1624,16 @@
       "target": "modules_audio_playsound"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/audio.js",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "src_shared_modules_audio_js",
+      "target": "modules_audio_playtickwiththrottle",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1635,6 +1654,72 @@
       "confidence_score": 1.0,
       "source": "src_subjects_ciencias_labs_decisiones_medicas_js",
       "target": "src_shared_modules_audio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/divisores.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_divisores_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/fracciones.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_fracciones_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/multiplos.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_multiplos_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_pulperia_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/audio.js",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "modules_audio_playtickwiththrottle",
+      "target": "modules_audio_playsound",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1679,6 +1764,116 @@
       "weight": 1.0,
       "source": "labs_decisiones_medicas_choosemedicaltool",
       "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/divisores.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_divisores_js",
+      "target": "modules_audio_playtickwiththrottle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/fracciones.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_fracciones_js",
+      "target": "modules_audio_playtickwiththrottle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_geometria_js",
+      "target": "modules_audio_playtickwiththrottle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/multiplos.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_multiplos_js",
+      "target": "modules_audio_playtickwiththrottle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_labs_pulperia_js",
+      "target": "modules_audio_playtickwiththrottle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/labs/divisores.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "labs_divisores_updatedivisoreslab",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/labs/fracciones.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "labs_fracciones_updatefraccioneslab",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/labs/geometria.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "labs_geometria_onlabsliderinput",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/labs/multiplos.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "labs_multiplos_updatemultipleslab",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/labs/pulperia.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "labs_pulperia_changepulper\u00edaqty",
+      "target": "modules_audio_playtickwiththrottle"
     },
     {
       "relation": "imports_from",
@@ -3787,5 +3982,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "14262391810e5fd2b9f99c9d2ad82150ecadf796"
+  "built_at_commit": "19eb4b91e512b2b8a0157f061da732bc7531cc68"
 }

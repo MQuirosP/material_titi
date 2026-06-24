@@ -1,16 +1,16 @@
 # Graph Report - rioja  (2026-06-24)
 
 ## Corpus Check
-- 28 files · ~25,214 words
+- 28 files · ~25,327 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 161 nodes · 224 edges · 16 communities (13 shown, 3 thin omitted)
+- 162 nodes · 241 edges · 16 communities (13 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `14262391`
+- Built from commit: `19eb4b91`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -32,34 +32,34 @@
 - [[_COMMUNITY_Community 15|Community 15]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Skill: Diagnóstico y Depuración de RíoMate` - 10 edges
-2. `switchSubject()` - 9 edges
-3. `🇨🇷 RíoMate — Reglas de Desarrollo (Manual Oficial)` - 8 edges
-4. `drawAndCalculate()` - 7 edges
-5. `updateBadges()` - 6 edges
-6. `Procedimiento` - 6 edges
-7. `Skill: Clonar RíoMate para una Nueva Materia` - 6 edges
-8. `Skill: Flashcards de Teoría en RíoMate` - 6 edges
-9. `Skill: Nuevo Laboratorio Interactivo en RíoMate` - 6 edges
-10. `scripts` - 5 edges
+1. `playTickWithThrottle()` - 12 edges
+2. `Skill: Diagnóstico y Depuración de RíoMate` - 10 edges
+3. `switchSubject()` - 9 edges
+4. `🇨🇷 RíoMate — Reglas de Desarrollo (Manual Oficial)` - 8 edges
+5. `drawAndCalculate()` - 7 edges
+6. `playSound()` - 6 edges
+7. `updateBadges()` - 6 edges
+8. `Procedimiento` - 6 edges
+9. `Skill: Clonar RíoMate para una Nueva Materia` - 6 edges
+10. `Skill: Flashcards de Teoría en RíoMate` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `nextQuestion()` --calls--> `updateBadges()`  [EXTRACTED]
-  src/shared/modules/quiz.js → src/shared/modules/flashcards.js
-- `switchSubject()` --calls--> `switchTab()`  [EXTRACTED]
-  src/subjects/matematicas/main.js → src/shared/modules/tabs.js
+- `onLabSliderInput()` --calls--> `playTickWithThrottle()`  [EXTRACTED]
+  src/subjects/matematicas/labs/geometria.js → src/shared/modules/audio.js
+- `switchSubject()` --calls--> `stopFiltroRenal()`  [EXTRACTED]
+  src/subjects/matematicas/main.js → src/subjects/ciencias/labs/filtro-renal.js
 - `selectOption()` --calls--> `playSound()`  [EXTRACTED]
   src/shared/modules/quiz.js → src/shared/modules/audio.js
 - `chooseMedicalTool()` --calls--> `playSound()`  [EXTRACTED]
   src/subjects/ciencias/labs/decisiones-medicas.js → src/shared/modules/audio.js
-- `switchSubject()` --calls--> `updateTheoryProgress()`  [EXTRACTED]
-  src/subjects/matematicas/main.js → src/shared/modules/flashcards.js
+- `updateDivisoresLab()` --calls--> `playTickWithThrottle()`  [EXTRACTED]
+  src/subjects/matematicas/labs/divisores.js → src/shared/modules/audio.js
 
 ## Communities (16 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.13
-Nodes (18): quizPracticoCiencias, quizPracticoQuestions, quizTeoricoCiencias, quizTeoricoQuestions, updateDivisoresLab(), stopFiltroRenal(), updateFraccionesLab(), updateMultiplesLab() (+10 more)
+Nodes (26): quizPracticoCiencias, quizPracticoQuestions, quizTeoricoCiencias, quizTeoricoQuestions, switchSubject(), urlParams, playSwissSound(), toggleCard() (+18 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.12
@@ -70,8 +70,8 @@ Cohesion: 0.13
 Nodes (14): dependencies, canvas-confetti, devDependencies, gh-pages, tailwindcss, @tailwindcss/vite, vite, name (+6 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.18
-Nodes (13): calculatePulpería(), changePulperíaQty(), labInitCallbacks, onLabInit(), switchTab(), pulperíaCart, pulperíaPrices, quizState (+5 more)
+Cohesion: 0.27
+Nodes (8): updateDivisoresLab(), updateFraccionesLab(), updateMultiplesLab(), calculatePulpería(), changePulperíaQty(), playTickWithThrottle(), pulperíaCart, pulperíaPrices
 
 ### Community 4 - "Community 4"
 Cohesion: 0.17
@@ -98,12 +98,12 @@ Cohesion: 0.25
 Nodes (7): code:html (<!-- Tarjeta N: {Título del Tema} -->), Cuándo usar este skill, Estructura HTML de una Flashcard, Paleta de colores por tarjeta existente, Pasos al agregar una tarjeta nueva, Reglas de contenido, Skill: Flashcards de Teoría en RíoMate
 
 ### Community 14 - "Community 14"
-Cohesion: 0.27
-Nodes (9): casosMedicosLab, chooseMedicalTool(), initDecisionesMedicas(), renderCaso(), playSound(), nextQuestion(), renderQuestion(), selectOption() (+1 more)
+Cohesion: 0.38
+Nodes (6): casosMedicosLab, chooseMedicalTool(), initDecisionesMedicas(), renderCaso(), playSound(), selectOption()
 
 ### Community 15 - "Community 15"
-Cohesion: 0.29
-Nodes (4): initFiltroRenal(), Particle, particles, tick()
+Cohesion: 0.25
+Nodes (5): initFiltroRenal(), Particle, particles, stopFiltroRenal(), tick()
 
 ## Knowledge Gaps
 - **64 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+59 more)
@@ -116,7 +116,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **What connects `name`, `private`, `dev` to the rest of the system?**
   _64 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.13105413105413105 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12773109243697478 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
