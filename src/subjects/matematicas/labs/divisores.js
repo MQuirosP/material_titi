@@ -1,5 +1,8 @@
+import { playTickWithThrottle } from '../../../shared/modules/audio.js';
+
 /** Laboratorio de Divisores — Fábrica de Divisores */
 export function updateDivisoresLab() {
+  playTickWithThrottle();
   const num     = parseInt(document.getElementById('lab-div-num').value);
   const divisor = parseInt(document.getElementById('lab-div-test').value);
 

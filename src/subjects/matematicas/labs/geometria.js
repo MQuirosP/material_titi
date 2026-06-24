@@ -1,3 +1,5 @@
+import { playTickWithThrottle } from '../../../shared/modules/audio.js';
+
 /** Definición de presets para cada figura geométrica */
 export const figurePresets = {
   cuadrado: {
@@ -76,6 +78,7 @@ export function onLabFigureChange() {
 
 /** Se ejecuta en cada movimiento de slider */
 export function onLabSliderInput(varId) {
+  playTickWithThrottle();
   const val = document.getElementById(`slide-${varId}`).value;
   document.getElementById(`val-${varId}`).innerText = `${val} cm`;
   drawAndCalculate();

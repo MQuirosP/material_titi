@@ -1,5 +1,8 @@
+import { playTickWithThrottle } from '../../../shared/modules/audio.js';
+
 /** Laboratorio de Múltiplos, Pares e Impares */
 export function updateMultiplesLab() {
+  playTickWithThrottle();
   const base = parseInt(document.getElementById('lab-mult-base').value);
   document.getElementById('lab-mult-base-val').innerText = base;
 

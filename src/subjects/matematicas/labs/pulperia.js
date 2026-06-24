@@ -1,8 +1,13 @@
 import { pulperíaCart, pulperíaPrices } from '../../../shared/state/store.js';
+import { playTickWithThrottle } from '../../../shared/modules/audio.js';
 
 /** Incrementa o decrementa la cantidad de un producto en el carrito */
 export function changePulperíaQty(key, delta) {
+  const oldQty = pulperíaCart[key];
   pulperíaCart[key] = Math.max(0, pulperíaCart[key] + delta);
+  if (pulperíaCart[key] !== oldQty) {
+    playTickWithThrottle();
+  }
   const el = document.getElementById(`pul-qty-${key}`);
   if (el) el.innerText = pulperíaCart[key];
   calculatePulpería();

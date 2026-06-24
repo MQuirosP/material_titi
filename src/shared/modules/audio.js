@@ -47,8 +47,32 @@ export function playSound(type) {
             const start = ctx.currentTime;
             playLowNote(220, 150, start, 0.14);       // Primer tono descendente
             playLowNote(180, 110, start + 0.11, 0.22); // Segundo tono más bajo y descendente
+        } else if (type === 'tick') {
+            // Sonido de "click" o "tap" muy corto, sutil y limpio
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(900, ctx.currentTime);
+            
+            gain.gain.setValueAtTime(0.04, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.04);
+            
+            osc.start();
+            osc.stop(ctx.currentTime + 0.04);
         }
     } catch (e) {
         console.log("Audio no soportado o bloqueado por el navegador", e);
     }
+}
+
+let lastTickTime = 0;
+export function playTickWithThrottle() {
+  const now = Date.now();
+  if (now - lastTickTime >= 65) {
+    lastTickTime = now;
+    playSound('tick');
+  }
 }

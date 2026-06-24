@@ -1,5 +1,8 @@
+import { playTickWithThrottle } from '../../../shared/modules/audio.js';
+
 /** Laboratorio de Fracciones — Cortadora de Chocolates */
 export function updateFraccionesLab() {
+  playTickWithThrottle();
   const num = parseInt(document.getElementById('lab-frac-num').value);
   const den = parseInt(document.getElementById('lab-frac-den').value);
 
