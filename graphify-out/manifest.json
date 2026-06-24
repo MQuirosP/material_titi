@@ -20,13 +20,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\quiz.js": {
-    "mtime": 1782316884.046228,
-    "ast_hash": "deff17a0cfdd055ba976cb687066623c",
+    "mtime": 1782330470.346635,
+    "ast_hash": "2efdbb90e492022d88885e190919eec0",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\tabs.js": {
-    "mtime": 1782316889.7752244,
-    "ast_hash": "34b5475664f9376ee2b6c23b9b811c97",
+    "mtime": 1782330495.2870584,
+    "ast_hash": "0620c477961706cf892f4c7c38ba7071",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\state\\store.js": {
@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\main.js": {
-    "mtime": 1782329417.964035,
-    "ast_hash": "e61904c828010a7644abb30d2f01cb8a",
+    "mtime": 1782330520.8465185,
+    "ast_hash": "09e2c524eae05fc0bab911454474458d",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\data\\quiz-practico.js": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\audio.js": {
-    "mtime": 1782329828.5269954,
-    "ast_hash": "2ea84c5f2cdb446dcacc5802450604f5",
+    "mtime": 1782330459.9281778,
+    "ast_hash": "d1f56512d1e2cd8ec1816a5fbbc50b14",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\data\\quiz-practico.js": {

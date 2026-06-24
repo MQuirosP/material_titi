@@ -123,3 +123,5 @@ update{Nombre}Lab(); // agregar junto a los otros
 - El slider `<input type="range">` debe tener `oninput="update{Nombre}Lab()"`.
 - SVG: siempre usar `viewBox` fijo (ej. `"0 0 200 200"`) para evitar desbordamiento.
 - Canvas: escalar coordenadas según ancho del contenedor, no usar valores fijos de pantalla.
+- **Retroalimentación de Audio:** Cada laboratorio con deslizadores, casillas táctiles, botones de incremento/decremento o botones de opción debe importar `playTickWithThrottle` de `audio.js` y ejecutarlo en cada interacción/cambio para proporcionar un sonido de respuesta táctil ("tick").
+

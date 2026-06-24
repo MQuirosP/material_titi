@@ -207,14 +207,14 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L2",
       "id": "modules_audio_playsound",
-      "community": 14,
+      "community": 0,
       "norm_label": "playsound()"
     },
     {
       "label": "playTickWithThrottle()",
       "file_type": "code",
       "source_file": "src/shared/modules/audio.js",
-      "source_location": "L72",
+      "source_location": "L142",
       "id": "modules_audio_playtickwiththrottle",
       "community": 3,
       "norm_label": "playtickwiththrottle()"
@@ -297,7 +297,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L67",
       "id": "modules_quiz_selectoption",
-      "community": 14,
+      "community": 0,
       "norm_label": "selectoption()"
     },
     {
@@ -313,7 +313,7 @@
       "label": "resetQuiz()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L176",
+      "source_location": "L179",
       "id": "modules_quiz_resetquiz",
       "community": 0,
       "norm_label": "resetquiz()"
@@ -324,41 +324,41 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L1",
       "id": "src_shared_modules_tabs_js",
-      "community": 0,
+      "community": 16,
       "norm_label": "tabs.js"
     },
     {
       "label": "labInitCallbacks",
       "file_type": "code",
       "source_file": "src/shared/modules/tabs.js",
-      "source_location": "L4",
+      "source_location": "L5",
       "id": "modules_tabs_labinitcallbacks",
-      "community": 0,
+      "community": 16,
       "norm_label": "labinitcallbacks"
     },
     {
       "label": "onLabInit()",
       "file_type": "code",
       "source_file": "src/shared/modules/tabs.js",
-      "source_location": "L10",
+      "source_location": "L11",
       "id": "modules_tabs_onlabinit",
-      "community": 0,
+      "community": 16,
       "norm_label": "onlabinit()"
     },
     {
       "label": "switchTab()",
       "file_type": "code",
       "source_file": "src/shared/modules/tabs.js",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "modules_tabs_switchtab",
-      "community": 0,
+      "community": 16,
       "norm_label": "switchtab()"
     },
     {
       "label": "switchLabSubTab()",
       "file_type": "code",
       "source_file": "src/shared/modules/tabs.js",
-      "source_location": "L68",
+      "source_location": "L70",
       "id": "modules_tabs_switchlabsubtab",
       "community": 0,
       "norm_label": "switchlabsubtab()"
@@ -369,7 +369,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L1",
       "id": "src_shared_state_store_js",
-      "community": 0,
+      "community": 16,
       "norm_label": "store.js"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L11",
       "id": "state_store_studiedcardsmath",
-      "community": 0,
+      "community": 16,
       "norm_label": "studiedcardsmath"
     },
     {
@@ -396,7 +396,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L12",
       "id": "state_store_studiedcardsscience",
-      "community": 0,
+      "community": 16,
       "norm_label": "studiedcardsscience"
     },
     {
@@ -414,7 +414,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L28",
       "id": "state_store_setuserhasusedlab",
-      "community": 0,
+      "community": 16,
       "norm_label": "setuserhasusedlab()"
     },
     {
@@ -423,7 +423,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L32",
       "id": "state_store_setactivetab",
-      "community": 0,
+      "community": 16,
       "norm_label": "setactivetab()"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L44",
       "id": "labs_decisiones_medicas_choosemedicaltool",
-      "community": 14,
+      "community": 0,
       "norm_label": "choosemedicaltool()"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L217",
       "id": "labs_filtro_renal_stopfiltrorenal",
-      "community": 15,
+      "community": 0,
       "norm_label": "stopfiltrorenal()"
     },
     {
@@ -628,16 +628,25 @@
       "label": "switchSubject()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L48",
+      "source_location": "L49",
       "id": "matematicas_main_switchsubject",
       "community": 0,
       "norm_label": "switchsubject()"
     },
     {
+      "label": "exitLink",
+      "file_type": "code",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L198",
+      "id": "matematicas_main_exitlink",
+      "community": 0,
+      "norm_label": "exitlink"
+    },
+    {
       "label": "urlParams",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L197",
+      "source_location": "L210",
       "id": "matematicas_main_urlparams",
       "community": 0,
       "norm_label": "urlparams"
@@ -1485,7 +1494,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L15",
       "id": "state_store_studiedcards",
-      "community": 0,
+      "community": 16,
       "norm_label": "studiedcards"
     }
   ],
@@ -1646,9 +1655,9 @@
       "source_file": "src/hub/main.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_hub_main_js",
-      "target": "hub_main_playhooraysound",
-      "confidence_score": 1.0
+      "target": "hub_main_playhooraysound"
     },
     {
       "relation": "contains",
@@ -1656,9 +1665,9 @@
       "source_file": "src/hub/main.js",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_hub_main_js",
-      "target": "hub_main_cards",
-      "confidence_score": 1.0
+      "target": "hub_main_cards"
     },
     {
       "relation": "contains",
@@ -1666,9 +1675,9 @@
       "source_file": "src/hub/main.js",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_hub_main_js",
-      "target": "hub_main_destination",
-      "confidence_score": 1.0
+      "target": "hub_main_destination"
     },
     {
       "relation": "contains",
@@ -1705,12 +1714,34 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_shared_modules_tabs_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_ciencias_labs_decisiones_medicas_js",
       "target": "src_shared_modules_audio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1793,12 +1824,34 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_shared_modules_tabs_js",
+      "target": "modules_audio_playsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_ciencias_labs_decisiones_medicas_js",
       "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_audio_playsound",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1809,6 +1862,39 @@
       "source_location": "L87",
       "weight": 1.0,
       "source": "modules_quiz_selectoption",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "modules_quiz_nextquestion",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "modules_tabs_switchtab",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/shared/modules/tabs.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "modules_tabs_switchlabsubtab",
       "target": "modules_audio_playsound"
     },
     {
@@ -3141,6 +3227,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "matematicas_main_exitlink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L199",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4039,5 +4135,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9a2f06d53215c144da1551f8287a37e92ce54ade"
+  "built_at_commit": "a128e7a460980954509ec0f3c6e224b795b59de5"
 }

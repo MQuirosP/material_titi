@@ -84,3 +84,19 @@ Para clonar a otra materia, mantener el caparazón (pestañas, confetti, progres
 2. Contenido de flashcards en `#content-teoria`.
 3. Lógica de laboratorios en sus funciones JS respectivas.
 4. Colores temáticos en las tarjetas (uno por tema).
+
+## SISTEMA DE AUDIO SINTETIZADO (Web Audio API)
+
+Para evitar la carga de archivos locales o externos (violación de dependencias), se utiliza la **Web Audio API** para generar efectos sonoros en tiempo real. 
+
+### Mandato de Audio:
+Toda nueva materia, laboratorio o interacción táctil (sliders, botones, resultados) **DEBE** incluir retroalimentación sonora utilizando las funciones del módulo `audio.js`:
+- **Acierto en preguntas:** `playSound('correct')` (brillante y alegre).
+- **Fallo en preguntas:** `playSound('incorrect')` (deslizable y sutil).
+- **Movimiento de sliders o botones `+`/`-`:** `playTickWithThrottle()` (taps controlados a un máximo de uno cada 65ms para evitar saturar el canal).
+- **Cambios de pestañas o enlaces de salida:** `playSound('tab_click')` (un pop de burbuja suave).
+- **Pantalla de resultados (según nota):**
+  - Nota ≥ 90%: `playSound('score_excellent')` (fanfarria triunfal).
+  - Nota 70%-89%: `playSound('score_good')` (campana alegre corta).
+  - Nota < 70%: `playSound('score_retry')` (melodía acogedora en escala Fa4/La4/Do5 triangular).
+- **Selección de materia (Menú Principal):** `playHooraySound()` (bronce Do mayor + ovación).

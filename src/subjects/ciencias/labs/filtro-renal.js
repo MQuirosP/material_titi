@@ -1,9 +1,11 @@
 // Simulador de Filtro Renal - Ciencias
+import { playTickWithThrottle } from '../../../shared/modules/audio.js';
 
 let canvas = null;
 let ctx = null;
 let animationFrameId = null;
 let particles = [];
+let lastHydrationState = 2;
 
 class Particle {
     constructor(x, y, radius, type, speedMultiplier) {
@@ -149,6 +151,11 @@ function tick() {
     
     const slider = document.getElementById('filtro-renal-slider');
     const hydrationState = slider ? parseInt(slider.value, 10) : 2;
+
+    if (hydrationState !== lastHydrationState) {
+        lastHydrationState = hydrationState;
+        playTickWithThrottle();
+    }
 
     // Update status text and style
     const statusText = document.getElementById('filtro-renal-status');
