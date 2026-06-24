@@ -128,7 +128,7 @@ export const quizTeoricoCiencias = [
     },
     {
         topic: "Biodiversidad",
-        question: "What define conceptualmente el término biodiversidad?",
+        question: "Qué define conceptualmente el término biodiversidad?",
         options: [
             { text: "La gran variedad y abundancia de distintas formas de vida en un territorio.", isCorrect: true, rationale: "¡Excelente! 'Bio' significa vida y 'diversidad' variedad." },
             { text: "El porcentaje de agua dulce en los glaciares.", isCorrect: false, rationale: "Eso pertenece a la hidrografía." },
