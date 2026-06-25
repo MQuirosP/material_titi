@@ -116,5 +116,14 @@ export const quizPracticoCiencias = [
             { text: "Anfibios", isCorrect: false, rationale: "Incorrecto. Los anfibios tienen la piel húmeda y desnuda sin escamas, y en sus etapas iniciales respiran por branquias." },
             { text: "Mamíferos", isCorrect: false, rationale: "Incorrecto. Los mamíferos tienen el cuerpo cubierto de pelo y son de sangre caliente, no fría." }
         ]
+    },
+    {
+        topic: "Casos Clínicos",
+        question: "Un paciente de la Escuela Riojalandia ingresa a emergencias debido a la mordedura de una serpiente terciopelo en una finca. ¿Qué medicamento específico se le debe aplicar de inmediato?",
+        options: [
+            { text: "Suero antiofídico", isCorrect: true, rationale: "¡Así es! El suero antiofídico neutraliza el veneno mortal de las serpientes." },
+            { text: "Un antibiótico fuerte", isCorrect: false, rationale: "Los antibióticos combaten bacterias, pero no tienen efecto contra el veneno toxicológico de las serpientes." },
+            { text: "Una vacuna preventiva contra la polio", isCorrect: false, rationale: "Las vacunas son para prevenir virus antes del contagio, no sirven para tratar una emergencia de envenenamiento activa." }
+        ]
     }
 ];

@@ -224,5 +224,41 @@ export const quizTeoricoCiencias = [
             { text: "Reptiles", isCorrect: false, rationale: "Incorrecto. Los reptiles nacen completamente formados con respiración pulmonar y piel escamosa seca." },
             { text: "Peces", isCorrect: false, rationale: "Incorrecto. Los peces mantienen su respiración branquial y vida acuática durante todo su ciclo vital." }
         ]
+    },
+    {
+        topic: "Héroes de la Medicina",
+        question: "¿Qué científico es reconocido mundialmente por crear la vacuna contra la poliomielitis?",
+        options: [
+            { text: "Jonas Salk", isCorrect: true, rationale: "¡Correcto! Jonas Salk desarrolló esta vacuna histórica que salvó a millones de niños de la parálisis." },
+            { text: "Edward Jenner", isCorrect: false, rationale: "Incorrecto. Edward Jenner descubrió la vacuna contra la viruela, no contra la polio." },
+            { text: "Clodomiro Picado", isCorrect: false, rationale: "Incorrecto. Clodomiro Picado destacó por sus trabajos de investigación con el suero antiofídico." }
+        ]
+    },
+    {
+        topic: "Científicos de Costa Rica",
+        question: "¿Qué importante aporte brindó el científico costarricense Clodomiro Picado (Clorito Picado) a la salud pública?",
+        options: [
+            { text: "Ayudó a investigar y producir el suero antiofídico para salvar vidas de mordeduras de serpientes.", isCorrect: true, rationale: "¡Excelente! Su legado en el Instituto Clodomiro Picado sigue salvando vidas en toda América Latina." },
+            { text: "Inventó la máquina digital de Rayos X.", isCorrect: false, rationale: "Incorrecto. Los Rayos X se desarrollaron mediante física electromagnética en Europa." },
+            { text: "Descubrió la primera vacuna contra la viruela.", isCorrect: false, rationale: "Incorrecto. El pionero de la vacuna de la viruela fue Edward Jenner." }
+        ]
+    },
+    {
+        topic: "Tecnología Médica",
+        question: "¿Cuál aparato tecnológico médico utiliza ondas de sonido para ver órganos internos y revisar el estado de un bebé durante el embarazo?",
+        options: [
+            { text: "El ultrasonido", isCorrect: true, rationale: "¡Exacto! El ultrasonido usa eco de ondas sonoras seguras, evitando la radiación." },
+            { text: "El rayo láser", isCorrect: false, rationale: "El rayo láser se usa para cortes limpios y cirugías de alta precisión." },
+            { text: "La bomba de cobalto", isCorrect: false, rationale: "La bomba de cobalto emite radiación fuerte para tratar el cáncer, no para ver embarazos." }
+        ]
+    },
+    {
+        topic: "Tecnología Médica",
+        question: "¿Qué tecnología médica se utiliza para realizar tratamientos de radioterapia contra el cáncer?",
+        options: [
+            { text: "La bomba de cobalto", isCorrect: true, rationale: "¡Correcto! Es una herramienta indispensable en oncología para combatir células cancerosas." },
+            { text: "Los Rayos X", isCorrect: false, rationale: "Los Rayos X comunes se usan para fotografiar los huesos de forma rápida." },
+            { text: "El ultrasonido", isCorrect: false, rationale: "El ultrasonido usa ondas acústicas de diagnóstico, no radiación curativa." }
+        ]
     }
 ];

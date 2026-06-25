@@ -125,13 +125,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\data\\quiz-practico.js": {
-    "mtime": 1782346906.23967,
-    "ast_hash": "d3f608da98a48a3d4e1fac4a6e369533",
+    "mtime": 1782347314.1767285,
+    "ast_hash": "d82a152faaeab8c7bb25cdcda88a3477",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\data\\quiz-teorico.js": {
-    "mtime": 1782346900.3451486,
-    "ast_hash": "a95ad115dc57ea0f6255bd84f785b7c9",
+    "mtime": 1782347308.3492215,
+    "ast_hash": "9efb4b8ce05384af97389a01e3d77bc9",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\labs\\decisiones-medicas.js": {
@@ -145,8 +145,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\practica\\index.html": {
-    "mtime": 1782346894.2040286,
-    "ast_hash": "ee537d4a51b9661853316916d57a8738",
+    "mtime": 1782347298.4456847,
+    "ast_hash": "96dd004f522d825c02455027762a5153",
     "semantic_hash": ""
   }
 }
