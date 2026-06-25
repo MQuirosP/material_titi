@@ -19,6 +19,30 @@ export function startQuiz(type) {
   renderQuestion(type);
 }
 
+export function updateQuizIntroTexts(subject) {
+  const teoricoCount = quizState.teorico.questions.length;
+  const practicoCount = quizState.practico.questions.length;
+
+  const introTitleT = document.querySelector('#quiz-t-intro h2');
+  const introDescT = document.querySelector('#quiz-t-intro p');
+  const introTitleP = document.querySelector('#quiz-p-intro h2');
+  const introDescP = document.querySelector('#quiz-p-intro p');
+
+  if (subject === 'ciencias') {
+    if (introTitleT) introTitleT.textContent = `Prueba de Conceptos y Teoría (${teoricoCount} Preguntas)`;
+    if (introDescT) introDescT.innerHTML = `Esta prueba contiene <strong>${teoricoCount} preguntas teóricas</strong> de Ciencias. Evaluará el funcionamiento del sistema urinario, la excreción celular, avances médicos y la biodiversidad costarricense.`;
+    
+    if (introTitleP) introTitleP.textContent = `Prueba Práctica y de Aplicación (${practicoCount} Preguntas)`;
+    if (introDescP) introDescP.innerHTML = `Esta prueba contiene <strong>${practicoCount} problemas prácticos de aplicación</strong> de Ciencias. Analizarás casos médicos clínicos, diagnóstico óseo y de tejidos, y conservación de la biodiversidad en Costa Rica.`;
+  } else {
+    if (introTitleT) introTitleT.textContent = `Prueba de Conceptos y Teoría (${teoricoCount} Preguntas)`;
+    if (introDescT) introDescT.innerHTML = `Esta prueba contiene <strong>${teoricoCount} preguntas teóricas</strong> de Matemáticas. Evaluará definiciones, propiedades de múltiplos y divisores, tipos de fracciones y la teoría que rodea las fórmulas de perímetros y áreas.`;
+    
+    if (introTitleP) introTitleP.textContent = `Prueba Práctica y de Aplicación (${practicoCount} Preguntas)`;
+    if (introDescP) introDescP.innerHTML = `Esta prueba contiene <strong>${practicoCount} problemas prácticos de aplicación</strong> de Matemáticas. Pondrá a prueba tu capacidad de calcular sumas y vueltos en colones, agrupar colecciones con múltiplos y calcular áreas y perímetros de terrenos.`;
+  }
+}
+
 /** Renderiza la pregunta activa en pantalla */
 export function renderQuestion(type) {
   const state = quizState[type];

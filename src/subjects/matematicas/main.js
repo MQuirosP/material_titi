@@ -7,7 +7,7 @@ import '../../shared/css/flashcards.css';
 
 import { switchTab, switchLabSubTab, onLabInit } from '../../shared/modules/tabs.js';
 import { toggleCard, updateTheoryProgress, updateBadges } from '../../shared/modules/flashcards.js';
-import { startQuiz, renderQuestion, selectOption, nextQuestion, resetQuiz } from '../../shared/modules/quiz.js';
+import { startQuiz, renderQuestion, selectOption, nextQuestion, resetQuiz, updateQuizIntroTexts } from '../../shared/modules/quiz.js';
 import { playSound } from '../../shared/modules/audio.js';
 
 import { updateMultiplesLab }               from './labs/multiplos.js';
@@ -163,6 +163,7 @@ export function switchSubject(subject) {
   // 4. Actualizar barra de progreso e insignias con la nueva materia
   updateTheoryProgress();
   updateBadges();
+  updateQuizIntroTexts(subject);
 }
 
 // ── Exponer funciones al HTML (puente: onclick="...") ─────────────────────
@@ -213,5 +214,6 @@ window.addEventListener('load', () => {
   } else {
     updateTheoryProgress();
     updateBadges();
+    updateQuizIntroTexts('matematicas');
   }
 });
