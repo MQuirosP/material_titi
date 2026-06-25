@@ -17,6 +17,7 @@ description: >
 ## Procedimiento
 
 ### 1. Verificar destino
+
 - **Examen teórico** → array `quizTeoricoQuestions` (aprox. línea 939 de `index.html`)
 - **Examen práctico** → array `quizPracticoQuestions` (aprox. línea 1143 de `index.html`)
 

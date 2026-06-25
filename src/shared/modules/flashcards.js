@@ -1,6 +1,8 @@
-import { studiedCards, quizState, userHasUsedLab } from '../state/store.js';
+import { studiedCards, quizState, userHasUsedLab, getTotalCardsForActiveSubject } from '../state/store.js';
 
-const TOTAL_CARDS = 6; // actualizar si se agregan más flashcards
+function getLimit() {
+  return getTotalCardsForActiveSubject();
+}
 
 /** Reproduce un sonido sintético de "whoosh" usando la Web Audio API para evitar dependencias de archivos */
 function playSwissSound() {
@@ -57,21 +59,23 @@ export function toggleCard(cardElement, cardId) {
 
 /** Actualiza la barra de progreso de teoría en la sección Inicio */
 export function updateTheoryProgress() {
-  const pct = Math.round((studiedCards.size / TOTAL_CARDS) * 100);
+  const limit = getLimit();
+  const pct = Math.round((studiedCards.size / limit) * 100);
   const bar = document.getElementById('progreso-teoria-bar');
   const txt = document.getElementById('progreso-teoria-porcentaje');
   const counter = document.getElementById('theory-counter');
 
   if (bar) bar.style.width = `${pct}%`;
   if (txt) txt.textContent = `${pct}%`;
-  if (counter) counter.textContent = `${studiedCards.size} de ${TOTAL_CARDS} Tarjetas Estudiadas`;
+  if (counter) counter.textContent = `${studiedCards.size} de ${limit} Tarjetas Estudiadas`;
 }
 
 /** Desbloquea las medallas según el progreso del estudiante */
 export function updateBadges() {
   // 🎓 Badge Teoría — todas las flashcards vistas
   const badgeTeoria = document.getElementById('badge-teoria');
-  if (badgeTeoria && studiedCards.size >= TOTAL_CARDS) {
+  const limit = getLimit();
+  if (badgeTeoria && studiedCards.size >= limit) {
     badgeTeoria.classList.remove('opacity-30', 'grayscale');
   }
 

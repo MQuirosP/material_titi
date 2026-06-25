@@ -89,5 +89,32 @@ export const quizPracticoCiencias = [
             { text: "Pintarla de colores vivos para que luzca decorativa.", isCorrect: false, rationale: "La taxonomía se fundamenta en la observación científica de rasgos reales, no en adornarlos." },
             { text: "Inventar un nombre fantasioso de forma inmediata.", isCorrect: false, rationale: "El nombre científico requiere de una clasificación rigurosa previa." }
         ]
+    },
+    {
+        topic: "Identificación de Reinos",
+        question: "Durante una caminata por el bosque de Escazú, Valeria encuentra un organismo sobre un tronco húmedo. Observa que no tiene hojas, no es verde, no se mueve y parece absorber nutrientes de la madera podrida. ¿En qué reino debe clasificarlo?",
+        options: [
+            { text: "En el Reino Fungi (los hongos).", isCorrect: true, rationale: "¡Excelente! Los hongos son heterótrofos por absorción, carecen de clorofila (por eso no son verdes) y crecen en lugares húmedos descomponiendo materia." },
+            { text: "En el Reino Plantae (las plantas).", isCorrect: false, rationale: "Incorrecto. Las plantas son autótrofas, contienen clorofila verde para realizar fotosíntesis y poseen hojas o tallos estructurados." },
+            { text: "En el Reino Animalia (los animales).", isCorrect: false, rationale: "Incorrecto. Los animales poseen digestión interna y capacidad de movimiento voluntario, rasgos de los que este organismo carece." }
+        ]
+    },
+    {
+        topic: "Clasificación de Plantas",
+        question: "Un agricultor en Coronado tiene árboles de pino que producen piñas o conos de madera dura pero nunca dan flores ni frutos jugosos. ¿Cómo clasificaría estas plantas con semillas?",
+        options: [
+            { text: "Como Gimnospermas.", isCorrect: true, rationale: "¡Correcto! Las gimnospermas son plantas con semillas desnudas que se desarrollan en conos, sin flores vistosas ni frutos verdaderos." },
+            { text: "Como Angiospermas.", isCorrect: false, rationale: "Incorrecto. Las angiospermas son las plantas que sí producen flores vistosas y frutos verdaderos que envuelven la semilla." },
+            { text: "Como Musgos sin semillas.", isCorrect: false, rationale: "Incorrecto. Los musgos no tienen semillas ni raíces verdaderas y son de tamaño microscópico o muy pequeño." }
+        ]
+    },
+    {
+        topic: "Rasgos de Vertebrados",
+        question: "Sofía está observando un animal en el Parque Nacional Manuel Antonio. Nota que el espécimen tiene la piel cubierta de escamas secas, respira por pulmones y es de sangre fría. ¿A qué clase de vertebrados pertenece?",
+        options: [
+            { text: "Reptiles", isCorrect: true, rationale: "¡Perfecto! Los reptiles son vertebrados terrestres de sangre fría con piel escamosa y seca, y respiración pulmonar activa." },
+            { text: "Anfibios", isCorrect: false, rationale: "Incorrecto. Los anfibios tienen la piel húmeda y desnuda sin escamas, y en sus etapas iniciales respiran por branquias." },
+            { text: "Mamíferos", isCorrect: false, rationale: "Incorrecto. Los mamíferos tienen el cuerpo cubierto de pelo y son de sangre caliente, no fría." }
+        ]
     }
 ];

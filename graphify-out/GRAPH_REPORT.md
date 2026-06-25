@@ -1,16 +1,16 @@
 # Graph Report - rioja  (2026-06-24)
 
 ## Corpus Check
-- 28 files · ~25,944 words
+- 28 files · ~27,554 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 166 nodes · 252 edges · 17 communities (13 shown, 4 thin omitted)
+- 170 nodes · 263 edges · 16 communities (11 shown, 5 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a128e7a4`
+- Built from commit: `b20d0e5c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -30,38 +30,37 @@
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 13|Community 13]]
 - [[_COMMUNITY_Community 14|Community 14]]
-- [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `playTickWithThrottle()` - 12 edges
+1. `playTickWithThrottle()` - 14 edges
 2. `playSound()` - 11 edges
 3. `Skill: Diagnóstico y Depuración de RíoMate` - 10 edges
 4. `switchSubject()` - 9 edges
-5. `🇨🇷 RíoMate — Reglas de Desarrollo (Manual Oficial)` - 8 edges
-6. `drawAndCalculate()` - 7 edges
-7. `updateBadges()` - 6 edges
+5. `🇨🇷 RíoMate — Reglas de Desarrollo (Manual Oficial)` - 9 edges
+6. `updateBadges()` - 7 edges
+7. `drawAndCalculate()` - 7 edges
 8. `switchTab()` - 6 edges
 9. `Procedimiento` - 6 edges
 10. `Skill: Clonar RíoMate para una Nueva Materia` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `switchTab()` --calls--> `playSound()`  [EXTRACTED]
-  src/shared/modules/tabs.js → src/shared/modules/audio.js
+- `nextQuestion()` --calls--> `playSound()`  [EXTRACTED]
+  src/shared/modules/quiz.js → src/shared/modules/audio.js
 - `onLabSliderInput()` --calls--> `playTickWithThrottle()`  [EXTRACTED]
   src/subjects/matematicas/labs/geometria.js → src/shared/modules/audio.js
 - `switchSubject()` --calls--> `switchTab()`  [EXTRACTED]
   src/subjects/matematicas/main.js → src/shared/modules/tabs.js
-- `selectOption()` --calls--> `playSound()`  [EXTRACTED]
-  src/shared/modules/quiz.js → src/shared/modules/audio.js
-- `nextQuestion()` --calls--> `playSound()`  [EXTRACTED]
-  src/shared/modules/quiz.js → src/shared/modules/audio.js
+- `switchSubject()` --calls--> `switchLabSubTab()`  [EXTRACTED]
+  src/subjects/matematicas/main.js → src/shared/modules/tabs.js
+- `switchSubject()` --calls--> `stopFiltroRenal()`  [EXTRACTED]
+  src/subjects/matematicas/main.js → src/subjects/ciencias/labs/filtro-renal.js
 
-## Communities (17 total, 4 thin omitted)
+## Communities (16 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.14
-Nodes (23): quizPracticoCiencias, quizPracticoQuestions, quizTeoricoCiencias, quizTeoricoQuestions, chooseMedicalTool(), stopFiltroRenal(), exitLink, switchSubject() (+15 more)
+Cohesion: 0.20
+Nodes (17): switchSubject(), getLimit(), playSwissSound(), toggleCard(), updateBadges(), updateTheoryProgress(), nextQuestion(), renderQuestion() (+9 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.12
@@ -72,16 +71,16 @@ Cohesion: 0.13
 Nodes (14): dependencies, canvas-confetti, devDependencies, gh-pages, tailwindcss, @tailwindcss/vite, vite, name (+6 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.27
-Nodes (8): updateDivisoresLab(), updateFraccionesLab(), updateMultiplesLab(), calculatePulpería(), changePulperíaQty(), playTickWithThrottle(), pulperíaCart, pulperíaPrices
+Cohesion: 0.14
+Nodes (18): quizPracticoCiencias, quizPracticoQuestions, quizTeoricoCiencias, quizTeoricoQuestions, updateDivisoresLab(), initFiltroRenal(), particles, stopFiltroRenal() (+10 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.17
 Nodes (11): 1. Errores de Notación Matemática, 2. Flashcards no se voltean, 3. Quiz no funciona / preguntas no aparecen, 4. Laboratorio de geometría SVG se desborda / solapamiento de etiquetas, 5. Pulpería / cálculo de vuelto incorrecto, 6. Progreso y badges no se actualizan, 7. Problema de responsive / scroll horizontal, 8. Proceso de verificación rápida (+3 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.20
-Nodes (9): ARQUITECTURA: Single-File Mandate, code:js (const quizQuestions = [), CONTEXTO DEL PROYECTO, ESCALABILIDAD — Blueprint de Nuevas Materias, ESQUEMA DE PREGUNTAS (Quiz) — Formato Estricto, NOTACIÓN MATEMÁTICA — PROHIBICIÓN ABSOLUTA, 🇨🇷 RíoMate — Reglas de Desarrollo (Manual Oficial), SIMULADORES INTERACTIVOS — Reglas de Laboratorio (+1 more)
+Cohesion: 0.17
+Nodes (11): ARQUITECTURA: Single-File Mandate, code:js (const quizQuestions = [), CONTEXTO DEL PROYECTO, ESCALABILIDAD — Blueprint de Nuevas Materias, ESQUEMA DE PREGUNTAS (Quiz) — Formato Estricto, Mandato de Audio:, NOTACIÓN MATEMÁTICA — PROHIBICIÓN ABSOLUTA, 🇨🇷 RíoMate — Reglas de Desarrollo (Manual Oficial) (+3 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.20
@@ -99,31 +98,27 @@ Nodes (8): addSvgText(), drawAndCalculate(), figurePresets, onLabFigureChange(),
 Cohesion: 0.25
 Nodes (7): code:html (<!-- Tarjeta N: {Título del Tema} -->), Cuándo usar este skill, Estructura HTML de una Flashcard, Paleta de colores por tarjeta existente, Pasos al agregar una tarjeta nueva, Reglas de contenido, Skill: Flashcards de Teoría en RíoMate
 
-### Community 14 - "Community 14"
-Cohesion: 0.67
-Nodes (3): casosMedicosLab, initDecisionesMedicas(), renderCaso()
-
-### Community 15 - "Community 15"
-Cohesion: 0.29
-Nodes (4): initFiltroRenal(), Particle, particles, tick()
-
 ### Community 16 - "Community 16"
-Cohesion: 0.29
-Nodes (8): labInitCallbacks, onLabInit(), switchTab(), setActiveTab(), setUserHasUsedLab(), studiedCards, studiedCardsMath, studiedCardsScience
+Cohesion: 0.21
+Nodes (12): casosMedicosLab, chooseMedicalTool(), initDecisionesMedicas(), renderCaso(), playSound(), selectOption(), labInitCallbacks, onLabInit() (+4 more)
 
 ## Knowledge Gaps
-- **67 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+62 more)
+- **68 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+63 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `Particle` connect `Community 14` to `Community 3`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **Why does `playTickWithThrottle()` connect `Community 3` to `Community 16`, `Community 8`?**
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `dev` to the rest of the system?**
-  _67 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.14482758620689656 - nodes in this community are weakly interconnected._
+  _68 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.13793103448275862 - nodes in this community are weakly interconnected._

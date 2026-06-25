@@ -14,6 +14,10 @@ export const studiedCardsScience = new Set();
 /** IDs (1-N) de flashcards que el estudiante ha volteado al menos una vez (apunta al set de la materia activa) */
 export let studiedCards = studiedCardsMath;
 
+export function getTotalCardsForActiveSubject() {
+  return activeSubject === 'ciencias' ? 8 : 6;
+}
+
 /** Cambia la referencia del set estudiado según la materia activa */
 export function syncStudiedCardsSet(subject) {
   if (subject === 'matematicas') {

@@ -71,7 +71,6 @@ export function switchSubject(subject) {
   
   const theoryMath = document.getElementById('theory-math');
   const theoryScience = document.getElementById('theory-science');
-  const theoryCounter = document.getElementById('theory-counter');
   
   const subtabsMath = document.getElementById('subtabs-math');
   const subtabsScience = document.getElementById('subtabs-science');

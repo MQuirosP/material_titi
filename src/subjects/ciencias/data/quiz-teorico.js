@@ -179,5 +179,50 @@ export const quizTeoricoCiencias = [
             { text: "Permitir la libre caza de aves coloridas.", isCorrect: false, rationale: "La cacería silvestre es ilegal y amenaza seriamente a las poblaciones autóctonas." },
             { text: "Pavimentar áreas boscosas sin análisis de impacto ecológico.", isCorrect: false, rationale: "La deforestación descontrolada fragmenta corredores biológicos y extingue especies." }
         ]
+    },
+    {
+        topic: "Complejidad Celular",
+        question: "¿Cuál de los siguientes grupos está constituido por seres unicelulares que poseen una sola célula, como las bacterias?",
+        options: [
+            { text: "Unicelulares", isCorrect: true, rationale: "¡Correcto! Los organismos unicelulares constan de una única célula que realiza todas las funciones vitales del ser vivo." },
+            { text: "Pluricelulares", isCorrect: false, rationale: "Incorrecto. Los organismos pluricelulares están formados por millones o miles de células organizadas." },
+            { text: "Autótrofos", isCorrect: false, rationale: "Incorrecto. Autótrofo define la nutrición (fabricar alimento) y no la cantidad de células." }
+        ]
+    },
+    {
+        topic: "Forma de Nutrición",
+        question: "¿Cómo se clasifican los organismos que no pueden fabricar su propio alimento y dependen de consumir otros seres vivos, como los animales y los hongos?",
+        options: [
+            { text: "Heterótrofos", isCorrect: true, rationale: "¡Excelente! Los heterótrofos deben obtener su energía consumiendo materia orgánica producida por otros seres vivos." },
+            { text: "Autótrofos", isCorrect: false, rationale: "Incorrecto. Los autótrofos fabrican su propio alimento a partir de energía solar y sustancias inorgánicas." },
+            { text: "Pluricelulares", isCorrect: false, rationale: "Incorrecto. Pluricelular se refiere a la cantidad de células, no a la forma de alimentación." }
+        ]
+    },
+    {
+        topic: "El Reino Fungi",
+        question: "¿Cuál es una característica fundamental del Reino Fungi (los hongos)?",
+        options: [
+            { text: "No se mueven y absorben sus nutrientes de la materia orgánica en descomposición del suelo.", isCorrect: true, rationale: "¡Exacto! Los hongos son heterótrofos por absorción, no realizan la fotosíntesis y viven fijos." },
+            { text: "Son todos unicelulares y se mueven en el agua mediante aletas.", isCorrect: false, rationale: "Incorrecto. La mayoría son pluricelulares (excepto las levaduras) y no poseen locomoción ni aletas." },
+            { text: "Producen su propio alimento gracias a la clorofila que contienen.", isCorrect: false, rationale: "Incorrecto. Los hongos carecen de clorofila y no pueden realizar la fotosíntesis." }
+        ]
+    },
+    {
+        topic: "El Reino Plantae",
+        question: "¿Cómo se clasifican las plantas que no producen flores visibles ni frutos, como los pinos?",
+        options: [
+            { text: "Gimnospermas", isCorrect: true, rationale: "¡Muy bien! Las gimnospermas tienen semillas desnudas, a menudo en estructuras llamadas conos o piñas, sin flores vistosas." },
+            { text: "Angiospermas", isCorrect: false, rationale: "Incorrecto. Las angiospermas son las plantas que sí tienen flores verdaderas y frutos protectores de la semilla." },
+            { text: "Plantas sin semillas", isCorrect: false, rationale: "Incorrecto. Los pinos sí producen semillas; las plantas sin semillas son los musgos y helechos." }
+        ]
+    },
+    {
+        topic: "El Reino Animalia",
+        question: "¿Cuál de las siguientes es una clase de vertebrados que pasa por una metamorfosis de larva acuática a adulto terrestre?",
+        options: [
+            { text: "Anfibios", isCorrect: true, rationale: "¡Correcto! Los anfibios, como las ranas y sapos, nacen en el agua respirando por branquias y de adultos desarrollan pulmones." },
+            { text: "Reptiles", isCorrect: false, rationale: "Incorrecto. Los reptiles nacen completamente formados con respiración pulmonar y piel escamosa seca." },
+            { text: "Peces", isCorrect: false, rationale: "Incorrecto. Los peces mantienen su respiración branquial y vida acuática durante todo su ciclo vital." }
+        ]
     }
 ];

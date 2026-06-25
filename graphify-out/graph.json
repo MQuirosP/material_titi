@@ -207,7 +207,7 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L2",
       "id": "modules_audio_playsound",
-      "community": 0,
+      "community": 16,
       "norm_label": "playsound()"
     },
     {
@@ -229,10 +229,19 @@
       "norm_label": "flashcards.js"
     },
     {
+      "label": "getLimit()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L3",
+      "id": "modules_flashcards_getlimit",
+      "community": 0,
+      "norm_label": "getlimit()"
+    },
+    {
       "label": "playSwissSound()",
       "file_type": "code",
       "source_file": "src/shared/modules/flashcards.js",
-      "source_location": "L6",
+      "source_location": "L8",
       "id": "modules_flashcards_playswisssound",
       "community": 0,
       "norm_label": "playswisssound()"
@@ -241,7 +250,7 @@
       "label": "toggleCard()",
       "file_type": "code",
       "source_file": "src/shared/modules/flashcards.js",
-      "source_location": "L50",
+      "source_location": "L52",
       "id": "modules_flashcards_togglecard",
       "community": 0,
       "norm_label": "togglecard()"
@@ -250,7 +259,7 @@
       "label": "updateTheoryProgress()",
       "file_type": "code",
       "source_file": "src/shared/modules/flashcards.js",
-      "source_location": "L59",
+      "source_location": "L61",
       "id": "modules_flashcards_updatetheoryprogress",
       "community": 0,
       "norm_label": "updatetheoryprogress()"
@@ -259,7 +268,7 @@
       "label": "updateBadges()",
       "file_type": "code",
       "source_file": "src/shared/modules/flashcards.js",
-      "source_location": "L71",
+      "source_location": "L74",
       "id": "modules_flashcards_updatebadges",
       "community": 0,
       "norm_label": "updatebadges()"
@@ -297,7 +306,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L67",
       "id": "modules_quiz_selectoption",
-      "community": 0,
+      "community": 16,
       "norm_label": "selectoption()"
     },
     {
@@ -360,7 +369,7 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L70",
       "id": "modules_tabs_switchlabsubtab",
-      "community": 0,
+      "community": 16,
       "norm_label": "switchlabsubtab()"
     },
     {
@@ -369,7 +378,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L1",
       "id": "src_shared_state_store_js",
-      "community": 16,
+      "community": 0,
       "norm_label": "store.js"
     },
     {
@@ -387,7 +396,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L11",
       "id": "state_store_studiedcardsmath",
-      "community": 16,
+      "community": 0,
       "norm_label": "studiedcardsmath"
     },
     {
@@ -396,14 +405,23 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L12",
       "id": "state_store_studiedcardsscience",
-      "community": 16,
+      "community": 0,
       "norm_label": "studiedcardsscience"
+    },
+    {
+      "label": "getTotalCardsForActiveSubject()",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L17",
+      "id": "state_store_gettotalcardsforactivesubject",
+      "community": 0,
+      "norm_label": "gettotalcardsforactivesubject()"
     },
     {
       "label": "syncStudiedCardsSet()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L18",
+      "source_location": "L22",
       "id": "state_store_syncstudiedcardsset",
       "community": 0,
       "norm_label": "syncstudiedcardsset()"
@@ -412,7 +430,7 @@
       "label": "setUserHasUsedLab()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L28",
+      "source_location": "L32",
       "id": "state_store_setuserhasusedlab",
       "community": 16,
       "norm_label": "setuserhasusedlab()"
@@ -421,7 +439,7 @@
       "label": "setActiveTab()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L32",
+      "source_location": "L36",
       "id": "state_store_setactivetab",
       "community": 16,
       "norm_label": "setactivetab()"
@@ -430,7 +448,7 @@
       "label": "quizState",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L35",
+      "source_location": "L39",
       "id": "state_store_quizstate",
       "community": 0,
       "norm_label": "quizstate"
@@ -439,7 +457,7 @@
       "label": "pulper\u00edaCart",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L53",
+      "source_location": "L57",
       "id": "state_store_pulper\u00edacart",
       "community": 3,
       "norm_label": "pulperiacart"
@@ -448,7 +466,7 @@
       "label": "pulper\u00edaPrices",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L61",
+      "source_location": "L65",
       "id": "state_store_pulper\u00edaprices",
       "community": 3,
       "norm_label": "pulperiaprices"
@@ -459,7 +477,7 @@
       "source_file": "src/subjects/ciencias/data/quiz-practico.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_data_quiz_practico_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "quiz-practico.js"
     },
     {
@@ -468,7 +486,7 @@
       "source_file": "src/subjects/ciencias/data/quiz-practico.js",
       "source_location": "L2",
       "id": "data_quiz_practico_quizpracticociencias",
-      "community": 0,
+      "community": 3,
       "norm_label": "quizpracticociencias"
     },
     {
@@ -477,7 +495,7 @@
       "source_file": "src/subjects/ciencias/data/quiz-teorico.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_data_quiz_teorico_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "quiz-teorico.js"
     },
     {
@@ -486,7 +504,7 @@
       "source_file": "src/subjects/ciencias/data/quiz-teorico.js",
       "source_location": "L2",
       "id": "data_quiz_teorico_quizteoricociencias",
-      "community": 0,
+      "community": 3,
       "norm_label": "quizteoricociencias"
     },
     {
@@ -495,7 +513,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js",
-      "community": 14,
+      "community": 16,
       "norm_label": "decisiones-medicas.js"
     },
     {
@@ -504,7 +522,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L5",
       "id": "labs_decisiones_medicas_casosmedicoslab",
-      "community": 14,
+      "community": 16,
       "norm_label": "casosmedicoslab"
     },
     {
@@ -513,7 +531,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L15",
       "id": "labs_decisiones_medicas_initdecisionesmedicas",
-      "community": 14,
+      "community": 16,
       "norm_label": "initdecisionesmedicas()"
     },
     {
@@ -522,7 +540,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L21",
       "id": "labs_decisiones_medicas_rendercaso",
-      "community": 14,
+      "community": 16,
       "norm_label": "rendercaso()"
     },
     {
@@ -531,7 +549,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L44",
       "id": "labs_decisiones_medicas_choosemedicaltool",
-      "community": 0,
+      "community": 16,
       "norm_label": "choosemedicaltool()"
     },
     {
@@ -540,79 +558,79 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_labs_filtro_renal_js",
-      "community": 15,
+      "community": 3,
       "norm_label": "filtro-renal.js"
     },
     {
       "label": "particles",
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "labs_filtro_renal_particles",
-      "community": 15,
+      "community": 3,
       "norm_label": "particles"
     },
     {
       "label": "Particle",
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
-      "source_location": "L8",
+      "source_location": "L10",
       "id": "labs_filtro_renal_particle",
-      "community": 15,
+      "community": 14,
       "norm_label": "particle"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
-      "source_location": "L9",
+      "source_location": "L11",
       "id": "labs_filtro_renal_particle_constructor",
-      "community": 15,
+      "community": 14,
       "norm_label": ".constructor()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
-      "source_location": "L19",
+      "source_location": "L21",
       "id": "labs_filtro_renal_particle_update",
-      "community": 15,
+      "community": 14,
       "norm_label": ".update()"
     },
     {
       "label": ".draw()",
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
-      "source_location": "L79",
+      "source_location": "L81",
       "id": "labs_filtro_renal_particle_draw",
-      "community": 15,
+      "community": 14,
       "norm_label": ".draw()"
     },
     {
       "label": "initFiltroRenal()",
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
-      "source_location": "L106",
+      "source_location": "L108",
       "id": "labs_filtro_renal_initfiltrorenal",
-      "community": 15,
+      "community": 3,
       "norm_label": "initfiltrorenal()"
     },
     {
       "label": "tick()",
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
-      "source_location": "L147",
+      "source_location": "L149",
       "id": "labs_filtro_renal_tick",
-      "community": 15,
+      "community": 3,
       "norm_label": "tick()"
     },
     {
       "label": "stopFiltroRenal()",
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
-      "source_location": "L217",
+      "source_location": "L224",
       "id": "labs_filtro_renal_stopfiltrorenal",
-      "community": 0,
+      "community": 3,
       "norm_label": "stopfiltrorenal()"
     },
     {
@@ -621,7 +639,7 @@
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_main_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "main.js"
     },
     {
@@ -637,18 +655,18 @@
       "label": "exitLink",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L198",
+      "source_location": "L197",
       "id": "matematicas_main_exitlink",
-      "community": 0,
+      "community": 3,
       "norm_label": "exitlink"
     },
     {
       "label": "urlParams",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L210",
+      "source_location": "L209",
       "id": "matematicas_main_urlparams",
-      "community": 0,
+      "community": 3,
       "norm_label": "urlparams"
     },
     {
@@ -657,7 +675,7 @@
       "source_file": "src/subjects/matematicas/data/quiz-practico.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_data_quiz_practico_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "quiz-practico.js"
     },
     {
@@ -666,7 +684,7 @@
       "source_file": "src/subjects/matematicas/data/quiz-practico.js",
       "source_location": "L2",
       "id": "data_quiz_practico_quizpracticoquestions",
-      "community": 0,
+      "community": 3,
       "norm_label": "quizpracticoquestions"
     },
     {
@@ -675,7 +693,7 @@
       "source_file": "src/subjects/matematicas/data/quiz-teorico.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_data_quiz_teorico_js",
-      "community": 0,
+      "community": 3,
       "norm_label": "quiz-teorico.js"
     },
     {
@@ -684,7 +702,7 @@
       "source_file": "src/subjects/matematicas/data/quiz-teorico.js",
       "source_location": "L2",
       "id": "data_quiz_teorico_quizteoricoquestions",
-      "community": 0,
+      "community": 3,
       "norm_label": "quizteoricoquestions"
     },
     {
@@ -958,6 +976,24 @@
       "norm_label": "escalabilidad \u2014 blueprint de nuevas materias"
     },
     {
+      "label": "SISTEMA DE AUDIO SINTETIZADO (Web Audio API)",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L88",
+      "id": "rules_riomate_sistema_de_audio_sintetizado_web_audio_api",
+      "community": 5,
+      "norm_label": "sistema de audio sintetizado (web audio api)"
+    },
+    {
+      "label": "Mandato de Audio:",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L92",
+      "id": "rules_riomate_mandato_de_audio",
+      "community": 5,
+      "norm_label": "mandato de audio:"
+    },
+    {
       "label": "riomate-add-quiz-questions.md",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-add-quiz-questions.md",
@@ -1006,7 +1042,7 @@
       "label": "2. Estructura obligatoria de cada pregunta",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-add-quiz-questions.md",
-      "source_location": "L23",
+      "source_location": "L24",
       "id": "skills_riomate_add_quiz_questions_2_estructura_obligatoria_de_cada_pregunta",
       "community": 6,
       "norm_label": "2. estructura obligatoria de cada pregunta"
@@ -1015,7 +1051,7 @@
       "label": "code:js ({)",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-add-quiz-questions.md",
-      "source_location": "L25",
+      "source_location": "L26",
       "id": "skills_riomate_add_quiz_questions_codeblock_1",
       "community": 6,
       "norm_label": "code:js ({)"
@@ -1024,7 +1060,7 @@
       "label": "3. Reglas de calidad",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-add-quiz-questions.md",
-      "source_location": "L54",
+      "source_location": "L55",
       "id": "skills_riomate_add_quiz_questions_3_reglas_de_calidad",
       "community": 6,
       "norm_label": "3. reglas de calidad"
@@ -1033,7 +1069,7 @@
       "label": "4. Inserci\u00f3n en el archivo",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-add-quiz-questions.md",
-      "source_location": "L65",
+      "source_location": "L66",
       "id": "skills_riomate_add_quiz_questions_4_inserci\u00f3n_en_el_archivo",
       "community": 6,
       "norm_label": "4. insercion en el archivo"
@@ -1042,7 +1078,7 @@
       "label": "5. Verificaci\u00f3n post-inserci\u00f3n",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-add-quiz-questions.md",
-      "source_location": "L71",
+      "source_location": "L72",
       "id": "skills_riomate_add_quiz_questions_5_verificaci\u00f3n_post_inserci\u00f3n",
       "community": 6,
       "norm_label": "5. verificacion post-insercion"
@@ -1494,7 +1530,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L15",
       "id": "state_store_studiedcards",
-      "community": 16,
+      "community": 0,
       "norm_label": "studiedcards"
     }
   ],
@@ -1717,9 +1753,9 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_shared_modules_tabs_js",
-      "target": "src_shared_modules_audio_js",
-      "confidence_score": 1.0
+      "target": "src_shared_modules_audio_js"
     },
     {
       "relation": "imports_from",
@@ -1736,12 +1772,23 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ciencias_labs_filtro_renal_js",
+      "target": "src_shared_modules_audio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
-      "target": "src_shared_modules_audio_js",
-      "confidence_score": 1.0
+      "target": "src_shared_modules_audio_js"
     },
     {
       "relation": "imports_from",
@@ -1827,9 +1874,9 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_shared_modules_tabs_js",
-      "target": "modules_audio_playsound",
-      "confidence_score": 1.0
+      "target": "modules_audio_playsound"
     },
     {
       "relation": "imports",
@@ -1849,9 +1896,9 @@
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
-      "target": "modules_audio_playsound",
-      "confidence_score": 1.0
+      "target": "modules_audio_playsound"
     },
     {
       "relation": "calls",
@@ -1912,6 +1959,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ciencias_labs_filtro_renal_js",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/matematicas/labs/divisores.js",
       "source_location": "L1",
       "weight": 1.0,
@@ -1961,6 +2019,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_matematicas_labs_pulperia_js",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
+      "source_location": "L157",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_filtro_renal_tick",
       "target": "modules_audio_playtickwiththrottle"
     },
     {
@@ -2052,6 +2121,27 @@
       "target": "state_store_quizstate"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_shared_modules_flashcards_js",
+      "target": "state_store_gettotalcardsforactivesubject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_shared_modules_flashcards_js",
+      "target": "modules_flashcards_getlimit",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/shared/modules/flashcards.js",
@@ -2112,6 +2202,39 @@
       "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
       "target": "src_shared_modules_flashcards_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "modules_flashcards_updatetheoryprogress",
+      "target": "modules_flashcards_getlimit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "modules_flashcards_updatebadges",
+      "target": "modules_flashcards_getlimit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/flashcards.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "modules_flashcards_getlimit",
+      "target": "state_store_gettotalcardsforactivesubject",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2584,6 +2707,16 @@
       "confidence_score": 1.0,
       "source": "src_shared_state_store_js",
       "target": "state_store_studiedcardsscience"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_gettotalcardsforactivesubject",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3229,9 +3362,9 @@
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
-      "target": "matematicas_main_exitlink",
-      "confidence_score": 1.0
+      "target": "matematicas_main_exitlink"
     },
     {
       "relation": "contains",
@@ -3597,11 +3730,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".agents/rules/riomate.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "target": "rules_riomate_sistema_de_audio_sintetizado_web_audio_api"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
       "source_location": "L54",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "rules_riomate_esquema_de_preguntas_quiz_formato_estricto",
       "target": "rules_riomate_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rules_riomate_sistema_de_audio_sintetizado_web_audio_api",
+      "target": "rules_riomate_mandato_de_audio"
     },
     {
       "relation": "contains",
@@ -4135,5 +4288,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a128e7a460980954509ec0f3c6e224b795b59de5"
+  "built_at_commit": "b20d0e5c40b6534c9bd6c5ffbfbb00b5ced286ef"
 }
