@@ -15,7 +15,7 @@ export const studiedCardsScience = new Set();
 export let studiedCards = studiedCardsMath;
 
 export function getTotalCardsForActiveSubject() {
-  return activeSubject === 'ciencias' ? 8 : 6;
+  return activeSubject === 'ciencias' ? 9 : 6;
 }
 
 /** Cambia la referencia del set estudiado según la materia activa */

@@ -125,5 +125,14 @@ export const quizPracticoCiencias = [
             { text: "Un antibiótico fuerte", isCorrect: false, rationale: "Los antibióticos combaten bacterias, pero no tienen efecto contra el veneno toxicológico de las serpientes." },
             { text: "Una vacuna preventiva contra la polio", isCorrect: false, rationale: "Las vacunas son para prevenir virus antes del contagio, no sirven para tratar una emergencia de envenenamiento activa." }
         ]
+    },
+    {
+        topic: "Clasificación de Seres Vivos",
+        question: "En una práctica de la Escuela Riojalandia, Titi debe clasificar un hongo, una bacteria, una orquídea y un tigre según el reino al que pertenecen. ¿Cuál opción muestra la clasificación correcta?",
+        options: [
+            { text: "Tigre (Animal), Bacteria (Monera), Orquídea (Plantae) y Hongo (Fungi).", isCorrect: true, rationale: "¡Espectacular! Cada ser vivo está clasificado exactamente en su reino correspondiente de la naturaleza." },
+            { text: "Tigre (Protista), Bacteria (Fungi), Orquídea (Monera) y Hongo (Plantae).", isCorrect: false, rationale: "Incorrecto. Los tigres son animales, las bacterias son moneras y los hongos tienen su propio reino Fungi." },
+            { text: "Tigre (Animal), Bacteria (Protista), Orquídea (Fungi) y Hongo (Monera).", isCorrect: false, rationale: "Incorrecto. La bacteria pertenece a Monera y la orquídea al reino Plantae." }
+        ]
     }
 ];

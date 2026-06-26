@@ -292,10 +292,19 @@
       "norm_label": "startquiz()"
     },
     {
+      "label": "updateQuizIntroTexts()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L22",
+      "id": "modules_quiz_updatequizintrotexts",
+      "community": 0,
+      "norm_label": "updatequizintrotexts()"
+    },
+    {
       "label": "renderQuestion()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L23",
+      "source_location": "L47",
       "id": "modules_quiz_renderquestion",
       "community": 0,
       "norm_label": "renderquestion()"
@@ -304,7 +313,7 @@
       "label": "selectOption()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L67",
+      "source_location": "L91",
       "id": "modules_quiz_selectoption",
       "community": 16,
       "norm_label": "selectoption()"
@@ -313,7 +322,7 @@
       "label": "nextQuestion()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L131",
+      "source_location": "L155",
       "id": "modules_quiz_nextquestion",
       "community": 0,
       "norm_label": "nextquestion()"
@@ -322,7 +331,7 @@
       "label": "resetQuiz()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L179",
+      "source_location": "L203",
       "id": "modules_quiz_resetquiz",
       "community": 0,
       "norm_label": "resetquiz()"
@@ -558,7 +567,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_labs_filtro_renal_js",
-      "community": 3,
+      "community": 14,
       "norm_label": "filtro-renal.js"
     },
     {
@@ -567,7 +576,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L7",
       "id": "labs_filtro_renal_particles",
-      "community": 3,
+      "community": 14,
       "norm_label": "particles"
     },
     {
@@ -612,7 +621,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L108",
       "id": "labs_filtro_renal_initfiltrorenal",
-      "community": 3,
+      "community": 14,
       "norm_label": "initfiltrorenal()"
     },
     {
@@ -621,7 +630,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L149",
       "id": "labs_filtro_renal_tick",
-      "community": 3,
+      "community": 14,
       "norm_label": "tick()"
     },
     {
@@ -630,7 +639,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L224",
       "id": "labs_filtro_renal_stopfiltrorenal",
-      "community": 3,
+      "community": 14,
       "norm_label": "stopfiltrorenal()"
     },
     {
@@ -655,7 +664,7 @@
       "label": "exitLink",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L197",
+      "source_location": "L198",
       "id": "matematicas_main_exitlink",
       "community": 3,
       "norm_label": "exitlink"
@@ -664,7 +673,7 @@
       "label": "urlParams",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L209",
+      "source_location": "L210",
       "id": "matematicas_main_urlparams",
       "community": 3,
       "norm_label": "urlparams"
@@ -2127,9 +2136,9 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_shared_modules_flashcards_js",
-      "target": "state_store_gettotalcardsforactivesubject",
-      "confidence_score": 1.0
+      "target": "state_store_gettotalcardsforactivesubject"
     },
     {
       "relation": "contains",
@@ -2137,9 +2146,9 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_shared_modules_flashcards_js",
-      "target": "modules_flashcards_getlimit",
-      "confidence_score": 1.0
+      "target": "modules_flashcards_getlimit"
     },
     {
       "relation": "contains",
@@ -2210,9 +2219,9 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "modules_flashcards_updatetheoryprogress",
-      "target": "modules_flashcards_getlimit",
-      "confidence_score": 1.0
+      "target": "modules_flashcards_getlimit"
     },
     {
       "relation": "calls",
@@ -2221,9 +2230,9 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "modules_flashcards_updatebadges",
-      "target": "modules_flashcards_getlimit",
-      "confidence_score": 1.0
+      "target": "modules_flashcards_getlimit"
     },
     {
       "relation": "calls",
@@ -2232,9 +2241,9 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "modules_flashcards_getlimit",
-      "target": "state_store_gettotalcardsforactivesubject",
-      "confidence_score": 1.0
+      "target": "state_store_gettotalcardsforactivesubject"
     },
     {
       "relation": "calls",
@@ -2384,6 +2393,16 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L22",
       "weight": 1.0,
+      "source": "src_shared_modules_quiz_js",
+      "target": "modules_quiz_updatequizintrotexts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/quiz.js",
+      "source_location": "L22",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_shared_modules_quiz_js",
       "target": "modules_quiz_renderquestion"
@@ -2450,6 +2469,28 @@
       "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
       "target": "modules_quiz_startquiz"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "modules_quiz_updatequizintrotexts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "matematicas_main_switchsubject",
+      "target": "modules_quiz_updatequizintrotexts"
     },
     {
       "relation": "calls",
@@ -2714,9 +2755,9 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_shared_state_store_js",
-      "target": "state_store_gettotalcardsforactivesubject",
-      "confidence_score": 1.0
+      "target": "state_store_gettotalcardsforactivesubject"
     },
     {
       "relation": "contains",
@@ -4288,5 +4329,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b20d0e5c40b6534c9bd6c5ffbfbb00b5ced286ef"
+  "built_at_commit": "36322f33258cbab9720790847c6d2a86fcbd5c95"
 }

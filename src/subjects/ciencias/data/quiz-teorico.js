@@ -260,5 +260,41 @@ export const quizTeoricoCiencias = [
             { text: "Los Rayos X", isCorrect: false, rationale: "Los Rayos X comunes se usan para fotografiar los huesos de forma rápida." },
             { text: "El ultrasonido", isCorrect: false, rationale: "El ultrasonido usa ondas acústicas de diagnóstico, no radiación curativa." }
         ]
+    },
+    {
+        topic: "Reino Monera",
+        question: "¿Cuáles son las dos formas típicas que presentan las bacterias del Reino Monera según su estructura física?",
+        options: [
+            { text: "Cocos y espirilos", isCorrect: true, rationale: "¡Muy bien! Los cocos son de forma redondeada y los espirilos tienen forma de espiral." },
+            { text: "Vertebrados e invertebrados", isCorrect: false, rationale: "Incorrecto. Esa es la clasificación de los animales según su columna vertebral." },
+            { text: "Angiospermas y gimnospermas", isCorrect: false, rationale: "Incorrecto. Esas son las divisiones de las plantas con semillas." }
+        ]
+    },
+    {
+        topic: "Reino Monera",
+        question: "¿Cuál es un beneficio directo que obtenemos de las bacterias del Reino Monera?",
+        options: [
+            { text: "Favorecen la digestión de alimentos en nuestro cuerpo y fijan nitrógeno en el suelo.", isCorrect: true, rationale: "¡Exacto! Ayudan a la flora intestinal a digerir alimentos y nutren las raíces de las plantas." },
+            { text: "Producen oxígeno a través de la fotosíntesis nocturna.", isCorrect: false, rationale: "Incorrecto. Las bacterias comunes del suelo no realizan la fotosíntesis." },
+            { text: "Forman esporas para la reproducción de helechos.", isCorrect: false, rationale: "Incorrecto. Las esporas de helechos pertenecen al reino vegetal." }
+        ]
+    },
+    {
+        topic: "Reino Protista",
+        question: "Las algas realizan fotosíntesis para fabricar su alimento en el agua pero carecen de tejidos. ¿A qué reino pertenecen?",
+        options: [
+            { text: "Reino Protista", isCorrect: true, rationale: "¡Perfecto! El Reino Protista incluye organismos sencillos sin tejidos verdaderos, como las algas y protozoos." },
+            { text: "Reino Plantae", isCorrect: false, rationale: "Aunque hacen fotosíntesis, las algas son sencillas y no forman los tejidos complejos de las plantas." },
+            { text: "Reino Monera", isCorrect: false, rationale: "Incorrecto. El Reino Monera abarca únicamente a las bacterias unicelulares." }
+        ]
+    },
+    {
+        topic: "Reino Protista",
+        question: "¿Cuál es la característica principal de los protozoos dentro del Reino Protista?",
+        options: [
+            { text: "Son heterótrofos y se trasladan en búsqueda de su alimento.", isCorrect: true, rationale: "¡Excelente! A diferencia de las algas, los protozoos se mueven para consumir materia orgánica." },
+            { text: "Elaboran su propio alimento mediante fotosíntesis.", isCorrect: false, rationale: "Incorrecto. Esas son las algas del reino protista, no los protozoos." },
+            { text: "Son pluricelulares complejos con columna vertebral.", isCorrect: false, rationale: "Incorrecto. Son organismos microscópicos unicelulares sin huesos." }
+        ]
     }
 ];
