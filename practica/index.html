@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="icon" id="favicon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
-  <script type="module" crossorigin src="/material_titi/assets/practica-6WGsGXXR.js"></script>
-  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-DP8_n8KD.js">
-  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-nymIYVC2.css">
+  <script type="module" crossorigin src="/material_titi/assets/practica-CQMjOjNk.js"></script>
+  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-KvV1qY9K.js">
+  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-B_WDWrto.css">
   <link rel="stylesheet" crossorigin href="/material_titi/assets/practica-DDx4YGlw.css">
 </head>
 
@@ -1634,19 +1634,20 @@
                                     </div>
 
                                     <div class="mt-4 mb-3">
-                                        <p class="text-xs font-bold uppercase text-amber-900 mb-2 font-fun">Toca una oración de ejemplo para analizarla:</p>
-                                        <div id="detector-samples-container" class="space-y-2 max-h-60 overflow-y-auto pr-1">
-                                            <!-- Tarjetas de muestra generadas dinámicamente -->
+                                        <p class="text-xs font-bold uppercase text-amber-900 mb-2 font-fun">🎠 Carrusel de Oraciones de Ejemplo:</p>
+                                        <div id="detector-samples-container">
+                                            <!-- Carrusel interactivo generado dinámicamente -->
                                         </div>
                                     </div>
 
                                     <!-- Analizador de texto propio -->
                                     <div class="pt-4 border-t border-amber-200 mt-4">
-                                        <label for="custom-sentence-input" class="block text-xs font-bold uppercase text-amber-900 mb-1 font-fun">O escribe tu propia frase:</label>
-                                        <div class="flex gap-2">
-                                            <input type="text" id="custom-sentence-input" placeholder="Ej: ¡Ojalá ganemos el concurso!" class="flex-1 px-3.5 py-2.5 rounded-xl border border-amber-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
-                                            <button onclick="analyzeCustomInput()" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs font-fun shadow transition-all">
-                                                Analizar 🔍
+                                        <label for="custom-sentence-input" class="block text-xs font-bold uppercase text-amber-900 mb-1.5 font-fun">✍️ O escribe tu propia frase:</label>
+                                        <div class="flex flex-col sm:flex-row gap-2.5">
+                                            <input type="text" id="custom-sentence-input" placeholder="Ej: ¡Ojalá ganemos el concurso!" class="w-full sm:flex-1 px-4 py-3 min-h-[48px] rounded-2xl border border-amber-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white shadow-inner">
+                                            <button onclick="analyzeCustomInput()" class="w-full sm:w-auto shrink-0 bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold px-6 py-3 min-h-[48px] rounded-2xl text-sm font-fun shadow-md transition-all flex items-center justify-center gap-2">
+                                                <span>Analizar</span>
+                                                <span class="text-base">🔍</span>
                                             </button>
                                         </div>
                                     </div>
