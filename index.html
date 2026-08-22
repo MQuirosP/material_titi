@@ -28,64 +28,172 @@
         </div>
       </div>
       <div class="bg-slate-100 p-3 rounded-2xl text-center md:text-right border border-slate-200">
-        <p class="text-xs text-slate-500 font-bold uppercase">Primer Semestre 2026</p>
+        <p id="portal-semester-title" class="text-xs text-slate-500 font-bold uppercase">Segundo Semestre 2026</p>
         <p class="text-sm font-bold text-indigo-700 font-fun">Secciones 5-1 y 5-2</p>
-        <p class="text-xs text-emerald-600 font-semibold">👩‍🏫 Maestra: Florisel Olmazo López</p>
+        <p id="portal-teacher-name" class="text-xs text-emerald-600 font-semibold">👩‍🏫 Maestra: Licda. Maureen Vargas Solano</p>
       </div>
     </div>
   </header>
 
   <!-- Main -->
-  <main class="max-w-5xl mx-auto px-4 mt-12">
+  <main class="max-w-5xl mx-auto px-4 mt-10">
 
-    <div class="text-center mb-10">
+    <div class="text-center mb-8">
       <span class="text-5xl">👋</span>
-      <h2 class="text-3xl font-bold text-slate-900 mt-4 font-fun">¡Hola, campeón!</h2>
-      <p class="text-slate-500 mt-2 text-lg max-w-xl mx-auto">Elige la materia que querés repasar hoy. Cada sección tiene teoría interactiva, laboratorios y exámenes de práctica.</p>
+      <h2 class="text-3xl font-bold text-slate-900 mt-3 font-fun">¡Hola, campeona!</h2>
+      <p class="text-slate-500 mt-2 text-base md:text-lg max-w-xl mx-auto">Selecciona el semestre y la materia que deseas estudiar hoy. Cada materia incluye teoría interactiva, laboratorios y exámenes prácticos.</p>
     </div>
 
-    <!-- Materias disponibles -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Selector de Semestre -->
+    <div class="flex justify-center mb-8">
+      <div class="bg-white p-1.5 rounded-2xl shadow-sm border border-slate-200 inline-flex gap-1.5">
+        <button id="btn-semestre-1" onclick="switchSemester(1)" class="px-5 py-2.5 rounded-xl font-bold text-xs md:text-sm transition-all duration-300 font-fun flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+          📅 I Semestre 2026
+        </button>
+        <button id="btn-semestre-2" onclick="switchSemester(2)" class="px-5 py-2.5 rounded-xl font-bold text-xs md:text-sm transition-all duration-300 font-fun flex items-center gap-2 bg-amber-600 text-white shadow-sm">
+          📅 II Semestre 2026
+        </button>
+      </div>
+    </div>
 
-      <!-- Matemáticas -->
-      <a href="./practica/?subject=matematicas" class="group bg-white rounded-3xl shadow-sm border border-indigo-100 p-8 flex flex-col items-center text-center hover:shadow-lg hover:border-indigo-300 transition-all duration-300 hover:-translate-y-1">
-        <span class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🧮</span>
-        <span class="bg-indigo-100 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase font-fun mb-3">Disponible</span>
-        <h3 class="text-xl font-bold text-slate-900 font-fun">Matemáticas</h3>
-        <p class="text-slate-500 text-sm mt-2 leading-relaxed">Múltiplos, divisores, fracciones, sistema monetario y geometría plana.</p>
-        <div class="mt-auto w-full bg-indigo-600 text-white py-3 rounded-2xl font-bold text-sm group-hover:bg-indigo-700 transition-colors">
-          Entrar al estudio →
-        </div>
-      </a>
-
-      <!-- Ciencias -->
-      <a href="./practica/?subject=ciencias" class="group bg-white rounded-3xl shadow-sm border border-emerald-100 p-8 flex flex-col items-center text-center hover:shadow-lg hover:border-emerald-300 transition-all duration-300 hover:-translate-y-1">
-        <span class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🔬</span>
-        <span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full uppercase font-fun mb-3">Disponible</span>
-        <h3 class="text-xl font-bold text-slate-900 font-fun">Ciencias</h3>
-        <p class="text-slate-500 text-sm mt-2 leading-relaxed">El sistema urinario, la excreción celular, avances médicos y la biodiversidad en Costa Rica.</p>
-        <div class="mt-auto w-full bg-emerald-600 text-white py-3 rounded-2xl font-bold text-sm group-hover:bg-emerald-700 transition-colors">
-          Entrar al estudio →
-        </div>
-      </a>
-
-      <!-- Español (próximamente) -->
-      <div class="bg-white rounded-3xl shadow-sm border border-slate-100 p-8 flex flex-col items-center text-center opacity-60 cursor-not-allowed select-none">
-        <span class="text-5xl mb-4 grayscale">📚</span>
-        <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full uppercase font-fun mb-3">Próximamente</span>
-        <h3 class="text-xl font-bold text-slate-900 font-fun">Español</h3>
-        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Ortografía, gramática y comprensión de lectura. ¡Muy pronto disponible!</p>
-        <div class="mt-auto w-full bg-slate-200 text-slate-400 py-3 rounded-2xl font-bold text-sm">
-          En construcción...
-        </div>
+    <!-- SEGUNDO SEMESTRE 2026 (ACTIVO POR DEFECTO) -->
+    <div id="semester-2-container" class="space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200/60 pb-3">
+        <h3 class="text-lg font-bold text-slate-900 font-fun flex items-center gap-2">
+          <span>📚</span> Materias del II Semestre 2026
+        </h3>
+        <span class="text-xs font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full font-fun">En Curso</span>
       </div>
 
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Español (Disponible) -->
+        <a href="./practica/?subject=espanol" class="group bg-white rounded-3xl shadow-sm border-2 border-amber-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-amber-400 transition-all duration-300 hover:-translate-y-1">
+          <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📚</span>
+          <span class="bg-amber-100 text-amber-800 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Examen: 24 Agosto</span>
+          <h4 class="text-lg font-bold text-slate-900 font-fun">Español</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
+          <p class="text-slate-500 text-xs leading-relaxed mb-4">Comprensión lectora, partes del libro, géneros literarios, tipos de oraciones y tradición costarricense.</p>
+          <div class="mt-auto w-full bg-amber-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-amber-700 transition-colors font-fun shadow-sm">
+            Entrar al estudio →
+          </div>
+        </a>
+
+        <!-- Estudios Sociales (Próximamente) -->
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
+          <span class="text-4xl mb-3 grayscale">🌎</span>
+          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Próximamente</span>
+          <h4 class="text-lg font-bold text-slate-900 font-fun">Estudios Sociales</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">Geografía, relieve, provincias, historia patria y símbolos nacionales de Costa Rica.</p>
+          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
+            En preparación...
+          </div>
+        </div>
+
+        <!-- Matemáticas II (Próximamente) -->
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
+          <span class="text-4xl mb-3 grayscale">🧮</span>
+          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Próximamente</span>
+          <h4 class="text-lg font-bold text-slate-900 font-fun">Matemáticas II</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">Operaciones combinadas, decimales, porcentajes y resolución de problemas del II semestre.</p>
+          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
+            En preparación...
+          </div>
+        </div>
+
+        <!-- Ciencias II (Próximamente) -->
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
+          <span class="text-4xl mb-3 grayscale">🔬</span>
+          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Próximamente</span>
+          <h4 class="text-lg font-bold text-slate-900 font-fun">Ciencias II</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">Ecosistemas, energía, materia y recursos naturales del II semestre.</p>
+          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
+            En preparación...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRIMER SEMESTRE 2026 (ARCHIVADO / DISPONIBLE) -->
+    <div id="semester-1-container" class="hidden space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200/60 pb-3">
+        <h3 class="text-lg font-bold text-slate-900 font-fun flex items-center gap-2">
+          <span>📅</span> Materias del I Semestre 2026
+        </h3>
+        <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full font-fun">Completado</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Matemáticas (Disponible) -->
+        <a href="./practica/?subject=matematicas" class="group bg-white rounded-3xl shadow-sm border-2 border-indigo-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-indigo-400 transition-all duration-300 hover:-translate-y-1">
+          <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🧮</span>
+          <span class="bg-indigo-100 text-indigo-700 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Disponible</span>
+          <h4 class="text-lg font-bold text-slate-900 font-fun">Matemáticas</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
+          <p class="text-slate-500 text-xs leading-relaxed mb-4">Múltiplos, divisores, fracciones impropias/mixtas, pulpería ₡ y geometría plana.</p>
+          <div class="mt-auto w-full bg-indigo-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-indigo-700 transition-colors font-fun shadow-sm">
+            Entrar al estudio →
+          </div>
+        </a>
+
+        <!-- Ciencias (Disponible) -->
+        <a href="./practica/?subject=ciencias" class="group bg-white rounded-3xl shadow-sm border-2 border-emerald-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-emerald-400 transition-all duration-300 hover:-translate-y-1">
+          <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🔬</span>
+          <span class="bg-emerald-100 text-emerald-700 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Disponible</span>
+          <h4 class="text-lg font-bold text-slate-900 font-fun">Ciencias</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
+          <p class="text-slate-500 text-xs leading-relaxed mb-4">El sistema urinario, la excreción celular, avances médicos y la biodiversidad en Costa Rica.</p>
+          <div class="mt-auto w-full bg-emerald-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-emerald-700 transition-colors font-fun shadow-sm">
+            Entrar al estudio →
+          </div>
+        </a>
+
+        <!-- Español I (Archivado) -->
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
+          <span class="text-4xl mb-3 grayscale">📚</span>
+          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Archivado</span>
+          <h4 class="text-lg font-bold text-slate-900 font-fun">Español I</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">Temas evaluados durante el primer semestre del curso lectivo.</p>
+          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
+            I Semestre cerrado
+          </div>
+        </div>
+
+        <!-- Estudios Sociales I (Archivado) -->
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
+          <span class="text-4xl mb-3 grayscale">🌎</span>
+          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Archivado</span>
+          <h4 class="text-lg font-bold text-slate-900 font-fun">Estudios Sociales I</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">Temas evaluados durante el primer semestre del curso lectivo.</p>
+          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
+            I Semestre cerrado
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Materias Complementarias -->
+    <div class="mt-10 bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-3xl border border-purple-100 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3 text-center md:text-left">
+        <span class="text-3xl">🎨</span>
+        <div>
+          <h4 class="font-bold text-purple-900 font-fun text-base">Materias Complementarias y Especiales</h4>
+          <p class="text-xs text-purple-700 mt-0.5">Espacio reservado para Inglés, Educación Musical, Artes Plásticas y Educación Física.</p>
+        </div>
+      </div>
+      <span class="bg-purple-200/80 text-purple-900 text-xs font-bold px-4 py-2 rounded-2xl font-fun uppercase">
+        Próximas Adiciones
+      </span>
     </div>
 
     <!-- Info -->
     <div class="mt-12 bg-white p-6 rounded-3xl shadow-sm border border-slate-200 text-center">
-      <p class="text-slate-500 text-sm">RíoPortal es una herramienta educativa de práctica libre para estudiantes de primaria.</p>
-      <p class="text-slate-400 text-xs mt-1">© 2026 Escuela Riojalandia · Costa Rica · Todos los derechos de aprendizaje reservados.</p>
+      <p class="text-slate-500 text-sm">RíoPortal es una herramienta educativa de práctica interactiva para estudiantes de primaria.</p>
+      <p class="text-slate-400 text-xs mt-1">© 2026 Escuela Riojalandia · Costa Rica · Secciones 5-1 y 5-2</p>
     </div>
   </main>
 

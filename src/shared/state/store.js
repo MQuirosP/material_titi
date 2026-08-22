@@ -10,18 +10,23 @@ export function setActiveSubject(val) { activeSubject = val; }
 /** Sets para guardar progreso independiente de tarjetas estudiadas */
 export const studiedCardsMath = new Set();
 export const studiedCardsScience = new Set();
+export const studiedCardsSpanish = new Set();
 
 /** IDs (1-N) de flashcards que el estudiante ha volteado al menos una vez (apunta al set de la materia activa) */
 export let studiedCards = studiedCardsMath;
 
 export function getTotalCardsForActiveSubject() {
-  return activeSubject === 'ciencias' ? 9 : 6;
+  if (activeSubject === 'espanol') return 10;
+  if (activeSubject === 'ciencias') return 9;
+  return 6;
 }
 
 /** Cambia la referencia del set estudiado según la materia activa */
 export function syncStudiedCardsSet(subject) {
   if (subject === 'matematicas') {
     studiedCards = studiedCardsMath;
+  } else if (subject === 'espanol') {
+    studiedCards = studiedCardsSpanish;
   } else {
     studiedCards = studiedCardsScience;
   }

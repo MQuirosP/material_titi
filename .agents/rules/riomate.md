@@ -100,3 +100,16 @@ Toda nueva materia, laboratorio o interacción táctil (sliders, botones, result
   - Nota 70%-89%: `playSound('score_good')` (campana alegre corta).
   - Nota < 70%: `playSound('score_retry')` (melodía acogedora en escala Fa4/La4/Do5 triangular).
 - **Selección de materia (Menú Principal):** `playHooraySound()` (bronce Do mayor + ovación).
+
+## CHECKLIST DE DIAGNÓSTICO Y DEPURACIÓN (MANDATORIO)
+
+Antes de dar por finalizada cualquier edición o refactorización, verificar:
+
+1. **Notación limpia:** Cero caracteres `$` o comandos LaTeX (`\frac`, `\times`, `\approx`, `\div`, `\cdot`, `\Delta`).
+2. **Flashcards 3D:** Clases `.flashcard-inner`, `.flashcard-front`, `.flashcard-back` con `backface-visibility: hidden` y llamada a `toggleCard(this, N)`.
+3. **Quizzes íntegros:** Exactamente un `isCorrect: true` por pregunta y `rationale` educativo presente en cada opción.
+4. **Laboratorios SVG / Canvas:** `viewBox` delimitado, figuras centradas y sin desbordamiento de coordenadas ni solapamiento de textos.
+5. **Cálculo de Pulpería:** Precios enteros exactos en colones, algoritmo de vuelto greedy descendente y validación de pago suficiente.
+6. **Progreso y Badges:** `updateBadges()` y `updateTheoryProgress()` sincronizados tras cada acción relevante.
+7. **Responsive & Mobile-First:** `max-w-5xl mx-auto px-4`, cero scroll horizontal a 375px de ancho y touch targets mínimo 44×44 px.
+8. **Consola limpia:** Cero errores de ejecución o sintaxis JavaScript.

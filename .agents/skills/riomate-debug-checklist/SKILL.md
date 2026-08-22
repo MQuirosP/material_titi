@@ -1,8 +1,6 @@
 ---
 name: riomate-debug-checklist
-description: >
-  Lista de verificación para diagnosticar y corregir errores comunes en RíoMate.
-  Usar cuando algo no funciona correctamente en la app.
+description: Lista de verificación para diagnosticar y corregir errores comunes en RíoMate. Usar cuando algo no funciona correctamente en la app.
 ---
 
 # Skill: Diagnóstico y Depuración de RíoMate
@@ -21,8 +19,7 @@ description: >
 
 **Síntoma:** Se ven caracteres como `$`, `\frac`, `\times`, `\approx` en pantalla.
 
-**Diagnóstico:** Buscar en el archivo `index.html`:
-
+**Diagnóstico:** Buscar en el código:
 ```
 $ \frac \times \approx \div \cdot \Delta \text{
 ```
@@ -34,13 +31,11 @@ $ \frac \times \approx \div \cdot \Delta \text{
 ## 2. Flashcards no se voltean
 
 **Síntomas posibles:**
-
 - Click no hace nada
 - La animación se corta
 - El dorso aparece en blanco
 
 **Checklist:**
-
 - [ ] `onclick="toggleCard(this, N)"` en el div con clase `flashcard`
 - [ ] CSS presente: `.flashcard-inner { transition: transform 0.6s; transform-style: preserve-3d; }`
 - [ ] CSS presente: `.flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }`
@@ -53,7 +48,6 @@ $ \frac \times \approx \div \cdot \Delta \text{
 ## 3. Quiz no funciona / preguntas no aparecen
 
 **Checklist:**
-
 - [ ] El array de preguntas existe y no está vacío
 - [ ] Exactamente un `isCorrect: true` por objeto de pregunta
 - [ ] `startQuiz('teorico'|'practico')` conectado al botón de inicio
@@ -66,7 +60,6 @@ $ \frac \times \approx \div \cdot \Delta \text{
 ## 4. Laboratorio de geometría SVG se desborda / solapamiento de etiquetas
 
 **Checklist:**
-
 - [ ] SVG tiene `viewBox="0 0 200 200"` correcto
 - [ ] Las coordenadas calculadas no exceden el rango `[0, 200]`
 - [ ] La escala de figura usa `* 8` o `* 10` y tiene offset calculado para centrar: `(200 - size) / 2`
@@ -78,7 +71,6 @@ $ \frac \times \approx \div \cdot \Delta \text{
 ## 5. Pulpería / cálculo de vuelto incorrecto
 
 **Checklist:**
-
 - [ ] `pulperíaPrices` tiene los precios correctos (leche: 950, galleta: 650, tropical: 1200, empanada: 800)
 - [ ] `calculatePulpería()` usa `parseInt()` o `Number()` para el valor del select de pago
 - [ ] El algoritmo greedy itera denominaciones en orden descendente
@@ -89,7 +81,6 @@ $ \frac \times \approx \div \cdot \Delta \text{
 ## 6. Progreso y badges no se actualizan
 
 **Checklist:**
-
 - [ ] `updateBadges()` es llamado al completar el quiz (`nextQuestion`) y al usar el lab (`switchTab`)
 - [ ] `updateTheoryProgress()` es llamado desde `toggleCard()`
 - [ ] El divisor en `updateTheoryProgress()` coincide con el número total de flashcards
@@ -101,7 +92,6 @@ $ \frac \times \approx \div \cdot \Delta \text{
 ## 7. Problema de responsive / scroll horizontal
 
 **Checklist:**
-
 - [ ] `<meta name="viewport" content="width=device-width, initial-scale=1.0">` en `<head>`
 - [ ] Contenedor principal usa `max-w-5xl mx-auto px-4` (no anchos fijos en px)
 - [ ] Los grids usan `grid-cols-1 md:grid-cols-N` (mobile-first)
@@ -112,8 +102,7 @@ $ \frac \times \approx \div \cdot \Delta \text{
 
 ## 8. Proceso de verificación rápida
 
-Antes de guardar cualquier cambio, verificar:
-
+Antes de dar por finalizado cualquier cambio, verificar:
 1. **Abrir en navegador** → F12 → Consola → Sin errores rojos
 2. **Reducir ventana a 375px** → Sin scroll horizontal
 3. **Clic en todas las pestañas** → Cada sección carga correctamente

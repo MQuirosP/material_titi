@@ -34,6 +34,12 @@ export function updateQuizIntroTexts(subject) {
     
     if (introTitleP) introTitleP.textContent = `Prueba Práctica y de Aplicación (${practicoCount} Preguntas)`;
     if (introDescP) introDescP.innerHTML = `Esta prueba contiene <strong>${practicoCount} problemas prácticos de aplicación</strong> de Ciencias. Analizarás casos médicos clínicos, diagnóstico óseo y de tejidos, y conservación de la biodiversidad en Costa Rica.`;
+  } else if (subject === 'espanol') {
+    if (introTitleT) introTitleT.textContent = `Prueba de Conceptos y Teoría (${teoricoCount} Preguntas)`;
+    if (introDescT) introDescT.innerHTML = `Esta prueba contiene <strong>${teoricoCount} preguntas teóricas</strong> de Español. Evaluará comprensión lectora, géneros literarios, partes del libro, tipos de diccionarios, técnicas de estudio, fichas y actitudes del emisor en oraciones.`;
+    
+    if (introTitleP) introTitleP.textContent = `Prueba Práctica y de Aplicación (${practicoCount} Preguntas)`;
+    if (introDescP) introDescP.innerHTML = `Esta prueba contiene <strong>${practicoCount} problemas prácticos y lecturas</strong> de Español. Analizarás fragmentos de fábulas de Esopo, bombas guanacastecas, refranes y dichos costarricenses, fichas bibliográficas y clasificación de oraciones reales.`;
   } else {
     if (introTitleT) introTitleT.textContent = `Prueba de Conceptos y Teoría (${teoricoCount} Preguntas)`;
     if (introDescT) introDescT.innerHTML = `Esta prueba contiene <strong>${teoricoCount} preguntas teóricas</strong> de Matemáticas. Evaluará definiciones, propiedades de múltiplos y divisores, tipos de fracciones y la teoría que rodea las fórmulas de perímetros y áreas.`;

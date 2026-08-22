@@ -37,6 +37,14 @@ export function switchTab(tabId) {
       } else {
         activeBtn.classList.add('bg-emerald-600', 'text-white');
       }
+    } else if (activeSubject === 'espanol') {
+      if (tabId === 'quiz-practico') {
+        activeBtn.classList.add('bg-rose-500', 'text-white');
+      } else if (tabId === 'quiz-teorico') {
+        activeBtn.classList.add('bg-orange-600', 'text-white');
+      } else {
+        activeBtn.classList.add('bg-amber-600', 'text-white');
+      }
     } else {
       if (tabId === 'quiz-practico') {
         activeBtn.classList.add('bg-amber-500', 'text-white');
@@ -84,7 +92,12 @@ export function switchLabSubTab(subTabId) {
   });
   const activeBtn = document.getElementById(`subtab-${subTabId}`);
   if (activeBtn) {
-    const bgClass = activeSubject === 'ciencias' ? 'bg-emerald-600' : 'bg-teal-500';
-    activeBtn.className = `subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 ${bgClass} text-white shadow-sm`;
+    let bgClass = 'bg-teal-500';
+    if (activeSubject === 'ciencias') {
+      bgClass = 'bg-emerald-600';
+    } else if (activeSubject === 'espanol') {
+      bgClass = 'bg-amber-600';
+    }
+    activeBtn.className = `subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 ${bgClass} text-white shadow-sm font-fun`;
   }
 }

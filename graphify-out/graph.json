@@ -175,10 +175,28 @@
       "norm_label": "playhooraysound()"
     },
     {
+      "label": "playClickSound()",
+      "file_type": "code",
+      "source_file": "src/hub/main.js",
+      "source_location": "L68",
+      "id": "hub_main_playclicksound",
+      "community": 13,
+      "norm_label": "playclicksound()"
+    },
+    {
+      "label": "switchSemester()",
+      "file_type": "code",
+      "source_file": "src/hub/main.js",
+      "source_location": "L87",
+      "id": "hub_main_switchsemester",
+      "community": 13,
+      "norm_label": "switchsemester()"
+    },
+    {
       "label": "cards",
       "file_type": "code",
       "source_file": "src/hub/main.js",
-      "source_location": "L70",
+      "source_location": "L120",
       "id": "hub_main_cards",
       "community": 13,
       "norm_label": "cards"
@@ -187,7 +205,7 @@
       "label": "destination",
       "file_type": "code",
       "source_file": "src/hub/main.js",
-      "source_location": "L74",
+      "source_location": "L124",
       "id": "hub_main_destination",
       "community": 13,
       "norm_label": "destination"
@@ -198,7 +216,7 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L1",
       "id": "src_shared_modules_audio_js",
-      "community": 3,
+      "community": 19,
       "norm_label": "audio.js"
     },
     {
@@ -207,7 +225,7 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L2",
       "id": "modules_audio_playsound",
-      "community": 16,
+      "community": 19,
       "norm_label": "playsound()"
     },
     {
@@ -216,7 +234,7 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L142",
       "id": "modules_audio_playtickwiththrottle",
-      "community": 3,
+      "community": 19,
       "norm_label": "playtickwiththrottle()"
     },
     {
@@ -225,7 +243,7 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L1",
       "id": "src_shared_modules_flashcards_js",
-      "community": 0,
+      "community": 20,
       "norm_label": "flashcards.js"
     },
     {
@@ -234,7 +252,7 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L3",
       "id": "modules_flashcards_getlimit",
-      "community": 0,
+      "community": 20,
       "norm_label": "getlimit()"
     },
     {
@@ -243,7 +261,7 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L8",
       "id": "modules_flashcards_playswisssound",
-      "community": 0,
+      "community": 20,
       "norm_label": "playswisssound()"
     },
     {
@@ -252,7 +270,7 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L52",
       "id": "modules_flashcards_togglecard",
-      "community": 0,
+      "community": 20,
       "norm_label": "togglecard()"
     },
     {
@@ -261,7 +279,7 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L61",
       "id": "modules_flashcards_updatetheoryprogress",
-      "community": 0,
+      "community": 20,
       "norm_label": "updatetheoryprogress()"
     },
     {
@@ -270,7 +288,7 @@
       "source_file": "src/shared/modules/flashcards.js",
       "source_location": "L74",
       "id": "modules_flashcards_updatebadges",
-      "community": 0,
+      "community": 3,
       "norm_label": "updatebadges()"
     },
     {
@@ -304,7 +322,7 @@
       "label": "renderQuestion()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L47",
+      "source_location": "L53",
       "id": "modules_quiz_renderquestion",
       "community": 0,
       "norm_label": "renderquestion()"
@@ -313,16 +331,16 @@
       "label": "selectOption()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L91",
+      "source_location": "L97",
       "id": "modules_quiz_selectoption",
-      "community": 16,
+      "community": 0,
       "norm_label": "selectoption()"
     },
     {
       "label": "nextQuestion()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L155",
+      "source_location": "L161",
       "id": "modules_quiz_nextquestion",
       "community": 0,
       "norm_label": "nextquestion()"
@@ -331,7 +349,7 @@
       "label": "resetQuiz()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L203",
+      "source_location": "L209",
       "id": "modules_quiz_resetquiz",
       "community": 0,
       "norm_label": "resetquiz()"
@@ -342,7 +360,7 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L1",
       "id": "src_shared_modules_tabs_js",
-      "community": 16,
+      "community": 0,
       "norm_label": "tabs.js"
     },
     {
@@ -351,7 +369,7 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L5",
       "id": "modules_tabs_labinitcallbacks",
-      "community": 16,
+      "community": 0,
       "norm_label": "labinitcallbacks"
     },
     {
@@ -360,7 +378,7 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L11",
       "id": "modules_tabs_onlabinit",
-      "community": 16,
+      "community": 0,
       "norm_label": "onlabinit()"
     },
     {
@@ -369,17 +387,62 @@
       "source_file": "src/shared/modules/tabs.js",
       "source_location": "L16",
       "id": "modules_tabs_switchtab",
-      "community": 16,
+      "community": 0,
       "norm_label": "switchtab()"
     },
     {
       "label": "switchLabSubTab()",
       "file_type": "code",
       "source_file": "src/shared/modules/tabs.js",
-      "source_location": "L70",
+      "source_location": "L78",
       "id": "modules_tabs_switchlabsubtab",
-      "community": 16,
+      "community": 0,
       "norm_label": "switchlabsubtab()"
+    },
+    {
+      "label": "gemini.js",
+      "file_type": "code",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L1",
+      "id": "src_shared_services_gemini_js",
+      "community": 19,
+      "norm_label": "gemini.js"
+    },
+    {
+      "label": "analysisCache",
+      "file_type": "code",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L10",
+      "id": "services_gemini_analysiscache",
+      "community": 19,
+      "norm_label": "analysiscache"
+    },
+    {
+      "label": "getGeminiApiKey()",
+      "file_type": "code",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L15",
+      "id": "services_gemini_getgeminiapikey",
+      "community": 19,
+      "norm_label": "getgeminiapikey()"
+    },
+    {
+      "label": "setGeminiApiKey()",
+      "file_type": "code",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L22",
+      "id": "services_gemini_setgeminiapikey",
+      "community": 19,
+      "norm_label": "setgeminiapikey()"
+    },
+    {
+      "label": "analyzeSentenceWithAI()",
+      "file_type": "code",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L35",
+      "id": "services_gemini_analyzesentencewithai",
+      "community": 19,
+      "norm_label": "analyzesentencewithai()"
     },
     {
       "label": "store.js",
@@ -387,7 +450,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L1",
       "id": "src_shared_state_store_js",
-      "community": 0,
+      "community": 20,
       "norm_label": "store.js"
     },
     {
@@ -405,7 +468,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L11",
       "id": "state_store_studiedcardsmath",
-      "community": 0,
+      "community": 20,
       "norm_label": "studiedcardsmath"
     },
     {
@@ -414,23 +477,32 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L12",
       "id": "state_store_studiedcardsscience",
-      "community": 0,
+      "community": 20,
       "norm_label": "studiedcardsscience"
+    },
+    {
+      "label": "studiedCardsSpanish",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L13",
+      "id": "state_store_studiedcardsspanish",
+      "community": 20,
+      "norm_label": "studiedcardsspanish"
     },
     {
       "label": "getTotalCardsForActiveSubject()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "state_store_gettotalcardsforactivesubject",
-      "community": 0,
+      "community": 20,
       "norm_label": "gettotalcardsforactivesubject()"
     },
     {
       "label": "syncStudiedCardsSet()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L22",
+      "source_location": "L25",
       "id": "state_store_syncstudiedcardsset",
       "community": 0,
       "norm_label": "syncstudiedcardsset()"
@@ -439,45 +511,45 @@
       "label": "setUserHasUsedLab()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L32",
+      "source_location": "L37",
       "id": "state_store_setuserhasusedlab",
-      "community": 16,
+      "community": 3,
       "norm_label": "setuserhasusedlab()"
     },
     {
       "label": "setActiveTab()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L36",
+      "source_location": "L41",
       "id": "state_store_setactivetab",
-      "community": 16,
+      "community": 0,
       "norm_label": "setactivetab()"
     },
     {
       "label": "quizState",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L39",
+      "source_location": "L44",
       "id": "state_store_quizstate",
-      "community": 0,
+      "community": 20,
       "norm_label": "quizstate"
     },
     {
       "label": "pulper\u00edaCart",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L57",
+      "source_location": "L62",
       "id": "state_store_pulper\u00edacart",
-      "community": 3,
+      "community": 20,
       "norm_label": "pulperiacart"
     },
     {
       "label": "pulper\u00edaPrices",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L65",
+      "source_location": "L70",
       "id": "state_store_pulper\u00edaprices",
-      "community": 3,
+      "community": 20,
       "norm_label": "pulperiaprices"
     },
     {
@@ -486,7 +558,7 @@
       "source_file": "src/subjects/ciencias/data/quiz-practico.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_data_quiz_practico_js",
-      "community": 3,
+      "community": 0,
       "norm_label": "quiz-practico.js"
     },
     {
@@ -495,7 +567,7 @@
       "source_file": "src/subjects/ciencias/data/quiz-practico.js",
       "source_location": "L2",
       "id": "data_quiz_practico_quizpracticociencias",
-      "community": 3,
+      "community": 0,
       "norm_label": "quizpracticociencias"
     },
     {
@@ -504,7 +576,7 @@
       "source_file": "src/subjects/ciencias/data/quiz-teorico.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_data_quiz_teorico_js",
-      "community": 3,
+      "community": 0,
       "norm_label": "quiz-teorico.js"
     },
     {
@@ -513,7 +585,7 @@
       "source_file": "src/subjects/ciencias/data/quiz-teorico.js",
       "source_location": "L2",
       "id": "data_quiz_teorico_quizteoricociencias",
-      "community": 3,
+      "community": 0,
       "norm_label": "quizteoricociencias"
     },
     {
@@ -522,7 +594,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js",
-      "community": 16,
+      "community": 0,
       "norm_label": "decisiones-medicas.js"
     },
     {
@@ -531,7 +603,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L5",
       "id": "labs_decisiones_medicas_casosmedicoslab",
-      "community": 16,
+      "community": 0,
       "norm_label": "casosmedicoslab"
     },
     {
@@ -540,7 +612,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L15",
       "id": "labs_decisiones_medicas_initdecisionesmedicas",
-      "community": 16,
+      "community": 0,
       "norm_label": "initdecisionesmedicas()"
     },
     {
@@ -549,7 +621,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L21",
       "id": "labs_decisiones_medicas_rendercaso",
-      "community": 16,
+      "community": 0,
       "norm_label": "rendercaso()"
     },
     {
@@ -558,7 +630,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L44",
       "id": "labs_decisiones_medicas_choosemedicaltool",
-      "community": 16,
+      "community": 0,
       "norm_label": "choosemedicaltool()"
     },
     {
@@ -567,7 +639,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_labs_filtro_renal_js",
-      "community": 14,
+      "community": 21,
       "norm_label": "filtro-renal.js"
     },
     {
@@ -576,7 +648,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L7",
       "id": "labs_filtro_renal_particles",
-      "community": 14,
+      "community": 21,
       "norm_label": "particles"
     },
     {
@@ -585,7 +657,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L10",
       "id": "labs_filtro_renal_particle",
-      "community": 14,
+      "community": 21,
       "norm_label": "particle"
     },
     {
@@ -594,7 +666,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L11",
       "id": "labs_filtro_renal_particle_constructor",
-      "community": 14,
+      "community": 21,
       "norm_label": ".constructor()"
     },
     {
@@ -603,7 +675,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L21",
       "id": "labs_filtro_renal_particle_update",
-      "community": 14,
+      "community": 21,
       "norm_label": ".update()"
     },
     {
@@ -612,7 +684,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L81",
       "id": "labs_filtro_renal_particle_draw",
-      "community": 14,
+      "community": 21,
       "norm_label": ".draw()"
     },
     {
@@ -621,7 +693,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L108",
       "id": "labs_filtro_renal_initfiltrorenal",
-      "community": 14,
+      "community": 21,
       "norm_label": "initfiltrorenal()"
     },
     {
@@ -630,7 +702,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L149",
       "id": "labs_filtro_renal_tick",
-      "community": 14,
+      "community": 21,
       "norm_label": "tick()"
     },
     {
@@ -639,8 +711,368 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L224",
       "id": "labs_filtro_renal_stopfiltrorenal",
-      "community": 14,
+      "community": 0,
       "norm_label": "stopfiltrorenal()"
+    },
+    {
+      "label": "quiz-practico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/data/quiz-practico.js",
+      "source_location": "L1",
+      "id": "src_subjects_espanol_data_quiz_practico_js",
+      "community": 0,
+      "norm_label": "quiz-practico.js"
+    },
+    {
+      "label": "quizPracticoEspanol",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/data/quiz-practico.js",
+      "source_location": "L8",
+      "id": "data_quiz_practico_quizpracticoespanol",
+      "community": 0,
+      "norm_label": "quizpracticoespanol"
+    },
+    {
+      "label": "quiz-teorico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/data/quiz-teorico.js",
+      "source_location": "L1",
+      "id": "src_subjects_espanol_data_quiz_teorico_js",
+      "community": 0,
+      "norm_label": "quiz-teorico.js"
+    },
+    {
+      "label": "quizTeoricoEspanol",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/data/quiz-teorico.js",
+      "source_location": "L8",
+      "id": "data_quiz_teorico_quizteoricoespanol",
+      "community": 0,
+      "norm_label": "quizteoricoespanol"
+    },
+    {
+      "label": "detector-oraciones.js",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L1",
+      "id": "src_subjects_espanol_labs_detector_oraciones_js",
+      "community": 19,
+      "norm_label": "detector-oraciones.js"
+    },
+    {
+      "label": "sampleSentences",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L11",
+      "id": "labs_detector_oraciones_samplesentences",
+      "community": 19,
+      "norm_label": "samplesentences"
+    },
+    {
+      "label": "challengeList",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L72",
+      "id": "labs_detector_oraciones_challengelist",
+      "community": 19,
+      "norm_label": "challengelist"
+    },
+    {
+      "label": "initDetectorOraciones()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L107",
+      "id": "labs_detector_oraciones_initdetectororaciones",
+      "community": 19,
+      "norm_label": "initdetectororaciones()"
+    },
+    {
+      "label": "renderSampleCarousel()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L113",
+      "id": "labs_detector_oraciones_rendersamplecarousel",
+      "community": 19,
+      "norm_label": "rendersamplecarousel()"
+    },
+    {
+      "label": "nextSampleSentence()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L170",
+      "id": "labs_detector_oraciones_nextsamplesentence",
+      "community": 19,
+      "norm_label": "nextsamplesentence()"
+    },
+    {
+      "label": "prevSampleSentence()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L177",
+      "id": "labs_detector_oraciones_prevsamplesentence",
+      "community": 19,
+      "norm_label": "prevsamplesentence()"
+    },
+    {
+      "label": "goToSampleSentence()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L184",
+      "id": "labs_detector_oraciones_gotosamplesentence",
+      "community": 19,
+      "norm_label": "gotosamplesentence()"
+    },
+    {
+      "label": "selectSampleSentence()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L191",
+      "id": "labs_detector_oraciones_selectsamplesentence",
+      "community": 19,
+      "norm_label": "selectsamplesentence()"
+    },
+    {
+      "label": "analyzeCustomInput()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L221",
+      "id": "labs_detector_oraciones_analyzecustominput",
+      "community": 19,
+      "norm_label": "analyzecustominput()"
+    },
+    {
+      "label": "renderChallenge()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L315",
+      "id": "labs_detector_oraciones_renderchallenge",
+      "community": 19,
+      "norm_label": "renderchallenge()"
+    },
+    {
+      "label": "answerChallengeDetector()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L356",
+      "id": "labs_detector_oraciones_answerchallengedetector",
+      "community": 19,
+      "norm_label": "answerchallengedetector()"
+    },
+    {
+      "label": "resetChallengeDetector()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L383",
+      "id": "labs_detector_oraciones_resetchallengedetector",
+      "community": 19,
+      "norm_label": "resetchallengedetector()"
+    },
+    {
+      "label": "pulperia-refranes.js",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L1",
+      "id": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "community": 22,
+      "norm_label": "pulperia-refranes.js"
+    },
+    {
+      "label": "refranesGameData",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L10",
+      "id": "labs_pulperia_refranes_refranesgamedata",
+      "community": 22,
+      "norm_label": "refranesgamedata"
+    },
+    {
+      "label": "adivinanzasData",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L49",
+      "id": "labs_pulperia_refranes_adivinanzasdata",
+      "community": 22,
+      "norm_label": "adivinanzasdata"
+    },
+    {
+      "label": "bombasData",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L70",
+      "id": "labs_pulperia_refranes_bombasdata",
+      "community": 22,
+      "norm_label": "bombasdata"
+    },
+    {
+      "label": "shuffledMeanings",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L93",
+      "id": "labs_pulperia_refranes_shuffledmeanings",
+      "community": 22,
+      "norm_label": "shuffledmeanings"
+    },
+    {
+      "label": "shuffleArray()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L95",
+      "id": "labs_pulperia_refranes_shufflearray",
+      "community": 22,
+      "norm_label": "shufflearray()"
+    },
+    {
+      "label": "resetRefranesGame()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L114",
+      "id": "labs_pulperia_refranes_resetrefranesgame",
+      "community": 22,
+      "norm_label": "resetrefranesgame()"
+    },
+    {
+      "label": "initPulperiaRefranes()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L122",
+      "id": "labs_pulperia_refranes_initpulperiarefranes",
+      "community": 22,
+      "norm_label": "initpulperiarefranes()"
+    },
+    {
+      "label": "renderRefranesGame()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L129",
+      "id": "labs_pulperia_refranes_renderrefranesgame",
+      "community": 22,
+      "norm_label": "renderrefranesgame()"
+    },
+    {
+      "label": "selectRefranToMatch()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L170",
+      "id": "labs_pulperia_refranes_selectrefrantomatch",
+      "community": 19,
+      "norm_label": "selectrefrantomatch()"
+    },
+    {
+      "label": "selectMeaningToMatch()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L186",
+      "id": "labs_pulperia_refranes_selectmeaningtomatch",
+      "community": 3,
+      "norm_label": "selectmeaningtomatch()"
+    },
+    {
+      "label": "renderAdivinanza()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L241",
+      "id": "labs_pulperia_refranes_renderadivinanza",
+      "community": 22,
+      "norm_label": "renderadivinanza()"
+    },
+    {
+      "label": "revealHint()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L277",
+      "id": "labs_pulperia_refranes_revealhint",
+      "community": 19,
+      "norm_label": "revealhint()"
+    },
+    {
+      "label": "revealAdivinanzaSolution()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L287",
+      "id": "labs_pulperia_refranes_revealadivinanzasolution",
+      "community": 3,
+      "norm_label": "revealadivinanzasolution()"
+    },
+    {
+      "label": "nextAdivinanza()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L299",
+      "id": "labs_pulperia_refranes_nextadivinanza",
+      "community": 22,
+      "norm_label": "nextadivinanza()"
+    },
+    {
+      "label": "renderBomba()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L305",
+      "id": "labs_pulperia_refranes_renderbomba",
+      "community": 22,
+      "norm_label": "renderbomba()"
+    },
+    {
+      "label": "checkBombaRhyme()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L339",
+      "id": "labs_pulperia_refranes_checkbombarhyme",
+      "community": 3,
+      "norm_label": "checkbombarhyme()"
+    },
+    {
+      "label": "nextBomba()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L362",
+      "id": "labs_pulperia_refranes_nextbomba",
+      "community": 22,
+      "norm_label": "nextbomba()"
+    },
+    {
+      "label": "taller-libro.js",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L1",
+      "id": "src_subjects_espanol_labs_taller_libro_js",
+      "community": 3,
+      "norm_label": "taller-libro.js"
+    },
+    {
+      "label": "bookPartsData",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L10",
+      "id": "labs_taller_libro_bookpartsdata",
+      "community": 3,
+      "norm_label": "bookpartsdata"
+    },
+    {
+      "label": "initTallerLibro()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L64",
+      "id": "labs_taller_libro_inittallerlibro",
+      "community": 3,
+      "norm_label": "inittallerlibro()"
+    },
+    {
+      "label": "selectBookPart()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L69",
+      "id": "labs_taller_libro_selectbookpart",
+      "community": 3,
+      "norm_label": "selectbookpart()"
+    },
+    {
+      "label": "switchCardGeneratorTab()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L110",
+      "id": "labs_taller_libro_switchcardgeneratortab",
+      "community": 3,
+      "norm_label": "switchcardgeneratortab()"
     },
     {
       "label": "main.js",
@@ -648,14 +1080,14 @@
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_main_js",
-      "community": 3,
+      "community": 0,
       "norm_label": "main.js"
     },
     {
       "label": "switchSubject()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L49",
+      "source_location": "L61",
       "id": "matematicas_main_switchsubject",
       "community": 0,
       "norm_label": "switchsubject()"
@@ -664,18 +1096,18 @@
       "label": "exitLink",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L198",
+      "source_location": "L258",
       "id": "matematicas_main_exitlink",
-      "community": 3,
+      "community": 0,
       "norm_label": "exitlink"
     },
     {
       "label": "urlParams",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L210",
+      "source_location": "L270",
       "id": "matematicas_main_urlparams",
-      "community": 3,
+      "community": 0,
       "norm_label": "urlparams"
     },
     {
@@ -684,7 +1116,7 @@
       "source_file": "src/subjects/matematicas/data/quiz-practico.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_data_quiz_practico_js",
-      "community": 3,
+      "community": 0,
       "norm_label": "quiz-practico.js"
     },
     {
@@ -693,7 +1125,7 @@
       "source_file": "src/subjects/matematicas/data/quiz-practico.js",
       "source_location": "L2",
       "id": "data_quiz_practico_quizpracticoquestions",
-      "community": 3,
+      "community": 0,
       "norm_label": "quizpracticoquestions"
     },
     {
@@ -702,7 +1134,7 @@
       "source_file": "src/subjects/matematicas/data/quiz-teorico.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_data_quiz_teorico_js",
-      "community": 3,
+      "community": 0,
       "norm_label": "quiz-teorico.js"
     },
     {
@@ -711,7 +1143,7 @@
       "source_file": "src/subjects/matematicas/data/quiz-teorico.js",
       "source_location": "L2",
       "id": "data_quiz_teorico_quizteoricoquestions",
-      "community": 3,
+      "community": 0,
       "norm_label": "quizteoricoquestions"
     },
     {
@@ -720,7 +1152,7 @@
       "source_file": "src/subjects/matematicas/labs/divisores.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_divisores_js",
-      "community": 3,
+      "community": 19,
       "norm_label": "divisores.js"
     },
     {
@@ -729,7 +1161,7 @@
       "source_file": "src/subjects/matematicas/labs/divisores.js",
       "source_location": "L4",
       "id": "labs_divisores_updatedivisoreslab",
-      "community": 3,
+      "community": 19,
       "norm_label": "updatedivisoreslab()"
     },
     {
@@ -738,7 +1170,7 @@
       "source_file": "src/subjects/matematicas/labs/fracciones.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_fracciones_js",
-      "community": 3,
+      "community": 19,
       "norm_label": "fracciones.js"
     },
     {
@@ -747,7 +1179,7 @@
       "source_file": "src/subjects/matematicas/labs/fracciones.js",
       "source_location": "L4",
       "id": "labs_fracciones_updatefraccioneslab",
-      "community": 3,
+      "community": 19,
       "norm_label": "updatefraccioneslab()"
     },
     {
@@ -837,7 +1269,7 @@
       "source_file": "src/subjects/matematicas/labs/multiplos.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_multiplos_js",
-      "community": 3,
+      "community": 19,
       "norm_label": "multiplos.js"
     },
     {
@@ -846,7 +1278,7 @@
       "source_file": "src/subjects/matematicas/labs/multiplos.js",
       "source_location": "L4",
       "id": "labs_multiplos_updatemultipleslab",
-      "community": 3,
+      "community": 19,
       "norm_label": "updatemultipleslab()"
     },
     {
@@ -855,7 +1287,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_pulperia_js",
-      "community": 3,
+      "community": 20,
       "norm_label": "pulperia.js"
     },
     {
@@ -864,7 +1296,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L5",
       "id": "labs_pulperia_changepulper\u00edaqty",
-      "community": 3,
+      "community": 20,
       "norm_label": "changepulperiaqty()"
     },
     {
@@ -873,7 +1305,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L17",
       "id": "labs_pulperia_calculatepulper\u00eda",
-      "community": 3,
+      "community": 20,
       "norm_label": "calculatepulperia()"
     },
     {
@@ -1001,6 +1433,15 @@
       "id": "rules_riomate_mandato_de_audio",
       "community": 5,
       "norm_label": "mandato de audio:"
+    },
+    {
+      "label": "CHECKLIST DE DIAGN\u00d3STICO Y DEPURACI\u00d3N (MANDATORIO)",
+      "file_type": "document",
+      "source_file": ".agents/rules/riomate.md",
+      "source_location": "L104",
+      "id": "rules_riomate_checklist_de_diagn\u00f3stico_y_depuraci\u00f3n_mandatorio",
+      "community": 5,
+      "norm_label": "checklist de diagnostico y depuracion (mandatorio)"
     },
     {
       "label": "riomate-add-quiz-questions.md",
@@ -1222,7 +1663,7 @@
       "label": "code:block1 ($ \\frac \\times \\approx \\div \\cdot \\Delta \\text{)",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-debug-checklist.md",
-      "source_location": "L25",
+      "source_location": "L26",
       "id": "skills_riomate_debug_checklist_codeblock_1",
       "community": 4,
       "norm_label": "code:block1 ($ \\frac \\times \\approx \\div \\cdot \\delta \\text{)"
@@ -1231,7 +1672,7 @@
       "label": "2. Flashcards no se voltean",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-debug-checklist.md",
-      "source_location": "L33",
+      "source_location": "L34",
       "id": "skills_riomate_debug_checklist_2_flashcards_no_se_voltean",
       "community": 4,
       "norm_label": "2. flashcards no se voltean"
@@ -1240,7 +1681,7 @@
       "label": "3. Quiz no funciona / preguntas no aparecen",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-debug-checklist.md",
-      "source_location": "L50",
+      "source_location": "L53",
       "id": "skills_riomate_debug_checklist_3_quiz_no_funciona_preguntas_no_aparecen",
       "community": 4,
       "norm_label": "3. quiz no funciona / preguntas no aparecen"
@@ -1249,7 +1690,7 @@
       "label": "4. Laboratorio de geometr\u00eda SVG se desborda / solapamiento de etiquetas",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-debug-checklist.md",
-      "source_location": "L62",
+      "source_location": "L66",
       "id": "skills_riomate_debug_checklist_4_laboratorio_de_geometr\u00eda_svg_se_desborda_solapamiento_de_etiquetas",
       "community": 4,
       "norm_label": "4. laboratorio de geometria svg se desborda / solapamiento de etiquetas"
@@ -1258,7 +1699,7 @@
       "label": "5. Pulper\u00eda / c\u00e1lculo de vuelto incorrecto",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-debug-checklist.md",
-      "source_location": "L73",
+      "source_location": "L78",
       "id": "skills_riomate_debug_checklist_5_pulper\u00eda_c\u00e1lculo_de_vuelto_incorrecto",
       "community": 4,
       "norm_label": "5. pulperia / calculo de vuelto incorrecto"
@@ -1267,7 +1708,7 @@
       "label": "6. Progreso y badges no se actualizan",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-debug-checklist.md",
-      "source_location": "L83",
+      "source_location": "L89",
       "id": "skills_riomate_debug_checklist_6_progreso_y_badges_no_se_actualizan",
       "community": 4,
       "norm_label": "6. progreso y badges no se actualizan"
@@ -1276,7 +1717,7 @@
       "label": "7. Problema de responsive / scroll horizontal",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-debug-checklist.md",
-      "source_location": "L94",
+      "source_location": "L101",
       "id": "skills_riomate_debug_checklist_7_problema_de_responsive_scroll_horizontal",
       "community": 4,
       "norm_label": "7. problema de responsive / scroll horizontal"
@@ -1285,7 +1726,7 @@
       "label": "8. Proceso de verificaci\u00f3n r\u00e1pida",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-debug-checklist.md",
-      "source_location": "L105",
+      "source_location": "L113",
       "id": "skills_riomate_debug_checklist_8_proceso_de_verificaci\u00f3n_r\u00e1pida",
       "community": 4,
       "norm_label": "8. proceso de verificacion rapida"
@@ -1516,6 +1957,348 @@
       "norm_label": "restricciones tecnicas"
     },
     {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_add_quiz_questions_skill_md",
+      "community": 15,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Skill: Agregar Preguntas al Quiz de R\u00edoMate",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L6",
+      "id": "riomate_add_quiz_questions_skill_skill_agregar_preguntas_al_quiz_de_r\u00edomate",
+      "community": 15,
+      "norm_label": "skill: agregar preguntas al quiz de riomate"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L8",
+      "id": "riomate_add_quiz_questions_skill_cu\u00e1ndo_usar_este_skill",
+      "community": 15,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "Procedimiento",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L15",
+      "id": "riomate_add_quiz_questions_skill_procedimiento",
+      "community": 15,
+      "norm_label": "procedimiento"
+    },
+    {
+      "label": "1. Verificar destino",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L17",
+      "id": "riomate_add_quiz_questions_skill_1_verificar_destino",
+      "community": 15,
+      "norm_label": "1. verificar destino"
+    },
+    {
+      "label": "2. Estructura obligatoria de cada pregunta",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L22",
+      "id": "riomate_add_quiz_questions_skill_2_estructura_obligatoria_de_cada_pregunta",
+      "community": 15,
+      "norm_label": "2. estructura obligatoria de cada pregunta"
+    },
+    {
+      "label": "code:js ({)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L24",
+      "id": "riomate_add_quiz_questions_skill_codeblock_1",
+      "community": 15,
+      "norm_label": "code:js ({)"
+    },
+    {
+      "label": "3. Reglas de calidad",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L53",
+      "id": "riomate_add_quiz_questions_skill_3_reglas_de_calidad",
+      "community": 15,
+      "norm_label": "3. reglas de calidad"
+    },
+    {
+      "label": "4. Inserci\u00f3n en el archivo",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L64",
+      "id": "riomate_add_quiz_questions_skill_4_inserci\u00f3n_en_el_archivo",
+      "community": 15,
+      "norm_label": "4. insercion en el archivo"
+    },
+    {
+      "label": "5. Verificaci\u00f3n post-inserci\u00f3n",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L70",
+      "id": "riomate_add_quiz_questions_skill_5_verificaci\u00f3n_post_inserci\u00f3n",
+      "community": 15,
+      "norm_label": "5. verificacion post-insercion"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_clone_materia_skill_md",
+      "community": 17,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Skill: Clonar R\u00edoMate para una Nueva Materia",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L6",
+      "id": "riomate_clone_materia_skill_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "community": 17,
+      "norm_label": "skill: clonar riomate para una nueva materia"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L8",
+      "id": "riomate_clone_materia_skill_cu\u00e1ndo_usar_este_skill",
+      "community": 17,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "Principio: Caparaz\u00f3n + Relleno",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L15",
+      "id": "riomate_clone_materia_skill_principio_caparaz\u00f3n_relleno",
+      "community": 17,
+      "norm_label": "principio: caparazon + relleno"
+    },
+    {
+      "label": "Pasos para clonar",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L33",
+      "id": "riomate_clone_materia_skill_pasos_para_clonar",
+      "community": 17,
+      "norm_label": "pasos para clonar"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_debug_checklist_skill_md",
+      "community": 14,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Skill: Diagn\u00f3stico y Depuraci\u00f3n de R\u00edoMate",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L6",
+      "id": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "community": 14,
+      "norm_label": "skill: diagnostico y depuracion de riomate"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L8",
+      "id": "riomate_debug_checklist_skill_cu\u00e1ndo_usar_este_skill",
+      "community": 14,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "1. Errores de Notaci\u00f3n Matem\u00e1tica",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L18",
+      "id": "riomate_debug_checklist_skill_1_errores_de_notaci\u00f3n_matem\u00e1tica",
+      "community": 14,
+      "norm_label": "1. errores de notacion matematica"
+    },
+    {
+      "label": "code:block1 ($ \\frac \\times \\approx \\div \\cdot \\Delta \\text{)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L23",
+      "id": "riomate_debug_checklist_skill_codeblock_1",
+      "community": 14,
+      "norm_label": "code:block1 ($ \\frac \\times \\approx \\div \\cdot \\delta \\text{)"
+    },
+    {
+      "label": "2. Flashcards no se voltean",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L31",
+      "id": "riomate_debug_checklist_skill_2_flashcards_no_se_voltean",
+      "community": 14,
+      "norm_label": "2. flashcards no se voltean"
+    },
+    {
+      "label": "3. Quiz no funciona / preguntas no aparecen",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L48",
+      "id": "riomate_debug_checklist_skill_3_quiz_no_funciona_preguntas_no_aparecen",
+      "community": 14,
+      "norm_label": "3. quiz no funciona / preguntas no aparecen"
+    },
+    {
+      "label": "4. Laboratorio de geometr\u00eda SVG se desborda / solapamiento de etiquetas",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L60",
+      "id": "riomate_debug_checklist_skill_4_laboratorio_de_geometr\u00eda_svg_se_desborda_solapamiento_de_etiquetas",
+      "community": 14,
+      "norm_label": "4. laboratorio de geometria svg se desborda / solapamiento de etiquetas"
+    },
+    {
+      "label": "5. Pulper\u00eda / c\u00e1lculo de vuelto incorrecto",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L71",
+      "id": "riomate_debug_checklist_skill_5_pulper\u00eda_c\u00e1lculo_de_vuelto_incorrecto",
+      "community": 14,
+      "norm_label": "5. pulperia / calculo de vuelto incorrecto"
+    },
+    {
+      "label": "6. Progreso y badges no se actualizan",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L81",
+      "id": "riomate_debug_checklist_skill_6_progreso_y_badges_no_se_actualizan",
+      "community": 14,
+      "norm_label": "6. progreso y badges no se actualizan"
+    },
+    {
+      "label": "7. Problema de responsive / scroll horizontal",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L92",
+      "id": "riomate_debug_checklist_skill_7_problema_de_responsive_scroll_horizontal",
+      "community": 14,
+      "norm_label": "7. problema de responsive / scroll horizontal"
+    },
+    {
+      "label": "8. Proceso de verificaci\u00f3n r\u00e1pida",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L103",
+      "id": "riomate_debug_checklist_skill_8_proceso_de_verificaci\u00f3n_r\u00e1pida",
+      "community": 14,
+      "norm_label": "8. proceso de verificacion rapida"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_new_flashcard_skill_md",
+      "community": 16,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Skill: Flashcards de Teor\u00eda en R\u00edoMate",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L6",
+      "id": "riomate_new_flashcard_skill_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "community": 16,
+      "norm_label": "skill: flashcards de teoria en riomate"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L8",
+      "id": "riomate_new_flashcard_skill_cu\u00e1ndo_usar_este_skill",
+      "community": 16,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "Estructura HTML de una Flashcard",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L14",
+      "id": "riomate_new_flashcard_skill_estructura_html_de_una_flashcard",
+      "community": 16,
+      "norm_label": "estructura html de una flashcard"
+    },
+    {
+      "label": "code:html (<!-- Tarjeta N: {T\u00edtulo del Tema} -->)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L16",
+      "id": "riomate_new_flashcard_skill_codeblock_1",
+      "community": 16,
+      "norm_label": "code:html (<!-- tarjeta n: {titulo del tema} -->)"
+    },
+    {
+      "label": "Reglas de contenido",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L54",
+      "id": "riomate_new_flashcard_skill_reglas_de_contenido",
+      "community": 16,
+      "norm_label": "reglas de contenido"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab/SKILL.md",
+      "source_location": "L1",
+      "id": "agents_skills_riomate_new_lab_skill_md",
+      "community": 18,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Skill: Nuevo Laboratorio Interactivo en R\u00edoMate",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab/SKILL.md",
+      "source_location": "L6",
+      "id": "riomate_new_lab_skill_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "community": 18,
+      "norm_label": "skill: nuevo laboratorio interactivo en riomate"
+    },
+    {
+      "label": "Cu\u00e1ndo usar este skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab/SKILL.md",
+      "source_location": "L8",
+      "id": "riomate_new_lab_skill_cu\u00e1ndo_usar_este_skill",
+      "community": 18,
+      "norm_label": "cuando usar este skill"
+    },
+    {
+      "label": "Anatom\u00eda de un Laboratorio",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab/SKILL.md",
+      "source_location": "L14",
+      "id": "riomate_new_lab_skill_anatom\u00eda_de_un_laboratorio",
+      "community": 18,
+      "norm_label": "anatomia de un laboratorio"
+    },
+    {
+      "label": "Restricciones t\u00e9cnicas",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-new-lab/SKILL.md",
+      "source_location": "L23",
+      "id": "riomate_new_lab_skill_restricciones_t\u00e9cnicas",
+      "community": 18,
+      "norm_label": "restricciones tecnicas"
+    },
+    {
       "label": "graphify.md",
       "file_type": "document",
       "source_file": ".agents/workflows/graphify.md",
@@ -1537,10 +2320,19 @@
       "label": "studiedCards",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "state_store_studiedcards",
-      "community": 0,
+      "community": 20,
       "norm_label": "studiedcards"
+    },
+    {
+      "label": "renderSampleCards()",
+      "file_type": "code",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L110",
+      "community": 19,
+      "norm_label": "rendersamplecards()",
+      "id": "labs_detector_oraciones_rendersamplecards"
     }
   ],
   "links": [
@@ -1708,6 +2500,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/hub/main.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hub_main_js",
+      "target": "hub_main_playclicksound"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hub/main.js",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hub_main_js",
+      "target": "hub_main_switchsemester"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hub/main.js",
       "source_location": "L70",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -1723,6 +2535,17 @@
       "confidence_score": 1.0,
       "source": "src_hub_main_js",
       "target": "hub_main_destination"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hub/main.js",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hub_main_switchsemester",
+      "target": "hub_main_playclicksound"
     },
     {
       "relation": "contains",
@@ -1786,6 +2609,39 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_ciencias_labs_filtro_renal_js",
+      "target": "src_shared_modules_audio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "src_shared_modules_audio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "src_shared_modules_audio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
       "target": "src_shared_modules_audio_js"
     },
     {
@@ -1902,6 +2758,39 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L11",
       "weight": 1.0,
@@ -1965,6 +2854,105 @@
       "target": "modules_audio_playsound"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_analyzecustominput",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L274",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_answerchallengedetector",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L296",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_resetchallengedetector",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_resetrefranesgame",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_selectmeaningtomatch",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L249",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_revealadivinanzasolution",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L261",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_nextadivinanza",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L306",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_checkbombarhyme",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L324",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_nextbomba",
+      "target": "modules_audio_playsound"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1973,6 +2961,39 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_ciencias_labs_filtro_renal_js",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
       "target": "modules_audio_playtickwiththrottle"
     },
     {
@@ -2039,6 +3060,105 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "labs_filtro_renal_tick",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_nextsamplesentence",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_prevsamplesentence",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_gotosamplesentence",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_selectsamplesentence",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_analyzecustominput",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_selectrefrantomatch",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_revealhint",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "labs_taller_libro_selectbookpart",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "labs_taller_libro_switchcardgeneratortab",
       "target": "modules_audio_playtickwiththrottle"
     },
     {
@@ -2205,6 +3325,39 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "src_shared_modules_flashcards_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "src_shared_modules_flashcards_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "src_shared_modules_flashcards_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L9",
       "weight": 1.0,
@@ -2326,6 +3479,39 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L9",
       "weight": 1.0,
@@ -2342,6 +3528,83 @@
       "source_location": "L162",
       "weight": 1.0,
       "source": "modules_quiz_nextquestion",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_selectsamplesentence",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L222",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_analyzecustominput",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_selectmeaningtomatch",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L257",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_revealadivinanzasolution",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L313",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_checkbombarhyme",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "labs_taller_libro_selectbookpart",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "labs_taller_libro_switchcardgeneratortab",
       "target": "modules_flashcards_updatebadges"
     },
     {
@@ -2393,9 +3656,9 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_shared_modules_quiz_js",
-      "target": "modules_quiz_updatequizintrotexts",
-      "confidence_score": 1.0
+      "target": "modules_quiz_updatequizintrotexts"
     },
     {
       "relation": "contains",
@@ -2477,9 +3740,9 @@
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
-      "target": "modules_quiz_updatequizintrotexts",
-      "confidence_score": 1.0
+      "target": "modules_quiz_updatequizintrotexts"
     },
     {
       "relation": "calls",
@@ -2722,6 +3985,90 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_shared_services_gemini_js",
+      "target": "services_gemini_analysiscache"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_shared_services_gemini_js",
+      "target": "services_gemini_getgeminiapikey"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_shared_services_gemini_js",
+      "target": "services_gemini_setgeminiapikey"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_shared_services_gemini_js",
+      "target": "services_gemini_analyzesentencewithai"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "src_shared_services_gemini_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/services/gemini.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_gemini_analyzesentencewithai",
+      "target": "services_gemini_getgeminiapikey"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "services_gemini_analyzesentencewithai"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_analyzecustominput",
+      "target": "services_gemini_analyzesentencewithai"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/shared/state/store.js",
       "source_location": "L8",
       "weight": 1.0,
@@ -2748,6 +4095,16 @@
       "confidence_score": 1.0,
       "source": "src_shared_state_store_js",
       "target": "state_store_studiedcardsscience"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_studiedcardsspanish"
     },
     {
       "relation": "contains",
@@ -2818,6 +4175,39 @@
       "confidence_score": 1.0,
       "source": "src_shared_state_store_js",
       "target": "state_store_pulper\u00edaprices"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "src_shared_state_store_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "src_shared_state_store_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "src_shared_state_store_js"
     },
     {
       "relation": "imports_from",
@@ -2894,6 +4284,116 @@
       "weight": 1.0,
       "source": "matematicas_main_switchsubject",
       "target": "state_store_syncstudiedcardsset"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_selectsamplesentence",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_analyzecustominput",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_selectmeaningtomatch",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L256",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_revealadivinanzasolution",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L312",
+      "weight": 1.0,
+      "source": "labs_pulperia_refranes_checkbombarhyme",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "labs_taller_libro_selectbookpart",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "labs_taller_libro_switchcardgeneratortab",
+      "target": "state_store_setuserhasusedlab"
     },
     {
       "relation": "imports",
@@ -3210,6 +4710,905 @@
       "weight": 1.0,
       "source": "matematicas_main_switchsubject",
       "target": "labs_filtro_renal_stopfiltrorenal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/data/quiz-practico.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_data_quiz_practico_js",
+      "target": "data_quiz_practico_quizpracticoespanol"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_espanol_data_quiz_practico_js"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_practico_quizpracticoespanol"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/data/quiz-teorico.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_data_quiz_teorico_js",
+      "target": "data_quiz_teorico_quizteoricoespanol"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_espanol_data_quiz_teorico_js"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_teorico_quizteoricoespanol"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_samplesentences"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_challengelist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_initdetectororaciones"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_rendersamplecarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_nextsamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_prevsamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_gotosamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_selectsamplesentence"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_analyzecustominput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L225",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_renderchallenge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L266",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_answerchallengedetector"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L293",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_resetchallengedetector"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_espanol_labs_detector_oraciones_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "labs_detector_oraciones_rendersamplecards"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_initdetectororaciones",
+      "target": "labs_detector_oraciones_rendersamplecarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_initdetectororaciones",
+      "target": "labs_detector_oraciones_selectsamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_detector_oraciones_initdetectororaciones",
+      "target": "labs_detector_oraciones_renderchallenge"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_detector_oraciones_initdetectororaciones"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_detector_oraciones_initdetectororaciones",
+      "target": "labs_detector_oraciones_rendersamplecards"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_nextsamplesentence",
+      "target": "labs_detector_oraciones_rendersamplecarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_prevsamplesentence",
+      "target": "labs_detector_oraciones_rendersamplecarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_gotosamplesentence",
+      "target": "labs_detector_oraciones_rendersamplecarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_nextsamplesentence",
+      "target": "labs_detector_oraciones_selectsamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_detector_oraciones_nextsamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_prevsamplesentence",
+      "target": "labs_detector_oraciones_selectsamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_detector_oraciones_prevsamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L188",
+      "weight": 1.0,
+      "source": "labs_detector_oraciones_gotosamplesentence",
+      "target": "labs_detector_oraciones_selectsamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_detector_oraciones_gotosamplesentence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_detector_oraciones_selectsamplesentence"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_detector_oraciones_analyzecustominput"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
+      "source_location": "L297",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_detector_oraciones_resetchallengedetector",
+      "target": "labs_detector_oraciones_renderchallenge"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_detector_oraciones_answerchallengedetector"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_detector_oraciones_resetchallengedetector"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_refranesgamedata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_adivinanzasdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_bombasdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_shuffledmeanings"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_shufflearray"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L114",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_resetrefranesgame"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_initpulperiarefranes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_renderrefranesgame"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_selectrefrantomatch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L147",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_selectmeaningtomatch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L202",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_renderadivinanza"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L238",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_revealhint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L248",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_revealadivinanzasolution"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_nextadivinanza"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L266",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_renderbomba"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L300",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_checkbombarhyme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L323",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_pulperia_refranes_js",
+      "target": "labs_pulperia_refranes_nextbomba"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_espanol_labs_pulperia_refranes_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_pulperia_refranes_resetrefranesgame",
+      "target": "labs_pulperia_refranes_shufflearray"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_pulperia_refranes_initpulperiarefranes",
+      "target": "labs_pulperia_refranes_shufflearray"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_pulperia_refranes_renderrefranesgame",
+      "target": "labs_pulperia_refranes_shufflearray"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_pulperia_refranes_resetrefranesgame",
+      "target": "labs_pulperia_refranes_renderrefranesgame"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_refranes_resetrefranesgame"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_pulperia_refranes_initpulperiarefranes",
+      "target": "labs_pulperia_refranes_renderrefranesgame"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_pulperia_refranes_initpulperiarefranes",
+      "target": "labs_pulperia_refranes_renderadivinanza"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_pulperia_refranes_initpulperiarefranes",
+      "target": "labs_pulperia_refranes_renderbomba"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_refranes_initpulperiarefranes"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_refranes_selectrefrantomatch"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_refranes_selectmeaningtomatch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L263",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_pulperia_refranes_nextadivinanza",
+      "target": "labs_pulperia_refranes_renderadivinanza"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_refranes_revealhint"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_refranes_revealadivinanzasolution"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_refranes_nextadivinanza"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
+      "source_location": "L326",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_pulperia_refranes_nextbomba",
+      "target": "labs_pulperia_refranes_renderbomba"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_refranes_checkbombarhyme"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_pulperia_refranes_nextbomba"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "labs_taller_libro_bookpartsdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "labs_taller_libro_inittallerlibro"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "labs_taller_libro_selectbookpart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "labs_taller_libro_switchcardgeneratortab"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_espanol_labs_taller_libro_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_taller_libro_inittallerlibro",
+      "target": "labs_taller_libro_selectbookpart"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/espanol/labs/taller-libro.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_taller_libro_inittallerlibro",
+      "target": "labs_taller_libro_switchcardgeneratortab"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_taller_libro_inittallerlibro"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_taller_libro_selectbookpart"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_taller_libro_switchcardgeneratortab"
     },
     {
       "relation": "imports_from",
@@ -3781,6 +6180,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".agents/rules/riomate.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rules_riomate_r\u00edomate_reglas_de_desarrollo_manual_oficial",
+      "target": "rules_riomate_checklist_de_diagn\u00f3stico_y_depuraci\u00f3n_mandatorio"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/riomate.md",
       "source_location": "L54",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4320,6 +6729,336 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skills_riomate_add_quiz_questions_skill_md",
+      "target": "riomate_add_quiz_questions_skill_skill_agregar_preguntas_al_quiz_de_r\u00edomate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_add_quiz_questions_skill_skill_agregar_preguntas_al_quiz_de_r\u00edomate",
+      "target": "riomate_add_quiz_questions_skill_cu\u00e1ndo_usar_este_skill"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_add_quiz_questions_skill_skill_agregar_preguntas_al_quiz_de_r\u00edomate",
+      "target": "riomate_add_quiz_questions_skill_procedimiento"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_add_quiz_questions_skill_procedimiento",
+      "target": "riomate_add_quiz_questions_skill_1_verificar_destino"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_add_quiz_questions_skill_procedimiento",
+      "target": "riomate_add_quiz_questions_skill_2_estructura_obligatoria_de_cada_pregunta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_add_quiz_questions_skill_procedimiento",
+      "target": "riomate_add_quiz_questions_skill_3_reglas_de_calidad"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_add_quiz_questions_skill_procedimiento",
+      "target": "riomate_add_quiz_questions_skill_4_inserci\u00f3n_en_el_archivo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_add_quiz_questions_skill_procedimiento",
+      "target": "riomate_add_quiz_questions_skill_5_verificaci\u00f3n_post_inserci\u00f3n"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-add-quiz-questions/SKILL.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_add_quiz_questions_skill_2_estructura_obligatoria_de_cada_pregunta",
+      "target": "riomate_add_quiz_questions_skill_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skills_riomate_clone_materia_skill_md",
+      "target": "riomate_clone_materia_skill_skill_clonar_r\u00edomate_para_una_nueva_materia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_clone_materia_skill_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "target": "riomate_clone_materia_skill_cu\u00e1ndo_usar_este_skill"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_clone_materia_skill_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "target": "riomate_clone_materia_skill_principio_caparaz\u00f3n_relleno"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_clone_materia_skill_skill_clonar_r\u00edomate_para_una_nueva_materia",
+      "target": "riomate_clone_materia_skill_pasos_para_clonar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skills_riomate_debug_checklist_skill_md",
+      "target": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "riomate_debug_checklist_skill_cu\u00e1ndo_usar_este_skill"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "riomate_debug_checklist_skill_1_errores_de_notaci\u00f3n_matem\u00e1tica"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "riomate_debug_checklist_skill_2_flashcards_no_se_voltean"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "riomate_debug_checklist_skill_3_quiz_no_funciona_preguntas_no_aparecen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "riomate_debug_checklist_skill_4_laboratorio_de_geometr\u00eda_svg_se_desborda_solapamiento_de_etiquetas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "riomate_debug_checklist_skill_5_pulper\u00eda_c\u00e1lculo_de_vuelto_incorrecto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "riomate_debug_checklist_skill_6_progreso_y_badges_no_se_actualizan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "riomate_debug_checklist_skill_7_problema_de_responsive_scroll_horizontal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_skill_diagn\u00f3stico_y_depuraci\u00f3n_de_r\u00edomate",
+      "target": "riomate_debug_checklist_skill_8_proceso_de_verificaci\u00f3n_r\u00e1pida"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-debug-checklist/SKILL.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_debug_checklist_skill_1_errores_de_notaci\u00f3n_matem\u00e1tica",
+      "target": "riomate_debug_checklist_skill_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skills_riomate_new_flashcard_skill_md",
+      "target": "riomate_new_flashcard_skill_skill_flashcards_de_teor\u00eda_en_r\u00edomate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_new_flashcard_skill_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "target": "riomate_new_flashcard_skill_cu\u00e1ndo_usar_este_skill"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_new_flashcard_skill_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "target": "riomate_new_flashcard_skill_estructura_html_de_una_flashcard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_new_flashcard_skill_skill_flashcards_de_teor\u00eda_en_r\u00edomate",
+      "target": "riomate_new_flashcard_skill_reglas_de_contenido"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-flashcard/SKILL.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_new_flashcard_skill_estructura_html_de_una_flashcard",
+      "target": "riomate_new_flashcard_skill_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_skills_riomate_new_lab_skill_md",
+      "target": "riomate_new_lab_skill_skill_nuevo_laboratorio_interactivo_en_r\u00edomate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_new_lab_skill_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "target": "riomate_new_lab_skill_cu\u00e1ndo_usar_este_skill"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab/SKILL.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_new_lab_skill_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "target": "riomate_new_lab_skill_anatom\u00eda_de_un_laboratorio"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-new-lab/SKILL.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_new_lab_skill_skill_nuevo_laboratorio_interactivo_en_r\u00edomate",
+      "target": "riomate_new_lab_skill_restricciones_t\u00e9cnicas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".agents/workflows/graphify.md",
       "source_location": "L6",
       "weight": 1.0,
@@ -4329,5 +7068,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "36322f33258cbab9720790847c6d2a86fcbd5c95"
+  "built_at_commit": "f0ba19cd4153adfd565143bde761a838fa2b6450"
 }
