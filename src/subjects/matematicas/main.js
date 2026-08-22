@@ -25,7 +25,7 @@ import { initDecisionesMedicas, chooseMedicalTool } from '../ciencias/labs/decis
 // Español Imports
 import { quizTeoricoEspanol }   from '../espanol/data/quiz-teorico.js';
 import { quizPracticoEspanol }  from '../espanol/data/quiz-practico.js';
-import { initDetectorOraciones, selectSampleSentence, nextSampleSentence, prevSampleSentence, goToSampleSentence, analyzeCustomInput, answerChallengeDetector, resetChallengeDetector } from '../espanol/labs/detector-oraciones.js';
+import { initDetectorOraciones, selectSampleSentence, analyzeCustomInput, answerChallengeDetector, resetChallengeDetector } from '../espanol/labs/detector-oraciones.js';
 import { initTallerLibro, selectBookPart, switchCardGeneratorTab } from '../espanol/labs/taller-libro.js';
 import { initPulperiaRefranes, selectRefranToMatch, selectMeaningToMatch, resetRefranesGame, revealHint, revealAdivinanzaSolution, nextAdivinanza, checkBombaRhyme, nextBomba } from '../espanol/labs/pulperia-refranes.js';
 
@@ -231,9 +231,6 @@ Object.assign(window, {
   onLabSliderInput,
   chooseMedicalTool,
   selectSampleSentence,
-  nextSampleSentence,
-  prevSampleSentence,
-  goToSampleSentence,
   analyzeCustomInput,
   answerChallengeDetector,
   resetChallengeDetector,

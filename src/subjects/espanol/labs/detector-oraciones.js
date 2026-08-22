@@ -102,94 +102,43 @@ const challengeList = [
   }
 ];
 
-let currentSampleIdx = 0;
+let selectedSampleIdx = 0;
 
 export function initDetectorOraciones() {
-  renderSampleCarousel();
-  selectSampleSentence(0, false); // Seleccionar primero sin sonido intrusivo inicial
+  renderSampleCards();
+  selectSampleSentence(0, false);
   renderChallenge();
 }
 
-export function renderSampleCarousel() {
+function renderSampleCards() {
   const container = document.getElementById('detector-samples-container');
   if (!container) return;
 
-  const s = sampleSentences[currentSampleIdx];
-  const total = sampleSentences.length;
-
-  container.innerHTML = `
-    <div class="bg-white rounded-3xl p-4 sm:p-5 border-2 border-amber-300 shadow-sm relative transition-all duration-300">
-      <!-- Cabecera del Carrusel con badge e indicador de paso -->
-      <div class="flex items-center justify-between gap-2 mb-3">
-        <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full ${s.color} font-fun">
-          <span>${s.icon}</span>
-          <span>${s.badge}</span>
-        </span>
-        <span class="text-xs font-bold text-slate-600 font-fun bg-amber-100/60 border border-amber-200 px-2.5 py-1 rounded-full">
-          Oración ${currentSampleIdx + 1} de ${total}
-        </span>
-      </div>
-
-      <!-- Oración destacada del carrusel -->
-      <div class="my-3 p-4 rounded-2xl bg-amber-50/70 border border-amber-200 text-center">
-        <p class="text-base sm:text-lg font-bold text-slate-900 leading-snug font-fun">
-          "${s.text}"
-        </p>
-      </div>
-
-      <!-- Botón de Análisis Directo -->
-      <div class="mb-4 text-center">
-        <button onclick="window.selectSampleSentence(${currentSampleIdx})" class="w-full bg-amber-100 hover:bg-amber-200 active:scale-98 text-amber-950 font-bold py-2.5 px-3 rounded-2xl text-xs font-fun transition-all border border-amber-300 shadow-sm flex items-center justify-center gap-2 min-h-[44px]">
-          <span>🔍 Ver Análisis de este Ejemplo</span>
-        </button>
-      </div>
-
-      <!-- Controles del Carrusel (< Anterior / Siguiente > y Dots) -->
-      <div class="flex items-center justify-between pt-3 border-t border-slate-100 gap-2">
-        <button onclick="window.prevSampleSentence()" aria-label="Oración anterior" class="shrink-0 h-11 px-3 sm:px-4 rounded-2xl border border-amber-300 bg-amber-50 hover:bg-amber-100 active:scale-95 text-xs font-bold text-amber-950 transition-all font-fun flex items-center justify-center gap-1.5 shadow-sm min-w-[44px]">
-          <span class="text-base font-bold">◀</span>
-          <span class="hidden sm:inline">Anterior</span>
-        </button>
-
-        <!-- Indicadores Dots -->
-        <div class="flex items-center justify-center gap-1.5 px-1 flex-1">
-          ${sampleSentences.map((_, i) => `
-            <button onclick="window.goToSampleSentence(${i})" aria-label="Ir a oración ${i+1}" class="h-2.5 rounded-full transition-all ${i === currentSampleIdx ? 'bg-amber-600 w-5' : 'bg-slate-200 hover:bg-amber-300 w-2'}"></button>
-          `).join('')}
+  container.innerHTML = sampleSentences.map((s, idx) => {
+    const isSelected = idx === selectedSampleIdx;
+    return `
+      <div onclick="window.selectSampleSentence(${idx})" id="sample-card-${idx}" class="cursor-pointer p-3.5 rounded-2xl border-2 transition-all duration-200 flex items-start gap-3 text-left ${isSelected ? 'border-amber-500 bg-amber-50/90 shadow-sm' : 'border-slate-200 bg-white hover:border-amber-300 hover:bg-amber-50/30'}">
+        <!-- Radio Button Circle -->
+        <div class="mt-0.5 shrink-0 w-5 h-5 rounded-full border-2 ${isSelected ? 'border-amber-600 bg-amber-600' : 'border-slate-300 bg-white'} flex items-center justify-center transition-all">
+          ${isSelected ? '<div class="w-2 h-2 rounded-full bg-white"></div>' : ''}
         </div>
-
-        <button onclick="window.nextSampleSentence()" aria-label="Oración siguiente" class="shrink-0 h-11 px-3 sm:px-4 rounded-2xl border border-amber-300 bg-amber-50 hover:bg-amber-100 active:scale-95 text-xs font-bold text-amber-950 transition-all font-fun flex items-center justify-center gap-1.5 shadow-sm min-w-[44px]">
-          <span class="hidden sm:inline">Siguiente</span>
-          <span class="text-base font-bold">▶</span>
-        </button>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-base">${s.icon}</span>
+            <span class="inline-block text-[11px] font-bold px-2.5 py-0.5 rounded-full ${s.color} font-fun">${s.badge}</span>
+          </div>
+          <p class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">"${s.text}"</p>
+        </div>
       </div>
-    </div>
-  `;
-}
-
-export function nextSampleSentence() {
-  playTickWithThrottle();
-  currentSampleIdx = (currentSampleIdx + 1) % sampleSentences.length;
-  renderSampleCarousel();
-  selectSampleSentence(currentSampleIdx);
-}
-
-export function prevSampleSentence() {
-  playTickWithThrottle();
-  currentSampleIdx = (currentSampleIdx - 1 + sampleSentences.length) % sampleSentences.length;
-  renderSampleCarousel();
-  selectSampleSentence(currentSampleIdx);
-}
-
-export function goToSampleSentence(idx) {
-  playTickWithThrottle();
-  currentSampleIdx = idx;
-  renderSampleCarousel();
-  selectSampleSentence(currentSampleIdx);
+    `;
+  }).join('');
 }
 
 export function selectSampleSentence(idx, withSound = true) {
   if (withSound) playTickWithThrottle();
+  selectedSampleIdx = idx;
+  renderSampleCards();
+
   const s = sampleSentences[idx];
   if (!s) return;
 
