@@ -118,49 +118,49 @@ export function renderSampleCarousel() {
   const total = sampleSentences.length;
 
   container.innerHTML = `
-    <div class="bg-white rounded-3xl p-5 border-2 border-amber-300 shadow-sm relative overflow-hidden transition-all duration-300">
+    <div class="bg-white rounded-3xl p-4 sm:p-5 border-2 border-amber-300 shadow-sm relative transition-all duration-300">
       <!-- Cabecera del Carrusel con badge e indicador de paso -->
       <div class="flex items-center justify-between gap-2 mb-3">
         <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full ${s.color} font-fun">
           <span>${s.icon}</span>
           <span>${s.badge}</span>
         </span>
-        <span class="text-xs font-bold text-slate-500 font-fun bg-slate-100 px-2.5 py-1 rounded-full">
+        <span class="text-xs font-bold text-slate-600 font-fun bg-amber-100/60 border border-amber-200 px-2.5 py-1 rounded-full">
           Oración ${currentSampleIdx + 1} de ${total}
         </span>
       </div>
 
       <!-- Oración destacada del carrusel -->
       <div class="my-3 p-4 rounded-2xl bg-amber-50/70 border border-amber-200 text-center">
-        <p class="text-base md:text-lg font-bold text-slate-900 leading-snug font-fun">
+        <p class="text-base sm:text-lg font-bold text-slate-900 leading-snug font-fun">
           "${s.text}"
         </p>
       </div>
 
       <!-- Botón de Análisis Directo -->
       <div class="mb-4 text-center">
-        <button onclick="window.selectSampleSentence(${currentSampleIdx})" class="w-full bg-amber-100 hover:bg-amber-200 active:scale-98 text-amber-950 font-bold py-2.5 px-4 rounded-2xl text-xs font-fun transition-all border border-amber-300 shadow-sm flex items-center justify-center gap-2">
-          <span>🔍 Ver Análisis Lingüístico de este Ejemplo</span>
+        <button onclick="window.selectSampleSentence(${currentSampleIdx})" class="w-full bg-amber-100 hover:bg-amber-200 active:scale-98 text-amber-950 font-bold py-2.5 px-3 rounded-2xl text-xs font-fun transition-all border border-amber-300 shadow-sm flex items-center justify-center gap-2 min-h-[44px]">
+          <span>🔍 Ver Análisis de este Ejemplo</span>
         </button>
       </div>
 
       <!-- Controles del Carrusel (< Anterior / Siguiente > y Dots) -->
       <div class="flex items-center justify-between pt-3 border-t border-slate-100 gap-2">
-        <button onclick="window.prevSampleSentence()" class="px-4 py-2.5 rounded-2xl border border-amber-200 bg-amber-50 hover:bg-amber-100 active:scale-95 text-xs font-bold text-amber-900 transition-all font-fun flex items-center gap-1.5 shadow-sm min-h-[44px]">
-          <span class="text-base">◀</span>
-          <span>Anterior</span>
+        <button onclick="window.prevSampleSentence()" aria-label="Oración anterior" class="shrink-0 h-11 px-3 sm:px-4 rounded-2xl border border-amber-300 bg-amber-50 hover:bg-amber-100 active:scale-95 text-xs font-bold text-amber-950 transition-all font-fun flex items-center justify-center gap-1.5 shadow-sm min-w-[44px]">
+          <span class="text-base font-bold">◀</span>
+          <span class="hidden sm:inline">Anterior</span>
         </button>
 
         <!-- Indicadores Dots -->
-        <div class="flex items-center gap-1.5">
+        <div class="flex items-center justify-center gap-1.5 px-1 flex-1">
           ${sampleSentences.map((_, i) => `
-            <button onclick="window.goToSampleSentence(${i})" aria-label="Ir a oración ${i+1}" class="h-2.5 rounded-full transition-all ${i === currentSampleIdx ? 'bg-amber-600 w-6' : 'bg-slate-200 hover:bg-amber-300 w-2.5'}"></button>
+            <button onclick="window.goToSampleSentence(${i})" aria-label="Ir a oración ${i+1}" class="h-2.5 rounded-full transition-all ${i === currentSampleIdx ? 'bg-amber-600 w-5' : 'bg-slate-200 hover:bg-amber-300 w-2'}"></button>
           `).join('')}
         </div>
 
-        <button onclick="window.nextSampleSentence()" class="px-4 py-2.5 rounded-2xl border border-amber-200 bg-amber-50 hover:bg-amber-100 active:scale-95 text-xs font-bold text-amber-900 transition-all font-fun flex items-center gap-1.5 shadow-sm min-h-[44px]">
-          <span>Siguiente</span>
-          <span class="text-base">▶</span>
+        <button onclick="window.nextSampleSentence()" aria-label="Oración siguiente" class="shrink-0 h-11 px-3 sm:px-4 rounded-2xl border border-amber-300 bg-amber-50 hover:bg-amber-100 active:scale-95 text-xs font-bold text-amber-950 transition-all font-fun flex items-center justify-center gap-1.5 shadow-sm min-w-[44px]">
+          <span class="hidden sm:inline">Siguiente</span>
+          <span class="text-base font-bold">▶</span>
         </button>
       </div>
     </div>
