@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="icon" id="favicon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
-  <script type="module" crossorigin src="/material_titi/assets/practica-CgpNNGMv.js"></script>
-  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-C4SM0eIi.js">
-  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-v6C4gWII.css">
+  <script type="module" crossorigin src="/material_titi/assets/practica-BJbMDo03.js"></script>
+  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-Ys3xgzKZ.js">
+  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-D-apg3J8.css">
   <link rel="stylesheet" crossorigin href="/material_titi/assets/practica-DDx4YGlw.css">
 </head>
 
@@ -26,7 +26,7 @@
                     <span class="text-3xl">🇨🇷</span>
                 </div>
                 <div>
-                    <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider font-fun">Primer Semestre 2026</span>
+                    <span id="semester-badge" class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider font-fun">Segundo Semestre 2026</span>
                     <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-1" id="main-title">RíoMate 5º</h1>
                     <p class="text-sm text-slate-500 font-medium" id="main-subtitle">Escuela Riojalandia · II Pruebas de Matemáticas · Secciones 5-1 y 5-2</p>
                 </div>
@@ -35,7 +35,7 @@
                 <p class="text-xs text-slate-500 font-bold uppercase">Fecha del Examen</p>
                 <p class="text-lg font-bold text-indigo-700 font-fun" id="exam-date">Miércoles 24 de Junio, 2026</p>
                 <p class="text-xs text-emerald-600 font-semibold flex items-center justify-center md:justify-end gap-1">
-                    <span>👩‍🏫 Maestra: Florisel Olmazo López</span>
+                    <span id="teacher-name">👩‍🏫 Maestra: Florisel Olmazo López</span>
                 </p>
             </div>
         </div>
@@ -102,6 +102,22 @@
                                 <h4 class="font-bold text-emerald-900">¿Cómo usar RíoCiencias?</h4>
                                 <p class="text-sm text-emerald-700 leading-relaxed mt-1">
                                     Explora las pestañas superiores. Revisa las tarjetas interactivas de teoría de los seres vivos y la salud, experimenta con el simulador de filtrado renal y pon a prueba tus conocimientos médicos clínicos en el laboratorio de decisiones clínicas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bienvenida Español -->
+                    <div id="welcome-espanol" class="hidden">
+                        <p class="text-slate-600 leading-relaxed text-lg mb-6">
+                            Bienvenida a tu compañero de estudio de español. Aquí vas a repasar comprensión de lectura, géneros literarios, partes del libro, tipos de diccionarios, técnicas de estudio, fichas y la clasificación de oraciones por la intención del emisor de forma interactiva y amena.
+                        </p>
+                        <div class="bg-amber-50 border border-amber-100 rounded-2xl p-4 flex gap-4 items-start">
+                            <span class="text-2xl mt-1">💡</span>
+                            <div>
+                                <h4 class="font-bold text-amber-900">¿Cómo usar RíoEspañol?</h4>
+                                <p class="text-sm text-amber-700 leading-relaxed mt-1">
+                                    Explora las pestañas superiores. Lee las 10 tarjetas interactivas de teoría, experimenta en los laboratorios de oraciones, libros y refranes ticos, y luego pon a prueba tus conocimientos en los exámenes teórico y práctico.
                                 </p>
                             </div>
                         </div>
@@ -227,6 +243,40 @@
                         <span class="text-xs font-bold text-green-700 bg-green-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 10 & 11</span>
                         <h4 class="font-bold text-slate-800 mt-2 text-base">Clasificación y Biodiversidad</h4>
                         <p class="text-xs text-slate-500 mt-1">Clasificar seres vivos según complejidad celular y nutrición. Características físicas de los reinos Fungi, Plantae y clases de Animalia.</p>
+                    </div>
+                </div>
+
+                <!-- Temario Español -->
+                <div id="temario-espanol" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-2xl bg-amber-50 border border-amber-100">
+                        <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 1</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Comprensión Lectora y Formatos</h4>
+                        <p class="text-xs text-slate-500 mt-1">Identificar ideas principales, secundarias, personajes y clasificar textos continuos, discontinuos y mixtos.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-rose-50 border border-rose-100">
+                        <span class="text-xs font-bold text-rose-800 bg-rose-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 2</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Géneros Literarios</h4>
+                        <p class="text-xs text-slate-500 mt-1">Diferenciar el cuento, fábula con moraleja, leyenda tradicional (La Tule Vieja), novela y obras dramáticas.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-orange-50 border border-orange-100">
+                        <span class="text-xs font-bold text-orange-800 bg-orange-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 3</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Tradición Popular y Lenguaje Figurado</h4>
+                        <p class="text-xs text-slate-500 mt-1">Adivinanzas, trabalenguas para dicción, bombas guanacastecas, refranes y dichos populares costarricenses.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-teal-50 border border-teal-100">
+                        <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 4</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Partes del Libro y Diccionarios</h4>
+                        <p class="text-xs text-slate-500 mt-1">Reconocer portada, contraportada, lomo, prólogo, índice, glosario y tipos de diccionarios especializados.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-indigo-50 border border-indigo-100">
+                        <span class="text-xs font-bold text-indigo-800 bg-indigo-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 5</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Técnicas de Estudio y Fichas</h4>
+                        <p class="text-xs text-slate-500 mt-1">Resumen vs síntesis, mapas conceptuales jerárquicos y fichas de cita textual, resumen y biográficas.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-purple-50 border border-purple-100">
+                        <span class="text-xs font-bold text-purple-800 bg-purple-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 6</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-base">Clases de Oraciones e Intención</h4>
+                        <p class="text-xs text-slate-500 mt-1">Oraciones enunciativas (afirmativas/negativas), interrogativas, exclamativas, imperativas, dubitativas y desiderativas.</p>
                     </div>
                 </div>
             </div>
@@ -780,6 +830,329 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Bloque de Tarjetas de Español (10 Flashcards) -->
+                <div id="theory-espanol" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Tarjeta 1: Ideas Principales y Secundarias -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 1)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-amber-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-amber-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full uppercase font-fun">Tema 1</span>
+                                    <span class="text-2xl">💡</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Ideas Principales y Secundarias</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Aprende a identificar el mensaje central de un texto y los detalles que lo apoyan.</p>
+                                </div>
+                                <div class="text-center text-xs text-amber-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-amber-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-amber-200 text-sm uppercase tracking-wider font-fun">Comprensión Lectora:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-amber-100">
+                                        <li><strong class="text-white">Idea Principal:</strong> Es el núcleo del texto. Expresa la afirmación más importante del autor; si se elimina, el párrafo pierde su sentido central.</li>
+                                        <li><strong class="text-white">Ideas Secundarias:</strong> Expresan detalles, explicaciones, ejemplos y argumentos que amplían o justifican la idea principal.</li>
+                                        <li><strong class="text-white">Elementos Narrativos:</strong> Personajes (principales y secundarios), escenario (lugar y tiempo), conflicto y desenlace.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-amber-900/60 p-2 rounded-xl border border-amber-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-amber-200">Pregúntate: "¿De qué nos habla principalmente el autor?". Esa respuesta es la idea principal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2: Formatos de Texto -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 2)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-rose-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-rose-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-rose-800 bg-rose-100 px-3 py-1 rounded-full uppercase font-fun">Tema 2</span>
+                                    <span class="text-2xl">📄</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Formatos de Texto</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Diferencias clave entre textos continuos, discontinuos y mixtos.</p>
+                                </div>
+                                <div class="text-center text-xs text-rose-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-rose-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-rose-200 text-sm uppercase tracking-wider font-fun">Clasificación por Formato:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-rose-100">
+                                        <li><strong class="text-white">Continuos:</strong> Redactados en oraciones y párrafos sucesivos en prosa lineal (novelas, cuentos, ensayos, noticias).</li>
+                                        <li><strong class="text-white">Discontinuos:</strong> Información organizada visualmente en gráficos, tablas, mapas, esquemas e infografías.</li>
+                                        <li><strong class="text-white">Mixtos:</strong> Combinan párrafos en prosa con recursos gráficos y tabulados (revistas científicas, manuales ilustrados).</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-rose-900/60 p-2 rounded-xl border border-rose-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-rose-200">Un mapa o gráfico de barras siempre es discontinuo; un cuento corrido es continuo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: Géneros Literarios -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 3)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-orange-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-orange-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-orange-800 bg-orange-100 px-3 py-1 rounded-full uppercase font-fun">Tema 3</span>
+                                    <span class="text-2xl">📖</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Géneros Literarios</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Cuento, fábula con moraleja, leyenda tradicional y novela.</p>
+                                </div>
+                                <div class="text-center text-xs text-orange-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-orange-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-orange-200 text-sm uppercase tracking-wider font-fun">Tipos de Narración:</h4>
+                                    <ul class="text-xs mt-2 space-y-1.5 list-disc list-inside text-orange-100">
+                                        <li><strong class="text-white">Cuento:</strong> Narración breve de ficción con pocos personajes y un solo conflicto central.</li>
+                                        <li><strong class="text-white">Fábula:</strong> Relato breve con animales personificados que concluye con una <strong class="text-amber-300">moraleja</strong> formativa.</li>
+                                        <li><strong class="text-white">Leyenda:</strong> Relato de tradición oral que mezcla sucesos reales con magia y misterio (ej. <em>La Tule Vieja</em>).</li>
+                                        <li><strong class="text-white">Novela:</strong> Narración extensa y compleja con múltiples tramas y personajes.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-orange-900/60 p-2 rounded-xl border border-orange-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-orange-200">Si los personajes son animales que hablan y hay enseñanza final, es una fábula.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4: Folclore Guanacasteco y Lenguaje -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 4)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-amber-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-amber-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full uppercase font-fun">Tema 4</span>
+                                    <span class="text-2xl">🎺</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Bombas y Trabalenguas</h3>
+                                    <p class="text-slate-500 text-sm mt-1">El arte de la rima guanacasteca y los retos de dicción oral.</p>
+                                </div>
+                                <div class="text-center text-xs text-amber-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-amber-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-amber-200 text-sm uppercase tracking-wider font-fun">Tradición y Pronunciación:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-amber-100">
+                                        <li><strong class="text-white">Bombas Guanacastecas:</strong> Cuartetos rimados de tono alegre, jocoso o romántico propios de nuestra cultura patria.</li>
+                                        <li><strong class="text-white">Trabalenguas:</strong> Composiciones breves con sonidos semejantes difíciles de pronunciar; mejoran la dicción y agilidad verbal.</li>
+                                        <li><strong class="text-white">Adivinanzas:</strong> Acertijos en verso con pistas para estimular el pensamiento y el entretenimiento lúdico.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-amber-900/60 p-2 rounded-xl border border-amber-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-amber-200">El propósito del trabalenguas es siempre ejercitar la pronunciación y dicción.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 5: Refranes y Dichos Ticos -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 5)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-rose-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-rose-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-rose-800 bg-rose-100 px-3 py-1 rounded-full uppercase font-fun">Tema 5</span>
+                                    <span class="text-2xl">🇨🇷</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Refranes y Dichos Ticos</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Sabiduría popular en sentido figurado de Costa Rica.</p>
+                                </div>
+                                <div class="text-center text-xs text-rose-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-rose-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-rose-200 text-sm uppercase tracking-wider font-fun">Sabiduría Popular:</h4>
+                                    <ul class="text-[11px] mt-1 space-y-1 list-disc list-inside text-rose-100">
+                                        <li><strong class="text-white">En boca cerrada no entran moscas:</strong> Prudencia al hablar para evitar problemas.</li>
+                                        <li><strong class="text-white">Coyol partido, coyol comido:</strong> Gastar el dinero de inmediato sin ahorrar.</li>
+                                        <li><strong class="text-white">Al mal tiempo buena cara:</strong> Optimismo ante las dificultades.</li>
+                                        <li><strong class="text-white">¡Pura vida!:</strong> Saludo de cordialidad y positivismo costarricense.</li>
+                                        <li><strong class="text-white">Más terco que una mula:</strong> Persona obstinada y difícil de convencer.</li>
+                                        <li><strong class="text-white">La sacó del estadio:</strong> Realizó una acción extraordinaria y brillante.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-rose-900/60 p-1.5 rounded-xl border border-rose-800/50 mt-1">
+                                    <p class="text-[10px] font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-[10px] text-rose-200">Los refranes se interpretan siempre en sentido figurado, nunca de forma literal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 6: Anatomía del Libro (Parte Externa) -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 6)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-800 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Tema 6</span>
+                                    <span class="text-2xl">📚</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Partes Externas del Libro</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Portada, lomo y contraportada: funciones y datos.</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Estructura Exterior:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Portada:</strong> Cara principal exterior; contiene título, autor, editorial e ilustración.</li>
+                                        <li><strong class="text-white">Lomo:</strong> Borde que sujeta y une las hojas; muestra autor y título para ubicar el libro en el estante.</li>
+                                        <li><strong class="text-white">Contraportada:</strong> Cara posterior; contiene la sinopsis o resumen de la obra y código de barras.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-2 rounded-xl border border-teal-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">El lomo es el canto que permite identificar libros en la biblioteca.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 7: Partes Internas y Diccionarios -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 7)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-indigo-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-indigo-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-indigo-800 bg-indigo-100 px-3 py-1 rounded-full uppercase font-fun">Tema 7</span>
+                                    <span class="text-2xl">📑</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Partes Internas y Diccionarios</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Prólogo, índice, glosario, bibliografía y fuentes de consulta.</p>
+                                </div>
+                                <div class="text-center text-xs text-indigo-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-indigo-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-indigo-200 text-sm uppercase tracking-wider font-fun">Estructura Interior:</h4>
+                                    <ul class="text-[11px] mt-1 space-y-1.5 list-disc list-inside text-indigo-100">
+                                        <li><strong class="text-white">Prólogo:</strong> Presentación e introducción a la obra.</li>
+                                        <li><strong class="text-white">Índice:</strong> Lista de capítulos con su número de página para localización rápida.</li>
+                                        <li><strong class="text-white">Glosario:</strong> Diccionario final que define términos difíciles o técnicos.</li>
+                                        <li><strong class="text-white">Bibliografía:</strong> Lista ordenada de fuentes consultadas.</li>
+                                        <li><strong class="text-white">Diccionario de sinónimos/antónimos:</strong> Para buscar palabras equivalentes u opuestas.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-indigo-900/60 p-1.5 rounded-xl border border-indigo-800/50 mt-1">
+                                    <p class="text-[10px] font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-[10px] text-indigo-200">El glosario define palabras del propio libro; el índice organiza páginas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 8: Resumen vs Síntesis -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 8)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-amber-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-amber-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full uppercase font-fun">Tema 8</span>
+                                    <span class="text-2xl">📝</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Resumen vs Síntesis</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Técnicas de estudio y mapas conceptuales jerárquicos.</p>
+                                </div>
+                                <div class="text-center text-xs text-amber-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-amber-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-amber-200 text-sm uppercase tracking-wider font-fun">Estrategias de Aprendizaje:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-amber-100">
+                                        <li><strong class="text-white">Resumen:</strong> Condensa el texto original respetando fielmente las palabras e ideas del autor.</li>
+                                        <li><strong class="text-white">Síntesis:</strong> Explicación abreviada elaborada con las palabras y la interpretación personal del estudiante.</li>
+                                        <li><strong class="text-white">Mapa Conceptual:</strong> Organizador gráfico jerárquico (conceptos generales arriba, palabras conectoras sobre líneas).</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-amber-900/60 p-2 rounded-xl border border-amber-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-amber-200">Resumen = palabras del autor. Síntesis = palabras propias del estudiante.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 9: Fichas de Lectura y Biografía -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 9)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-rose-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-rose-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-rose-800 bg-rose-100 px-3 py-1 rounded-full uppercase font-fun">Tema 9</span>
+                                    <span class="text-2xl">📇</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Fichas de Lectura y Registro</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Cita textual con comillas, resumen y biografía de Don Pepe Figueres.</p>
+                                </div>
+                                <div class="text-center text-xs text-rose-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-rose-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-rose-200 text-sm uppercase tracking-wider font-fun">Modelos de Fichas:</h4>
+                                    <ul class="text-[11px] mt-1 space-y-1.5 list-disc list-inside text-rose-100">
+                                        <li><strong class="text-white">Ficha de Cita Textual:</strong> Transcripción literal entre comillas obligatorias (" ") indicando autor y número de página.</li>
+                                        <li><strong class="text-white">Ficha de Resumen:</strong> Extracto condensado de las ideas centrales.</li>
+                                        <li><strong class="text-white">Ficha de Comentario:</strong> Opinión crítica y reflexiva del lector.</li>
+                                        <li><strong class="text-white">Ficha Biográfica:</strong> Datos y aportes de figuras ilustres (ej. Don Pepe Figueres: abolición del ejército en 1948, ICE, voto femenino).</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-rose-900/60 p-1.5 rounded-xl border border-rose-800/50 mt-1">
+                                    <p class="text-[10px] font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-[10px] text-rose-200">Toda cita textual debe llevar siempre comillas y número de página de referencia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 10: Clases de Oraciones por Intención -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 10)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-purple-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-purple-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-purple-800 bg-purple-100 px-3 py-1 rounded-full uppercase font-fun">Tema 10</span>
+                                    <span class="text-2xl">🗣️</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Actitud del Emisor en Oraciones</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Las 6 clases de oraciones según la intención comunicativa.</p>
+                                </div>
+                                <div class="text-center text-xs text-purple-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-purple-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-purple-200 text-sm uppercase tracking-wider font-fun">Las 6 Actitudes del Hablante:</h4>
+                                    <ul class="text-[11px] mt-1 space-y-1 list-disc list-inside text-purple-100">
+                                        <li><strong class="text-white">Enunciativas:</strong> Informan hechos (Afirmativas o Negativas con <em>no, jamás, nunca</em>).</li>
+                                        <li><strong class="text-white">Interrogativas:</strong> Formulan preguntas (<em>¿Cómo te llamas?</em>).</li>
+                                        <li><strong class="text-white">Exclamativas:</strong> Expresan emoción o sorpresa (<em>¡Qué alegría!</em>).</li>
+                                        <li><strong class="text-white">Imperativas/Exhortativas:</strong> Órdenes, mandatos, ruegos (<em>Guarden silencio</em>).</li>
+                                        <li><strong class="text-white">Dubitativas:</strong> Duda o probabilidad (<em>Tal vez, quizás</em>).</li>
+                                        <li><strong class="text-white">Desiderativas:</strong> Deseos y anhelos (<em>Ojalá, espero que</em>).</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-purple-900/60 p-1.5 rounded-xl border border-purple-800/50 mt-1">
+                                    <p class="text-[10px] font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-[10px] text-purple-200">"Ojalá" = Desiderativa (deseo). "Tal vez" = Dubitativa (duda).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -817,6 +1190,19 @@
                     </button>
                     <button onclick="switchLabSubTab('decisiones-medicas')" id="subtab-decisiones-medicas" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
                         📋 Decisiones Médicas
+                    </button>
+                </div>
+
+                <!-- Sub-pestañas internas de los laboratorios (Español) -->
+                <div id="subtabs-espanol" class="hidden flex flex-wrap gap-2 mb-8 justify-center bg-slate-50 p-2 rounded-2xl border border-slate-200">
+                    <button onclick="switchLabSubTab('detector-oraciones')" id="subtab-detector-oraciones" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 bg-amber-600 text-white shadow-sm font-fun">
+                        🕵️ El Detective de Oraciones
+                    </button>
+                    <button onclick="switchLabSubTab('taller-libro')" id="subtab-taller-libro" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200 font-fun">
+                        📖 El Taller del Libro y Fichas
+                    </button>
+                    <button onclick="switchLabSubTab('pulperia-refranes')" id="subtab-pulperia-refranes" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200 font-fun">
+                        🎭 Pulpería de Refranes y Bombas
                     </button>
                 </div>
 
@@ -1225,6 +1611,173 @@
 
                                 <div id="clinical-case-feedback" class="hidden mt-6 p-5 rounded-2xl border transition-all duration-300">
                                     <!-- Feedback de acierto/error dinámico -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENEDORES DE LABS DE ESPAÑOL -->
+                <div id="lab-contents-espanol" class="hidden">
+                    <!-- LAB 1: EL DETECTIVE DE ORACIONES -->
+                    <div id="lab-sub-content-detector-oraciones" class="lab-sub-content block">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                            <!-- Columna Izquierda: Banco de oraciones y Analizador personalizado -->
+                            <div class="md:col-span-6 bg-amber-50/70 p-6 rounded-3xl border border-amber-200 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="text-3xl">🕵️</span>
+                                        <div>
+                                            <h3 class="font-bold text-amber-950 text-lg font-fun">Detector de Intenciones</h3>
+                                            <p class="text-xs text-amber-800">Descubre la actitud del hablante en cada oración.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4 mb-3">
+                                        <p class="text-xs font-bold uppercase text-amber-900 mb-2 font-fun">Toca una oración de ejemplo para analizarla:</p>
+                                        <div id="detector-samples-container" class="space-y-2 max-h-60 overflow-y-auto pr-1">
+                                            <!-- Tarjetas de muestra generadas dinámicamente -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Analizador de texto propio -->
+                                    <div class="pt-4 border-t border-amber-200 mt-4">
+                                        <label for="custom-sentence-input" class="block text-xs font-bold uppercase text-amber-900 mb-1 font-fun">O escribe tu propia frase:</label>
+                                        <div class="flex gap-2">
+                                            <input type="text" id="custom-sentence-input" placeholder="Ej: ¡Ojalá ganemos el concurso!" class="flex-1 px-3.5 py-2.5 rounded-xl border border-amber-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+                                            <button onclick="analyzeCustomInput()" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs font-fun shadow transition-all">
+                                                Analizar 🔍
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white/90 p-3 rounded-2xl border border-amber-200 mt-4 text-xs text-amber-900 leading-relaxed">
+                                    💡 <strong>Regla de Oro:</strong> Las oraciones <em>desiderativas</em> expresan deseos (<em>ojalá</em>) y las <em>dubitativas</em> expresan duda (<em>tal vez, quizás</em>).
+                                </div>
+                            </div>
+
+                            <!-- Columna Derecha: Resultado del Análisis y Reto de Detective -->
+                            <div class="md:col-span-6 space-y-6">
+                                <div id="detector-analysis-result">
+                                    <div class="p-6 rounded-3xl border-2 border-dashed border-amber-200 bg-amber-50/30 text-center py-10">
+                                        <span class="text-4xl">🔍</span>
+                                        <h4 class="font-bold text-slate-800 text-base font-fun mt-2">Selecciona o escribe una oración</h4>
+                                        <p class="text-xs text-slate-500 mt-1">El detective identificará la actitud, entonación y palabras clave.</p>
+                                    </div>
+                                </div>
+
+                                <div id="detector-challenge-box">
+                                    <!-- Reto interactivo de casos -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LAB 2: EL TALLER DEL LIBRO Y FICHAS -->
+                    <div id="lab-sub-content-taller-libro" class="lab-sub-content hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                            <!-- Columna Izquierda: Explorador de Partes del Libro -->
+                            <div class="md:col-span-6 bg-slate-50 p-6 rounded-3xl border border-slate-200 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="text-3xl">📖</span>
+                                        <div>
+                                            <h3 class="font-bold text-slate-900 text-lg font-fun">Anatomía del Libro</h3>
+                                            <p class="text-xs text-slate-500">Toca cada sección para conocer su función exacta en la obra.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 my-4">
+                                        <button id="btn-part-portada" onclick="selectBookPart('portada')" class="book-part-btn p-3 rounded-2xl border border-slate-200 text-xs font-bold text-slate-700 bg-white hover:border-amber-400 transition-all font-fun">
+                                            📕 Portada
+                                        </button>
+                                        <button id="btn-part-lomo" onclick="selectBookPart('lomo')" class="book-part-btn p-3 rounded-2xl border border-slate-200 text-xs font-bold text-slate-700 bg-white hover:border-amber-400 transition-all font-fun">
+                                            📏 Lomo
+                                        </button>
+                                        <button id="btn-part-contraportada" onclick="selectBookPart('contraportada')" class="book-part-btn p-3 rounded-2xl border border-slate-200 text-xs font-bold text-slate-700 bg-white hover:border-amber-400 transition-all font-fun">
+                                            📋 Contraportada
+                                        </button>
+                                        <button id="btn-part-prologo" onclick="selectBookPart('prologo')" class="book-part-btn p-3 rounded-2xl border border-slate-200 text-xs font-bold text-slate-700 bg-white hover:border-amber-400 transition-all font-fun">
+                                            ✍️ Prólogo
+                                        </button>
+                                        <button id="btn-part-indice" onclick="selectBookPart('indice')" class="book-part-btn p-3 rounded-2xl border border-slate-200 text-xs font-bold text-slate-700 bg-white hover:border-amber-400 transition-all font-fun">
+                                            📑 Índice
+                                        </button>
+                                        <button id="btn-part-glosario" onclick="selectBookPart('glosario')" class="book-part-btn p-3 rounded-2xl border border-slate-200 text-xs font-bold text-slate-700 bg-white hover:border-amber-400 transition-all font-fun">
+                                            📚 Glosario
+                                        </button>
+                                        <button id="btn-part-bibliografia" onclick="selectBookPart('bibliografia')" class="book-part-btn p-3 rounded-2xl border border-slate-200 text-xs font-bold text-slate-700 bg-white hover:border-amber-400 transition-all font-fun col-span-2 sm:col-span-3">
+                                            🔍 Bibliografía de Consulta
+                                        </button>
+                                    </div>
+
+                                    <div id="book-part-detail">
+                                        <!-- Detalle anatómico interactivo -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Columna Derecha: Fichero y Modelos de Fichas -->
+                            <div class="md:col-span-6 bg-slate-50 p-6 rounded-3xl border border-slate-200 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="text-3xl">📇</span>
+                                        <div>
+                                            <h3 class="font-bold text-slate-900 text-lg font-fun">Fichero de Estudio</h3>
+                                            <p class="text-xs text-slate-500">Explora modelos formales de registro bibliográfico y lectura.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-2 mb-4 bg-white p-1.5 rounded-2xl border border-slate-200">
+                                        <button id="fichas-tab-biografica" onclick="switchCardGeneratorTab('biografica')" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-amber-600 text-white font-fun transition-all flex-1">
+                                            👤 Don Pepe Figueres
+                                        </button>
+                                        <button id="fichas-tab-textual" onclick="switchCardGeneratorTab('textual')" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 font-fun transition-all flex-1">
+                                            💬 Cita Textual
+                                        </button>
+                                        <button id="fichas-tab-resumen" onclick="switchCardGeneratorTab('resumen')" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 font-fun transition-all flex-1">
+                                            📝 Resumen
+                                        </button>
+                                    </div>
+
+                                    <div id="ficha-interactive-preview">
+                                        <!-- Vista previa de ficha -->
+                                    </div>
+                                </div>
+                                <div class="bg-amber-100/70 p-3 rounded-2xl border border-amber-200 text-xs text-amber-900 mt-4 leading-relaxed">
+                                    ⭐ <strong>Dato Clave de Examen:</strong> En la ficha de cita textual siempre debes transcribir entre comillas (" ") y citar el número de página de referencia.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LAB 3: LA PULPERÍA DE REFRANES Y BOMBAS TICAS -->
+                    <div id="lab-sub-content-pulperia-refranes" class="lab-sub-content hidden">
+                        <div class="space-y-8">
+                            <!-- 1. Pareo de Refranes Ticos -->
+                            <div class="bg-amber-50/50 p-6 rounded-3xl border border-amber-200">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="text-3xl">🇨🇷</span>
+                                    <div>
+                                        <h3 class="font-bold text-amber-950 text-lg font-fun">Pareo de Refranes Costarricenses</h3>
+                                        <p class="text-xs text-amber-800">Conecta cada refrán tradicional con su verdadero significado moral.</p>
+                                    </div>
+                                </div>
+                                <div id="refranes-match-game">
+                                    <!-- Pareo dinámico -->
+                                </div>
+                            </div>
+
+                            <!-- 2. Adivinanzas y Bombas Guanacastecas en Grid -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Adivinanzas -->
+                                <div id="adivinanzas-slot">
+                                    <!-- Adivinanzas dinámicas -->
+                                </div>
+
+                                <!-- Bombas -->
+                                <div id="bombas-slot">
+                                    <!-- Bombas dinámicas -->
                                 </div>
                             </div>
                         </div>
