@@ -82,12 +82,12 @@ export function renderQuestion(type) {
 
   shuffledOptions.forEach((opt) => {
     const btn = document.createElement('button');
-    btn.className = `option-btn-${pfx} w-full text-left p-4 rounded-2xl border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all duration-200 font-medium text-slate-700 flex justify-between items-center bg-white`;
+    btn.className = `option-btn-${pfx} w-full text-left p-4 rounded-2xl border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 active:scale-[0.99] transition-all duration-200 font-medium text-slate-700 flex justify-between items-center bg-white gap-3.5 min-h-[54px] shadow-sm`;
     btn.dataset.isCorrect = opt.isCorrect;
     btn.onclick = () => selectOption(type, opt, btn);
     btn.innerHTML = `
-      <span>${opt.text}</span>
-      <span class="circle-icon w-6 h-6 border-2 border-slate-300 rounded-full flex items-center justify-center text-xs font-bold text-slate-400"></span>
+      <span class="flex-1 text-sm sm:text-base leading-snug">${opt.text}</span>
+      <span class="circle-icon shrink-0 w-6 h-6 border-2 border-slate-300 rounded-full flex items-center justify-center text-xs font-bold text-slate-400"></span>
     `;
     container.appendChild(btn);
   });
@@ -111,7 +111,7 @@ export function selectOption(type, opt, buttonElement) {
     buttonElement.classList.add('border-emerald-500', 'bg-emerald-50', 'text-emerald-800', '!opacity-100');
     buttonElement.querySelector('.circle-icon').innerHTML = '✓';
     buttonElement.querySelector('.circle-icon').className =
-      'circle-icon w-6 h-6 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xs font-bold';
+      'circle-icon shrink-0 w-6 h-6 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xs font-bold';
     
     // Sonido de acierto
     playSound('correct');
@@ -122,7 +122,7 @@ export function selectOption(type, opt, buttonElement) {
     buttonElement.classList.add('border-rose-500', 'bg-rose-50', 'text-rose-800', '!opacity-100');
     buttonElement.querySelector('.circle-icon').innerHTML = '✗';
     buttonElement.querySelector('.circle-icon').className =
-      'circle-icon w-6 h-6 bg-rose-500 text-white rounded-full flex items-center justify-center text-xs font-bold';
+      'circle-icon shrink-0 w-6 h-6 bg-rose-500 text-white rounded-full flex items-center justify-center text-xs font-bold';
 
     // Sonido de fallo
     playSound('incorrect');
@@ -132,6 +132,11 @@ export function selectOption(type, opt, buttonElement) {
       if (btn.dataset.isCorrect === 'true') {
         btn.classList.remove('opacity-60');
         btn.classList.add('border-emerald-500', 'bg-emerald-50', 'text-emerald-800', '!opacity-100');
+        const icon = btn.querySelector('.circle-icon');
+        if (icon) {
+          icon.innerHTML = '✓';
+          icon.className = 'circle-icon shrink-0 w-6 h-6 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xs font-bold';
+        }
       }
     });
   }
