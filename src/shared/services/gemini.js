@@ -3,14 +3,14 @@
 // Clasificador pedagógico de oraciones en tiempo real
 // =====================================================
 
-const DEFAULT_API_KEY = "AIzaSyBf-W7n2FgfvhSTygrvtUyhwjL5HwdhXog";
+const DEFAULT_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 const MODEL_NAME = "gemini-flash-lite-latest";
 
 // Cache en memoria para reutilizar análisis sin consumir cuota de la API
 const analysisCache = new Map();
 
 /**
- * Obtiene la clave de API activa (de localStorage o la clave predeterminada)
+ * Obtiene la clave de API activa (de localStorage o variable de entorno)
  */
 export function getGeminiApiKey() {
   return localStorage.getItem('riomate_gemini_api_key') || DEFAULT_API_KEY;
