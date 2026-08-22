@@ -280,28 +280,34 @@ export async function analyzeCustomInput() {
 
   if (resultBox) {
     resultBox.innerHTML = `
-      <div class="p-6 rounded-3xl border-2 border-amber-300 bg-amber-50/70 animate-fadeIn">
-        <div class="flex items-center justify-between gap-3 mb-2">
-          <div class="flex items-center gap-3">
-            <span class="text-3xl">${icon}</span>
+      <div class="p-4 sm:p-6 rounded-3xl border-2 border-amber-300 bg-amber-50/70 animate-fadeIn">
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <div class="flex items-center gap-2.5">
+            <span class="text-3xl shrink-0">${icon}</span>
             <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-amber-700 font-fun">Resultado de tu Oración</span>
-              <h4 class="text-xl font-bold text-slate-900 font-fun">${type}</h4>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-800 font-fun block">Resultado de tu Frase</span>
+              <h4 class="text-base sm:text-xl font-bold text-slate-900 font-fun leading-tight">${type}</h4>
             </div>
           </div>
-          <span class="text-[11px] font-bold px-3 py-1 rounded-full ${isAI ? 'bg-indigo-100 text-indigo-800 border border-indigo-200' : 'bg-amber-200 text-amber-900'} font-fun flex items-center gap-1">
-            ${isAI ? '✨ IA Gemini' : '🔍 Analizador Local'}
+          <span class="shrink-0 text-[10px] font-bold px-2.5 py-1 rounded-full ${isAI ? 'bg-indigo-100 text-indigo-900 border border-indigo-200 shadow-sm' : 'bg-slate-100 text-slate-700 border border-slate-200'} font-fun flex items-center gap-1">
+            ${isAI ? '✨ IA Gemini' : '🔍 Modo Local'}
           </span>
         </div>
-        <p class="text-base text-slate-700 font-medium italic mb-3 bg-white p-3 rounded-xl border border-amber-200">"${text}"</p>
-        <div class="bg-white/90 p-4 rounded-2xl border border-amber-100 space-y-2">
+
+        <div class="p-3.5 rounded-2xl bg-white border border-amber-200 mb-3 shadow-inner">
+          <p class="text-sm sm:text-base text-slate-800 font-semibold italic text-center font-fun">"${text}"</p>
+        </div>
+
+        <div class="bg-white/95 p-4 rounded-2xl border border-amber-100 space-y-2 shadow-sm">
           <div>
-            <p class="text-xs text-slate-500 uppercase font-bold tracking-wider font-fun">🔍 Explicación Pedagógica:</p>
-            <p class="text-sm text-slate-700 font-medium mt-0.5">${clue}</p>
+            <p class="text-xs text-amber-900 uppercase font-bold tracking-wider font-fun flex items-center gap-1.5">
+              <span>🔍</span> <span>Explicación Pedagógica:</span>
+            </p>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium mt-1 leading-relaxed">${clue}</p>
           </div>
           ${praise ? `
-          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-emerald-700 font-fun">
-            <span>🌟</span>
+          <div class="pt-2.5 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-emerald-700 font-fun">
+            <span class="text-sm">🌟</span>
             <span>${praise}</span>
           </div>
           ` : ''}
