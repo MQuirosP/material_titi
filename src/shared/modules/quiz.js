@@ -150,13 +150,13 @@ export function selectOption(type, opt, buttonElement) {
   if (feedbackBox) {
     feedbackBox.classList.remove('hidden');
     if (isCorrect) {
-      feedbackBox.className = 'mt-6 p-5 rounded-2xl border border-emerald-100 bg-emerald-50/50 text-emerald-900 transition-all duration-300';
-      if (fbIcon)  fbIcon.textContent  = '🎉 ¡Excelente!';
+      feedbackBox.className = 'mt-6 p-5 rounded-2xl border-2 border-emerald-200 bg-emerald-50/70 text-emerald-950 transition-all duration-300 shadow-sm';
+      if (fbIcon)  fbIcon.textContent  = '🎉';
       if (fbTitle) fbTitle.textContent = '¡Respuesta Correcta!';
     } else {
-      feedbackBox.className = 'mt-6 p-5 rounded-2xl border border-rose-100 bg-rose-50/50 text-rose-900 transition-all duration-300';
-      if (fbIcon)  fbIcon.textContent  = '💡 ¡Aprendamos juntos!';
-      if (fbTitle) fbTitle.textContent = '¡Sigue practicando!';
+      feedbackBox.className = 'mt-6 p-5 rounded-2xl border-2 border-rose-200 bg-rose-50/70 text-rose-950 transition-all duration-300 shadow-sm';
+      if (fbIcon)  fbIcon.textContent  = '💡';
+      if (fbTitle) fbTitle.textContent = '¡Aprendamos juntos!';
     }
     if (fbText) fbText.innerHTML = opt.rationale;
   }
