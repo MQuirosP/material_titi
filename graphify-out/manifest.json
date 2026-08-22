@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\quiz.js": {
-    "mtime": 1787434030.9118176,
-    "ast_hash": "604154b39a3550e42dc3e2eaa23e311a",
+    "mtime": 1787439255.8762088,
+    "ast_hash": "2c57dd70812f37bd9f6f2bfacb0baef2",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\tabs.js": {
@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\main.js": {
-    "mtime": 1787438121.7397273,
-    "ast_hash": "d305663b19a559ae233b336179dc86df",
+    "mtime": 1787439036.742962,
+    "ast_hash": "bab77a184ed80a8d7ca7d731b5848089",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\data\\quiz-practico.js": {
@@ -85,23 +85,23 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\rules\\riomate.md": {
-    "mtime": 1787432947.6299226,
-    "ast_hash": "7b24f143ecdc72c0cb46145c29e764a0",
+    "mtime": 1787439456.0085409,
+    "ast_hash": "fc7313caa7fe567aed667833503e9db3",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-add-quiz-questions.md": {
-    "mtime": 1782331281.562856,
-    "ast_hash": "f46d7babf3e5baffc7c448f829a0d509",
+    "mtime": 1787439481.4518535,
+    "ast_hash": "7348fd038b6a4999f2af58bd19c5cf28",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-clone-materia.md": {
-    "mtime": 1782261183.0997577,
-    "ast_hash": "317bae871c938267cca4d591f2fae4e0",
+    "mtime": 1787439496.0938127,
+    "ast_hash": "4719a33c3f48a16819cfde969322b46f",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-debug-checklist.md": {
-    "mtime": 1782513796.9882734,
-    "ast_hash": "d01d6fbaed45e3c1b8f2d892037dbf45",
+    "mtime": 1787439507.4188864,
+    "ast_hash": "828b3fce1cc41067a598b90075a3bbcc",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-new-flashcard.md": {
@@ -110,8 +110,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-new-lab.md": {
-    "mtime": 1782331241.2131076,
-    "ast_hash": "c9715d843b8ead24819ed5f452115364",
+    "mtime": 1787439469.9919813,
+    "ast_hash": "d1ea1fbccfe528bf45210a6bc5a75436",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\workflows\\graphify.md": {
@@ -145,23 +145,23 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\practica\\index.html": {
-    "mtime": 1787438098.9173555,
-    "ast_hash": "698840306e4da4f95afac761f0bf4ddd",
+    "mtime": 1787439008.1117911,
+    "ast_hash": "c1b9af43a51735af28a31a6dd773952e",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-add-quiz-questions\\SKILL.md": {
-    "mtime": 1787432926.810796,
-    "ast_hash": "6137a7f4bb1ab5c5cbeafe608b5e2314",
+    "mtime": 1787439476.0990307,
+    "ast_hash": "7348fd038b6a4999f2af58bd19c5cf28",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-clone-materia\\SKILL.md": {
-    "mtime": 1787432930.039668,
-    "ast_hash": "9e5fe90ab97809596d56a421fa476835",
+    "mtime": 1787439490.7818997,
+    "ast_hash": "4719a33c3f48a16819cfde969322b46f",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-debug-checklist\\SKILL.md": {
-    "mtime": 1787432923.0703378,
-    "ast_hash": "f0565b82eb8bd378fb2142668901f1a2",
+    "mtime": 1787439501.5292573,
+    "ast_hash": "828b3fce1cc41067a598b90075a3bbcc",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-new-flashcard\\SKILL.md": {
@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-new-lab\\SKILL.md": {
-    "mtime": 1787432940.7702124,
-    "ast_hash": "edf0b1d6802fec750ddbe86e112ce477",
+    "mtime": 1787439464.2110825,
+    "ast_hash": "d1ea1fbccfe528bf45210a6bc5a75436",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\espanol\\data\\quiz-practico.js": {
@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\espanol\\labs\\detector-oraciones.js": {
-    "mtime": 1787438109.5417106,
-    "ast_hash": "3dce07f1d606e17bbea65949e79c04f0",
+    "mtime": 1787439068.093831,
+    "ast_hash": "f42aa9384e3bb32e6348239570e111d5",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\espanol\\labs\\pulperia-refranes.js": {

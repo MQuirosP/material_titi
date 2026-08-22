@@ -1,88 +1,39 @@
 ---
 name: riomate-clone-materia
-description: >
-  Clona la estructura de RíoMate para una nueva materia (Ciencias, Español, Estudios Sociales, etc.).
-  Usar cuando el usuario pide adaptar la app a un tema diferente de matemáticas.
+description: Clona la estructura de RíoMate para una nueva materia (Ciencias, Español, Estudios Sociales, etc.). Usar cuando el usuario pide adaptar la app a un tema diferente de matemáticas.
 ---
 
-# Skill: Clonar RíoMate para una Nueva Materia
+# Skill: Clonar Materia en RíoMate (Escuela Riojalandia)
 
 ## Cuándo usar este skill
+- "Agrega la materia de [nombre]"
+- "Adapta la aplicación para [Ciencias / Español / Estudios Sociales]"
+- "Prepara el material de estudio para el examen de [materia]"
 
-- "Crea una versión de RíoMate para Ciencias"
-- "Adapta esto para Estudios Sociales"
-- "Clona la app para Español / Gramática"
-- "Quiero una versión de historia costarricense"
+## Mapeo Oficial de Docentes y Semestres
+- **👩‍🏫 Maestra Florisel Olmazo López:** Responsable oficial de **Matemáticas** y **Ciencias** (I Semestre y II Semestre).
+- **👩‍🏫 Maestra Licda. Maureen Vargas Solano:** Responsable oficial de **Español** y **Estudios Sociales** (I Semestre y II Semestre).
+- **Materias Complementarias:** Inglés, Educación Musical, Artes Plásticas y Educación Física.
 
-## Principio: Caparazón + Relleno
+## Blueprint de Creación / Clonación
 
-El caparazón (mantener intacto):
-- Sistema de pestañas (`switchTab`, `.tab-content`)
-- Sistema de flashcards (CSS flip 3D)
-- Sistema de quiz (`quizState`, `renderQuestion`, `selectOption`, `nextQuestion`)
-- Sistema de badges y progreso (`updateBadges`, `updateTheoryProgress`)
-- Canvas-confetti para celebración
-- Header/Footer, tipografías, estilos globales
+1. **Directorio de Materia (`src/subjects/{materia}/`):**
+   - `data/quiz-teorico.js`: Array `quizTeorico{Materia}` con preguntas teóricas.
+   - `data/quiz-practico.js`: Array `quizPractico{Materia}` con problemas aplicados.
+   - `labs/{nombre-lab}.js`: Laboratorios interactivos con **Radio Button Cards** o simuladores SVG.
 
-El relleno (reemplazar):
-- Arrays de preguntas (`quizTeoricoQuestions`, `quizPracticoQuestions`)
-- Contenido de flashcards en `#content-teoria`
-- Laboratorios interactivos (funciones `update*Lab()` y HTML de sub-contenidos)
-- Paleta de colores dominante
-- Título `<h1>` y metadata del header
+2. **Integración en Portal (`index.html`):**
+   - Registrar la tarjeta en el contenedor de semestre correspondiente (`#semester-1-container` o `#semester-2-container`).
+   - Indicar docente oficial y badge temático.
 
-## Blueprints por Materia
+3. **Integración en la Aplicación de Práctica (`practica/index.html`):**
+   - `#welcome-{materia}`: Banner de bienvenida con resumen.
+   - `#temario-{materia}`: Cuadrícula de 6 a 8 temas clave.
+   - `#theory-{materia}`: 10 Flashcards 3D interactivas.
+   - `#subtabs-{materia}`: Barra de navegación de laboratorios.
+   - `#lab-contents-{materia}`: Contenedores HTML de los laboratorios.
 
-### 🌍 Estudios Sociales
-
-| Sección | Contenido |
-|---|---|
-| Flashcards | Efemérides: Batalla de Rivas, Independencia, Juan Santamaría, Óscar Arias. Provincias de CR. |
-| Lab 1 | **Línea de Tiempo:** Slider de años (1821–1948). Muestra evento histórico con CSS. |
-| Lab 2 | **Mapa de Provincias:** 7 divs con nombre y capital al hacer click. |
-| Lab 3 | **Símbolos Patrios:** Carrusel de tarjetas (bandera, escudo, flor, árbol, ave, animal). |
-| Quiz Teórico | Definiciones de democracia, poderes del Estado, provincias. |
-| Quiz Práctico | Eventos históricos en orden cronológico, identificación de mapas. |
-| Colores | `red` (patriótico) + `blue` + `white` |
-
-### 🔬 Ciencias
-
-| Sección | Contenido |
-|---|---|
-| Flashcards | Sistemas del cuerpo humano, estados de la materia, célula animal vs vegetal. |
-| Lab 1 | **Fábrica de Materia:** Slider de temperatura → partículas `<canvas>` (quietas/Sólido, moviéndose/Líquido, libres/Gas). |
-| Lab 2 | **Cadena Alimenticia:** Click en eslabones para ver quién come a quién. |
-| Lab 3 | **Ciclo del Agua:** SVG animado (evaporación → condensación → precipitación). |
-| Quiz Teórico | Definiciones de fotosíntesis, cadena trófica, órganos. |
-| Quiz Práctico | Problemas de clasificación de seres vivos, hábitats. |
-| Colores | `green` + `teal` + `sky` |
-
-### 📚 Español / Gramática
-
-| Sección | Contenido |
-|---|---|
-| Flashcards | Reglas de acentuación (agudas/graves/esdrújulas), uso de B y V, tipos de oraciones. |
-| Lab 1 | **Clasificador de Palabras:** Palabras en tarjetas que el estudiante arrastra a cajas de Sustantivo/Verbo/Adjetivo. |
-| Lab 2 | **Sílabas:** Input de texto → conteo dinámico de sílabas con código de colores. |
-| Lab 3 | **Tildador:** Palabra dada → identificar y colocar el acento correcto. |
-| Quiz Teórico | Reglas ortográficas, identificación de partes de la oración. |
-| Quiz Práctico | Completar oraciones, corrección ortográfica. |
-| Colores | `blue` + `violet` + `indigo` |
-
-## Pasos para clonar
-
-1. **Crear un nuevo archivo** `index-{materia}.html` en la misma carpeta.
-2. **Copiar** todo el `index.html` original como base.
-3. **Cambiar** el `<title>` y el `<h1>` del header.
-4. **Reemplazar** los arrays de preguntas (vaciar y rellenar con nuevo contenido).
-5. **Reemplazar** el HTML de flashcards (`#content-teoria`).
-6. **Reemplazar** los laboratorios: HTML en `#content-laboratorio` + funciones JS.
-7. **Ajustar colores** del header y badges.
-8. **Mantener** el CDN de Tailwind y canvas-confetti sin cambios.
-
-## Restricciones al clonar
-
-- Las mismas reglas de notación (sin LaTeX) aplican a toda materia.
-- Los quizzes siempre usan el mismo formato `{topic, question, options[]}`.
-- Touch targets mínimo 44px en todos los controles interactivos.
-- El archivo resultante debe ser autocontenido (un solo `.html`).
+4. **Sincronización en `src/subjects/matematicas/main.js`:**
+   - Asignar `quizState.teorico.questions` y `quizState.practico.questions`.
+   - Configurar título, subtítulo, fecha de examen, docente oficial y badge de semestre (`Primer Semestre 2026` o `Segundo Semestre 2026`).
+   - Sincronizar conjunto de tarjetas estudiadas (`syncStudiedCardsSet`).

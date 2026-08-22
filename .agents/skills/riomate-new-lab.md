@@ -1,127 +1,53 @@
 ---
 name: riomate-new-lab
-description: >
-  Crea un nuevo laboratorio interactivo dentro de la sección de Laboratorios de RíoMate.
-  Usar cuando el usuario pide agregar un simulador, mini-juego o experimento nuevo.
+description: Crea un nuevo laboratorio interactivo dentro de la sección de Laboratorios de RíoMate. Usar cuando el usuario pide agregar un simulador, mini-juego o experimento nuevo.
 ---
 
 # Skill: Nuevo Laboratorio Interactivo en RíoMate
 
 ## Cuándo usar este skill
-
 - "Agrega un laboratorio de [tema]"
 - "Crea un simulador de [concepto]"
 - "Quiero un experimento interactivo de [materia]"
 
-## Anatomía de un Laboratorio (Patrón existente)
+## Estructura Estándar de un Laboratorio (Layout de 2 Columnas)
+Todo laboratorio se organiza en un grid responsive de 2 columnas (`grid grid-cols-1 md:grid-cols-12 gap-8`):
+1. **Columna Izquierda (`md:col-span-6`):** Controles interactivos, selección de muestras mediante **Radio Button Cards** o sliders SVG.
+2. **Columna Derecha (`md:col-span-6`):** Tarjeta de resultado en vivo, análisis lingüístico/matemático y reto interactivo de preguntas.
 
-Cada laboratorio consta de:
-
-```
-1. Sub-tab button en la barra de navegación (.agents/rules/riomate.md → sección Tabs)
-2. Contenedor HTML  id="lab-sub-content-{nombre}"  class="lab-sub-content hidden"
-3. Función JS       function update{Nombre}Lab() { ... }
-4. Llamada en     switchTab('laboratorio')  →  update{Nombre}Lab()
-5. Llamada en     window.onload             →  update{Nombre}Lab()
-```
-
-## Pasos de implementación
-
-### Paso 1 — Botón sub-pestaña
-
-Insertar en el `<div class="flex flex-wrap gap-2 mb-8 ...">` que contiene los `subtab-btn`:
-
+### Patrón Oficial de Selección: Radio Button Cards
+Para permitir seleccionar opciones de muestra, usar siempre:
 ```html
-<button onclick="switchLabSubTab('{nombre}')" id="subtab-{nombre}"
-  class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
-  {emoji} {Título del Lab}
-</button>
-```
-
-### Paso 2 — Estructura HTML del laboratorio
-
-```html
-<!-- SUB-CONTENIDO: LABORATORIO DE {NOMBRE EN MAYÚSCULAS} -->
-<div id="lab-sub-content-{nombre}" class="lab-sub-content hidden">
-  <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-
-    <!-- Panel de control (4 columnas) -->
-    <div class="md:col-span-4 bg-{color}-50 p-5 rounded-2xl border border-{color}-100 flex flex-col justify-between">
-      <div>
-        <h3 class="font-bold text-{color}-900 text-lg font-fun mb-2">{emoji} {Título}</h3>
-        <p class="text-xs text-{color}-800 leading-relaxed mb-4">{Descripción del lab}</p>
-        <!-- Controles: sliders, checkboxes, selects -->
-      </div>
-      <div class="bg-white/80 p-3 rounded-xl border border-{color}-100 mt-4 text-xs text-{color}-900">
-        💡 <strong>Aprende:</strong> {Dato educativo clave}
-      </div>
+<div onclick="selectSample({idx})" class="cursor-pointer p-3.5 rounded-2xl border-2 transition-all duration-200 flex items-start gap-3 text-left {isSelected ? 'border-amber-500 bg-amber-50/90 shadow-sm' : 'border-slate-200 bg-white hover:border-amber-300 hover:bg-amber-50/30'}">
+  <div class="mt-0.5 shrink-0 w-5 h-5 rounded-full border-2 {isSelected ? 'border-amber-600 bg-amber-600' : 'border-slate-300 bg-white'} flex items-center justify-center transition-all">
+    {isSelected ? '<div class="w-2 h-2 rounded-full bg-white"></div>' : ''}
+  </div>
+  <div class="flex-1 min-w-0">
+    <div class="flex items-center gap-2 mb-1">
+      <span class="text-base">{icon}</span>
+      <span class="inline-block text-[11px] font-bold px-2.5 py-0.5 rounded-full {badgeColor} font-fun">{badge}</span>
     </div>
-
-    <!-- Panel de visualización (8 columnas) -->
-    <div class="md:col-span-8">
-      <!-- Contenido visual dinámico -->
-      <div id="lab-{nombre}-visual" class="...">
-        <!-- Generado dinámicamente por JS -->
-      </div>
-    </div>
-
+    <p class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">"{text}"</p>
   </div>
 </div>
 ```
 
-### Paso 3 — Función JavaScript
-
-```js
-// ==========================================
-// {emoji} LÓGICA: LABORATORIO DE {NOMBRE}
-// ==========================================
-function update{Nombre}Lab() {
-    // 1. Leer valores de inputs
-    const val = parseInt(document.getElementById('lab-{nombre}-input').value);
-    
-    // 2. Actualizar displays de valores
-    document.getElementById('lab-{nombre}-val').innerText = val;
-    
-    // 3. Calcular resultado
-    // ... lógica matemática ...
-    
-    // 4. Renderizar visualización en el DOM
-    const container = document.getElementById('lab-{nombre}-visual');
-    container.innerHTML = ''; // limpiar
-    // ... crear elementos dinámicamente ...
-}
+### Patrón Oficial de Input + Botón en Móvil
+```html
+<div class="flex flex-col sm:flex-row gap-2.5">
+  <input type="text" class="w-full sm:flex-1 px-4 py-3 min-h-[48px] rounded-2xl border border-amber-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white shadow-inner">
+  <button class="w-full sm:w-auto shrink-0 bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold px-6 py-3 min-h-[48px] rounded-2xl text-sm font-fun shadow-md transition-all flex items-center justify-center gap-2">
+    <span>Analizar</span> <span>🔍</span>
+  </button>
+</div>
 ```
 
-### Paso 4 — Registrar en switchTab y window.onload
+### Integración de Gemini IA (Mínimo Consumo)
+- Usar el módulo `src/shared/services/gemini.js` con el modelo `gemini-flash-lite-latest`.
+- Limitar a `maxOutputTokens: 90`.
+- Cachear resultados en memoria con `Map`.
+- Si la conexión falla, fallback instantáneo al motor local.
 
-En `switchTab('laboratorio')`:
-```js
-update{Nombre}Lab(); // agregar junto a los otros update*Lab()
-```
-
-En `window.onload`:
-```js
-update{Nombre}Lab(); // agregar junto a los otros
-```
-
-## Paleta de colores por temática
-
-| Tema | Color Tailwind |
-|---|---|
-| Matemáticas / Números | `teal` |
-| Fracciones / Alimentos | `amber` |
-| Dinero / Economía | `rose` o `emerald` |
-| Geometría / Figuras | `slate` o `purple` |
-| Ciencias / Naturaleza | `green` |
-| Historia / Social | `orange` |
-| Lenguaje / Letras | `blue` |
-
-## Restricciones técnicas
-
-- Sin assets externos. Toda visualización es HTML/CSS/SVG/Canvas.
-- Touch targets mínimo 44px para botones y sliders.
-- El slider `<input type="range">` debe tener `oninput="update{Nombre}Lab()"`.
-- SVG: siempre usar `viewBox` fijo (ej. `"0 0 200 200"`) para evitar desbordamiento.
-- Canvas: escalar coordenadas según ancho del contenedor, no usar valores fijos de pantalla.
-- **Retroalimentación de Audio:** Cada laboratorio con deslizadores, casillas táctiles, botones de incremento/decremento o botones de opción debe importar `playTickWithThrottle` de `audio.js` y ejecutarlo en cada interacción/cambio para proporcionar un sonido de respuesta táctil ("tick").
-
+### Audio y Estado
+- Ejecutar `playTickWithThrottle()` en selecciones táctiles.
+- Llamar a `setUserHasUsedLab(true)` y `updateBadges()` tras interactuar.
