@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="icon" id="favicon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
-  <script type="module" crossorigin src="/material_titi/assets/practica-XyIFBpC2.js"></script>
-  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-CVLmXYme.js">
-  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-DevJxLUT.css">
+  <script type="module" crossorigin src="/material_titi/assets/practica-YGVI2vNw.js"></script>
+  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-Br8MEpPC.js">
+  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-C1D0JBLu.css">
   <link rel="stylesheet" crossorigin href="/material_titi/assets/practica-DDx4YGlw.css">
 </head>
 
@@ -1825,17 +1825,18 @@
                     </div>
 
                     <!-- Retroalimentación / Rationale Explicado -->
-                    <div id="quiz-t-feedback" class="hidden mt-6 p-5 rounded-2xl border transition-all duration-300">
-                        <div class="flex gap-4 items-start">
-                            <span class="text-3xl" id="quiz-t-feedback-icon">🌟</span>
-                            <div>
-                                <h4 class="font-bold text-lg" id="quiz-t-feedback-title">¡Resultado!</h4>
-                                <p class="text-sm mt-1 leading-relaxed" id="quiz-t-feedback-text"></p>
-                            </div>
+                    <div id="quiz-t-feedback" class="hidden mt-6 p-4 sm:p-5 rounded-2xl border transition-all duration-300">
+                        <div class="flex items-center gap-2.5 mb-2">
+                            <span class="text-2xl sm:text-3xl shrink-0" id="quiz-t-feedback-icon">🎉</span>
+                            <h4 class="font-bold text-base sm:text-lg font-fun" id="quiz-t-feedback-title">¡Respuesta Correcta!</h4>
                         </div>
-                        <div class="mt-4 flex justify-end">
-                            <button onclick="nextQuestion('teorico')" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition-all font-fun">
-                                Siguiente Pregunta ➡️
+                        <div class="bg-white/90 p-3.5 sm:p-4 rounded-xl border border-black/5 mt-2">
+                            <p class="text-xs sm:text-sm leading-relaxed text-slate-800" id="quiz-t-feedback-text"></p>
+                        </div>
+                        <div class="mt-4 flex flex-col sm:flex-row sm:justify-end">
+                            <button onclick="nextQuestion('teorico')" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 active:scale-95 text-white font-bold px-6 py-3 min-h-[48px] rounded-2xl text-sm transition-all font-fun shadow-md flex items-center justify-center gap-2">
+                                <span>Siguiente Pregunta</span>
+                                <span class="text-base">➡️</span>
                             </button>
                         </div>
                     </div>
@@ -1902,17 +1903,18 @@
                     </div>
 
                     <!-- Retroalimentación / Rationale Explicado -->
-                    <div id="quiz-p-feedback" class="hidden mt-6 p-5 rounded-2xl border transition-all duration-300">
-                        <div class="flex gap-4 items-start">
-                            <span class="text-3xl" id="quiz-p-feedback-icon">🌟</span>
-                            <div>
-                                <h4 class="font-bold text-lg" id="quiz-p-feedback-title">¡Resultado!</h4>
-                                <p class="text-sm mt-1 leading-relaxed" id="quiz-p-feedback-text"></p>
-                            </div>
+                    <div id="quiz-p-feedback" class="hidden mt-6 p-4 sm:p-5 rounded-2xl border transition-all duration-300">
+                        <div class="flex items-center gap-2.5 mb-2">
+                            <span class="text-2xl sm:text-3xl shrink-0" id="quiz-p-feedback-icon">🎉</span>
+                            <h4 class="font-bold text-base sm:text-lg font-fun" id="quiz-p-feedback-title">¡Respuesta Correcta!</h4>
                         </div>
-                        <div class="mt-4 flex justify-end">
-                            <button onclick="nextQuestion('practico')" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition-all font-fun">
-                                Siguiente Pregunta ➡️
+                        <div class="bg-white/90 p-3.5 sm:p-4 rounded-xl border border-black/5 mt-2">
+                            <p class="text-xs sm:text-sm leading-relaxed text-slate-800" id="quiz-p-feedback-text"></p>
+                        </div>
+                        <div class="mt-4 flex flex-col sm:flex-row sm:justify-end">
+                            <button onclick="nextQuestion('practico')" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 active:scale-95 text-white font-bold px-6 py-3 min-h-[48px] rounded-2xl text-sm transition-all font-fun shadow-md flex items-center justify-center gap-2">
+                                <span>Siguiente Pregunta</span>
+                                <span class="text-base">➡️</span>
                             </button>
                         </div>
                     </div>
