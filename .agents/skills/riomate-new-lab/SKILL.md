@@ -1,53 +1,76 @@
 ---
 name: riomate-new-lab
-description: Crea un nuevo laboratorio interactivo dentro de la sección de Laboratorios de RíoMate. Usar cuando el usuario pide agregar un simulador, mini-juego o experimento nuevo.
+description: Crea un nuevo laboratorio interactivo dentro de la seccion de Laboratorios de RioMate. Usar cuando el usuario pide agregar un simulador, mini-juego o experimento nuevo.
 ---
 
-# Skill: Nuevo Laboratorio Interactivo en RíoMate
+# Skill: Nuevo Laboratorio Interactivo en RioMate
 
-## Cuándo usar este skill
+## Cuando usar este skill
 - "Agrega un laboratorio de [tema]"
 - "Crea un simulador de [concepto]"
 - "Quiero un experimento interactivo de [materia]"
 
-## Estructura Estándar de un Laboratorio (Layout de 2 Columnas)
-Todo laboratorio se organiza en un grid responsive de 2 columnas (`grid grid-cols-1 md:grid-cols-12 gap-8`):
-1. **Columna Izquierda (`md:col-span-6`):** Controles interactivos, selección de muestras mediante **Radio Button Cards** o sliders SVG.
-2. **Columna Derecha (`md:col-span-6`):** Tarjeta de resultado en vivo, análisis lingüístico/matemático y reto interactivo de preguntas.
+---
 
-### Patrón Oficial de Selección: Radio Button Cards
-Para permitir seleccionar opciones de muestra, usar siempre:
-```html
-<div onclick="selectSample({idx})" class="cursor-pointer p-3.5 rounded-2xl border-2 transition-all duration-200 flex items-start gap-3 text-left {isSelected ? 'border-amber-500 bg-amber-50/90 shadow-sm' : 'border-slate-200 bg-white hover:border-amber-300 hover:bg-amber-50/30'}">
-  <div class="mt-0.5 shrink-0 w-5 h-5 rounded-full border-2 {isSelected ? 'border-amber-600 bg-amber-600' : 'border-slate-300 bg-white'} flex items-center justify-center transition-all">
-    {isSelected ? '<div class="w-2 h-2 rounded-full bg-white"></div>' : ''}
-  </div>
-  <div class="flex-1 min-w-0">
-    <div class="flex items-center gap-2 mb-1">
-      <span class="text-base">{icon}</span>
-      <span class="inline-block text-[11px] font-bold px-2.5 py-0.5 rounded-full {badgeColor} font-fun">{badge}</span>
-    </div>
-    <p class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">"{text}"</p>
-  </div>
-</div>
-```
+## PASO 0 - Revisar componentes reutilizables ANTES de escribir HTML
 
-### Patrón Oficial de Input + Botón en Móvil
-```html
-<div class="flex flex-col sm:flex-row gap-2.5">
-  <input type="text" class="w-full sm:flex-1 px-4 py-3 min-h-[48px] rounded-2xl border border-amber-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white shadow-inner">
-  <button class="w-full sm:w-auto shrink-0 bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold px-6 py-3 min-h-[48px] rounded-2xl text-sm font-fun shadow-md transition-all flex items-center justify-center gap-2">
-    <span>Analizar</span> <span>🔍</span>
-  </button>
-</div>
-```
+Antes de escribir cualquier HTML de laboratorio, revisar si alguno de estos modulos ya resuelve lo que necesitas:
 
-### Integración de Gemini IA (Mínimo Consumo)
-- Usar el módulo `src/shared/services/gemini.js` con el modelo `gemini-flash-lite-latest`.
-- Limitar a `maxOutputTokens: 90`.
-- Cachear resultados en memoria con `Map`.
-- Si la conexión falla, fallback instantáneo al motor local.
+### src/shared/modules/lab-components.js
+Exporta 4 funciones. Usarlas solo si aplican al lab - no son obligatorias.
 
-### Audio y Estado
-- Ejecutar `playTickWithThrottle()` en selecciones táctiles.
-- Llamar a `setUserHasUsedLab(true)` y `updateBadges()` tras interactuar.
+| Funcion | Cuando usarla |
+|---|---|
+| renderLabCarousel(containerId, items, idx, handlers) | Si el lab navega ejemplos de UNO en UNO con botones anterior/siguiente y dots |
+| renderLabResultCard(containerId, opts) | Si el lab muestra resultado de analisis IA o local con badge IA/Local |
+| renderSampleResultCard(containerId, opts) | Si el lab muestra analisis de ejemplos del carrusel (sin badge IA) |
+| renderLabLoading(containerId) | Si el lab hace una llamada async (Gemini u otra) y necesita estado de carga |
+
+Parametros de renderLabCarousel:
+  - containerId: ID del div en HTML
+  - items: Array con { text, type, icon, color, badge }
+  - currentIdx: Indice activo (numero)
+  - handlers: { onSelect, onPrev, onNext, onDot } - nombres de funciones en window.*
+
+Parametros de renderLabResultCard:
+  - icon, type, text, clue, praise (opcional), isAI (boolean)
+
+Parametros de renderSampleResultCard:
+  - icon, type, text, clue
+
+### src/shared/services/gemini.js
+Para analisis con IA. Importar analyzeSentenceWithAI(text).
+Devuelve { tipo, icono, explicacion, elogio } o null si falla (fallback local automatico).
+
+### src/shared/modules/audio.js
+- playTickWithThrottle() en selecciones tactiles
+- playSound('correct' | 'incorrect' | 'tab_click') en aciertos/fallos/cambios
+
+### src/shared/modules/flashcards.js
+- updateBadges() - siempre llamar tras interaccion del usuario
+- setUserHasUsedLab(true) - marcar que el lab fue usado (desbloquea medallas)
+
+---
+
+## Estructura Estandar de un Laboratorio (Layout de 2 Columnas)
+
+Todo laboratorio se organiza en un grid responsive:
+  grid grid-cols-1 md:grid-cols-12 gap-8
+
+1. Columna Izquierda (md:col-span-6): Controles interactivos, seleccion de muestras mediante Carrusel o Radio Button Cards.
+2. Columna Derecha (md:col-span-6): Tarjeta de resultado en vivo y reto interactivo.
+
+### Carrusel vs Radio Button Cards?
+- Carrusel (renderLabCarousel): cuando se navegan ejemplos de uno en uno. Preferido para listas largas (5+).
+- Radio Button Cards (ver Seccion 3B de riomate.md): cuando se muestran TODAS las opciones a la vez. Util para listas cortas (2-4 items).
+
+### Patron Oficial de Input + Boton en Movil (Seccion 3C de riomate.md)
+Ver el patron completo en riomate.md Seccion 3C. Regla clave: en movil apilados al 100%, en sm: alineados horizontalmente. min-h-[48px] siempre.
+
+---
+
+## Checklist antes de entregar el lab
+1. npm run build sin errores.
+2. Probar en 360x800px (Galaxy S20) - sin scroll horizontal, touch targets 44px minimo.
+3. updateBadges() y setUserHasUsedLab(true) llamados tras cada interaccion.
+4. Verificar que ningun componente de la Seccion 3 de riomate.md fue alterado.
