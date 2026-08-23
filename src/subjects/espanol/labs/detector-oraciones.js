@@ -7,6 +7,12 @@ import { playSound, playTickWithThrottle } from '../../../shared/modules/audio.j
 import { setUserHasUsedLab } from '../../../shared/state/store.js';
 import { updateBadges } from '../../../shared/modules/flashcards.js';
 import { analyzeSentenceWithAI } from '../../../shared/services/gemini.js';
+import {
+  renderLabLoading,
+  renderLabResultCard,
+  renderSampleResultCard,
+  renderLabCarousel
+} from '../../../shared/modules/lab-components.js';
 
 const sampleSentences = [
   {
@@ -111,60 +117,17 @@ export function initDetectorOraciones() {
 }
 
 export function renderSampleCarousel() {
-  const container = document.getElementById('detector-samples-container');
-  if (!container) return;
-
-  const s = sampleSentences[currentSampleIdx];
-  const total = sampleSentences.length;
-
-  container.innerHTML = `
-    <div class="bg-white rounded-3xl p-4 sm:p-5 border-2 border-amber-300 shadow-sm relative transition-all duration-300">
-      <!-- Cabecera del Carrusel con badge e indicador de paso -->
-      <div class="flex items-center justify-between gap-2 mb-3">
-        <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full ${s.color} font-fun">
-          <span>${s.icon}</span>
-          <span>${s.badge}</span>
-        </span>
-        <span class="text-xs font-bold text-slate-600 font-fun bg-amber-100/60 border border-amber-200 px-2.5 py-1 rounded-full">
-          Oración ${currentSampleIdx + 1} de ${total}
-        </span>
-      </div>
-
-      <!-- Oración destacada del carrusel -->
-      <div class="my-3 p-4 rounded-2xl bg-amber-50/70 border border-amber-200 text-center">
-        <p class="text-base sm:text-lg font-bold text-slate-900 leading-snug font-fun">
-          "${s.text}"
-        </p>
-      </div>
-
-      <!-- Botón de Análisis Directo -->
-      <div class="mb-4 text-center">
-        <button onclick="window.selectSampleSentence(${currentSampleIdx})" class="w-full bg-amber-100 hover:bg-amber-200 active:scale-98 text-amber-950 font-bold py-2.5 px-3 rounded-2xl text-xs font-fun transition-all border border-amber-300 shadow-sm flex items-center justify-center gap-2 min-h-[44px]">
-          <span>🔍 Ver Análisis Lingüístico de este Ejemplo</span>
-        </button>
-      </div>
-
-      <!-- Controles del Carrusel (< Anterior / Siguiente > y Dots) -->
-      <div class="flex items-center justify-between pt-3 border-t border-slate-100 gap-2">
-        <button onclick="window.prevSampleSentence()" aria-label="Oración anterior" class="shrink-0 h-11 px-3 sm:px-4 rounded-2xl border border-amber-300 bg-amber-50 hover:bg-amber-100 active:scale-95 text-xs font-bold text-amber-950 transition-all font-fun flex items-center justify-center gap-1.5 shadow-sm min-w-[44px]">
-          <span class="text-base font-bold">◀</span>
-          <span class="hidden sm:inline">Anterior</span>
-        </button>
-
-        <!-- Indicadores Dots -->
-        <div class="flex items-center justify-center gap-1.5 px-1 flex-1">
-          ${sampleSentences.map((_, i) => `
-            <button onclick="window.goToSampleSentence(${i})" aria-label="Ir a oración ${i+1}" class="h-2.5 rounded-full transition-all ${i === currentSampleIdx ? 'bg-amber-600 w-5' : 'bg-slate-200 hover:bg-amber-300 w-2'}"></button>
-          `).join('')}
-        </div>
-
-        <button onclick="window.nextSampleSentence()" aria-label="Oración siguiente" class="shrink-0 h-11 px-3 sm:px-4 rounded-2xl border border-amber-300 bg-amber-50 hover:bg-amber-100 active:scale-95 text-xs font-bold text-amber-950 transition-all font-fun flex items-center justify-center gap-1.5 shadow-sm min-w-[44px]">
-          <span class="hidden sm:inline">Siguiente</span>
-          <span class="text-base font-bold">▶</span>
-        </button>
-      </div>
-    </div>
-  `;
+  renderLabCarousel(
+    'detector-samples-container',
+    sampleSentences,
+    currentSampleIdx,
+    {
+      onSelect: 'selectSampleSentence',
+      onPrev:   'prevSampleSentence',
+      onNext:   'nextSampleSentence',
+      onDot:    'goToSampleSentence'
+    }
+  );
 }
 
 export function nextSampleSentence() {
@@ -196,25 +159,12 @@ export function selectSampleSentence(idx, withSound = true) {
   const s = sampleSentences[idx];
   if (!s) return;
 
-  const resultBox = document.getElementById('detector-analysis-result');
-  if (!resultBox) return;
-
-  resultBox.innerHTML = `
-    <div class="p-6 rounded-3xl border-2 border-amber-300 bg-amber-50/70 animate-fadeIn">
-      <div class="flex items-center gap-3 mb-2">
-        <span class="text-3xl">${s.icon}</span>
-        <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-amber-700 font-fun">Resultado del Análisis Lingüístico</span>
-          <h4 class="text-xl font-bold text-slate-900 font-fun">${s.type}</h4>
-        </div>
-      </div>
-      <p class="text-base text-slate-700 font-medium italic mb-3 bg-white p-3 rounded-xl border border-amber-200">"${s.text}"</p>
-      <div class="bg-white/90 p-4 rounded-2xl border border-amber-100">
-        <p class="text-sm text-slate-600 leading-relaxed font-semibold">🔍 Pistas del Detective:</p>
-        <p class="text-sm text-slate-700 mt-1">${s.clue}</p>
-      </div>
-    </div>
-  `;
+  renderSampleResultCard('detector-analysis-result', {
+    icon: s.icon,
+    type: s.type,
+    text: s.text,
+    clue: s.clue
+  });
 
   // Marcar uso de laboratorio para medallas
   setUserHasUsedLab(true);
@@ -228,16 +178,7 @@ export async function analyzeCustomInput() {
   const text = input.value.trim();
   playTickWithThrottle();
 
-  const resultBox = document.getElementById('detector-analysis-result');
-  if (resultBox) {
-    resultBox.innerHTML = `
-      <div class="p-6 rounded-3xl border-2 border-amber-300 bg-amber-50/70 animate-pulse text-center">
-        <span class="text-3xl inline-block animate-bounce mb-2">✨</span>
-        <p class="text-sm font-bold text-amber-900 font-fun">Consultando con la IA de Google Gemini...</p>
-        <p class="text-xs text-slate-500 mt-1">Analizando la intención comunicativa de tu oración...</p>
-      </div>
-    `;
-  }
+  renderLabLoading('detector-analysis-result');
 
   // 1. Intentar analizar con Gemini IA
   let aiResult = await analyzeSentenceWithAI(text);
@@ -278,43 +219,7 @@ export async function analyzeCustomInput() {
     }
   }
 
-  if (resultBox) {
-    resultBox.innerHTML = `
-      <div class="p-4 sm:p-6 rounded-3xl border-2 border-amber-300 bg-amber-50/70 animate-fadeIn">
-        <div class="flex items-start justify-between gap-2 mb-3">
-          <div class="flex items-center gap-2.5">
-            <span class="text-3xl shrink-0">${icon}</span>
-            <div>
-              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-800 font-fun block">Resultado de tu Frase</span>
-              <h4 class="text-base sm:text-xl font-bold text-slate-900 font-fun leading-tight">${type}</h4>
-            </div>
-          </div>
-          <span class="shrink-0 text-[10px] font-bold px-2.5 py-1 rounded-full ${isAI ? 'bg-indigo-100 text-indigo-900 border border-indigo-200 shadow-sm' : 'bg-slate-100 text-slate-700 border border-slate-200'} font-fun flex items-center gap-1">
-            ${isAI ? '✨ IA Gemini' : '🔍 Modo Local'}
-          </span>
-        </div>
-
-        <div class="p-3.5 rounded-2xl bg-white border border-amber-200 mb-3 shadow-inner">
-          <p class="text-sm sm:text-base text-slate-800 font-semibold italic text-center font-fun">"${text}"</p>
-        </div>
-
-        <div class="bg-white/95 p-4 rounded-2xl border border-amber-100 space-y-2 shadow-sm">
-          <div>
-            <p class="text-xs text-amber-900 uppercase font-bold tracking-wider font-fun flex items-center gap-1.5">
-              <span>🔍</span> <span>Explicación Pedagógica:</span>
-            </p>
-            <p class="text-xs sm:text-sm text-slate-700 font-medium mt-1 leading-relaxed">${clue}</p>
-          </div>
-          ${praise ? `
-          <div class="pt-2.5 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-emerald-700 font-fun">
-            <span class="text-sm">🌟</span>
-            <span>${praise}</span>
-          </div>
-          ` : ''}
-        </div>
-      </div>
-    `;
-  }
+  renderLabResultCard('detector-analysis-result', { icon, type, text, clue, praise, isAI });
 
   playSound('tab_click');
   setUserHasUsedLab(true);
