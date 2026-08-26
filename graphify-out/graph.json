@@ -216,7 +216,7 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L1",
       "id": "src_shared_modules_audio_js",
-      "community": 19,
+      "community": 20,
       "norm_label": "audio.js"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "src/shared/modules/audio.js",
       "source_location": "L142",
       "id": "modules_audio_playtickwiththrottle",
-      "community": 19,
+      "community": 20,
       "norm_label": "playtickwiththrottle()"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L36",
       "id": "modules_quiz_updatequizintrotexts",
-      "community": 0,
+      "community": 23,
       "norm_label": "updatequizintrotexts()"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L71",
       "id": "modules_quiz_checksavedprogress",
-      "community": 0,
+      "community": 23,
       "norm_label": "checksavedprogress()"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L287",
       "id": "modules_quiz_resetquiz",
-      "community": 0,
+      "community": 23,
       "norm_label": "resetquiz()"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L37",
       "id": "state_store_setuserhasusedlab",
-      "community": 22,
+      "community": 23,
       "norm_label": "setuserhasusedlab()"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L62",
       "id": "state_store_pulper\u00edacart",
-      "community": 0,
+      "community": 20,
       "norm_label": "pulperiacart"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L70",
       "id": "state_store_pulper\u00edaprices",
-      "community": 0,
+      "community": 20,
       "norm_label": "pulperiaprices"
     },
     {
@@ -940,6 +940,24 @@
       "norm_label": "cienciassem1eval2module"
     },
     {
+      "label": "quiz-practico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem1_eval2/data/quiz-practico.js",
+      "source_location": "L1",
+      "id": "src_subjects_ciencias_sem1_eval2_data_quiz_practico_js",
+      "community": 0,
+      "norm_label": "quiz-practico.js"
+    },
+    {
+      "label": "quizPracticoCienciasSem1Eval2",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem1_eval2/data/quiz-practico.js",
+      "source_location": "L6",
+      "id": "data_quiz_practico_quizpracticocienciassem1eval2",
+      "community": 0,
+      "norm_label": "quizpracticocienciassem1eval2"
+    },
+    {
       "label": "quiz-teorico.js",
       "file_type": "code",
       "source_file": "src/subjects/ciencias/sem1_eval2/data/quiz-teorico.js",
@@ -1008,7 +1026,7 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/labs/filtro-renal.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_sem1_eval2_labs_filtro_renal_js",
-      "community": 19,
+      "community": 20,
       "norm_label": "filtro-renal.js"
     },
     {
@@ -1017,7 +1035,7 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/labs/filtro-renal.js",
       "source_location": "L7",
       "id": "src_subjects_ciencias_sem1_eval2_labs_filtro_renal_js_labs_filtro_renal_particles",
-      "community": 19,
+      "community": 20,
       "norm_label": "particles"
     },
     {
@@ -1026,7 +1044,7 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/labs/filtro-renal.js",
       "source_location": "L10",
       "id": "src_subjects_ciencias_sem1_eval2_labs_filtro_renal_js_labs_filtro_renal_particle",
-      "community": 19,
+      "community": 20,
       "norm_label": "particle"
     },
     {
@@ -1035,7 +1053,7 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/labs/filtro-renal.js",
       "source_location": "L11",
       "id": "src_subjects_ciencias_sem1_eval2_labs_filtro_renal_js_labs_filtro_renal_particle_constructor",
-      "community": 19,
+      "community": 20,
       "norm_label": ".constructor()"
     },
     {
@@ -1044,7 +1062,7 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/labs/filtro-renal.js",
       "source_location": "L21",
       "id": "src_subjects_ciencias_sem1_eval2_labs_filtro_renal_js_labs_filtro_renal_particle_update",
-      "community": 19,
+      "community": 20,
       "norm_label": ".update()"
     },
     {
@@ -1053,7 +1071,7 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/labs/filtro-renal.js",
       "source_location": "L73",
       "id": "src_subjects_ciencias_sem1_eval2_labs_filtro_renal_js_labs_filtro_renal_particle_draw",
-      "community": 19,
+      "community": 20,
       "norm_label": ".draw()"
     },
     {
@@ -1062,7 +1080,7 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/labs/filtro-renal.js",
       "source_location": "L99",
       "id": "src_subjects_ciencias_sem1_eval2_labs_filtro_renal_js_labs_filtro_renal_initfiltrorenal",
-      "community": 19,
+      "community": 20,
       "norm_label": "initfiltrorenal()"
     },
     {
@@ -1071,7 +1089,7 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/labs/filtro-renal.js",
       "source_location": "L136",
       "id": "src_subjects_ciencias_sem1_eval2_labs_filtro_renal_js_labs_filtro_renal_tick",
-      "community": 19,
+      "community": 20,
       "norm_label": "tick()"
     },
     {
@@ -1080,7 +1098,7 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/labs/filtro-renal.js",
       "source_location": "L204",
       "id": "src_subjects_ciencias_sem1_eval2_labs_filtro_renal_js_labs_filtro_renal_stopfiltrorenal",
-      "community": 19,
+      "community": 20,
       "norm_label": "stopfiltrorenal()"
     },
     {
@@ -1602,7 +1620,7 @@
       "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
       "source_location": "L270",
       "id": "labs_detector_oraciones_answerchallengedetector",
-      "community": 3,
+      "community": 19,
       "norm_label": "answerchallengedetector()"
     },
     {
@@ -1737,7 +1755,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L287",
       "id": "labs_pulperia_refranes_revealadivinanzasolution",
-      "community": 22,
+      "community": 23,
       "norm_label": "revealadivinanzasolution()"
     },
     {
@@ -1782,7 +1800,7 @@
       "source_file": "src/subjects/espanol/labs/taller-libro.js",
       "source_location": "L1",
       "id": "src_subjects_espanol_labs_taller_libro_js",
-      "community": 22,
+      "community": 23,
       "norm_label": "taller-libro.js"
     },
     {
@@ -1791,7 +1809,7 @@
       "source_file": "src/subjects/espanol/labs/taller-libro.js",
       "source_location": "L10",
       "id": "labs_taller_libro_bookpartsdata",
-      "community": 22,
+      "community": 23,
       "norm_label": "bookpartsdata"
     },
     {
@@ -1800,7 +1818,7 @@
       "source_file": "src/subjects/espanol/labs/taller-libro.js",
       "source_location": "L64",
       "id": "labs_taller_libro_inittallerlibro",
-      "community": 22,
+      "community": 23,
       "norm_label": "inittallerlibro()"
     },
     {
@@ -1809,7 +1827,7 @@
       "source_file": "src/subjects/espanol/labs/taller-libro.js",
       "source_location": "L69",
       "id": "labs_taller_libro_selectbookpart",
-      "community": 22,
+      "community": 23,
       "norm_label": "selectbookpart()"
     },
     {
@@ -1818,7 +1836,7 @@
       "source_file": "src/subjects/espanol/labs/taller-libro.js",
       "source_location": "L110",
       "id": "labs_taller_libro_switchcardgeneratortab",
-      "community": 22,
+      "community": 23,
       "norm_label": "switchcardgeneratortab()"
     },
     {
@@ -1852,7 +1870,7 @@
       "label": "hideElement()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L83",
+      "source_location": "L82",
       "id": "matematicas_main_hideelement",
       "community": 0,
       "norm_label": "hideelement()"
@@ -1861,7 +1879,7 @@
       "label": "showElement()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L88",
+      "source_location": "L87",
       "id": "matematicas_main_showelement",
       "community": 0,
       "norm_label": "showelement()"
@@ -1870,7 +1888,7 @@
       "label": "switchSubject()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L96",
+      "source_location": "L95",
       "id": "matematicas_main_switchsubject",
       "community": 0,
       "norm_label": "switchsubject()"
@@ -1879,7 +1897,7 @@
       "label": "initApp()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L253",
+      "source_location": "L252",
       "id": "matematicas_main_initapp",
       "community": 0,
       "norm_label": "initapp()"
@@ -1926,7 +1944,7 @@
       "source_file": "src/subjects/matematicas/labs/divisores.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_divisores_js",
-      "community": 19,
+      "community": 20,
       "norm_label": "divisores.js"
     },
     {
@@ -1935,7 +1953,7 @@
       "source_file": "src/subjects/matematicas/labs/divisores.js",
       "source_location": "L4",
       "id": "labs_divisores_updatedivisoreslab",
-      "community": 19,
+      "community": 20,
       "norm_label": "updatedivisoreslab()"
     },
     {
@@ -1944,7 +1962,7 @@
       "source_file": "src/subjects/matematicas/labs/fracciones.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_fracciones_js",
-      "community": 19,
+      "community": 20,
       "norm_label": "fracciones.js"
     },
     {
@@ -1953,7 +1971,7 @@
       "source_file": "src/subjects/matematicas/labs/fracciones.js",
       "source_location": "L4",
       "id": "labs_fracciones_updatefraccioneslab",
-      "community": 19,
+      "community": 20,
       "norm_label": "updatefraccioneslab()"
     },
     {
@@ -2043,7 +2061,7 @@
       "source_file": "src/subjects/matematicas/labs/multiplos.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_multiplos_js",
-      "community": 19,
+      "community": 20,
       "norm_label": "multiplos.js"
     },
     {
@@ -2052,7 +2070,7 @@
       "source_file": "src/subjects/matematicas/labs/multiplos.js",
       "source_location": "L4",
       "id": "labs_multiplos_updatemultipleslab",
-      "community": 19,
+      "community": 20,
       "norm_label": "updatemultipleslab()"
     },
     {
@@ -2061,7 +2079,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_pulperia_js",
-      "community": 0,
+      "community": 20,
       "norm_label": "pulperia.js"
     },
     {
@@ -2070,7 +2088,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L5",
       "id": "labs_pulperia_changepulper\u00edaqty",
-      "community": 0,
+      "community": 20,
       "norm_label": "changepulperiaqty()"
     },
     {
@@ -2079,7 +2097,7 @@
       "source_file": "src/subjects/matematicas/labs/pulperia.js",
       "source_location": "L17",
       "id": "labs_pulperia_calculatepulper\u00eda",
-      "community": 0,
+      "community": 20,
       "norm_label": "calculatepulperia()"
     },
     {
@@ -7571,6 +7589,38 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem1_eval2/data/quiz-practico.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem1_eval2_data_quiz_practico_js",
+      "target": "data_quiz_practico_quizpracticocienciassem1eval2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ciencias_sem1_eval2_data_quiz_practico_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_practico_quizpracticocienciassem1eval2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/ciencias/sem1_eval2/data/quiz-teorico.js",
       "source_location": "L5",
       "weight": 1.0,
@@ -11964,5 +12014,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2f9a7782dccbc0d7630d235586b5b9a7243bfd86"
+  "built_at_commit": "a65dbdf706d5c4ddcd0e72472cf35f91f87ab246"
 }

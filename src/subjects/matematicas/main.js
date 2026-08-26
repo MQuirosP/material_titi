@@ -17,9 +17,8 @@ import { changePulperíaQty, calculatePulpería } from './labs/pulperia.js';
 import { onLabFigureChange, onLabSliderInput }   from './labs/geometria.js';
 
 // Ciencias Imports
-import { quizTeoricoCiencias }  from '../ciencias/data/quiz-teorico.js';
-import { quizPracticoCiencias } from '../ciencias/data/quiz-practico.js';
 import { quizTeoricoCienciasSem1Eval2 } from '../ciencias/sem1_eval2/data/quiz-teorico.js';
+import { quizPracticoCienciasSem1Eval2 } from '../ciencias/sem1_eval2/data/quiz-practico.js';
 import { quizTeoricoCienciasSem2Eval1 } from '../ciencias/sem2_eval1/data/quiz-teorico.js';
 import { quizPracticoCienciasSem2Eval1 } from '../ciencias/sem2_eval1/data/quiz-practico.js';
 import { initFiltroRenal, stopFiltroRenal } from '../ciencias/sem1_eval2/labs/filtro-renal.js';
@@ -181,9 +180,9 @@ export function switchSubject(subject, sem = '2', evalNum = '1', force = false) 
 
   // 4. Asignar Preguntas de Examen por Módulo Activo
   if (targetSubject === 'ciencias') {
-    if (targetSem === '1' && targetEval === '2') {
+    if (String(targetSem) === '1' && String(targetEval) === '2') {
       quizState.teorico.questions = quizTeoricoCienciasSem1Eval2;
-      quizState.practico.questions = quizPracticoCiencias;
+      quizState.practico.questions = quizPracticoCienciasSem1Eval2;
     } else {
       quizState.teorico.questions = quizTeoricoCienciasSem2Eval1;
       quizState.practico.questions = quizPracticoCienciasSem2Eval1;
