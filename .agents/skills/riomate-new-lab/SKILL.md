@@ -6,6 +6,7 @@ description: Crea un nuevo laboratorio interactivo dentro de la seccion de Labor
 # Skill: Nuevo Laboratorio Interactivo en RioMate
 
 ## Cuando usar este skill
+
 - "Agrega un laboratorio de [tema]"
 - "Crea un simulador de [concepto]"
 - "Quiero un experimento interactivo de [materia]"
@@ -17,6 +18,7 @@ description: Crea un nuevo laboratorio interactivo dentro de la seccion de Labor
 Antes de escribir cualquier HTML de laboratorio, revisar si alguno de estos modulos ya resuelve lo que necesitas:
 
 ### src/shared/modules/lab-components.js
+
 Exporta 4 funciones. Usarlas solo si aplican al lab - no son obligatorias.
 
 | Funcion | Cuando usarla |
@@ -39,14 +41,17 @@ Parametros de renderSampleResultCard:
   - icon, type, text, clue
 
 ### src/shared/services/gemini.js
+
 Para analisis con IA. Importar analyzeSentenceWithAI(text).
 Devuelve { tipo, icono, explicacion, elogio } o null si falla (fallback local automatico).
 
 ### src/shared/modules/audio.js
+
 - playTickWithThrottle() en selecciones tactiles
 - playSound('correct' | 'incorrect' | 'tab_click') en aciertos/fallos/cambios
 
 ### src/shared/modules/flashcards.js
+
 - updateBadges() - siempre llamar tras interaccion del usuario
 - setUserHasUsedLab(true) - marcar que el lab fue usado (desbloquea medallas)
 
@@ -61,15 +66,18 @@ Todo laboratorio se organiza en un grid responsive:
 2. Columna Derecha (md:col-span-6): Tarjeta de resultado en vivo y reto interactivo.
 
 ### Carrusel vs Radio Button Cards?
+
 - Carrusel (renderLabCarousel): cuando se navegan ejemplos de uno en uno. Preferido para listas largas (5+).
 - Radio Button Cards (ver Seccion 3B de riomate.md): cuando se muestran TODAS las opciones a la vez. Util para listas cortas (2-4 items).
 
 ### Patron Oficial de Input + Boton en Movil (Seccion 3C de riomate.md)
+
 Ver el patron completo en riomate.md Seccion 3C. Regla clave: en movil apilados al 100%, en sm: alineados horizontalmente. min-h-[48px] siempre.
 
 ---
 
 ## Checklist antes de entregar el lab
+
 1. npm run build sin errores.
 2. Probar en 360x800px (Galaxy S20) - sin scroll horizontal, touch targets 44px minimo.
 3. updateBadges() y setUserHasUsedLab(true) llamados tras cada interaccion.

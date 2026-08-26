@@ -1,0 +1,209 @@
+// Simulador de Filtro Renal - Ciencias (1er Semestre 2ª Evaluación)
+import { playTickWithThrottle } from '../../../../shared/modules/audio.js';
+
+let canvas = null;
+let ctx = null;
+let animationFrameId = null;
+let particles = [];
+let lastHydrationState = 2;
+
+class Particle {
+    constructor(x, y, radius, type, speedMultiplier) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.type = type; // 'nutrient' (red, big) or 'toxin' (yellow, small)
+        this.vx = (Math.random() - 0.5) * 2;
+        this.vy = (Math.random() - 0.5) * 2;
+        this.speedMultiplier = speedMultiplier;
+    }
+
+    update(width, height, hydrationState) {
+        let currentMultiplier = 1;
+        if (this.type === 'toxin') {
+            if (hydrationState === 1) { // Poco
+                currentMultiplier = 0.3;
+            } else if (hydrationState === 3) { // Súper
+                currentMultiplier = 2.5;
+            } else {
+                currentMultiplier = 1.0;
+            }
+        }
+
+        this.x += this.vx * this.speedMultiplier * currentMultiplier;
+        this.y += this.vy * this.speedMultiplier * currentMultiplier;
+
+        const midline = height / 2;
+
+        if (this.type === 'nutrient') {
+            if (this.x - this.radius < 0) {
+                this.x = this.radius;
+                this.vx = -this.vx;
+            } else if (this.x + this.radius > width) {
+                this.x = width - this.radius;
+                this.vx = -this.vx;
+            }
+            if (this.y - this.radius < 0) {
+                this.y = this.radius;
+                this.vy = -this.vy;
+            } else if (this.y + this.radius > midline - 5) {
+                this.y = midline - 5 - this.radius;
+                this.vy = -this.vy;
+            }
+        } else {
+            if (this.x - this.radius < 0) {
+                this.x = this.radius;
+                this.vx = -this.vx;
+            } else if (this.x + this.radius > width) {
+                this.x = width - this.radius;
+                this.vx = -this.vx;
+            }
+            if (this.y - this.radius < 0) {
+                this.y = this.radius;
+                this.vy = -this.vy;
+            } else if (this.y - this.radius > height) {
+                this.x = Math.random() * width;
+                this.y = Math.random() * (midline - 20);
+                this.vx = (Math.random() - 0.5) * 2;
+                this.vy = Math.random() * 1.5 + 0.5;
+            }
+        }
+    }
+
+    draw(ctx, hydrationState) {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        
+        if (this.type === 'nutrient') {
+            ctx.fillStyle = '#ef4444';
+            ctx.shadowBlur = 0;
+        } else {
+            if (hydrationState === 1) {
+                ctx.fillStyle = 'rgba(180, 160, 20, 0.4)';
+                ctx.shadowBlur = 0;
+            } else if (hydrationState === 3) {
+                ctx.fillStyle = '#facc15';
+                ctx.shadowColor = '#facc15';
+                ctx.shadowBlur = 8;
+            } else {
+                ctx.fillStyle = '#eab308';
+                ctx.shadowBlur = 0;
+            }
+        }
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        ctx.closePath();
+    }
+}
+
+export function initFiltroRenal() {
+    canvas = document.getElementById('filtro-renal-canvas');
+    if (!canvas) return;
+    ctx = canvas.getContext('2d');
+    
+    canvas.width = 600;
+    canvas.height = 300;
+
+    particles = [];
+    
+    for (let i = 0; i < 15; i++) {
+        particles.push(new Particle(
+            Math.random() * canvas.width,
+            Math.random() * (canvas.height / 2 - 20) + 10,
+            12,
+            'nutrient',
+            1.2
+        ));
+    }
+
+    for (let i = 0; i < 25; i++) {
+        particles.push(new Particle(
+            Math.random() * canvas.width,
+            Math.random() * (canvas.height / 2 - 20) + 10,
+            6,
+            'toxin',
+            1.5
+        ));
+    }
+
+    if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+    }
+    
+    tick();
+}
+
+function tick() {
+    if (!canvas || !ctx) return;
+    
+    const slider = document.getElementById('filtro-renal-slider');
+    const hydrationState = slider ? parseInt(slider.value, 10) : 2;
+
+    if (hydrationState !== lastHydrationState) {
+        lastHydrationState = hydrationState;
+        playTickWithThrottle();
+    }
+
+    const statusText = document.getElementById('filtro-renal-status');
+    const container = document.getElementById('filtro-renal-flow-container');
+    if (statusText) {
+        if (hydrationState === 1) {
+            statusText.textContent = 'Poca Hidratación ⚠️ (Flujo obstruido y lento)';
+            statusText.className = 'text-sm font-bold text-rose-600';
+            if (container) container.className = 'mt-4 p-4 rounded-2xl bg-rose-50 border border-rose-100 transition-colors';
+        } else if (hydrationState === 3) {
+            statusText.textContent = 'Súper Hidratación 💧 (Flujo rápido y sangre limpia)';
+            statusText.className = 'text-sm font-bold text-emerald-600';
+            if (container) container.className = 'mt-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-100 transition-colors';
+        } else {
+            statusText.textContent = 'Hidratación Regular 👍 (Flujo saludable)';
+            statusText.className = 'text-sm font-bold text-teal-600';
+            if (container) container.className = 'mt-4 p-4 rounded-2xl bg-teal-50 border border-teal-100 transition-colors';
+        }
+    }
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const midline = canvas.height / 2;
+    
+    ctx.fillStyle = 'rgba(254, 242, 242, 0.6)';
+    ctx.fillRect(0, 0, canvas.width, midline);
+    
+    if (hydrationState === 1) {
+        ctx.fillStyle = 'rgba(254, 240, 138, 0.4)';
+    } else if (hydrationState === 3) {
+        ctx.fillStyle = 'rgba(240, 253, 244, 0.6)';
+    } else {
+        ctx.fillStyle = 'rgba(254, 240, 138, 0.15)';
+    }
+    ctx.fillRect(0, midline, canvas.width, canvas.height - midline);
+
+    ctx.strokeStyle = '#94a3b8';
+    ctx.lineWidth = 4;
+    ctx.setLineDash([8, 8]);
+    ctx.beginPath();
+    ctx.moveTo(0, midline);
+    ctx.lineTo(canvas.width, midline);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    ctx.fillStyle = '#64748b';
+    ctx.font = 'bold 11px Fredoka, sans-serif';
+    ctx.fillText('Membrana Renal (Filtro)', 10, midline - 8);
+    ctx.fillText('Sangre con nutrientes y toxinas', 10, 20);
+    ctx.fillText('Orina (Toxinas expulsadas)', 10, canvas.height - 15);
+
+    particles.forEach(p => {
+        p.update(canvas.width, canvas.height, hydrationState);
+        p.draw(ctx, hydrationState);
+    });
+
+    animationFrameId = requestAnimationFrame(tick);
+}
+
+export function stopFiltroRenal() {
+    if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = null;
+    }
+}

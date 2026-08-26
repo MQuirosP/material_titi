@@ -1,16 +1,16 @@
-# Graph Report - rioja  (2026-08-22)
+# Graph Report - rioja  (2026-08-26)
 
 ## Corpus Check
-- 39 files · ~47,321 words
+- 52 files · ~67,673 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 303 nodes · 504 edges · 21 communities (18 shown, 3 thin omitted)
+- 438 nodes · 765 edges · 25 communities (22 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c6562ee3`
+- Built from commit: `138fd02a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,6 +18,7 @@
 - [[_COMMUNITY_Community 0|Community 0]]
 - [[_COMMUNITY_Community 1|Community 1]]
 - [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
 - [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
@@ -35,37 +36,40 @@
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
 - [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `playTickWithThrottle()` - 26 edges
-2. `playSound()` - 23 edges
-3. `updateBadges()` - 17 edges
-4. `setUserHasUsedLab()` - 13 edges
-5. `selectSampleSentence()` - 10 edges
-6. `switchSubject()` - 10 edges
-7. `🇨🇷 RíoMate — Reglas de Desarrollo (Manual Oficial)` - 10 edges
-8. `Skill: Diagnóstico y Depuración de RíoMate` - 10 edges
+1. `playSound()` - 40 edges
+2. `playTickWithThrottle()` - 31 edges
+3. `updateBadges()` - 23 edges
+4. `setUserHasUsedLab()` - 15 edges
+5. `switchSubject()` - 15 edges
+6. `selectSampleSentence()` - 12 edges
+7. `🇨🇷 RíoMate — Reglas y Estándares Oficiales de Desarrollo` - 11 edges
+8. `🇨🇷 RíoMate — Reglas de Desarrollo (Manual Oficial)` - 10 edges
 9. `Skill: Diagnóstico y Depuración de RíoMate` - 10 edges
-10. `🇨🇷 RíoMate — Reglas y Estándares Oficiales de Desarrollo` - 8 edges
+10. `Skill: Diagnóstico y Depuración de RíoMate` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `analyzeCustomInput()` --calls--> `playSound()`  [EXTRACTED]
-  src/subjects/espanol/labs/detector-oraciones.js → src/shared/modules/audio.js
-- `resetChallengeDetector()` --calls--> `playSound()`  [EXTRACTED]
-  src/subjects/espanol/labs/detector-oraciones.js → src/shared/modules/audio.js
-- `resetRefranesGame()` --calls--> `playSound()`  [EXTRACTED]
-  src/subjects/espanol/labs/pulperia-refranes.js → src/shared/modules/audio.js
-- `selectMeaningToMatch()` --calls--> `playSound()`  [EXTRACTED]
-  src/subjects/espanol/labs/pulperia-refranes.js → src/shared/modules/audio.js
-- `revealAdivinanzaSolution()` --calls--> `playSound()`  [EXTRACTED]
-  src/subjects/espanol/labs/pulperia-refranes.js → src/shared/modules/audio.js
+- `chooseMedicalTool()` --calls--> `playSound()`  [EXTRACTED]
+  src/subjects/ciencias/labs/decisiones-medicas.js → src/shared/modules/audio.js
+- `initApp()` --calls--> `playSound()`  [EXTRACTED]
+  src/subjects/matematicas/main.js → src/shared/modules/audio.js
+- `selectOption()` --calls--> `playSound()`  [EXTRACTED]
+  src/shared/modules/quiz.js → src/shared/modules/audio.js
+- `nextQuestion()` --calls--> `playSound()`  [EXTRACTED]
+  src/shared/modules/quiz.js → src/shared/modules/audio.js
+- `switchTab()` --calls--> `playSound()`  [EXTRACTED]
+  src/shared/modules/tabs.js → src/shared/modules/audio.js
 
-## Communities (21 total, 3 thin omitted)
+## Communities (25 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.08
-Nodes (35): quizPracticoCiencias, quizPracticoEspanol, quizPracticoQuestions, quizTeoricoCiencias, quizTeoricoEspanol, quizTeoricoQuestions, casosMedicosLab, chooseMedicalTool() (+27 more)
+Nodes (28): quizPracticoCiencias, quizPracticoCienciasSem2Eval1, quizPracticoEspanol, quizPracticoQuestions, quizTeoricoCiencias, quizTeoricoCienciasSem1Eval2, quizTeoricoCienciasSem2Eval1, quizTeoricoEspanol (+20 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.10
@@ -75,13 +79,17 @@ Nodes (21): Anatomía de un Laboratorio (Patrón existente), Audio y Estado, cod
 Cohesion: 0.13
 Nodes (14): dependencies, canvas-confetti, devDependencies, gh-pages, tailwindcss, @tailwindcss/vite, vite, name (+6 more)
 
+### Community 3 - "Community 3"
+Cohesion: 0.09
+Nodes (37): addChainOrganism(), answerRelacionType(), cadenasData, compostItems, compostSelected, fotosintesisState, GasParticle, initCadenasLab() (+29 more)
+
 ### Community 4 - "Community 4"
 Cohesion: 0.14
 Nodes (13): 1. Errores de Notación Matemática, 2. Flashcards no se voltean, 3. Quiz no funciona / preguntas no aparecen, 4. Laboratorio de geometría SVG se desborda / solapamiento de etiquetas, 5. Pulpería / cálculo de vuelto incorrecto, 6. Progreso y badges no se actualizan, 7. Problema de responsive / scroll horizontal, 8. Proceso de verificación rápida (+5 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.08
-Nodes (26): 1. ARQUITECTURA GENERAL & SINGLE-BUNDLE MANDATE, 2. CONTEXTO ACADÉMICO, SEMESTRES Y DOCENTES OFICIALES, 3. ESTÁNDARES DE COMPONENTES UI/UX (PROHIBIDO ALTERAR), 4. INTEGRACIÓN DE GOOGLE GEMINI IA (ESTÁNDAR DE BAJO CONSUMO), 5. NOTACIÓN MATEMÁTICA — PROHIBICIÓN ABSOLUTA, 6. SISTEMA DE AUDIO SINTETIZADO (Web Audio API), 7. CHECKLIST MANDATORIO DE DIAGNÓSTICO, A. Botones de Opciones en Exámenes (Quiz) (+18 more)
+Cohesion: 0.06
+Nodes (36): 1. ARQUITECTURA GENERAL & SINGLE-BUNDLE MANDATE, 2. CONTEXTO ACADÉMICO, SEMESTRES Y DOCENTES OFICIALES, 3. ESTÁNDARES DE COMPONENTES UI/UX ⛔ INMUTABLES, 3. ESTÁNDARES DE COMPONENTES UI/UX (PROHIBIDO ALTERAR), 4. INTEGRACIÓN DE GOOGLE GEMINI IA (ESTÁNDAR DE BAJO CONSUMO), 5. NOTACIÓN MATEMÁTICA — PROHIBICIÓN ABSOLUTA, 6. SISTEMA DE AUDIO SINTETIZADO (Web Audio API), 7. CHECKLIST MANDATORIO DE DIAGNÓSTICO (+28 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.16
@@ -92,8 +100,8 @@ Cohesion: 0.17
 Nodes (12): Blueprint de Creación / Clonación, Blueprints por Materia, 🔬 Ciencias, Cuándo usar este skill, 📚 Español / Gramática, 🌍 Estudios Sociales, Mapeo Oficial de Docentes y Semestres, Pasos para clonar (+4 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.47
-Nodes (8): addSvgText(), drawAndCalculate(), figurePresets, onLabFigureChange(), onLabSliderInput(), _svgEl(), _svgLine(), _svgRightAngle()
+Cohesion: 0.29
+Nodes (5): registry, cienciasSem1Eval2Module, matematicasSem1Eval2Module, cienciasSem2Eval1Module, espanolSem2Eval1Module
 
 ### Community 9 - "Community 9"
 Cohesion: 0.25
@@ -112,48 +120,60 @@ Cohesion: 0.16
 Nodes (13): 1. Verificar destino, 2. Estructura obligatoria de cada pregunta, 3. Reglas de calidad, 4. Inserción en el archivo, 5. Verificación post-inserción, code:js (export const quizTeoricoMateria = [), code:html (<button class="option-btn-{pfx} w-full text-left p-4 rounded), Cuándo usar este skill (+5 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.33
-Nodes (5): code:html (<!-- Tarjeta N: {Título del Tema} -->), Cuándo usar este skill, Estructura HTML de una Flashcard, Reglas de contenido, Skill: Flashcards de Teoría en RíoMate
+Cohesion: 0.29
+Nodes (6): code:html (<!-- Tarjeta N: {Título del Tema} -->), Cuándo usar este skill, Estructura HTML de una Flashcard, ⛔ Regla Crítica de Estructura DOM, Reglas de contenido, Skill: Flashcards de Teoría en RíoMate
 
 ### Community 17 - "Community 17"
-Cohesion: 0.29
-Nodes (7): Blueprint de Creación / Clonación, Cuándo usar este skill, Mapeo Oficial de Docentes y Semestres, Pasos para clonar, Principio: Caparazón + Relleno, Skill: Clonar Materia en RíoMate (Escuela Riojalandia), Skill: Clonar RíoMate para una Nueva Materia
+Cohesion: 0.12
+Nodes (18): 1. Crear el Módulo de Contenido (`src/subjects/{materia}/{sem_eval}/content.js`), 2. Registrar en `subjectRegistry.js` (`src/shared/modules/subjectRegistry.js`), 3. Agregar Contenedores Segregados en `practica/index.html`, 4. ⛔ Verificación Estricta de Cierre de Etiquetas `<div>`, 5. Compilación y Validación, Blueprint de Creación / Clonación, code:block1 (src/subjects/{materia}/{sem_eval}/), code:javascript (export const materiaSemXEvalYModule = {) (+10 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.17
-Nodes (11): Anatomía de un Laboratorio, Audio y Estado, code:html (<div onclick="selectSample({idx})" class="cursor-pointer p-3), code:html (<div class="flex flex-col sm:flex-row gap-2.5">), Cuándo usar este skill, Estructura Estándar de un Laboratorio (Layout de 2 Columnas), Integración de Gemini IA (Mínimo Consumo), Patrón Oficial de Input + Botón en Móvil (+3 more)
+Cohesion: 0.09
+Nodes (22): Anatomía de un Laboratorio, Audio y Estado, Carrusel vs Radio Button Cards?, Checklist antes de entregar el lab, code:html (<div onclick="selectSample({idx})" class="cursor-pointer p-3), code:html (<div class="flex flex-col sm:flex-row gap-2.5">), Cuando usar este skill, Cuándo usar este skill (+14 more)
 
 ### Community 19 - "Community 19"
-Cohesion: 0.13
+Cohesion: 0.10
 Nodes (27): analyzeCustomInput(), challengeList, goToSampleSentence(), initDetectorOraciones(), nextSampleSentence(), prevSampleSentence(), renderChallenge(), renderSampleCards() (+19 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.20
-Nodes (13): calculatePulpería(), changePulperíaQty(), getLimit(), playSwissSound(), toggleCard(), updateTheoryProgress(), getTotalCardsForActiveSubject(), pulperíaCart (+5 more)
+Cohesion: 0.14
+Nodes (8): initFiltroRenal(), Particle, particles, tick(), initFiltroRenal(), Particle, particles, tick()
+
+### Community 21 - "Community 21"
+Cohesion: 0.28
+Nodes (8): casosMedicosLab, chooseMedicalTool(), initDecisionesMedicas(), renderCaso(), casosMedicosLab, chooseMedicalTool(), initDecisionesMedicas(), renderCaso()
 
 ### Community 22 - "Community 22"
-Cohesion: 0.22
-Nodes (14): adivinanzasData, bombasData, initPulperiaRefranes(), nextAdivinanza(), nextBomba(), refranesGameData, renderAdivinanza(), renderBomba() (+6 more)
+Cohesion: 0.14
+Nodes (22): adivinanzasData, bombasData, checkBombaRhyme(), initPulperiaRefranes(), nextAdivinanza(), nextBomba(), refranesGameData, renderAdivinanza() (+14 more)
+
+### Community 23 - "Community 23"
+Cohesion: 0.14
+Nodes (30): getLimit(), playSwissSound(), restoreSavedTheoryCards(), toggleCard(), updateBadges(), updateTheoryProgress(), clearQuizProgress(), getLabVisited() (+22 more)
+
+### Community 24 - "Community 24"
+Cohesion: 0.47
+Nodes (8): addSvgText(), drawAndCalculate(), figurePresets, onLabFigureChange(), onLabSliderInput(), _svgEl(), _svgLine(), _svgRightAngle()
 
 ## Knowledge Gaps
-- **116 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+111 more)
+- **147 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+142 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `playTickWithThrottle()` connect `Community 19` to `Community 0`, `Community 8`, `Community 20`, `Community 22`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `playSound()` connect `Community 0` to `Community 19`, `Community 22`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
+- **Why does `playSound()` connect `Community 3` to `Community 0`, `Community 19`, `Community 21`, `Community 22`, `Community 23`?**
+  _High betweenness centrality (0.031) - this node is a cross-community bridge._
+- **Why does `playTickWithThrottle()` connect `Community 19` to `Community 0`, `Community 3`, `Community 20`, `Community 22`, `Community 24`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `updateBadges()` connect `Community 23` to `Community 0`, `Community 19`, `Community 22`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `dev` to the rest of the system?**
-  _116 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _147 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.07686274509803921 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08076923076923077 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.09956709956709957 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
-- **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._

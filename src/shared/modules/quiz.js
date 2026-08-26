@@ -1,7 +1,16 @@
 import confetti from 'canvas-confetti';
-import { quizState } from '../state/store.js';
+import { quizState, activeSubject } from '../state/store.js';
 import { updateBadges } from './flashcards.js';
 import { playSound } from './audio.js';
+import { saveQuizProgress, getQuizProgress, clearQuizProgress } from './progressManager.js';
+
+let currentQuizSem = '2';
+let currentQuizEval = '1';
+
+export function setQuizContext(sem, evalNum) {
+  currentQuizSem = String(sem || '2');
+  currentQuizEval = String(evalNum || '1');
+}
 
 /** Inicia (o reinicia) un quiz del tipo dado */
 export function startQuiz(type) {
@@ -10,6 +19,11 @@ export function startQuiz(type) {
   state.score       = 0;
   state.answers     = [];
   state.isCompleted = false;
+
+  // Barajar las preguntas en cada intento para evitar la memorización
+  if (state.questions && state.questions.length > 0) {
+    state.questions = [...state.questions].sort(() => Math.random() - 0.5);
+  }
 
   const pfx = type === 'teorico' ? 't' : 'p';
   document.getElementById(`quiz-${pfx}-intro`)?.classList.add('hidden');
@@ -46,6 +60,57 @@ export function updateQuizIntroTexts(subject) {
     
     if (introTitleP) introTitleP.textContent = `Prueba Práctica y de Aplicación (${practicoCount} Preguntas)`;
     if (introDescP) introDescP.innerHTML = `Esta prueba contiene <strong>${practicoCount} problemas prácticos de aplicación</strong> de Matemáticas. Pondrá a prueba tu capacidad de calcular sumas y vueltos en colones, agrupar colecciones con múltiplos y calcular áreas y perímetros de terrenos.`;
+  }
+
+  // Verificar progreso previo guardado
+  checkSavedProgress('teorico');
+  checkSavedProgress('practico');
+}
+
+/** Verifica si hay un resultado guardado en localStorage y actualiza la UI de intro */
+export function checkSavedProgress(type) {
+  const pfx = type === 'teorico' ? 't' : 'p';
+  const evalKey = `${currentQuizSem}_eval${currentQuizEval}`;
+  const saved = getQuizProgress(activeSubject, evalKey, type);
+  
+  const scoreTxt = document.getElementById(`score-${type}-txt`);
+  const scoreBar = document.getElementById(`score-${type}-bar`);
+  
+  if (saved) {
+    if (scoreTxt) scoreTxt.textContent = `${saved.grade}/100`;
+    if (scoreBar) scoreBar.style.width = `${saved.grade}%`;
+
+    // Renderizar o actualizar banner de nota guardada
+    let banner = document.getElementById(`quiz-${pfx}-saved-banner`);
+    if (!banner) {
+      const introBox = document.getElementById(`quiz-${pfx}-intro`);
+      if (introBox) {
+        banner = document.createElement('div');
+        banner.id = `quiz-${pfx}-saved-banner`;
+        introBox.appendChild(banner);
+      }
+    }
+
+    if (banner) {
+      banner.className = "mt-4 p-4 bg-amber-100/90 border-2 border-amber-300 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm font-fun animate-fadeIn";
+      banner.innerHTML = `
+        <div class="flex items-center gap-2.5">
+          <span class="text-2xl shrink-0">🏆</span>
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-amber-900 block">Resultado Previo Guardado</span>
+            <span class="text-sm sm:text-base font-bold text-amber-950">Calificación obtenida: <strong class="text-amber-700 font-extrabold">${saved.grade} / 100</strong></span>
+          </div>
+        </div>
+        <button onclick="window.clearQuizSavedResult('${type}')" class="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold px-4 py-2 rounded-xl text-xs font-fun shadow-sm transition-all flex items-center justify-center gap-1.5">
+          <span>🔄 Reiniciar Prueba</span>
+        </button>
+      `;
+    }
+  } else {
+    if (scoreTxt) scoreTxt.textContent = `0/100`;
+    if (scoreBar) scoreBar.style.width = `0%`;
+    const banner = document.getElementById(`quiz-${pfx}-saved-banner`);
+    if (banner) banner.remove();
   }
 }
 
@@ -185,6 +250,14 @@ export function nextQuestion(type) {
 
   if (scoreEl) scoreEl.textContent = `${finalGrade} / 100`;
 
+  // Guardar en localStorage
+  const evalKey = `${currentQuizSem}_eval${currentQuizEval}`;
+  saveQuizProgress(activeSubject, evalKey, type, {
+    score: state.score,
+    total: state.questions.length,
+    grade: finalGrade
+  });
+
   // Actualizar barra de progreso en Inicio
   const scoreTxt = document.getElementById(`score-${type}-txt`);
   const scoreBar = document.getElementById(`score-${type}-bar`);
@@ -215,4 +288,16 @@ export function resetQuiz(type) {
   const pfx = type === 'teorico' ? 't' : 'p';
   document.getElementById(`quiz-${pfx}-results`)?.classList.add('hidden');
   document.getElementById(`quiz-${pfx}-intro`)?.classList.remove('hidden');
+  checkSavedProgress(type);
 }
+
+// Exponer handler global para reiniciar resultado guardado
+if (typeof window !== 'undefined') {
+  window.clearQuizSavedResult = (type) => {
+    const evalKey = `${currentQuizSem}_eval${currentQuizEval}`;
+    clearQuizProgress(activeSubject, evalKey, type);
+    checkSavedProgress(type);
+    playSound('tab_click');
+  };
+}
+

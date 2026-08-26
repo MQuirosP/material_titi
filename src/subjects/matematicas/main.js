@@ -7,7 +7,7 @@ import '../../shared/css/flashcards.css';
 
 import { switchTab, switchLabSubTab, onLabInit } from '../../shared/modules/tabs.js';
 import { toggleCard, updateTheoryProgress, updateBadges } from '../../shared/modules/flashcards.js';
-import { startQuiz, renderQuestion, selectOption, nextQuestion, resetQuiz, updateQuizIntroTexts } from '../../shared/modules/quiz.js';
+import { startQuiz, renderQuestion, selectOption, nextQuestion, resetQuiz, updateQuizIntroTexts, setQuizContext } from '../../shared/modules/quiz.js';
 import { playSound } from '../../shared/modules/audio.js';
 
 import { updateMultiplesLab }               from './labs/multiplos.js';
@@ -19,8 +19,17 @@ import { onLabFigureChange, onLabSliderInput }   from './labs/geometria.js';
 // Ciencias Imports
 import { quizTeoricoCiencias }  from '../ciencias/data/quiz-teorico.js';
 import { quizPracticoCiencias } from '../ciencias/data/quiz-practico.js';
-import { initFiltroRenal, stopFiltroRenal } from '../ciencias/labs/filtro-renal.js';
-import { initDecisionesMedicas, chooseMedicalTool } from '../ciencias/labs/decisiones-medicas.js';
+import { quizTeoricoCienciasSem1Eval2 } from '../ciencias/sem1_eval2/data/quiz-teorico.js';
+import { quizTeoricoCienciasSem2Eval1 } from '../ciencias/sem2_eval1/data/quiz-teorico.js';
+import { quizPracticoCienciasSem2Eval1 } from '../ciencias/sem2_eval1/data/quiz-practico.js';
+import { initFiltroRenal, stopFiltroRenal } from '../ciencias/sem1_eval2/labs/filtro-renal.js';
+import { initDecisionesMedicas, chooseMedicalTool } from '../ciencias/sem1_eval2/labs/decisiones-medicas.js';
+import { initFotosintesisLab, stopFotosintesisLab, initCadenasLab, initRelacionesLab, initCompostLab } from '../ciencias/sem2_eval1/labs/ciencias-labs.js';
+
+// Exponer handler de decisiones médicas para I Semestre
+if (typeof window !== 'undefined') {
+  window.chooseMedicalTool = chooseMedicalTool;
+}
 
 // Español Imports
 import { quizTeoricoEspanol }   from '../espanol/data/quiz-teorico.js';
@@ -33,6 +42,9 @@ import { quizTeoricoQuestions }  from './data/quiz-teorico.js';
 import { quizPracticoQuestions } from './data/quiz-practico.js';
 import { quizState, activeSubject, setActiveSubject, syncStudiedCardsSet } from '../../shared/state/store.js';
 
+let currentSem = '2';
+let currentEval = '1';
+
 // ── Cargar preguntas iniciales (Matemáticas por defecto) ───────────────────
 quizState.teorico.questions  = quizTeoricoQuestions;
 quizState.practico.questions = quizPracticoQuestions;
@@ -40,15 +52,26 @@ quizState.practico.questions = quizPracticoQuestions;
 // ── Registrar labs para inicialización al abrir la pestaña ───────────────
 onLabInit(() => {
   if (activeSubject === 'ciencias') {
-    initFiltroRenal();
-    initDecisionesMedicas();
+    if (currentSem === '1' && currentEval === '2') {
+      stopFotosintesisLab();
+      initFiltroRenal();
+      initDecisionesMedicas();
+    } else {
+      stopFiltroRenal();
+      initFotosintesisLab();
+      initCadenasLab();
+      initRelacionesLab();
+      initCompostLab();
+    }
   } else if (activeSubject === 'espanol') {
     stopFiltroRenal();
+    stopFotosintesisLab();
     initDetectorOraciones();
     initTallerLibro();
     initPulperiaRefranes();
   } else {
     stopFiltroRenal();
+    stopFotosintesisLab();
     updateMultiplesLab();
     updateDivisoresLab();
     updateFraccionesLab();
@@ -57,15 +80,44 @@ onLabInit(() => {
   }
 });
 
-// Función para alternar materias
-export function switchSubject(subject) {
-  if (subject === activeSubject) return;
+function hideElement(el) {
+  if (!el) return;
+  el.style.display = 'none';
+}
 
-  // Parar loops de animación previos si existen
+function showElement(el, displayClass = 'block') {
+  if (!el) return;
+  el.style.display = displayClass;
+}
+
+import { getSubjectModule } from '../../shared/modules/subjectRegistry.js';
+
+// Función universal para alternar materias, semestres y evaluaciones usando módulos jerárquicos
+export function switchSubject(subject, sem = '2', evalNum = '1', force = false) {
+  const targetSubject = String(subject || 'matematicas');
+  let targetSem = String(sem || '2');
+  let targetEval = String(evalNum || '1');
+
+  // Normalización explícita: Ciencias I Semestre es 2ª Evaluación
+  if (targetSubject === 'ciencias' && targetSem === '1' && targetEval === '1') {
+    targetEval = '2';
+  }
+
+  if (!force && targetSubject === activeSubject && targetSem === currentSem && targetEval === currentEval) return;
+
+  currentSem = targetSem;
+  currentEval = targetEval;
+
+  // Parar loops de animación previos
   stopFiltroRenal();
+  stopFotosintesisLab();
 
-  setActiveSubject(subject);
-  syncStudiedCardsSet(subject);
+  setActiveSubject(targetSubject);
+  syncStudiedCardsSet(targetSubject);
+  setQuizContext(targetSem, targetEval);
+
+  // Obtener Módulo Jerárquico Activo
+  const moduleData = getSubjectModule(targetSubject, targetSem, targetEval);
 
   const body = document.getElementById('main-body') || document.body;
   const title = document.getElementById('main-title');
@@ -76,137 +128,85 @@ export function switchSubject(subject) {
   const progressTitle = document.getElementById('progress-title');
   const badgesTitle = document.getElementById('badges-title');
   const badgeFormulas = document.getElementById('badge-formulas');
-  
-  // Elementos de Contenido
-  const welcomeMath = document.getElementById('welcome-math');
-  const welcomeScience = document.getElementById('welcome-science');
-  const welcomeSpanish = document.getElementById('welcome-espanol');
-  
-  const temarioMath = document.getElementById('temario-math');
-  const temarioScience = document.getElementById('temario-science');
-  const temarioSpanish = document.getElementById('temario-espanol');
-  
-  const theoryMath = document.getElementById('theory-math');
-  const theoryScience = document.getElementById('theory-science');
-  const theorySpanish = document.getElementById('theory-espanol');
-  
-  const subtabsMath = document.getElementById('subtabs-math');
-  const subtabsScience = document.getElementById('subtabs-science');
-  const subtabsSpanish = document.getElementById('subtabs-espanol');
-  
-  const labContentsMath = document.getElementById('lab-contents-math');
-  const labContentsScience = document.getElementById('lab-contents-science');
-  const labContentsSpanish = document.getElementById('lab-contents-espanol');
-
   const favicon = document.getElementById('favicon');
 
-  // Ocultar todos por defecto
-  [welcomeMath, welcomeScience, welcomeSpanish].forEach(el => el && el.classList.replace('block', 'hidden'));
-  [temarioMath, temarioScience, temarioSpanish, theoryMath, theoryScience, theorySpanish].forEach(el => el && el.classList.replace('grid', 'hidden'));
-  [subtabsMath, subtabsScience, subtabsSpanish].forEach(el => el && el.classList.replace('flex', 'hidden'));
-  [labContentsMath, labContentsScience, labContentsSpanish].forEach(el => el && el.classList.replace('block', 'hidden'));
+  // 1. Aplicar Metadatos y Estilos del Módulo
+  body.className = moduleData.themeClass;
+  document.title = `${moduleData.title} — ${targetSubject.charAt(0).toUpperCase() + targetSubject.slice(1)} (Escuela Riojalandia)`;
+  if (favicon) favicon.href = moduleData.favicon;
 
-  if (subject === 'ciencias') {
-    // 1. Cambiar Estilos / Temas
-    body.className = "bg-gradient-to-br from-emerald-50 via-teal-50 to-green-50 min-h-screen text-slate-800 pb-12 transition-all duration-500";
-    document.title = "RíoCiencias 5° — Ciencias (Escuela Riojalandia)";
-    if (favicon) favicon.href = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>";
+  if (title) title.textContent = moduleData.title;
+  if (subtitle) subtitle.textContent = moduleData.subtitle;
+  if (examDate) examDate.textContent = moduleData.examDate;
+  if (teacherName) teacherName.textContent = moduleData.teacher;
+  if (semesterBadge) semesterBadge.textContent = moduleData.semesterBadge;
 
-    if (title) title.textContent = "RíoCiencias 5º";
-    if (subtitle) subtitle.textContent = "Escuela Riojalandia · II Pruebas de Ciencias · Secciones 5-1 y 5-2";
-    if (examDate) examDate.textContent = "Viernes 26 de Junio, 2026";
-    if (teacherName) teacherName.textContent = "👩‍🏫 Maestra: Florisel Olmazo López";
-    if (semesterBadge) semesterBadge.textContent = "Primer Semestre 2026";
-    if (progressTitle) progressTitle.textContent = "Tu Progreso de Ciencias";
-    if (badgesTitle) badgesTitle.textContent = "Tus Medallas RíoCiencias";
-    
-    if (badgeFormulas) {
-      badgeFormulas.setAttribute('title', 'Médica Estrella (Usa los laboratorios de ciencias)');
-      badgeFormulas.textContent = '🧬';
-    }
+  if (progressTitle) progressTitle.textContent = targetSubject === 'matematicas' ? 'Tu Progreso de Estudio' : `Tu Progreso de ${targetSubject.charAt(0).toUpperCase() + targetSubject.slice(1)}`;
+  if (badgesTitle) badgesTitle.textContent = `Tus Medallas ${moduleData.title}`;
 
-    // 2. Visibilidad
-    if (welcomeScience) welcomeScience.classList.replace('hidden', 'block');
-    if (temarioScience) temarioScience.classList.replace('hidden', 'grid');
-    if (theoryScience) theoryScience.classList.replace('hidden', 'grid');
-    if (subtabsScience) subtabsScience.classList.replace('hidden', 'flex');
-    if (labContentsScience) labContentsScience.classList.replace('hidden', 'block');
-
-    quizState.teorico.questions = quizTeoricoCiencias;
-    quizState.practico.questions = quizPracticoCiencias;
-
-    switchLabSubTab('filtro-renal');
-  } else if (subject === 'espanol') {
-    // 1. Cambiar Estilos / Temas
-    body.className = "bg-gradient-to-br from-amber-50 via-rose-50 to-orange-50 min-h-screen text-slate-800 pb-12 transition-all duration-500";
-    document.title = "RíoEspañol 5° — Español (Escuela Riojalandia)";
-    if (favicon) favicon.href = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>";
-
-    if (title) title.textContent = "RíoEspañol 5º";
-    if (subtitle) subtitle.textContent = "Escuela Riojalandia · I Prueba de Español · II Semestre · Secciones 5-1 y 5-2";
-    if (examDate) examDate.textContent = "Lunes 24 de Agosto, 2026";
-    if (teacherName) teacherName.textContent = "👩‍🏫 Maestra: Licda. Maureen Vargas Solano";
-    if (semesterBadge) semesterBadge.textContent = "Segundo Semestre 2026";
-    if (progressTitle) progressTitle.textContent = "Tu Progreso de Español";
-    if (badgesTitle) badgesTitle.textContent = "Tus Medallas RíoEspañol";
-    
-    if (badgeFormulas) {
-      badgeFormulas.setAttribute('title', 'Detective de las Letras (Usa los laboratorios de español)');
-      badgeFormulas.textContent = '📖';
-    }
-
-    // 2. Visibilidad
-    if (welcomeSpanish) welcomeSpanish.classList.replace('hidden', 'block');
-    if (temarioSpanish) temarioSpanish.classList.replace('hidden', 'grid');
-    if (theorySpanish) theorySpanish.classList.replace('hidden', 'grid');
-    if (subtabsSpanish) subtabsSpanish.classList.replace('hidden', 'flex');
-    if (labContentsSpanish) labContentsSpanish.classList.replace('hidden', 'block');
-
-    quizState.teorico.questions = quizTeoricoEspanol;
-    quizState.practico.questions = quizPracticoEspanol;
-
-    switchLabSubTab('detector-oraciones');
-  } else {
-    // 1. Cambiar Estilos / Temas
-    body.className = "bg-gradient-to-br from-indigo-50 via-teal-50 to-amber-50 min-h-screen text-slate-800 pb-12 transition-all duration-500";
-    document.title = "RíoMate 5° — Matemáticas (Escuela Riojalandia)";
-    if (favicon) favicon.href = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>";
-
-    if (title) title.textContent = "RíoMate 5º";
-    if (subtitle) subtitle.textContent = "Escuela Riojalandia · II Pruebas de Matemáticas · Secciones 5-1 y 5-2";
-    if (examDate) examDate.textContent = "Miércoles 24 de Junio, 2026";
-    if (teacherName) teacherName.textContent = "👩‍🏫 Maestra: Florisel Olmazo López";
-    if (semesterBadge) semesterBadge.textContent = "Primer Semestre 2026";
-    if (progressTitle) progressTitle.textContent = "Tu Progreso de Estudio";
-    if (badgesTitle) badgesTitle.textContent = "Tus Medallas RíoMate";
-
-    if (badgeFormulas) {
-      badgeFormulas.setAttribute('title', 'Maestra Geómetra (Usa el laboratorio de fórmulas)');
-      badgeFormulas.textContent = '📐';
-    }
-
-    // 2. Visibilidad
-    if (welcomeMath) welcomeMath.classList.replace('hidden', 'block');
-    if (temarioMath) temarioMath.classList.replace('hidden', 'grid');
-    if (theoryMath) theoryMath.classList.replace('hidden', 'grid');
-    if (subtabsMath) subtabsMath.classList.replace('hidden', 'flex');
-    if (labContentsMath) labContentsMath.classList.replace('hidden', 'block');
-
-    quizState.teorico.questions = quizTeoricoQuestions;
-    quizState.practico.questions = quizPracticoQuestions;
-
-    switchLabSubTab('multiplos');
+  if (badgeFormulas) {
+    badgeFormulas.setAttribute('title', moduleData.badgeFormulaTitle);
+    badgeFormulas.textContent = moduleData.badgeFormulaIcon;
   }
 
-  // 3. Resetear exámenes e ir al inicio
+  // 2. Inyección Dinámica de Contenedores Únicos (Bienvenida, Temario, Subtabs)
+  const welcomeContainer = document.getElementById('welcome-container');
+  if (welcomeContainer) welcomeContainer.innerHTML = moduleData.welcomeHTML;
+
+  const temarioContainer = document.getElementById('temario-container');
+  if (temarioContainer) temarioContainer.innerHTML = moduleData.temarioHTML;
+
+  const subtabsContainer = document.getElementById('subtabs-container');
+  if (subtabsContainer) subtabsContainer.innerHTML = moduleData.subtabsHTML;
+
+  // 3. Conmutación Segregada de Tarjetas de Teoría y Contenidos de Laboratorio (data-subject)
+  document.querySelectorAll('[data-subject]').forEach(el => {
+    const elSubject = el.getAttribute('data-subject');
+    const elSem = el.getAttribute('data-sem');
+    const elEval = el.getAttribute('data-eval');
+    const displayType = el.getAttribute('data-display') || 'block';
+
+    const matchSubject = (elSubject === targetSubject);
+    const matchSem = !elSem || (elSem === targetSem);
+    const matchEval = !elEval || (elEval === targetEval);
+
+    if (matchSubject && matchSem && matchEval) {
+      el.style.display = displayType;
+      el.classList.remove('hidden');
+    } else {
+      el.style.display = 'none';
+      el.classList.add('hidden');
+    }
+  });
+
+  // 4. Asignar Preguntas de Examen por Módulo Activo
+  if (targetSubject === 'ciencias') {
+    if (targetSem === '1' && targetEval === '2') {
+      quizState.teorico.questions = quizTeoricoCienciasSem1Eval2;
+      quizState.practico.questions = quizPracticoCiencias;
+    } else {
+      quizState.teorico.questions = quizTeoricoCienciasSem2Eval1;
+      quizState.practico.questions = quizPracticoCienciasSem2Eval1;
+    }
+  } else if (targetSubject === 'espanol') {
+    quizState.teorico.questions = quizTeoricoEspanol;
+    quizState.practico.questions = quizPracticoEspanol;
+  } else {
+    quizState.teorico.questions = quizTeoricoQuestions;
+    quizState.practico.questions = quizPracticoQuestions;
+  }
+
+  // Activar la sub-pestaña de laboratorio por defecto del módulo
+  switchLabSubTab(moduleData.defaultLabSubTab);
+
+  // Resetear exámenes
   resetQuiz('teorico');
   resetQuiz('practico');
-  switchTab('inicio');
 
-  // 4. Actualizar barra de progreso e insignias con la nueva materia
+  // Actualizar barra de progreso e insignias con la nueva materia
   updateTheoryProgress();
   updateBadges();
-  updateQuizIntroTexts(subject);
+  updateQuizIntroTexts(targetSubject);
 }
 
 // ── Exponer funciones al HTML (puente: onclick="...") ─────────────────────
@@ -249,12 +249,11 @@ Object.assign(window, {
   nextBomba,
 });
 
-// ── Inicializar al cargar la página ──────────────────────────────────────
-window.addEventListener('load', () => {
-  // Asegurar que el body tenga el ID
-  document.body.id = 'main-body';
-  
-  // Interceptar el clic de "Menú Principal" para reproducir sonido de salida
+// ── Inicialización Robustas de la Aplicación ────────────────────────────
+function initApp() {
+  const body = document.getElementById('main-body') || document.body;
+  body.id = 'main-body';
+
   const exitLink = document.querySelector('a[href="../"]');
   if (exitLink) {
     exitLink.addEventListener('click', (e) => {
@@ -266,16 +265,27 @@ window.addEventListener('load', () => {
     });
   }
 
-  // Revisar si viene parámetro ?subject=ciencias o ?materia=ciencias
   const urlParams = new URLSearchParams(window.location.search);
   const subjectParam = urlParams.get('subject') || urlParams.get('materia');
-  if (subjectParam === 'ciencias') {
-    switchSubject('ciencias');
-  } else if (subjectParam === 'espanol') {
-    switchSubject('espanol');
-  } else {
-    updateTheoryProgress();
-    updateBadges();
-    updateQuizIntroTexts('matematicas');
+  let semParam = urlParams.get('sem') || urlParams.get('semestre') || '2';
+  let evalParam = urlParams.get('eval') || urlParams.get('evaluacion');
+
+  if (!evalParam) {
+    evalParam = (semParam === '1') ? '2' : '1';
   }
-});
+
+  if (subjectParam === 'ciencias') {
+    switchSubject('ciencias', semParam, evalParam, true);
+  } else if (subjectParam === 'espanol') {
+    switchSubject('espanol', semParam, evalParam, true);
+  } else {
+    switchSubject('matematicas', semParam, evalParam, true);
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
+

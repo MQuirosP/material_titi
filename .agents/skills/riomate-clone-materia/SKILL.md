@@ -1,39 +1,84 @@
 ---
 name: riomate-clone-materia
-description: Clona la estructura de RíoMate para una nueva materia (Ciencias, Español, Estudios Sociales, etc.). Usar cuando el usuario pide adaptar la app a un tema diferente de matemáticas.
+description: Clona o agrega una nueva materia, semestre o evaluación en RíoMate (Ciencias, Español, Estudios Sociales, Matemáticas). Usar cuando el usuario pide agregar una nueva materia o nuevo semestre.
 ---
 
-# Skill: Clonar Materia en RíoMate (Escuela Riojalandia)
+# Skill: Agregar Materia, Semestre o Evaluación en RíoMate (Escuela Riojalandia)
 
 ## Cuándo usar este skill
-- "Agrega la materia de [nombre]"
-- "Adapta la aplicación para [Ciencias / Español / Estudios Sociales]"
-- "Prepara el material de estudio para el examen de [materia]"
+- "Agrega la materia de [Estudios Sociales / Ciencias / Español / Matemáticas]"
+- "Agrega el [Primer Semestre / Segundo Semestre] de [materia]"
+- "Crea la [1ª Evaluación / 2ª Evaluación] de [materia]"
 
 ## Mapeo Oficial de Docentes y Semestres
 - **👩‍🏫 Maestra Florisel Olmazo López:** Responsable oficial de **Matemáticas** y **Ciencias** (I Semestre y II Semestre).
 - **👩‍🏫 Maestra Licda. Maureen Vargas Solano:** Responsable oficial de **Español** y **Estudios Sociales** (I Semestre y II Semestre).
 - **Materias Complementarias:** Inglés, Educación Musical, Artes Plásticas y Educación Física.
 
-## Blueprint de Creación / Clonación
+---
 
-1. **Directorio de Materia (`src/subjects/{materia}/`):**
-   - `data/quiz-teorico.js`: Array `quizTeorico{Materia}` con preguntas teóricas.
-   - `data/quiz-practico.js`: Array `quizPractico{Materia}` con problemas aplicados.
-   - `labs/{nombre-lab}.js`: Laboratorios interactivos con **Radio Button Cards** o simuladores SVG.
+## 🏛️ Estructura Modular Jerárquica Obligatoria
 
-2. **Integración en Portal (`index.html`):**
-   - Registrar la tarjeta en el contenedor de semestre correspondiente (`#semester-1-container` o `#semester-2-container`).
-   - Indicar docente oficial y badge temático.
+Cada materia, semestre y evaluación DEBE vivir en su propio módulo jerárquico independiente:
 
-3. **Integración en la Aplicación de Práctica (`practica/index.html`):**
-   - `#welcome-{materia}`: Banner de bienvenida con resumen.
-   - `#temario-{materia}`: Cuadrícula de 6 a 8 temas clave.
-   - `#theory-{materia}`: 10 Flashcards 3D interactivas.
-   - `#subtabs-{materia}`: Barra de navegación de laboratorios.
-   - `#lab-contents-{materia}`: Contenedores HTML de los laboratorios.
+```
+src/subjects/{materia}/{sem_eval}/
+├── content.js              <-- Módulo de contenido (bienvenida, temario, subtabs, docente)
+├── data/
+│   ├── quiz-teorico.js     <-- Banco de preguntas teóricas con rationale educativo
+│   └── quiz-practico.js    <-- Banco de preguntas prácticas
+└── labs/
+    └── {nombre-lab}.js     <-- Laboratorios interactivos independientes
+```
 
-4. **Sincronización en `src/subjects/matematicas/main.js`:**
-   - Asignar `quizState.teorico.questions` y `quizState.practico.questions`.
-   - Configurar título, subtítulo, fecha de examen, docente oficial y badge de semestre (`Primer Semestre 2026` o `Segundo Semestre 2026`).
-   - Sincronizar conjunto de tarjetas estudiadas (`syncStudiedCardsSet`).
+---
+
+## 📋 Pasos de Implementación Estricta
+
+### 1. Crear el Módulo de Contenido (`src/subjects/{materia}/{sem_eval}/content.js`)
+Define los atributos del módulo:
+```javascript
+export const materiaSemXEvalYModule = {
+  id: 'materia-semX-evalY',
+  subject: 'materia',
+  sem: 'X',
+  eval: 'Y',
+  title: 'RíoMateria 5º',
+  subtitle: 'Escuela Riojalandia · Yª Evaluación · X Semestre · Secciones 5-1 y 5-2',
+  examDate: 'Fecha del Examen',
+  teacher: '👩‍🏫 Maestra: Nombre Docente',
+  semesterBadge: 'Semestre X 2026 · Yª Evaluación',
+  themeClass: 'clases-de-fondo-tailwind',
+  favicon: 'favicon-svg-inline',
+  badgeFormulaTitle: 'Título de Medalla de Laboratorio',
+  badgeFormulaIcon: 'Icono',
+  welcomeHTML: `...`,
+  temarioHTML: `...`,
+  subtabsHTML: `...`,
+  defaultLabSubTab: 'lab-defecto'
+};
+```
+
+### 2. Registrar en `subjectRegistry.js` (`src/shared/modules/subjectRegistry.js`)
+Importar y agregar el módulo al array `registry`:
+```javascript
+import { materiaSemXEvalYModule } from '../../subjects/materia/semX_evalY/content.js';
+
+const registry = [
+  ...
+  materiaSemXEvalYModule
+];
+```
+
+### 3. Agregar Contenedores Segregados en `practica/index.html`
+- **Tarjetas de Teoría:** Contenedor `<div id="theory-materia-semX-evalY" data-subject="materia" data-sem="X" data-eval="Y" data-display="grid" class="grid grid-cols-1 md:grid-cols-2 gap-6" style="display: none;">` con exactamente las flashcards 3D interactivas.
+- **Laboratorios:** Contenedor `<div id="lab-contents-materia-semX-evalY" data-subject="materia" data-sem="X" data-eval="Y" data-display="block">` con los laboratorios correspondientes.
+
+### 4. ⛔ Verificación Estricta de Cierre de Etiquetas `<div>`
+Antes de compilar:
+- Verificar con lupa que **todas** las tarjetas `.flashcard` dentro del nuevo bloque tengan sus `<div>` de apertura y cierre perfectamente emparejados.
+- Confirmar que el `</div>` de cierre del contenedor principal `#theory-...` no se trague el siguiente bloque ni se cierre prematuramente.
+
+### 5. Compilación y Validación
+- Ejecutar `npm run build` para asegurar 0 errores.
+- Verificar navegando a `?subject=materia&sem=X&eval=Y`.

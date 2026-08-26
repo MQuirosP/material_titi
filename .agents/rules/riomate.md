@@ -328,9 +328,24 @@ Toda interacción debe utilizar las funciones de `src/shared/modules/audio.js`:
 - `playHooraySound()` al entrar a una materia desde el Menú Principal.
 - `playSound('score_excellent')` / `playSound('score_good')` / `playSound('score_retry')` en notas finales de examen.
 
+## 8. REGLAS OBLIGATORIAS DE ARQUITECTURA JERÁRQUICA Y AUDITORÍA DE ETIQUETAS HTML
+
+1. **Separación Modular Jerárquica Obligatoria:**
+   - Toda materia nueva, semestre o evaluación DEBE agregarse como un módulo independiente en `src/subjects/[materia]/[sem_eval]/content.js`.
+   - Registrar el nuevo módulo en `src/shared/modules/subjectRegistry.js`.
+   - NUNCA incrustar temarios, bienvenidas o controles estáticos mezclados en el HTML principal (`practica/index.html`).
+
+2. **Auditoría Estricta de Balance de Cierre de Etiquetas (`<div>`):**
+   - ANTES de finalizar cualquier cambio que altere el HTML, verificar que TODAS las tarjetas (`.flashcard`), contenedores de grupo y secciones tengan exactitud matemática de apertura `<div...>` y cierre `</div>`.
+   - NUNCA dejar un `</div>` faltante o sobrante, para evitar colapsos o anidamientos indebidos en el DOM.
+
+3. **Independencia Total de Semestres y Evaluaciones:**
+   - La alteración de un semestre o evaluación NUNCA debe modificar o desbordar los contenedores de otros semestres.
+   - Usar atributos `data-subject`, `data-sem` y `data-eval` explícitos en contenedores de teoría y laboratorios.
+
 ---
 
-## 7. CHECKLIST MANDATORIO DE DIAGNÓSTICO
+## 9. CHECKLIST MANDATORIO DE DIAGNÓSTICO
 
 Antes de finalizar cualquier cambio:
 1. **Compilación limpia:** `npm run build` sin advertencias ni errores.
@@ -338,5 +353,7 @@ Antes de finalizar cualquier cambio:
 3. **Quizzes íntegros:** Exactamente un `isCorrect: true` y `rationale` educativo presente en cada opción.
 4. **Badges sincronizados:** `updateBadges()` y `updateTheoryProgress()` llamados tras cada acción.
 5. **UI inmutable:** Verificar que ningún componente de la Sección 3 fue alterado sin autorización explícita del usuario.
+6. **Balance HTML Auditado:** Verificar balance numérico de divs abiertos y cerrados en cada contenedor editado.
+
 
 

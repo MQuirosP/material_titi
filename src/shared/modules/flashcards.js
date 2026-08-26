@@ -1,4 +1,5 @@
-import { studiedCards, quizState, userHasUsedLab, getTotalCardsForActiveSubject } from '../state/store.js';
+import { studiedCards, quizState, userHasUsedLab, setUserHasUsedLab, getTotalCardsForActiveSubject, activeSubject } from '../state/store.js';
+import { saveStudiedCards, getStudiedCards, saveLabVisited, getLabVisited, getQuizProgress } from './progressManager.js';
 
 function getLimit() {
   return getTotalCardsForActiveSubject();
@@ -53,6 +54,20 @@ export function toggleCard(cardElement, cardId) {
   cardElement.classList.toggle('flipped');
   playSwissSound();
   studiedCards.add(cardId);
+  saveStudiedCards(activeSubject, Array.from(studiedCards));
+  updateTheoryProgress();
+  updateBadges();
+}
+
+/** Restaura el progreso de tarjetas guardadas en localStorage */
+export function restoreSavedTheoryCards(subject) {
+  const savedArr = getStudiedCards(subject);
+  if (savedArr && Array.isArray(savedArr)) {
+    savedArr.forEach(id => studiedCards.add(id));
+  }
+  if (getLabVisited(subject)) {
+    setUserHasUsedLab(true);
+  }
   updateTheoryProgress();
   updateBadges();
 }
@@ -72,30 +87,50 @@ export function updateTheoryProgress() {
 
 /** Desbloquea las medallas según el progreso del estudiante */
 export function updateBadges() {
+  const limit = getLimit();
+
+  // 1. Cargar progreso guardado de las tarjetas
+  const savedCards = getStudiedCards(activeSubject);
+  if (savedCards && Array.isArray(savedCards)) {
+    savedCards.forEach(id => studiedCards.add(id));
+  }
+
   // 🎓 Badge Teoría — todas las flashcards vistas
   const badgeTeoria = document.getElementById('badge-teoria');
-  const limit = getLimit();
   if (badgeTeoria && studiedCards.size >= limit) {
     badgeTeoria.classList.remove('opacity-30', 'grayscale');
+    badgeTeoria.classList.add('shadow-md', 'scale-105');
   }
 
   // 📐 Badge Laboratorio — usó cualquier laboratorio
   const badgeFormulas = document.getElementById('badge-formulas');
-  if (badgeFormulas && userHasUsedLab) {
+  const isLabUsed = userHasUsedLab || getLabVisited(activeSubject);
+  if (badgeFormulas && isLabUsed) {
     badgeFormulas.classList.remove('opacity-30', 'grayscale');
+    badgeFormulas.classList.add('shadow-md', 'scale-105');
   }
 
-  // 🧠 Badge Quiz Teórico — score ≥ 80
+  // 🧠 Badge Quiz Teórico — score ≥ 80 o guardado previo ≥ 80
   const badgeQuizT = document.getElementById('badge-quiz-t');
-  if (badgeQuizT && quizState.teorico.isCompleted) {
-    const grade = Math.round((quizState.teorico.score / quizState.teorico.questions.length) * 100);
-    if (grade >= 80) badgeQuizT.classList.remove('opacity-30', 'grayscale');
+  const quizTSaved = getQuizProgress(activeSubject, '2_eval1', 'teorico') || getQuizProgress(activeSubject, '1_eval2', 'teorico');
+  const gradeT = quizState.teorico.isCompleted 
+    ? Math.round((quizState.teorico.score / quizState.teorico.questions.length) * 100)
+    : (quizTSaved ? quizTSaved.grade : 0);
+
+  if (badgeQuizT && gradeT >= 80) {
+    badgeQuizT.classList.remove('opacity-30', 'grayscale');
+    badgeQuizT.classList.add('shadow-md', 'scale-105');
   }
 
-  // ⭐ Badge Quiz Práctico — score ≥ 80
+  // ⭐ Badge Quiz Práctico — score ≥ 80 o guardado previo ≥ 80
   const badgeQuizP = document.getElementById('badge-quiz-p');
-  if (badgeQuizP && quizState.practico.isCompleted) {
-    const grade = Math.round((quizState.practico.score / quizState.practico.questions.length) * 100);
-    if (grade >= 80) badgeQuizP.classList.remove('opacity-30', 'grayscale');
+  const quizPSaved = getQuizProgress(activeSubject, '2_eval1', 'practico') || getQuizProgress(activeSubject, '1_eval2', 'practico');
+  const gradeP = quizState.practico.isCompleted 
+    ? Math.round((quizState.practico.score / quizState.practico.questions.length) * 100)
+    : (quizPSaved ? quizPSaved.grade : 0);
+
+  if (badgeQuizP && gradeP >= 80) {
+    badgeQuizP.classList.remove('opacity-30', 'grayscale');
+    badgeQuizP.classList.add('shadow-md', 'scale-105');
   }
 }

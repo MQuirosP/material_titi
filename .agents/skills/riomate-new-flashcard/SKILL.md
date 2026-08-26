@@ -28,7 +28,7 @@ description: Agrega o modifica tarjetas de estudio (flashcards) en la sección T
         <h3 class="text-xl font-bold text-slate-800 font-fun">{Título de la tarjeta}</h3>
         <p class="text-slate-500 text-sm mt-1">{Pregunta o subtítulo provocador}</p>
       </div>
-      <div class="text-center text-xs text-{color}-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría y fórmulas!</div>
+      <div class="text-center text-xs text-{color}-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
     </div>
 
     <!-- DORSO (visible al girar) -->
@@ -40,16 +40,20 @@ description: Agrega o modifica tarjetas de estudio (flashcards) en la sección T
           <li><strong class="text-white">{Concepto 2}:</strong> <strong class="text-amber-300">{Dato clave resaltado}</strong>.</li>
           <li><strong class="text-white">{Concepto 3}:</strong> {Explicación.}</li>
         </ul>
-      </div>
+      </div> <!-- ⛔ CRÍTICO: CERRAR ESTE DIV DE LA LISTA ANTES DEL TRUCO DE EXAMEN -->
       <div class="bg-{color}-900/60 p-2.5 rounded-xl border border-{color}-800/50 mt-2">
         <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
         <p class="text-xs text-{color}-200">{Consejo memorístico o mnemotécnico breve}</p>
       </div>
-    </div>
+    </div> <!-- Cierra flashcard-back -->
 
-  </div>
-</div>
+  </div> <!-- Cierra flashcard-inner -->
+</div> <!-- Cierra flashcard -->
 ```
+
+## ⛔ Regla Crítica de Estructura DOM
+- **Exactitud de Cierre:** Cada `<div>` interno (frente, dorso, lista de teoría, truco de examen) DEBE tener su correspondiente `</div>` de cierre.
+- **Evitar Desbordamiento:** Si olvidas el `</div>` tras el `<ul>`, desbalanceas la tarjeta y colapsas los contenedores de teoría subsiguientes.
 
 ## Reglas de contenido
 

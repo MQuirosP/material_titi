@@ -17,7 +17,7 @@ export let studiedCards = studiedCardsMath;
 
 export function getTotalCardsForActiveSubject() {
   if (activeSubject === 'espanol') return 10;
-  if (activeSubject === 'ciencias') return 9;
+  if (activeSubject === 'ciencias') return 10;
   return 6;
 }
 

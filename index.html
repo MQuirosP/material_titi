@@ -57,120 +57,132 @@
     </div>
 
     <!-- SEGUNDO SEMESTRE 2026 (ACTIVO POR DEFECTO) -->
-    <div id="semester-2-container" class="space-y-6">
-      <div class="flex items-center justify-between border-b border-slate-200/60 pb-3">
-        <h3 class="text-lg font-bold text-slate-900 font-fun flex items-center gap-2">
-          <span>📚</span> Materias del II Semestre 2026
-        </h3>
-        <span class="text-xs font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full font-fun">En Curso</span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        <!-- Español (Disponible) -->
-        <a href="./practica/?subject=espanol" class="group bg-white rounded-3xl shadow-sm border-2 border-amber-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-amber-400 transition-all duration-300 hover:-translate-y-1">
-          <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📚</span>
-          <span class="bg-amber-100 text-amber-800 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Examen: 24 Agosto</span>
-          <h4 class="text-lg font-bold text-slate-900 font-fun">Español</h4>
-          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
-          <p class="text-slate-500 text-xs leading-relaxed mb-4">Comprensión lectora, partes del libro, géneros literarios, tipos de oraciones y tradición costarricense.</p>
-          <div class="mt-auto w-full bg-amber-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-amber-700 transition-colors font-fun shadow-sm">
-            Entrar al estudio →
+    <div id="semester-2-container" class="space-y-8">
+      <!-- 1ª EVALUACIÓN (EN CURSO) -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between border-b border-amber-200/80 pb-3">
+          <div>
+            <span class="bg-amber-100 text-amber-800 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider font-fun">En Curso</span>
+            <h3 class="text-xl font-bold text-slate-900 font-fun mt-1 flex items-center gap-2">
+              <span>📝</span> 1ª Evaluación — II Semestre 2026
+            </h3>
           </div>
-        </a>
-
-        <!-- Estudios Sociales (Próximamente) -->
-        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
-          <span class="text-4xl mb-3 grayscale">🌎</span>
-          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Próximamente</span>
-          <h4 class="text-lg font-bold text-slate-900 font-fun">Estudios Sociales</h4>
-          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
-          <p class="text-slate-400 text-xs leading-relaxed mb-4">Geografía, relieve, provincias, historia patria y símbolos nacionales de Costa Rica.</p>
-          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
-            En preparación...
-          </div>
+          <span class="text-xs font-semibold text-slate-500 font-fun hidden sm:inline">Pruebas en desarrollo</span>
         </div>
 
-        <!-- Matemáticas II (Próximamente) -->
-        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
-          <span class="text-4xl mb-3 grayscale">🧮</span>
-          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Próximamente</span>
-          <h4 class="text-lg font-bold text-slate-900 font-fun">Matemáticas II</h4>
-          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
-          <p class="text-slate-400 text-xs leading-relaxed mb-4">Operaciones combinadas, decimales, porcentajes y resolución de problemas del II semestre.</p>
-          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
-            En preparación...
-          </div>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Español (1ª Eval II Semestre) -->
+          <a href="./practica/?subject=espanol&sem=2&eval=1" class="group bg-white rounded-3xl shadow-sm border-2 border-amber-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-amber-400 transition-all duration-300 hover:-translate-y-1">
+            <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📚</span>
+            <span class="bg-amber-100 text-amber-800 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">1ª Eval · 24 Agosto</span>
+            <h4 class="text-lg font-bold text-slate-900 font-fun">Español</h4>
+            <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">Comprensión lectora, partes del libro, géneros literarios, tipos de oraciones y tradición costarricense.</p>
+            <div class="mt-auto w-full bg-amber-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-amber-700 transition-colors font-fun shadow-sm">
+              Entrar al estudio →
+            </div>
+          </a>
 
-        <!-- Ciencias II (Próximamente) -->
-        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
-          <span class="text-4xl mb-3 grayscale">🔬</span>
-          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Próximamente</span>
-          <h4 class="text-lg font-bold text-slate-900 font-fun">Ciencias II</h4>
-          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
-          <p class="text-slate-400 text-xs leading-relaxed mb-4">Ecosistemas, energía, materia y recursos naturales del II semestre.</p>
-          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
-            En preparación...
+          <!-- Ciencias (1ª Eval II Semestre - Disponible) -->
+          <a href="./practica/?subject=ciencias&sem=2&eval=1" class="group bg-white rounded-3xl shadow-sm border-2 border-emerald-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-emerald-400 transition-all duration-300 hover:-translate-y-1">
+            <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🔬</span>
+            <span class="bg-emerald-100 text-emerald-800 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">1ª Eval · II Semestre</span>
+            <h4 class="text-lg font-bold text-slate-900 font-fun">Ciencias</h4>
+            <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">Cadenas tróficas, fotosíntesis, célula vegetal, interacciones ecológicas y estrategia de las 5 R.</p>
+            <div class="mt-auto w-full bg-emerald-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-emerald-700 transition-colors font-fun shadow-sm">
+              Entrar al estudio →
+            </div>
+          </a>
+
+          <!-- Matemáticas (1ª Eval II Semestre - Próximamente) -->
+          <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
+            <span class="text-4xl mb-3 grayscale">🧮</span>
+            <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Próximamente</span>
+            <h4 class="text-lg font-bold text-slate-900 font-fun">Matemáticas</h4>
+            <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">Operaciones combinadas, decimales y resolución de problemas de la 1ª Evaluación.</p>
+            <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
+              En preparación...
+            </div>
+          </div>
+
+          <!-- Estudios Sociales (1ª Eval II Semestre - Próximamente) -->
+          <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
+            <span class="text-4xl mb-3 grayscale">🌎</span>
+            <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Próximamente</span>
+            <h4 class="text-lg font-bold text-slate-900 font-fun">Estudios Sociales</h4>
+            <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">Geografía, relieve, provincias e historia patria de Costa Rica.</p>
+            <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
+              En preparación...
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- PRIMER SEMESTRE 2026 (ARCHIVADO / DISPONIBLE) -->
-    <div id="semester-1-container" class="hidden space-y-6">
-      <div class="flex items-center justify-between border-b border-slate-200/60 pb-3">
-        <h3 class="text-lg font-bold text-slate-900 font-fun flex items-center gap-2">
-          <span>📅</span> Materias del I Semestre 2026
-        </h3>
-        <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full font-fun">Completado</span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        <!-- Matemáticas (Disponible) -->
-        <a href="./practica/?subject=matematicas" class="group bg-white rounded-3xl shadow-sm border-2 border-indigo-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-indigo-400 transition-all duration-300 hover:-translate-y-1">
-          <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🧮</span>
-          <span class="bg-indigo-100 text-indigo-700 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Disponible</span>
-          <h4 class="text-lg font-bold text-slate-900 font-fun">Matemáticas</h4>
-          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
-          <p class="text-slate-500 text-xs leading-relaxed mb-4">Múltiplos, divisores, fracciones impropias/mixtas, pulpería ₡ y geometría plana.</p>
-          <div class="mt-auto w-full bg-indigo-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-indigo-700 transition-colors font-fun shadow-sm">
-            Entrar al estudio →
+    <div id="semester-1-container" class="hidden space-y-8">
+      <!-- 2ª EVALUACIÓN (I SEMESTRE) -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between border-b border-indigo-200/80 pb-3">
+          <div>
+            <span class="bg-emerald-100 text-emerald-800 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider font-fun">Completado</span>
+            <h3 class="text-xl font-bold text-slate-900 font-fun mt-1 flex items-center gap-2">
+              <span>🎓</span> 2ª Evaluación — I Semestre 2026
+            </h3>
           </div>
-        </a>
-
-        <!-- Ciencias (Disponible) -->
-        <a href="./practica/?subject=ciencias" class="group bg-white rounded-3xl shadow-sm border-2 border-emerald-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-emerald-400 transition-all duration-300 hover:-translate-y-1">
-          <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🔬</span>
-          <span class="bg-emerald-100 text-emerald-700 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Disponible</span>
-          <h4 class="text-lg font-bold text-slate-900 font-fun">Ciencias</h4>
-          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
-          <p class="text-slate-500 text-xs leading-relaxed mb-4">El sistema urinario, la excreción celular, avances médicos y la biodiversidad en Costa Rica.</p>
-          <div class="mt-auto w-full bg-emerald-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-emerald-700 transition-colors font-fun shadow-sm">
-            Entrar al estudio →
-          </div>
-        </a>
-
-        <!-- Español I (Archivado) -->
-        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
-          <span class="text-4xl mb-3 grayscale">📚</span>
-          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Archivado</span>
-          <h4 class="text-lg font-bold text-slate-900 font-fun">Español I</h4>
-          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
-          <p class="text-slate-400 text-xs leading-relaxed mb-4">Temas evaluados durante el primer semestre del curso lectivo.</p>
-          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
-            I Semestre cerrado
-          </div>
+          <span class="text-xs font-semibold text-slate-500 font-fun hidden sm:inline">Material de Repaso</span>
         </div>
 
-        <!-- Estudios Sociales I (Archivado) -->
-        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
-          <span class="text-4xl mb-3 grayscale">🌎</span>
-          <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Archivado</span>
-          <h4 class="text-lg font-bold text-slate-900 font-fun">Estudios Sociales I</h4>
-          <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
-          <p class="text-slate-400 text-xs leading-relaxed mb-4">Temas evaluados durante el primer semestre del curso lectivo.</p>
-          <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
-            I Semestre cerrado
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Matemáticas (2ª Eval I Semestre) -->
+          <a href="./practica/?subject=matematicas&sem=1&eval=2" class="group bg-white rounded-3xl shadow-sm border-2 border-indigo-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-indigo-400 transition-all duration-300 hover:-translate-y-1">
+            <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🧮</span>
+            <span class="bg-indigo-100 text-indigo-700 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">2ª Eval · I Semestre</span>
+            <h4 class="text-lg font-bold text-slate-900 font-fun">Matemáticas</h4>
+            <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">Múltiplos, divisores, fracciones impropias/mixtas, pulpería ₡ y geometría plana.</p>
+            <div class="mt-auto w-full bg-indigo-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-indigo-700 transition-colors font-fun shadow-sm">
+              Entrar al estudio →
+            </div>
+          </a>
+
+          <!-- Ciencias (2ª Eval I Semestre) -->
+          <a href="./practica/?subject=ciencias&sem=1&eval=2" class="group bg-white rounded-3xl shadow-sm border-2 border-teal-200 p-6 flex flex-col items-center text-center hover:shadow-lg hover:border-teal-400 transition-all duration-300 hover:-translate-y-1">
+            <span class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🔬</span>
+            <span class="bg-teal-100 text-teal-800 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">2ª Eval · I Semestre</span>
+            <h4 class="text-lg font-bold text-slate-900 font-fun">Ciencias</h4>
+            <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Florisel Olmazo</p>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">El sistema urinario, la excreción celular, avances médicos y la biodiversidad en Costa Rica.</p>
+            <div class="mt-auto w-full bg-teal-600 text-white py-2.5 rounded-2xl font-bold text-xs group-hover:bg-teal-700 transition-colors font-fun shadow-sm">
+              Entrar al estudio →
+            </div>
+          </a>
+
+          <!-- Español (2ª Eval I Semestre - Archivado) -->
+          <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
+            <span class="text-4xl mb-3 grayscale">📚</span>
+            <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Archivado</span>
+            <h4 class="text-lg font-bold text-slate-900 font-fun">Español</h4>
+            <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">Temas evaluados durante el primer semestre del curso lectivo.</p>
+            <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
+              I Semestre cerrado
+            </div>
+          </div>
+
+          <!-- Estudios Sociales (2ª Eval I Semestre - Archivado) -->
+          <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 flex flex-col items-center text-center opacity-75">
+            <span class="text-4xl mb-3 grayscale">🌎</span>
+            <span class="bg-slate-100 text-slate-500 text-[11px] font-bold px-3 py-0.5 rounded-full uppercase font-fun mb-2">Archivado</span>
+            <h4 class="text-lg font-bold text-slate-900 font-fun">Estudios Sociales</h4>
+            <p class="text-xs text-slate-500 font-semibold mb-2">👩‍🏫 Maestra: Maureen Solano</p>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">Temas evaluados durante el primer semestre del curso lectivo.</p>
+            <div class="mt-auto w-full bg-slate-100 text-slate-400 py-2.5 rounded-2xl font-bold text-xs font-fun">
+              I Semestre cerrado
+            </div>
           </div>
         </div>
       </div>
