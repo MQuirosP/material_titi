@@ -459,7 +459,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L1",
       "id": "src_shared_modules_quiz_js",
-      "community": 23,
+      "community": 0,
       "norm_label": "quiz.js"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L16",
       "id": "modules_quiz_startquiz",
-      "community": 23,
+      "community": 0,
       "norm_label": "startquiz()"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L36",
       "id": "modules_quiz_updatequizintrotexts",
-      "community": 23,
+      "community": 0,
       "norm_label": "updatequizintrotexts()"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L71",
       "id": "modules_quiz_checksavedprogress",
-      "community": 23,
+      "community": 0,
       "norm_label": "checksavedprogress()"
     },
     {
@@ -504,7 +504,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L118",
       "id": "modules_quiz_renderquestion",
-      "community": 23,
+      "community": 0,
       "norm_label": "renderquestion()"
     },
     {
@@ -513,7 +513,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L162",
       "id": "modules_quiz_selectoption",
-      "community": 23,
+      "community": 0,
       "norm_label": "selectoption()"
     },
     {
@@ -522,7 +522,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L231",
       "id": "modules_quiz_nextquestion",
-      "community": 23,
+      "community": 0,
       "norm_label": "nextquestion()"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L287",
       "id": "modules_quiz_resetquiz",
-      "community": 23,
+      "community": 0,
       "norm_label": "resetquiz()"
     },
     {
@@ -1638,7 +1638,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L1",
       "id": "src_subjects_espanol_labs_pulperia_refranes_js",
-      "community": 22,
+      "community": 23,
       "norm_label": "pulperia-refranes.js"
     },
     {
@@ -1647,7 +1647,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L10",
       "id": "labs_pulperia_refranes_refranesgamedata",
-      "community": 22,
+      "community": 23,
       "norm_label": "refranesgamedata"
     },
     {
@@ -1656,7 +1656,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L49",
       "id": "labs_pulperia_refranes_adivinanzasdata",
-      "community": 22,
+      "community": 23,
       "norm_label": "adivinanzasdata"
     },
     {
@@ -1665,7 +1665,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L70",
       "id": "labs_pulperia_refranes_bombasdata",
-      "community": 22,
+      "community": 23,
       "norm_label": "bombasdata"
     },
     {
@@ -1674,7 +1674,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L93",
       "id": "labs_pulperia_refranes_shuffledmeanings",
-      "community": 22,
+      "community": 23,
       "norm_label": "shuffledmeanings"
     },
     {
@@ -1683,7 +1683,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L95",
       "id": "labs_pulperia_refranes_shufflearray",
-      "community": 22,
+      "community": 23,
       "norm_label": "shufflearray()"
     },
     {
@@ -1692,7 +1692,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L114",
       "id": "labs_pulperia_refranes_resetrefranesgame",
-      "community": 22,
+      "community": 23,
       "norm_label": "resetrefranesgame()"
     },
     {
@@ -1701,7 +1701,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L122",
       "id": "labs_pulperia_refranes_initpulperiarefranes",
-      "community": 22,
+      "community": 23,
       "norm_label": "initpulperiarefranes()"
     },
     {
@@ -1710,7 +1710,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L129",
       "id": "labs_pulperia_refranes_renderrefranesgame",
-      "community": 22,
+      "community": 23,
       "norm_label": "renderrefranesgame()"
     },
     {
@@ -1719,7 +1719,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L170",
       "id": "labs_pulperia_refranes_selectrefrantomatch",
-      "community": 22,
+      "community": 23,
       "norm_label": "selectrefrantomatch()"
     },
     {
@@ -1728,7 +1728,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L186",
       "id": "labs_pulperia_refranes_selectmeaningtomatch",
-      "community": 22,
+      "community": 23,
       "norm_label": "selectmeaningtomatch()"
     },
     {
@@ -1737,7 +1737,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L241",
       "id": "labs_pulperia_refranes_renderadivinanza",
-      "community": 22,
+      "community": 23,
       "norm_label": "renderadivinanza()"
     },
     {
@@ -1746,7 +1746,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L277",
       "id": "labs_pulperia_refranes_revealhint",
-      "community": 22,
+      "community": 23,
       "norm_label": "revealhint()"
     },
     {
@@ -1764,7 +1764,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L299",
       "id": "labs_pulperia_refranes_nextadivinanza",
-      "community": 22,
+      "community": 23,
       "norm_label": "nextadivinanza()"
     },
     {
@@ -1773,7 +1773,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L305",
       "id": "labs_pulperia_refranes_renderbomba",
-      "community": 22,
+      "community": 23,
       "norm_label": "renderbomba()"
     },
     {
@@ -1782,7 +1782,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L339",
       "id": "labs_pulperia_refranes_checkbombarhyme",
-      "community": 22,
+      "community": 23,
       "norm_label": "checkbombarhyme()"
     },
     {
@@ -1791,7 +1791,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L362",
       "id": "labs_pulperia_refranes_nextbomba",
-      "community": 22,
+      "community": 23,
       "norm_label": "nextbomba()"
     },
     {
@@ -2329,7 +2329,7 @@
       "label": "9. CHECKLIST MANDATORIO DE DIAGN\u00d3STICO",
       "file_type": "document",
       "source_file": ".agents/rules/riomate.md",
-      "source_location": "L348",
+      "source_location": "L350",
       "id": "rules_riomate_9_checklist_mandatorio_de_diagn\u00f3stico",
       "community": 5,
       "norm_label": "9. checklist mandatorio de diagnostico"
@@ -2794,19 +2794,37 @@
       "norm_label": "code:javascript (import { materiasemxevalymodule } from '../../subjects/mater)"
     },
     {
-      "label": "3. Agregar Contenedores Segregados en `practica/index.html`",
+      "label": "3. Crear Preguntas Exclusivas en `src/subjects/{materia}/{sem_eval}/data/`",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
       "source_location": "L73",
-      "id": "riomate_clone_materia_skill_3_agregar_contenedores_segregados_en_practica_index_html",
+      "id": "riomate_clone_materia_skill_3_crear_preguntas_exclusivas_en_src_subjects_materia_sem_eval_data",
       "community": 17,
-      "norm_label": "3. agregar contenedores segregados en `practica/index.html`"
+      "norm_label": "3. crear preguntas exclusivas en `src/subjects/{materia}/{sem_eval}/data/`"
+    },
+    {
+      "label": "code:javascript (if (targetSubject === 'materia' && targetSem === 'X' && targ)",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L77",
+      "id": "riomate_clone_materia_skill_codeblock_4",
+      "community": 17,
+      "norm_label": "code:javascript (if (targetsubject === 'materia' && targetsem === 'x' && targ)"
+    },
+    {
+      "label": "4. Agregar Contenedores Segregados en `practica/index.html`",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L84",
+      "id": "riomate_clone_materia_skill_4_agregar_contenedores_segregados_en_practica_index_html",
+      "community": 17,
+      "norm_label": "4. agregar contenedores segregados en `practica/index.html`"
     },
     {
       "label": "4. \u26d4 Verificaci\u00f3n Estricta de Cierre de Etiquetas `<div>`",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
-      "source_location": "L77",
+      "source_location": "L88",
       "id": "riomate_clone_materia_skill_4_verificaci\u00f3n_estricta_de_cierre_de_etiquetas_div",
       "community": 17,
       "norm_label": "4. \u26d4 verificacion estricta de cierre de etiquetas `<div>`"
@@ -2815,7 +2833,7 @@
       "label": "5. Compilaci\u00f3n y Validaci\u00f3n",
       "file_type": "document",
       "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
-      "source_location": "L82",
+      "source_location": "L93",
       "id": "riomate_clone_materia_skill_5_compilaci\u00f3n_y_validaci\u00f3n",
       "community": 17,
       "norm_label": "5. compilacion y validacion"
@@ -3044,6 +3062,15 @@
       "id": "state_store_studiedcards",
       "community": 23,
       "norm_label": "studiedcards"
+    },
+    {
+      "label": "3. Agregar Contenedores Segregados en `practica/index.html`",
+      "file_type": "document",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L73",
+      "community": 17,
+      "norm_label": "3. agregar contenedores segregados en `practica/index.html`",
+      "id": "riomate_clone_materia_skill_3_agregar_contenedores_segregados_en_practica_index_html"
     },
     {
       "label": "7. CHECKLIST MANDATORIO DE DIAGN\u00d3STICO",
@@ -7592,9 +7619,9 @@
       "source_file": "src/subjects/ciencias/sem1_eval2/data/quiz-practico.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_ciencias_sem1_eval2_data_quiz_practico_js",
-      "target": "data_quiz_practico_quizpracticocienciassem1eval2",
-      "confidence_score": 1.0
+      "target": "data_quiz_practico_quizpracticocienciassem1eval2"
     },
     {
       "relation": "imports_from",
@@ -7603,9 +7630,9 @@
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
-      "target": "src_subjects_ciencias_sem1_eval2_data_quiz_practico_js",
-      "confidence_score": 1.0
+      "target": "src_subjects_ciencias_sem1_eval2_data_quiz_practico_js"
     },
     {
       "relation": "imports",
@@ -7614,9 +7641,9 @@
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_subjects_matematicas_main_js",
-      "target": "data_quiz_practico_quizpracticocienciassem1eval2",
-      "confidence_score": 1.0
+      "target": "data_quiz_practico_quizpracticocienciassem1eval2"
     },
     {
       "relation": "contains",
@@ -10976,9 +11003,19 @@
       "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
       "source_location": "L73",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "riomate_clone_materia_skill_pasos_de_implementaci\u00f3n_estricta",
-      "target": "riomate_clone_materia_skill_3_agregar_contenedores_segregados_en_practica_index_html"
+      "target": "riomate_clone_materia_skill_3_crear_preguntas_exclusivas_en_src_subjects_materia_sem_eval_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "riomate_clone_materia_skill_pasos_de_implementaci\u00f3n_estricta",
+      "target": "riomate_clone_materia_skill_4_agregar_contenedores_segregados_en_practica_index_html",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11004,6 +11041,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "riomate_clone_materia_skill_pasos_de_implementaci\u00f3n_estricta",
+      "target": "riomate_clone_materia_skill_3_agregar_contenedores_segregados_en_practica_index_html"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
       "source_location": "L40",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -11019,6 +11066,16 @@
       "confidence_score": 1.0,
       "source": "riomate_clone_materia_skill_2_registrar_en_subjectregistry_js_src_shared_modules_subjectregistry_js",
       "target": "riomate_clone_materia_skill_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "riomate_clone_materia_skill_3_crear_preguntas_exclusivas_en_src_subjects_materia_sem_eval_data",
+      "target": "riomate_clone_materia_skill_codeblock_4",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12014,5 +12071,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a65dbdf706d5c4ddcd0e72472cf35f91f87ab246"
+  "built_at_commit": "7a654bad2de7064a5a1843bc283aaba0bdcf355e"
 }

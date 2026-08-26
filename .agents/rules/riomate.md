@@ -340,8 +340,10 @@ Toda interacción debe utilizar las funciones de `src/shared/modules/audio.js`:
    - NUNCA dejar un `</div>` faltante o sobrante, para evitar colapsos o anidamientos indebidos en el DOM.
 
 3. **Independencia Total de Semestres y Evaluaciones:**
-   - La alteración de un semestre o evaluación NUNCA debe modificar o desbordar los contenedores de otros semestres.
+   - La alteración de un semestre o evaluación NUNCA debe modificar o desbordar los contenedores ni los exámener de otros semestres.
    - Usar atributos `data-subject`, `data-sem` y `data-eval` explícitos en contenedores de teoría y laboratorios.
+   - **PROHIBICIÓN DE MEZCLA DE EXÁMENES:** Cada evaluación y semestre DEBE poseer sus propios archivos dedicados de examen en `src/subjects/[materia]/[sem_eval]/data/quiz-teorico.js` y `quiz-practico.js`. NUNCA reutilizar ni importar bancos globales genéricos entre diferentes evaluaciones.
+   - En `src/subjects/matematicas/main.js → switchSubject()`, las asignaciones de `quizState.teorico.questions` y `quizState.practico.questions` DEBEN apuntar estrictamente a las constantes de ese módulo específico.
 
 ---
 

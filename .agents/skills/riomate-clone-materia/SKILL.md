@@ -70,7 +70,18 @@ const registry = [
 ];
 ```
 
-### 3. Agregar Contenedores Segregados en `practica/index.html`
+### 3. Crear Preguntas Exclusivas en `src/subjects/{materia}/{sem_eval}/data/`
+- **PROHIBICIÓN:** NUNCA usar o compartir bancos de preguntas de otros semestres o evaluaciones.
+- Crear `quiz-teorico.js` y `quiz-practico.js` exclusivos en esa carpeta.
+- En `src/subjects/matematicas/main.js → switchSubject()` importarlos y asignarlos de forma explícita:
+  ```javascript
+  if (targetSubject === 'materia' && targetSem === 'X' && targetEval === 'Y') {
+    quizState.teorico.questions = quizTeoricoMateriaSemXEvalY;
+    quizState.practico.questions = quizPracticoMateriaSemXEvalY;
+  }
+  ```
+
+### 4. Agregar Contenedores Segregados en `practica/index.html`
 - **Tarjetas de Teoría:** Contenedor `<div id="theory-materia-semX-evalY" data-subject="materia" data-sem="X" data-eval="Y" data-display="grid" class="grid grid-cols-1 md:grid-cols-2 gap-6" style="display: none;">` con exactamente las flashcards 3D interactivas.
 - **Laboratorios:** Contenedor `<div id="lab-contents-materia-semX-evalY" data-subject="materia" data-sem="X" data-eval="Y" data-display="block">` con los laboratorios correspondientes.
 
