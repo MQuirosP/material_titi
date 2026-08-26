@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="icon" id="favicon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
-  <script type="module" crossorigin src="/material_titi/assets/practica-CVgEbrFl.js"></script>
-  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-BGxa2ZwJ.js">
-  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-DJyKVEYF.css">
+  <script type="module" crossorigin src="/material_titi/assets/practica-Cnz7Jv2z.js"></script>
+  <link rel="modulepreload" crossorigin href="/material_titi/assets/base-EAyIPgTP.js">
+  <link rel="stylesheet" crossorigin href="/material_titi/assets/base-Bh8uUBve.css">
   <link rel="stylesheet" crossorigin href="/material_titi/assets/practica-DDx4YGlw.css">
 </head>
 
@@ -26,7 +26,7 @@
                     <span class="text-3xl">🇨🇷</span>
                 </div>
                 <div>
-                    <span id="semester-badge" class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider font-fun">Segundo Semestre 2026</span>
+                    <span id="semester-badge" class="inline-block text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider font-fun bg-amber-100 text-amber-800 border border-amber-200/60 max-w-full">Segundo Semestre 2026</span>
                     <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-1" id="main-title">RíoMate 5º</h1>
                     <p class="text-sm text-slate-500 font-medium" id="main-subtitle">Escuela Riojalandia · II Pruebas de Matemáticas · Secciones 5-1 y 5-2</p>
                 </div>
@@ -45,26 +45,34 @@
     <main class="max-w-5xl mx-auto px-4 mt-8">
 
 
-        <!-- Pestañas de Navegación -->
-        <div class="flex flex-wrap gap-2 mb-8 justify-center bg-white p-2 rounded-2xl shadow-sm border border-slate-200">
-            <a href="../" class="px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-rose-600 hover:bg-rose-50 font-fun">
-                🚪 Menú Principal
-            </a>
-            <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 bg-indigo-600 text-white font-fun">
-                🏠 Inicio
-            </button>
-            <button onclick="switchTab('teoria')" id="tab-teoria" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100 font-fun">
-                📚 Teoría Interactiva
-            </button>
-            <button onclick="switchTab('laboratorio')" id="tab-laboratorio" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100 font-fun">
-                🧪 Súper Laboratorios
-            </button>
-            <button onclick="switchTab('quiz-teorico')" id="tab-quiz-teorico" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100 font-fun">
-                ✏️ Examen Teórico
-            </button>
-            <button onclick="switchTab('quiz-practico')" id="tab-quiz-practico" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 text-slate-600 hover:bg-slate-100 font-fun">
-                🧮 Examen Práctico
-            </button>
+        <!-- Pestañas de Navegación Responsivas (Mobile Grid 2x2 + Desktop Flex Row) -->
+        <div class="mb-6 bg-white p-2.5 sm:p-2 rounded-2xl shadow-sm border border-slate-200 flex flex-col sm:flex-row flex-wrap gap-2 justify-between items-stretch sm:items-center">
+            
+            <!-- Barra Superior Móvil: Menú Principal e Inicio -->
+            <div class="flex items-center justify-between gap-2 w-full sm:w-auto">
+                <a href="../" class="flex-1 sm:flex-initial px-3.5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-1.5 text-rose-600 hover:bg-rose-50 bg-rose-50/50 sm:bg-transparent border border-rose-200 sm:border-0 font-fun min-h-[44px]">
+                    <span>🚪</span> <span>Menú Principal</span>
+                </a>
+                <button onclick="switchTab('inicio')" id="tab-inicio" class="tab-btn flex-1 sm:flex-initial px-3.5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-1.5 bg-emerald-600 text-white font-fun min-h-[44px] shadow-sm">
+                    <span>🏠</span> <span>Inicio</span>
+                </button>
+            </div>
+
+            <!-- Grid Móvil 2x2 para Pestañas de Estudio / Desktop Row -->
+            <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 w-full sm:w-auto flex-1 sm:justify-end">
+                <button onclick="switchTab('teoria')" id="tab-teoria" class="tab-btn w-full sm:w-auto px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-1.5 text-slate-700 bg-slate-50 hover:bg-slate-100 border border-slate-200 font-fun min-h-[44px]">
+                    <span class="text-sm">📚</span> <span class="truncate">Teoría</span>
+                </button>
+                <button onclick="switchTab('laboratorio')" id="tab-laboratorio" class="tab-btn w-full sm:w-auto px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-1.5 text-slate-700 bg-slate-50 hover:bg-slate-100 border border-slate-200 font-fun min-h-[44px]">
+                    <span class="text-sm">🧪</span> <span class="truncate">Laboratorios</span>
+                </button>
+                <button onclick="switchTab('quiz-teorico')" id="tab-quiz-teorico" class="tab-btn w-full sm:w-auto px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-1.5 text-slate-700 bg-slate-50 hover:bg-slate-100 border border-slate-200 font-fun min-h-[44px]">
+                    <span class="text-sm">✏️</span> <span class="truncate">Ex. Teórico</span>
+                </button>
+                <button onclick="switchTab('quiz-practico')" id="tab-quiz-practico" class="tab-btn w-full sm:w-auto px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-1.5 text-slate-700 bg-slate-50 hover:bg-slate-100 border border-slate-200 font-fun min-h-[44px]">
+                    <span class="text-sm">🧮</span> <span class="truncate">Ex. Práctico</span>
+                </button>
+            </div>
         </div>
 
         <!-- SECCIÓN: INICIO -->
@@ -75,53 +83,8 @@
                     <span class="text-4xl">👋</span>
                     <h2 class="text-3xl font-bold text-slate-900 mt-4 mb-2">¡Hola, campeona!</h2>
                     
-                    <!-- Bienvenida Matemáticas -->
-                    <div id="welcome-math" class="block">
-                        <p class="text-slate-600 leading-relaxed text-lg mb-6">
-                            Bienvenida a tu compañero de estudio de matemáticas. Aquí vas a repasar toda la teoría del examen de forma divertida, visual e interactiva. No te limites a memorizar las respuestas: comprende los conceptos y practica con los números para ganarte esa nota máxima el miércoles.
-                        </p>
-                        <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-4 flex gap-4 items-start">
-                            <span class="text-2xl mt-1">💡</span>
-                            <div>
-                                <h4 class="font-bold text-indigo-900">¿Cómo usar RíoMate?</h4>
-                                <p class="text-sm text-indigo-700 leading-relaxed mt-1">
-                                    Explora las pestañas superiores. Lee las tarjetas interactivas de teoría, juega con las figuras geométricas en el laboratorio de fórmulas para ver cómo cambian sus áreas, y luego ponte a prueba en los exámenes de teoría y práctica.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Bienvenida Ciencias -->
-                    <div id="welcome-science" class="hidden">
-                        <p class="text-slate-600 leading-relaxed text-lg mb-6">
-                            Bienvenida a tu compañero de estudio de ciencias. Aquí vas a repasar el funcionamiento del sistema urinario, la excreción celular en la piel y pulmones, los fascinantes avances tecnológicos de la medicina y la biodiversidad de Costa Rica de manera interactiva.
-                        </p>
-                        <div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-4 flex gap-4 items-start">
-                            <span class="text-2xl mt-1">💡</span>
-                            <div>
-                                <h4 class="font-bold text-emerald-900">¿Cómo usar RíoCiencias?</h4>
-                                <p class="text-sm text-emerald-700 leading-relaxed mt-1">
-                                    Explora las pestañas superiores. Revisa las tarjetas interactivas de teoría de los seres vivos y la salud, experimenta con el simulador de filtrado renal y pon a prueba tus conocimientos médicos clínicos en el laboratorio de decisiones clínicas.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Bienvenida Español -->
-                    <div id="welcome-espanol" class="hidden">
-                        <p class="text-slate-600 leading-relaxed text-lg mb-6">
-                            Bienvenida a tu compañero de estudio de español. Aquí vas a repasar comprensión de lectura, géneros literarios, partes del libro, tipos de diccionarios, técnicas de estudio, fichas y la clasificación de oraciones por la intención del emisor de forma interactiva y amena.
-                        </p>
-                        <div class="bg-amber-50 border border-amber-100 rounded-2xl p-4 flex gap-4 items-start">
-                            <span class="text-2xl mt-1">💡</span>
-                            <div>
-                                <h4 class="font-bold text-amber-900">¿Cómo usar RíoEspañol?</h4>
-                                <p class="text-sm text-amber-700 leading-relaxed mt-1">
-                                    Explora las pestañas superiores. Lee las 10 tarjetas interactivas de teoría, experimenta en los laboratorios de oraciones, libros y refranes ticos, y luego pon a prueba tus conocimientos en los exámenes teórico y práctico.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Contenedor Dinámico de Bienvenida (Inyectado por el módulo activo) -->
+                    <div id="welcome-container"></div>
                 </div>
 
                 <!-- Tu Progreso General -->
@@ -178,107 +141,8 @@
                     <span>📋</span> ¿Qué viene exactamente en el examen?
                 </h3>
                 
-                <!-- Temario Matemáticas -->
-                <div id="temario-math" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="p-4 rounded-2xl bg-indigo-50 border border-indigo-100">
-                        <span class="text-xs font-bold text-indigo-700 bg-indigo-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 1</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Múltiplos, Pares e Impares</h4>
-                        <p class="text-xs text-slate-500 mt-1">Identificar múltiplos, determinar números pares e impares y resolver problemas de organización de colecciones.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-teal-50 border border-teal-100">
-                        <span class="text-xs font-bold text-teal-700 bg-teal-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 2</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Divisores de un Número</h4>
-                        <p class="text-xs text-slate-500 mt-1">Reconocer los números que dividen exactamente a un número natural sin dejar residuo.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-amber-50 border border-amber-100">
-                        <span class="text-xs font-bold text-amber-700 bg-amber-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 3 & 4</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Fracciones Impropias y Mixtas</h4>
-                        <p class="text-xs text-slate-500 mt-1">Identificar fracciones mayores que la unidad y convertirlas a mixtas y viceversa en contextos reales.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-rose-50 border border-rose-100">
-                        <span class="text-xs font-bold text-rose-700 bg-rose-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 5</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Sistema Monetario Nacional</h4>
-                        <p class="text-xs text-slate-500 mt-1">Resolver problemas prácticos de compras, sumando gastos en colones y calculando el vuelto necesario.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-purple-50 border border-purple-100">
-                        <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 6</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Perímetro y Área por Fórmulas</h4>
-                        <p class="text-xs text-slate-500 mt-1">Aplicar fórmulas directas en triángulos, cuadrados, rectángulos, paralelogramos y trapecios.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-sky-50 border border-sky-100">
-                        <span class="text-xs font-bold text-sky-700 bg-sky-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 7</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Resolución de Problemas Geométricos</h4>
-                        <p class="text-xs text-slate-500 mt-1">Problemas complejos que involucran el cálculo de áreas y perímetros combinados de figuras planas.</p>
-                    </div>
-                </div>
-
-                <!-- Temario Ciencias -->
-                <div id="temario-science" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
-                        <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 1 & 2</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">El Sistema Urinario y Riñones</h4>
-                        <p class="text-xs text-slate-500 mt-1">Filtración de la sangre y eliminación de impurezas. Anatomía renal básica y formación de la orina.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-teal-50 border border-teal-100">
-                        <span class="text-xs font-bold text-teal-700 bg-teal-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 3 & 4</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Conductos Excretores y Vejiga</h4>
-                        <p class="text-xs text-slate-500 mt-1">Uréteres, almacenamiento de orina en la vejiga urinaria y expulsión al exterior por la uretra.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-lime-50 border border-lime-100">
-                        <span class="text-xs font-bold text-lime-700 bg-lime-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 5 & 6</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Piel, Pulmones y Excreción</h4>
-                        <p class="text-xs text-slate-500 mt-1">La excreción cutánea de sales a través del sudor e interrelación respiratoria con el dióxido de carbono.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-cyan-50 border border-cyan-100">
-                        <span class="text-xs font-bold text-cyan-700 bg-cyan-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 7 & 8</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Avances Médicos y Diagnósticos</h4>
-                        <p class="text-xs text-slate-500 mt-1">Uso preventivo de vacunas, antibióticos para bacterias, diagnóstico por Rayos X y trasplantes.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-emerald-950/5 border border-emerald-950/10">
-                        <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 9</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Bioética de Laboratorio</h4>
-                        <p class="text-xs text-slate-500 mt-1">Trato digno y humanitario para animales en experimentación, prohibición del dolor y sufrimiento.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-green-50 border border-green-100">
-                        <span class="text-xs font-bold text-green-700 bg-green-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 10 & 11</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Clasificación y Biodiversidad</h4>
-                        <p class="text-xs text-slate-500 mt-1">Clasificar seres vivos según complejidad celular y nutrición. Características físicas de los reinos Fungi, Plantae y clases de Animalia.</p>
-                    </div>
-                </div>
-
-                <!-- Temario Español -->
-                <div id="temario-espanol" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="p-4 rounded-2xl bg-amber-50 border border-amber-100">
-                        <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 1</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Comprensión Lectora y Formatos</h4>
-                        <p class="text-xs text-slate-500 mt-1">Identificar ideas principales, secundarias, personajes y clasificar textos continuos, discontinuos y mixtos.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-rose-50 border border-rose-100">
-                        <span class="text-xs font-bold text-rose-800 bg-rose-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 2</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Géneros Literarios</h4>
-                        <p class="text-xs text-slate-500 mt-1">Diferenciar el cuento, fábula con moraleja, leyenda tradicional (La Tule Vieja), novela y obras dramáticas.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-orange-50 border border-orange-100">
-                        <span class="text-xs font-bold text-orange-800 bg-orange-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 3</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Tradición Popular y Lenguaje Figurado</h4>
-                        <p class="text-xs text-slate-500 mt-1">Adivinanzas, trabalenguas para dicción, bombas guanacastecas, refranes y dichos populares costarricenses.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-teal-50 border border-teal-100">
-                        <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 4</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Partes del Libro y Diccionarios</h4>
-                        <p class="text-xs text-slate-500 mt-1">Reconocer portada, contraportada, lomo, prólogo, índice, glosario y tipos de diccionarios especializados.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-indigo-50 border border-indigo-100">
-                        <span class="text-xs font-bold text-indigo-800 bg-indigo-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 5</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Técnicas de Estudio y Fichas</h4>
-                        <p class="text-xs text-slate-500 mt-1">Resumen vs síntesis, mapas conceptuales jerárquicos y fichas de cita textual, resumen y biográficas.</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-purple-50 border border-purple-100">
-                        <span class="text-xs font-bold text-purple-800 bg-purple-100 px-2.5 py-1 rounded-full uppercase font-fun">Tema 6</span>
-                        <h4 class="font-bold text-slate-800 mt-2 text-base">Clases de Oraciones e Intención</h4>
-                        <p class="text-xs text-slate-500 mt-1">Oraciones enunciativas (afirmativas/negativas), interrogativas, exclamativas, imperativas, dubitativas y desiderativas.</p>
-                    </div>
-                </div>
+                <!-- Contenedor Dinámico del Temario (Inyectado por el módulo activo) -->
+                <div id="temario-container"></div>
             </div>
         </section>
 
@@ -294,7 +158,7 @@
                 </div>
 
                 <!-- Bloque de Tarjetas de Matemáticas -->
-                <div id="theory-math" class="block grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div id="theory-math" data-subject="matematicas" data-sem="1" data-eval="2" data-display="grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Tarjeta 1: Múltiplos, pares e impares -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 1)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-indigo-100 duration-500">
@@ -494,7 +358,6 @@
                                         <li><strong class="text-white">Triángulo:</strong> Área = (Base × Altura) ÷ 2</li>
                                         <li><strong class="text-white">Cuadrado:</strong> Área = Lado × Lado</li>
                                         <li><strong class="text-white">Rectángulo y Paralelogramo:</strong> Área = Base × Altura</li>
-                                        <li><strong class="text-white">Trapecio:</strong> Área = [(Base Mayor + Base Menor) × Altura] ÷ 2</li>
                                     </ul>
                                 </div>
                                 <div class="bg-purple-900/60 p-2 rounded-xl border border-purple-800/50">
@@ -506,102 +369,414 @@
                     </div>
                 </div>
 
-                <!-- Bloque de Tarjetas de Ciencias -->
-                <div id="theory-science" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Tarjeta 1: Sistema Urinario -->
+                <!-- Bloque de Tarjetas de Ciencias (1ª Eval II Semestre) -->
+                <div id="theory-science-sem2-eval1" data-subject="ciencias" data-sem="2" data-eval="1" data-display="grid" class="grid grid-cols-1 md:grid-cols-2 gap-6" style="display: none;">
+                    <!-- Tarjeta 1: Autótrofos y Heterótrofos -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 1)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
-                            <!-- Frente -->
                             <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Tema 1</span>
-                                    <span class="text-2xl">🔬</span>
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 1</span>
+                                    <span class="text-2xl">🌱</span>
                                 </div>
                                 <div class="my-auto">
-                                    <h3 class="text-xl font-bold text-slate-800 font-fun">El Sistema Urinario</h3>
-                                    <p class="text-slate-500 text-sm mt-1">¿Cuál es su rol en la excreción y cómo mantiene el equilibrio en nuestro cuerpo?</p>
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Autótrofos y Heterótrofos</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cómo obtienen energía los seres vivos según su forma de nutrición?</p>
                                 </div>
                                 <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
                             </div>
-                            <!-- Dorso -->
                             <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">La Teoría Esencial:</h4>
-                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-emerald-100">
-                                        <li><strong class="text-white">Excreción:</strong> Proceso por el cual el cuerpo filtra y desecha sustancias tóxicas del metabolismo celular.</li>
-                                        <li><strong class="text-white">Función principal:</strong> Filtrar la sangre para eliminar desechos líquidos celulares en forma de orina.</li>
-                                        <li><strong class="text-white">Desechos eliminados:</strong> Urea, exceso de sales y residuos de medicamentos del plasma sanguíneo.</li>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Forma de Nutrición:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Autótrofos (Productores):</strong> Fabrican su propio alimento usando agua, dióxido de carbono y energía solar (plantas, pasto, algas). Primer nivel trófico.</li>
+                                        <li><strong class="text-white">Heterótrofos (Consumidores):</strong> No fabrican alimento; dependen de consumir otros seres vivos o sus restos (león, vaca, hongos, personas).</li>
                                     </ul>
                                 </div>
                                 <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
                                     <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
-                                    <p class="text-xs text-emerald-200">El sistema urinario no digiere comida (digestivo) ni oxigena (respiratorio), solo limpia fluidos.</p>
+                                    <p class="text-xs text-emerald-200">Los autótrofos son la base del ecosistema porque producen la glucosa inicial.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 2: Anatomía Renal -->
+                    <!-- Tarjeta 2: Clasificación de Heterótrofos -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 2)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
-                            <!-- Frente -->
                             <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Tema 2</span>
-                                    <span class="text-2xl">🍒</span>
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 1</span>
+                                    <span class="text-2xl">🦁</span>
                                 </div>
                                 <div class="my-auto">
-                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Los Riñones</h3>
-                                    <p class="text-slate-500 text-sm mt-1">Nuestros coladores naturales de sangre. ¿Cómo funcionan y qué es la nefrona?</p>
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Tipos de Heterótrofos</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Herbívoros, carnívoros, omnívoros y descomponedores.</p>
                                 </div>
                                 <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
                             </div>
-                            <!-- Dorso -->
                             <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Los Riñones:</h4>
-                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-teal-100">
-                                        <li><strong class="text-white">Órganos gemelos:</strong> Dos estructuras en forma de frijol situadas en la parte lumbar.</li>
-                                        <li><strong class="text-white">Nefrona:</strong> Unidad funcional y microscópica del riñón que filtra la sangre y forma la orina.</li>
-                                        <li><strong class="text-white">Cuidado renal:</strong> Consumir agua potable ayuda a que los riñones diluyan solutos sin sobrecargarse de sal.</li>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Categorías de Consumo:</h4>
+                                    <ul class="text-xs mt-2 space-y-1.5 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Herbívoros (Primarios):</strong> Comen plantas/frutos (vaca, conejo, venado, oruga).</li>
+                                        <li><strong class="text-white">Carnívoros (Secundarios/Terciarios):</strong> Comen carne (tiburón, orca, león, águila, puma, zorro).</li>
+                                        <li><strong class="text-white">Omnívoros:</strong> Alimentación mixta (oso, cerdo, humano, mapache).</li>
+                                        <li><strong class="text-white">Descomponedores:</strong> Reciclan materia orgánica muerta al suelo (hongos, bacterias, lombrices).</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-2 rounded-xl border border-teal-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">Los descomponedores devuelven minerales esenciales a la tierra para reiniciar el ciclo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: Cadenas Tróficas del Examen -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 3)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 1</span>
+                                    <span class="text-2xl">🔗</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Cadenas Tróficas del Examen</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Conoce las 3 cadenas exactas evaluadas en las pruebas.</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Cadenas del Cuaderno:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 text-emerald-100">
+                                        <li><strong class="text-white">Cadena A:</strong> Pasto ➔ Conejo ➔ Serpiente ➔ Águila ➔ Hongos.</li>
+                                        <li><strong class="text-white">Cadena B:</strong> Zanahoria ➔ Conejo ➔ Zorro ➔ León.</li>
+                                        <li><strong class="text-white">Cadena C:</strong> Arbusto ➔ Oruga ➔ Pájaro ➔ Zorro ➔ Descomponedores.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-emerald-200">Las flechas (➔) señalan siempre hacia donde fluye la energía (quién se come a quién).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4: Fotosíntesis y Fórmula -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 4)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 2</span>
+                                    <span class="text-2xl">☀️</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Ecuación de la Fotosíntesis</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cómo convierten las plantas luz solar en glucosa y oxígeno?</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Fórmula en Palabras:</h4>
+                                    <p class="text-xs text-amber-300 font-bold my-2 bg-teal-900 p-2 rounded-xl border border-teal-800">
+                                        Luz Solar + Agua (H₂O) + Dióxido de Carbono (CO₂) ➔ [Clorofila] ➔ Glucosa + Oxígeno (O₂)
+                                    </p>
+                                    <ul class="text-xs space-y-1 text-teal-100">
+                                        <li><strong class="text-white">Raíces:</strong> Absorben agua y sales minerales del suelo.</li>
+                                        <li><strong class="text-white">Hojas:</strong> Absorben CO₂ del aire y captan energía del Sol.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-2 rounded-xl border border-teal-800/50 mt-1">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">El oxígeno (O₂) liberado es indispensable para la respiración de animales y personas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 5: Fases de la Fotosíntesis -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 5)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 2</span>
+                                    <span class="text-2xl">🌙</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Fase Luminosa y Oscura</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Las dos etapas continuas del proceso fotosintético.</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Las 2 Fases Fotosintéticas:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Fase Luminosa (Clara):</strong> Requiere luz solar directa. Rompe moléculas de agua (H₂O), libera O₂ al ambiente y almacena energía química.</li>
+                                        <li><strong class="text-white">Fase Oscura:</strong> No requiere luz directa en ese instante. Usa la energía acumulada para fijar el CO₂ del aire y fabricar glucosa.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-emerald-200">El oxígeno se produce en la Fase Luminosa; los azúcares (glucosa) en la Fase Oscura.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 6: Fotosíntesis Oxigénica vs Anoxigénica -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 6)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 2</span>
+                                    <span class="text-2xl">🔮</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Fotosíntesis Anoxigénica</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Por qué algunas bacterias realizan fotosíntesis sin producir oxígeno?</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Comparativa de Fotosíntesis:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Oxigénica:</strong> Plantas, algas y cianobacterias. Usa agua y SÍ libera oxígeno (O₂).</li>
+                                        <li><strong class="text-white">Anoxigénica:</strong> Bacterias púrpuras y verdes del azufre. NO libera oxígeno porque usan compuestos como sulfuro de hidrógeno (H₂S).</li>
                                     </ul>
                                 </div>
                                 <div class="bg-teal-900/60 p-2.5 rounded-xl border border-teal-800/50 mt-2">
                                     <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
-                                    <p class="text-xs text-teal-200">El exceso de sal (sodio) obliga a los riñones a realizar un esfuerzo excesivo y daña capilares.</p>
+                                    <p class="text-xs text-teal-200">Anoxigénica significa literalmente "sin generación de oxígeno".</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 3: Vías Urinarias -->
-                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 3)">
+                    <!-- Tarjeta 7: Anatomía Célula Vegetal -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 7)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
-                            <!-- Frente -->
                             <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Tema 3</span>
-                                    <span class="text-2xl">🔌</span>
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 2</span>
+                                    <span class="text-2xl">🔬</span>
                                 </div>
                                 <div class="my-auto">
-                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Uréteres, Vejiga y Uretra</h3>
-                                    <p class="text-slate-500 text-sm mt-1">¿Cuáles son los conductos que transportan, almacenan y expulsan la orina?</p>
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Anatomía de la Célula Vegetal</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Cloroplasto, Membrana Celular y la gran Vacuola.</p>
                                 </div>
                                 <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
                             </div>
-                            <!-- Dorso -->
                             <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Conductos Urinarios:</h4>
-                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-emerald-100">
-                                        <li><strong class="text-white">Uréteres:</strong> Dos conductos delgados que llevan la orina desde los riñones a la vejiga.</li>
-                                        <li><strong class="text-white">Vejiga urinaria:</strong> Bolsa muscular elástica que almacena la orina.</li>
-                                        <li><strong class="text-white">Uretra:</strong> Conducto único que expulsa la orina al exterior.</li>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Estructuras Celulares:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Cloroplastos:</strong> Contienen clorofila verde; sitio donde ocurre la fotosíntesis.</li>
+                                        <li><strong class="text-white">Membrana Celular:</strong> Controla entrada de agua/CO₂ y salida de O₂.</li>
+                                        <li><strong class="text-white">Vacuola:</strong> Bolsa membranosa que almacena agua y mantiene la turgencia celular.</li>
                                     </ul>
                                 </div>
                                 <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
                                     <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
-                                    <p class="text-xs text-emerald-200">Retener la orina por horas facilita que las bacterias se multipliquen y causen infecciones.</p>
+                                    <p class="text-xs text-emerald-200">La turgencia es la firmeza de la planta sostenida por el agua en la vacuola.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 8: Relaciones Intraespecíficas -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 8)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 3</span>
+                                    <span class="text-2xl">👥</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Relaciones Intraespecíficas</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Interacciones entre seres vivos de la MISMA especie.</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Misma Especie:</h4>
+                                    <ul class="text-xs mt-2 space-y-1.5 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Competencia Intraespecífica:</strong> Lucha por alimento, territorio o pareja (leones peleando por manada).</li>
+                                        <li><strong class="text-white">Asociaciones Gregarias:</strong> Unión para protección o migración (gavilanes en V, manada de lobos, peces).</li>
+                                        <li><strong class="text-white">Sociedades:</strong> Comunidades permanentes con jerarquía y castas (hormigas, abejas, termitas).</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-2 rounded-xl border border-teal-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">Intra = dentro de la misma especie. Las abejas viven en sociedades jerárquicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 9: Relaciones Interespecíficas del Examen -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 9)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 3</span>
+                                    <span class="text-2xl">🌐</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Relaciones Interespecíficas</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Matapalo, Rana Roja, Garza bueyera, abejas y flores.</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Especies Diferentes:</h4>
+                                    <ul class="text-[11px] mt-1 space-y-1.5 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Mutualismo (+/+):</strong> Beneficio mutuo (abeja y flor).</li>
+                                        <li><strong class="text-white">Comensalismo (+/0):</strong> Uno se beneficia sin dañar al otro (garza bueyera y ganado).</li>
+                                        <li><strong class="text-white">Parasitismo (+/-):</strong> El parásito sustrae nutrientes dañando al hospedero (el Matapalo en el árbol).</li>
+                                        <li><strong class="text-white">Depredación (+/-):</strong> Caza y consume a la presa (Rana Roja comiendo termitas/hormigas).</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-emerald-900/60 p-1.5 rounded-xl border border-emerald-800/50 mt-1">
+                                    <p class="text-[10px] font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-[10px] text-emerald-200">El Matapalo es parásito vegetal; la Rana Roja es depredadora de termitas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 10: Conservación Ambiental y las 5 R -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 10)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 4</span>
+                                    <span class="text-2xl">♻️</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Conservación y Estrategia 5 R</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Viveros, reforestación, compostaje orgánico y las 5 R.</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Protección del Ambiente:</h4>
+                                    <ul class="text-[11px] mt-1 space-y-1 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Viveros:</strong> Cuidado inicial de plántulas antes del trasplante.</li>
+                                        <li><strong class="text-white">Compostaje:</strong> Abono con cáscaras, broza de café y residuos de jardín.</li>
+                                        <li><strong class="text-white">Estrategia de las 5 R:</strong>
+                                            <ul class="pl-4 list-disc text-teal-200">
+                                                <li>Reducir, Reutilizar, Reciclar, Rechazar y Reparar.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-1.5 rounded-xl border border-teal-800/50 mt-1">
+                                    <p class="text-[10px] font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-[10px] text-teal-200">Compostar recicla materia orgánica y reduce desechos en botaderos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque de Tarjetas de Ciencias (2ª Eval I Semestre) -->
+                <div id="theory-science-sem1-eval2" data-subject="ciencias" data-sem="1" data-eval="2" data-display="grid" class="grid grid-cols-1 md:grid-cols-2 gap-6" style="display: none;">
+                    <!-- Tarjeta 1: Sistema Urinario -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 1)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 1</span>
+                                    <span class="text-2xl">🔬</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">El Sistema Urinario</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cómo filtra los desechos de la sangre nuestro cuerpo?</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Excreción Renal:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Función Principal:</strong> Filtrar la sangre para eliminar toxinas acumuladas (urea y ácido úrico) en forma de orina.</li>
+                                        <li><strong class="text-white">Nefrona:</strong> Unidad microscópica de filtración dentro del riñón (colador diminuto).</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-emerald-200">Tomar suficiente agua mantiene el flujo de filtración ágil y previene toxinas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2: Anatomía del Aparato Urinario -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 2)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 1</span>
+                                    <span class="text-2xl">🩸</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Órganos del Aparato Urinario</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Riñones, uréteres, vejiga urinaria y uretra.</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Recorrido de la Orina:</h4>
+                                    <ul class="text-xs mt-2 space-y-1.5 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Riñones (2):</strong> Órganos en forma de frijol que purifican la sangre.</li>
+                                        <li><strong class="text-white">Uréteres (2):</strong> Tubos delgados que conducen la orina hasta la vejiga.</li>
+                                        <li><strong class="text-white">Vejiga Urinaria:</strong> Bolsa muscular elástica que almacena la orina.</li>
+                                        <li><strong class="text-white">Uretra:</strong> Conducto de salida de la orina al exterior.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-2 rounded-xl border border-teal-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">Orden exacto: Riñón ➔ Uréter ➔ Vejiga ➔ Uretra.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: Excreción Celular en la Piel y Pulmones -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 3)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 1</span>
+                                    <span class="text-2xl">🫁</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Excreción en Piel y Pulmones</h3>
+                                    <p class="text-slate-500 text-sm mt-1">¿Cómo expulsan desechos otros órganos del cuerpo?</p>
+                                </div>
+                                <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Órganos Excretores Adicionales:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Pulmones:</strong> Expulsan el gas tóxico CO₂ (dióxido de carbono) durante la espiración.</li>
+                                        <li><strong class="text-white">Piel (Glándulas Sudoríparas):</strong> Excreta sudor (agua, sales minerales y regulador térmico).</li>
+                                        <li><strong class="text-white">Hígado:</strong> Degrada toxinas y fármacos antes de su eliminación.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-emerald-200">El sudor ayuda a regular la temperatura corporal y eliminar exceso de sales.</p>
                                 </div>
                             </div>
                         </div>
@@ -610,221 +785,215 @@
                     <!-- Tarjeta 4: Héroes de la Medicina -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 4)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
-                            <!-- Frente -->
                             <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Tema 4</span>
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 2</span>
                                     <span class="text-2xl">👨‍🔬</span>
                                 </div>
                                 <div class="my-auto">
-                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Héroes de la Medicina</h3>
-                                    <p class="text-slate-500 text-sm mt-1">Conoce a Edward Jenner, Jonas Salk y a nuestro compatriota Clodomiro Picado (Clorito).</p>
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Avances Históricos en Medicina</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Edward Jenner, Jonas Salk y el científico costarricense Clorito Picado.</p>
                                 </div>
                                 <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
                             </div>
-                            <!-- Dorso -->
                             <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Grandes Científicos:</h4>
-                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-teal-100">
-                                        <li><strong class="text-white">Edward Jenner:</strong> Creador de la primera vacuna de la historia (contra la viruela).</li>
-                                        <li><strong class="text-white">Jonas Salk:</strong> Desarrolló la vacuna que combate la poliomielitis (polio).</li>
-                                        <li><strong class="text-white">Clodomiro Picado (Clorito):</strong> Sabio costarricense, pionero en producir el suero antiofídico para mordeduras de serpientes.</li>
-                                        <li><strong class="text-white">Alexis Agüero y Longino Soto:</strong> Médicos costarricenses pioneros en cirugías complejas y trasplantes.</li>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Científicos Destacados:</h4>
+                                    <ul class="text-xs mt-2 space-y-1.5 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Edward Jenner:</strong> Padre de la inmunología; creó la primera vacuna (Viruela).</li>
+                                        <li><strong class="text-white">Jonas Salk:</strong> Desarrolló la vacuna contra la poliomielitis.</li>
+                                        <li><strong class="text-white">Clodomiro "Clorito" Picado:</strong> Científico benemérito costarricense; pionero del suero antiofídico y la penicilina en Costa Rica.</li>
                                     </ul>
                                 </div>
-                                <div class="bg-teal-900/60 p-2.5 rounded-xl border border-teal-800/50 mt-2">
+                                <div class="bg-teal-900/60 p-2 rounded-xl border border-teal-800/50 mt-2">
                                     <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
-                                    <p class="text-xs text-teal-200">El suero antiofídico de Clorito Picado es un medicamento de emergencia vital.</p>
+                                    <p class="text-xs text-teal-200">Clorito Picado es orgullo nacional por sus aportes contra mordeduras de serpiente.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 5: Nuevas Tecnologías Médicas -->
+                    <!-- Tarjeta 5: Tecnología Médica en Diagnóstico -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 5)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
-                            <!-- Frente -->
                             <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Tema 5</span>
-                                    <span class="text-2xl">⚡</span>
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 2</span>
+                                    <span class="text-2xl">📸</span>
                                 </div>
                                 <div class="my-auto">
-                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Nuevas Tecnologías Médicas</h3>
-                                    <p class="text-slate-500 text-sm mt-1">Rayos X, Ultrasonido, Rayo láser y la Bomba de cobalto.</p>
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Tecnología en Diagnóstico</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Rayos X, Ultrasonido y Escáneres Médicos.</p>
                                 </div>
                                 <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
                             </div>
-                            <!-- Dorso -->
                             <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Tecnología en Salud:</h4>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Equipos de Diagnóstico:</h4>
                                     <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-emerald-100">
-                                        <li><strong class="text-white">Rayos X:</strong> Radiografía rápida para detectar fracturas en huesos duros.</li>
-                                        <li><strong class="text-white">Ultrasonido:</strong> Usa ondas de sonido para ver tejidos blandos, órganos internos y embarazos.</li>
-                                        <li><strong class="text-white">Rayo láser:</strong> Cirugías limpias de altísima precisión (ojos, odontología) sin sangrado.</li>
-                                        <li><strong class="text-white">Bomba de cobalto:</strong> Emplea radioterapia localizada para combatir y destruir células cancerosas.</li>
+                                        <li><strong class="text-white">Rayos X:</strong> Radiación electromagnética para fotografiar fracturas u osteoporosis en huesos.</li>
+                                        <li><strong class="text-white">Ultrasonido:</strong> Ondas sonoras de alta frecuencia sin radiación para observar fetos u órganos blandos.</li>
+                                        <li><strong class="text-white">Tomografía (TAC):</strong> Imágenes detalladas en 3D del interior del cuerpo.</li>
                                     </ul>
                                 </div>
                                 <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
                                     <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
-                                    <p class="text-xs text-emerald-200">El ultrasonido no usa radiación peligrosa; funciona con eco de ondas sonoras.</p>
+                                    <p class="text-xs text-emerald-200">Para fracturas de hueso ➔ Rayos X. Para desarrollo del bebé ➔ Ultrasonido.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 6: Biodiversidad y Bioética -->
+                    <!-- Tarjeta 6: Tecnología en Tratamiento y Trasplantes -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 6)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
-                            <!-- Frente -->
                             <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Tema 6</span>
-                                    <span class="text-2xl">🌱</span>
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 2</span>
+                                    <span class="text-2xl">🫁</span>
                                 </div>
                                 <div class="my-auto">
-                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Biodiversidad y Bioética</h3>
-                                    <p class="text-slate-500 text-sm mt-1">La increíble riqueza de Costa Rica y el respeto a los seres vivos en laboratorios.</p>
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Tratamiento y Trasplantes</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Láser quirúrgico, antibióticos y donación de órganos.</p>
                                 </div>
                                 <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
                             </div>
-                            <!-- Dorso -->
                             <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Ética y Naturaleza:</h4>
-                                    <ul class="text-sm mt-2 space-y-2 list-disc list-inside text-teal-100">
-                                        <li><strong class="text-white">Biodiversidad:</strong> La variedad y abundancia de formas de vida en un territorio. Costa Rica alberga el 5% mundial.</li>
-                                        <li><strong class="text-white">Taxonomía:</strong> Clasificación biológica de animales por rasgos observables para preservarlos.</li>
-                                        <li><strong class="text-white">Bioética:</strong> Garantizar el trato digno e impedir sufrimiento a animales en laboratorios.</li>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Técnicas Quirúrgicas:</h4>
+                                    <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Cirugía Láser:</strong> Corte ultra-preciso de baja hemorragia en ojos y tumores.</li>
+                                        <li><strong class="text-white">Trasplante de Órganos:</strong> Sustitución de riñón, corazón o hígado inservible por el de un donante sano.</li>
+                                        <li><strong class="text-white">Antibióticos:</strong> Medicamentos bactericidas específicos (no curan virus).</li>
                                     </ul>
                                 </div>
                                 <div class="bg-teal-900/60 p-2.5 rounded-xl border border-teal-800/50 mt-2">
                                     <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
-                                    <p class="text-xs text-teal-200">La conservación biológica protege especies de la extinción mediante áreas silvestres protegidas.</p>
+                                    <p class="text-xs text-teal-200">Los antibióticos solo destruyen bacterias; las vacunas previenen contagios.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 7: Clasificación de Seres Vivos -->
+                    <!-- Tarjeta 7: Vacunas vs Antibióticos -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 7)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
-                            <!-- Frente -->
                             <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Tema 7</span>
-                                    <span class="text-2xl">🧬</span>
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 2</span>
+                                    <span class="text-2xl">💊</span>
                                 </div>
                                 <div class="my-auto">
-                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Clasificación de Seres Vivos</h3>
-                                    <p class="text-slate-500 text-sm mt-1">¿Cómo clasificamos a los seres vivos según su complejidad y nutrición?</p>
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Vacunas vs Antibióticos</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Diferencia entre prevención y curación bacteriana.</p>
                                 </div>
                                 <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
                             </div>
-                            <!-- Dorso -->
                             <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Criterios de Clasificación:</h4>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Comparativa Medicinal:</h4>
                                     <ul class="text-xs mt-2 space-y-2 list-disc list-inside text-emerald-100">
-                                        <li><strong class="text-white">Complejidad Celular:</strong>
-                                            <ul class="pl-4 list-disc text-emerald-200">
-                                                <li><strong class="text-white">Unicelulares:</strong> Una sola célula, como levaduras y bacterias.</li>
-                                                <li><strong class="text-white">Pluricelulares:</strong> Muchas células, como plantas y animales.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong class="text-white">Forma de Nutrición:</strong>
-                                            <ul class="pl-4 list-disc text-emerald-200">
-                                                <li><strong class="text-white">Autótrofos:</strong> Fabrican su alimento mediante fotosíntesis, como las plantas.</li>
-                                                <li><strong class="text-white">Heterótrofos:</strong> Se alimentan de otros seres vivos, como animales y hongos.</li>
-                                            </ul>
-                                        </li>
+                                        <li><strong class="text-white">Vacunas (Preventivas):</strong> Se aplican a personas sanas para crear anticuerpos antes de enfermar.</li>
+                                        <li><strong class="text-white">Antibióticos (Curativos):</strong> Se toman cuando la persona ya tiene una infección bacteriana activa.</li>
                                     </ul>
                                 </div>
                                 <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800/50 mt-2">
                                     <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
-                                    <p class="text-xs text-emerald-200">Las bacterias son siempre unicelulares. Las plantas son siempre autótrofas pluricelulares.</p>
+                                    <p class="text-xs text-emerald-200">Vacuna = escudo preventivo antes del contagio. Antibiótico = remedio curativo.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 8: Reinos Monera y Protista -->
+                    <!-- Tarjeta 8: Bioética en Salud -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 8)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
-                            <!-- Frente -->
                             <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Tema 8</span>
-                                    <span class="text-2xl">🧫</span>
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 2</span>
+                                    <span class="text-2xl">⚖️</span>
                                 </div>
                                 <div class="my-auto">
-                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Reinos Monera y Protista</h3>
-                                    <p class="text-slate-500 text-sm mt-1">Descubre a las bacterias (Monera), algas y protozoos (Protista) y sus características.</p>
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Bioética Médica</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Principios morales en la aplicación tecnológica de la salud.</p>
                                 </div>
                                 <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
                             </div>
-                            <!-- Dorso -->
                             <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Monera y Protista:</h4>
-                                    <ul class="text-[11px] mt-1 space-y-1.5 list-disc list-inside text-teal-100">
-                                        <li><strong class="text-white">Reino Monera (Bacterias):</strong> Son seres unicelulares (formados por una sola célula) microscópicos y muy simples. Tienen dos formas principales según su estructura física: Cocos (forma redondeada) y Espirilos (forma de espiral). Aportan grandes beneficios como favorecer la digestión de los alimentos (flora intestinal) y permitir la fijación de nitrógeno en las raíces de las plantas.</li>
-                                        <li><strong class="text-white">Reino Protista (Algas y Protozoos):</strong> Organismos que pueden ser unicelulares o pluricelulares sencillos que no forman tejidos verdaderos. Se dividen en:
-                                            <ul class="pl-4 list-disc text-teal-200">
-                                                <li><strong class="text-white">Algas:</strong> Son autótrofas, hacen fotosíntesis para producir su alimento en el agua.</li>
-                                                <li><strong class="text-white">Protozoos:</strong> Son heterótrofos y se trasladan activamente en búsqueda de su alimento, como las amebas.</li>
-                                            </ul>
-                                        </li>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Valores de Bioética:</h4>
+                                    <ul class="text-xs mt-2 space-y-1.5 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Autonomía y Consentimiento:</strong> El paciente debe estar informado y de acuerdo.</li>
+                                        <li><strong class="text-white">No Maleficencia:</strong> Primero no hacer daño ni experimentos crueles.</li>
+                                        <li><strong class="text-white">Justicia Distributiva:</strong> Medicina accesible para toda la población.</li>
                                     </ul>
                                 </div>
-                                <div class="bg-teal-900/60 p-1.5 rounded-xl border border-teal-800/50 mt-1">
-                                    <p class="text-[10px] font-bold text-amber-300">💡 Truco de Examen:</p>
-                                    <p class="text-[10px] text-teal-200">Las bacterias son unicelulares simples. Las algas hacen fotosíntesis pero no tienen tejidos verdaderos.</p>
+                                <div class="bg-teal-900/60 p-2 rounded-xl border border-teal-800/50 mt-2">
+                                    <p class="text-xs font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-xs text-teal-200">La bioética garantiza que la ciencia avance respetando la dignidad humana.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 9: Reinos Fungi, Plantae y Animalia -->
+                    <!-- Tarjeta 9: Reinos Biológicos -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 9)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-emerald-100 duration-500">
-                            <!-- Frente -->
                             <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-emerald-50 to-white rounded-3xl flex flex-col justify-between">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Tema 9</span>
-                                    <span class="text-2xl">🍄</span>
+                                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 3</span>
+                                    <span class="text-2xl">🦁</span>
                                 </div>
                                 <div class="my-auto">
-                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Reinos Fungi, Plantae y Animalia</h3>
-                                    <p class="text-slate-500 text-sm mt-1">Aprende sobre las características físicas de los hongos, plantas y animales (vertebrados e invertebrados).</p>
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Los 5 Reinos Biológicos</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Monera, Protista, Fungi, Plantae y Animalia.</p>
                                 </div>
                                 <div class="text-center text-xs text-emerald-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
                             </div>
-                            <!-- Dorso -->
                             <div class="flashcard-back absolute w-full h-full p-6 bg-emerald-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Los Tres Grandes Reinos:</h4>
-                                    <ul class="text-[11px] mt-1 space-y-1.5 list-disc list-inside text-emerald-100">
-                                        <li><strong class="text-white">Reino Fungi:</strong> En su mayoría pluricelulares (excepto levaduras). Absorben nutrientes del suelo. Útiles en pan, vino y penicilina.</li>
-                                        <li><strong class="text-white">Reino Plantae:</strong> Pluricelulares fotosintéticos. Se dividen en:
-                                            <ul class="pl-4 list-disc text-emerald-200">
-                                                <li><strong class="text-white">Sin semillas:</strong> Musgos y helechos (se reproducen por esporas).</li>
-                                                <li><strong class="text-white">Con semillas:</strong> Gimnospermas (sin flores visibles, ej. pinos) y Angiospermas (con flores y frutos).</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong class="text-white">Reino Animalia:</strong> Pluricelulares heterótrofos.
-                                            <ul class="pl-4 list-disc text-emerald-200">
-                                                <li><strong class="text-white">Vertebrados:</strong> Con columna vertebral. 5 clases: Peces, Anfibios (metamorfosis), Reptiles (escamas, sangre fría), Aves (plumas) y Mamíferos (pelo, toman leche).</li>
-                                                <li><strong class="text-white">Invertebrados:</strong> Sin columna vertebral. Artrópodos, Moluscos, Esponjas, Celenterados, Equinodermos y Anélidos.</li>
-                                            </ul>
-                                        </li>
+                                    <h4 class="font-bold text-emerald-200 text-sm uppercase tracking-wider font-fun">Taxonomía de la Vida:</h4>
+                                    <ul class="text-[11px] mt-1 space-y-1 list-disc list-inside text-emerald-100">
+                                        <li><strong class="text-white">Monera:</strong> Bacterias microscópicas procariotas.</li>
+                                        <li><strong class="text-white">Protista:</strong> Algas unicelulares y protozoarios.</li>
+                                        <li><strong class="text-white">Fungi:</strong> Hongos, levaduras y mohos (descomponedores).</li>
+                                        <li><strong class="text-white">Plantae / Animalia:</strong> Plantas autótrofas y animales heterótrofos.</li>
                                     </ul>
                                 </div>
                                 <div class="bg-emerald-900/60 p-1.5 rounded-xl border border-emerald-800/50 mt-1">
                                     <p class="text-[10px] font-bold text-amber-300">💡 Truco de Examen:</p>
-                                    <p class="text-[10px] text-emerald-200">Los helechos no tienen flores ni semillas. Los musgos crecen en lugares húmedos.</p>
+                                    <p class="text-[10px] text-emerald-200">Los hongos pertenecen al Reino Fungi (no son plantas porque no fotosintetizan).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 10: Biodiversidad de Costa Rica -->
+                    <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 10)">
+                        <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-teal-100 duration-500">
+                            <div class="flashcard-front absolute w-full h-full p-6 bg-gradient-to-br from-teal-50 to-white rounded-3xl flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full uppercase font-fun">Módulo 3</span>
+                                    <span class="text-2xl">🦜</span>
+                                </div>
+                                <div class="my-auto">
+                                    <h3 class="text-xl font-bold text-slate-800 font-fun">Biodiversidad en Costa Rica</h3>
+                                    <p class="text-slate-500 text-sm mt-1">Protección de especies endémicas y Parques Nacionales.</p>
+                                </div>
+                                <div class="text-center text-xs text-teal-600 font-bold font-fun">👆 ¡Haz clic para ver la teoría!</div>
+                            </div>
+                            <div class="flashcard-back absolute w-full h-full p-6 bg-teal-950 text-white rounded-3xl overflow-y-auto flex flex-col justify-between">
+                                <div>
+                                    <h4 class="font-bold text-teal-200 text-sm uppercase tracking-wider font-fun">Patrimonio Natural:</h4>
+                                    <ul class="text-[11px] mt-1 space-y-1 list-disc list-inside text-teal-100">
+                                        <li><strong class="text-white">Riqueza Biológica:</strong> Costa Rica alberga más del 5% de la biodiversidad mundial.</li>
+                                        <li><strong class="text-white">Áreas Protegidas (SINAC):</strong> Parques Nacionales y Reservas Biológicas para conservar hábitats.</li>
+                                        <li><strong class="text-white">Responsabilidad:</strong> Proteger la fauna silvestre y reforestar con flora autóctona.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-teal-900/60 p-1.5 rounded-xl border border-teal-800/50 mt-1">
+                                    <p class="text-[10px] font-bold text-amber-300">💡 Truco de Examen:</p>
+                                    <p class="text-[10px] text-teal-200">Las Reservas Biológicas resguardan el equilibrio de los ecosistemas costarricenses.</p>
                                 </div>
                             </div>
                         </div>
@@ -832,7 +1001,7 @@
                 </div>
 
                 <!-- Bloque de Tarjetas de Español (10 Flashcards) -->
-                <div id="theory-espanol" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div id="theory-espanol" data-subject="espanol" data-sem="2" data-eval="1" data-display="grid" class="grid grid-cols-1 md:grid-cols-2 gap-6" style="display: none;">
                     <!-- Tarjeta 1: Ideas Principales y Secundarias -->
                     <div class="flashcard h-80 w-full cursor-pointer group" onclick="toggleCard(this, 1)">
                         <div class="flashcard-inner relative w-full h-full shadow-lg rounded-3xl border border-amber-100 duration-500">
@@ -1164,50 +1333,11 @@
                     <p class="text-slate-500 text-sm">Practica jugando con cada uno de los temas del examen utilizando estos simuladores educativos interactivos.</p>
                 </div>
 
-                <!-- Sub-pestañas internas de los laboratorios (Matemáticas) -->
-                <div id="subtabs-math" class="block flex flex-wrap gap-2 mb-8 justify-center bg-slate-50 p-2 rounded-2xl border border-slate-200">
-                    <button onclick="switchLabSubTab('multiplos')" id="subtab-multiplos" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 bg-teal-500 text-white shadow-sm">
-                        🔢 Múltiplos, Pares e Impares
-                    </button>
-                    <button onclick="switchLabSubTab('divisores')" id="subtab-divisores" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
-                        ✂️ Divisores
-                    </button>
-                    <button onclick="switchLabSubTab('fracciones')" id="subtab-fracciones" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
-                        🍕 Fracciones
-                    </button>
-                    <button onclick="switchLabSubTab('moneda')" id="subtab-moneda" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
-                        💵 Pulpería ₡
-                    </button>
-                    <button onclick="switchLabSubTab('geometria')" id="subtab-geometria" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
-                        📐 Geometría
-                    </button>
-                </div>
-
-                <!-- Sub-pestañas internas de los laboratorios (Ciencias) -->
-                <div id="subtabs-science" class="hidden flex flex-wrap gap-2 mb-8 justify-center bg-slate-50 p-2 rounded-2xl border border-slate-200">
-                    <button onclick="switchLabSubTab('filtro-renal')" id="subtab-filtro-renal" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 bg-emerald-600 text-white shadow-sm">
-                        🔬 Filtro Renal
-                    </button>
-                    <button onclick="switchLabSubTab('decisiones-medicas')" id="subtab-decisiones-medicas" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200">
-                        📋 Decisiones Médicas
-                    </button>
-                </div>
-
-                <!-- Sub-pestañas internas de los laboratorios (Español) -->
-                <div id="subtabs-espanol" class="hidden flex flex-wrap gap-2 mb-8 justify-center bg-slate-50 p-2 rounded-2xl border border-slate-200">
-                    <button onclick="switchLabSubTab('detector-oraciones')" id="subtab-detector-oraciones" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 bg-amber-600 text-white shadow-sm font-fun">
-                        🕵️ El Detective de Oraciones
-                    </button>
-                    <button onclick="switchLabSubTab('taller-libro')" id="subtab-taller-libro" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200 font-fun">
-                        📖 El Taller del Libro y Fichas
-                    </button>
-                    <button onclick="switchLabSubTab('pulperia-refranes')" id="subtab-pulperia-refranes" class="subtab-btn px-4 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 text-slate-600 hover:bg-slate-200 font-fun">
-                        🎭 Pulpería de Refranes y Bombas
-                    </button>
-                </div>
+                <!-- Contenedor Dinámico de Sub-pestañas de Laboratorio (Inyectado por módulo activo) -->
+                <div id="subtabs-container" class="flex flex-wrap gap-2 mb-8 justify-center bg-slate-50 p-2 rounded-2xl border border-slate-200"></div>
 
                 <!-- CONTENEDORES DE LABS DE MATEMÁTICAS -->
-                <div id="lab-contents-math" class="block">
+                <div id="lab-contents-math" data-subject="matematicas" data-sem="1" data-eval="2" data-display="block">
                     <!-- SUB-CONTENIDO: LABORATORIO DE MÚLTIPLOS -->
                     <div id="lab-sub-content-multiplos" class="lab-sub-content block">
                         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -1528,8 +1658,507 @@
                     </div>
                 </div>
 
-                <!-- CONTENEDORES DE LABS DE CIENCIAS -->
-                <div id="lab-contents-science" class="hidden">
+                <!-- CONTENEDORES DE LABS DE CIENCIAS (1ª EVALUACIÓN II SEMESTRE) -->
+                <div id="lab-contents-science-sem2-eval1" data-subject="ciencias" data-sem="2" data-eval="1" data-display="block" style="display: none;">
+                    <!-- SUB-CONTENIDO: SIMULADOR DE FOTOSÍNTESIS Y CÉLULA VEGETAL -->
+                    <div id="lab-sub-content-fotosintesis" class="lab-sub-content block space-y-6">
+                        <!-- BLOQUE 1: SIMULADOR Y REACCIÓN QUÍMICA DE LA FOTOSÍNTESIS -->
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                            <!-- Columna Izquierda: Sliders y Medidores -->
+                            <div class="md:col-span-5 bg-emerald-50/70 p-5 rounded-3xl border border-emerald-200 flex flex-col justify-between shadow-sm">
+                                <div>
+                                    <h3 class="font-bold text-emerald-900 text-lg font-fun mb-2">☀️ Reactivos y Fases Fotosintéticas</h3>
+                                    <p class="text-xs text-emerald-800 leading-relaxed mb-4 font-fun">Ajusta la intensidad de Sol, Agua y CO₂. Cambia entre Fase Luminosa (expulsa O₂) y Fase Oscura (fabrica Glucosa).</p>
+
+                                    <div class="space-y-3 pt-2 border-t border-emerald-200/50">
+                                        <div>
+                                            <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase font-fun">
+                                                <span>☀️ Luz Solar:</span>
+                                            </div>
+                                            <input type="range" min="1" max="5" value="3" oninput="window.setFotosintesisSlider('sunlight', this.value)" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600">
+                                        </div>
+
+                                        <div>
+                                            <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase font-fun">
+                                                <span>💧 Agua (H₂O) del suelo:</span>
+                                            </div>
+                                            <input type="range" min="1" max="5" value="3" oninput="window.setFotosintesisSlider('water', this.value)" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600">
+                                        </div>
+
+                                        <div>
+                                            <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase font-fun">
+                                                <span>💨 Dióxido de Carbono (CO₂):</span>
+                                            </div>
+                                            <input type="range" min="1" max="5" value="3" oninput="window.setFotosintesisSlider('co2', this.value)" class="w-full h-2 bg-emerald-200 rounded-lg cursor-pointer accent-emerald-600">
+                                        </div>
+
+                                        <div class="pt-2 flex flex-col gap-2">
+                                            <span class="text-xs font-bold text-emerald-900 font-fun">Selecciona la Fase:</span>
+                                            <div class="flex gap-2">
+                                                <button id="btn-fase-luminosa" onclick="window.setFotosintesisPhase('luminosa')" class="px-4 py-2 rounded-xl text-xs font-bold font-fun bg-amber-500 text-white shadow-sm flex-1">
+                                                    ☀️ Fase Luminosa
+                                                </button>
+                                                <button id="btn-fase-oscura" onclick="window.setFotosintesisPhase('oscura')" class="px-4 py-2 rounded-xl text-xs font-bold font-fun bg-slate-100 text-slate-600 hover:bg-slate-200 flex-1">
+                                                    🌙 Fase Oscura
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="pt-2 flex flex-col gap-2">
+                                            <span class="text-xs font-bold text-emerald-900 font-fun">Tipo de Fotosíntesis:</span>
+                                            <div class="flex gap-2">
+                                                <button id="btn-foto-oxi" onclick="window.setFotosintesisType('oxigenica')" class="px-3 py-1.5 rounded-xl text-xs font-bold font-fun bg-emerald-600 text-white shadow-sm flex-1">
+                                                    🌿 Oxigénica (Plantas)
+                                                </button>
+                                                <button id="btn-foto-anoxi" onclick="window.setFotosintesisType('anoxigenica')" class="px-3 py-1.5 rounded-xl text-xs font-bold font-fun bg-slate-100 text-slate-600 hover:bg-slate-200 flex-1">
+                                                    🔮 Anoxigénica (Bacterias)
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Medidores Dinámicos en Vivo de la Reacción Chemical -->
+                                        <div class="pt-3 border-t border-emerald-200/60 space-y-2.5">
+                                            <span class="text-xs font-bold text-emerald-950 font-fun block">📊 Medidores Bioquímicos en Tiempo Real:</span>
+                                            
+                                            <div>
+                                                <div class="flex justify-between text-[11px] font-bold text-slate-700 font-fun">
+                                                    <span>🍬 Fabricación de Glucosa:</span>
+                                                    <span id="meter-glucose-val" class="text-amber-600">0%</span>
+                                                </div>
+                                                <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden mt-1">
+                                                    <div id="meter-glucose-bar" class="bg-amber-500 h-full transition-all duration-300 w-0"></div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="flex justify-between text-[11px] font-bold text-slate-700 font-fun">
+                                                    <span>💨 Liberación de Oxígeno (O₂):</span>
+                                                    <span id="meter-o2-val" class="text-emerald-600">0%</span>
+                                                </div>
+                                                <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden mt-1">
+                                                    <div id="meter-o2-bar" class="bg-emerald-500 h-full transition-all duration-300 w-0"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Columna Derecha: Animación Canvas y Banner de Fase -->
+                            <div class="md:col-span-7 flex flex-col gap-4 justify-between">
+                                <!-- Animación Visual Interactiva de Fotosíntesis en Canvas -->
+                                <div class="bg-slate-950 rounded-3xl p-4 w-full flex items-center justify-center relative overflow-hidden shadow-inner border-2 border-slate-800">
+                                    <canvas id="fotosintesis-canvas" class="w-full h-auto max-w-[540px] aspect-[2/1]"></canvas>
+                                </div>
+
+                                <!-- Panel Pedagógico Dinámico de la Fase Activa -->
+                                <div id="foto-phase-banner" class="p-4 rounded-2xl border-2 transition-all duration-300 bg-amber-50 border-amber-200 text-amber-950 shadow-sm">
+                                    <div class="flex items-center gap-2.5 mb-1">
+                                        <span id="foto-phase-icon" class="text-2xl shrink-0">☀️</span>
+                                        <h4 id="foto-phase-title" class="font-bold text-sm sm:text-base font-fun">Fase Luminosa (Dependiente de la Luz)</h4>
+                                    </div>
+                                    <p id="foto-phase-text" class="text-xs leading-relaxed font-medium font-fun">
+                                        La clorofila verde capta la luz del sol en los tilacoides, rompe el agua (H₂O) en el proceso de fotólisis y libera **Oxígeno (O₂)** como subproducto a la atmósfera.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BLOQUE 2: EXPLORADOR ANATÓMICO DE LA CÉLULA VEGETAL (ANCHO COMPLETO 100%) -->
+                        <div class="w-full bg-white p-4 sm:p-6 rounded-3xl border-2 border-emerald-200 shadow-sm">
+                                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-3 border-b border-slate-100 pb-3">
+                                        <div>
+                                            <h4 class="text-base sm:text-xl font-bold text-slate-900 font-fun">🔬 Anatomía de la Célula Vegetal</h4>
+                                            <p class="text-xs text-slate-500 font-medium">Haz clic sobre cualquier organelo en el dibujo o sobre las etiquetas marcadas.</p>
+                                        </div>
+                                        <span class="text-[11px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-200 px-3 py-1 rounded-full font-fun">Diagrama Anatómico Interactivo</span>
+                                    </div>
+
+                                    <!-- Contenedor SVG Interactivo Ilustrado Fiel al Dibujo Escolar -->
+                                    <div class="bg-amber-50/40 p-2 sm:p-4 rounded-3xl border border-amber-200/80 mb-4 flex justify-center items-center relative overflow-hidden shadow-inner">
+                                        <svg id="cell-diagram-svg" viewBox="0 0 800 620" class="w-full h-auto max-w-[760px]">
+                                            <defs>
+                                                <!-- Gradientes de organelos -->
+                                                <radialGradient id="grad-vacuola-real" cx="30%" cy="30%" r="70%">
+                                                    <stop offset="0%" stop-color="#bae6fd" />
+                                                    <stop offset="50%" stop-color="#38bdf8" />
+                                                    <stop offset="100%" stop-color="#0284c7" />
+                                                </radialGradient>
+
+                                                <radialGradient id="grad-nucleo-real" cx="35%" cy="35%" r="65%">
+                                                    <stop offset="0%" stop-color="#fed7aa" />
+                                                    <stop offset="45%" stop-color="#f97316" />
+                                                    <stop offset="100%" stop-color="#c2410c" />
+                                                </radialGradient>
+
+                                                <radialGradient id="grad-nucleolo-real" cx="40%" cy="40%" r="60%">
+                                                    <stop offset="0%" stop-color="#fde047" />
+                                                    <stop offset="100%" stop-color="#ca8a04" />
+                                                </radialGradient>
+
+                                                <radialGradient id="grad-cloroplasto-real" cx="30%" cy="30%" r="70%">
+                                                    <stop offset="0%" stop-color="#a3e635" />
+                                                    <stop offset="60%" stop-color="#4d7c0f" />
+                                                    <stop offset="100%" stop-color="#1a2e05" />
+                                                </radialGradient>
+
+                                                <filter id="glow-gold-real" x="-20%" y="-20%" width="140%" height="140%">
+                                                    <feGaussianBlur stdDeviation="4" result="blur" />
+                                                    <feComponentTransfer in="blur" result="glow">
+                                                        <feFuncA type="linear" slope="1" />
+                                                    </feComponentTransfer>
+                                                    <feComposite in="SourceGraphic" in2="glow" operator="over" />
+                                                </filter>
+                                            </defs>
+
+                                            <!-- ── 1. CÉLULA VEGETAL POLIGONAL CON PROYECCIONES (CUERNOS DE CELULOSA) ── -->
+                                            <!-- Pared Celular Externa Rígida (Verde Bosque) -->
+                                            <path id="cell-svg-pared" d="M 220,90 Q 210,60 190,50 Q 220,70 260,75 L 540,75 Q 580,70 610,50 Q 590,60 580,90 L 610,290 Q 640,310 660,310 Q 640,320 610,340 L 580,530 Q 590,560 610,570 Q 580,550 540,545 L 260,545 Q 220,550 190,570 Q 210,560 220,530 L 190,340 Q 160,320 140,310 Q 160,300 190,290 Z" fill="#15803d" stroke="#14532d" stroke-width="6" class="cursor-pointer transition-all duration-300 hover:opacity-95" onclick="window.selectCellPart('pared')" />
+
+                                            <!-- Membrana Celular Interna (Verde Limón) -->
+                                            <path id="cell-svg-membrana" d="M 230,105 L 570,105 L 595,310 L 570,515 L 230,515 L 205,310 Z" fill="#4ade80" stroke="#22c55e" stroke-width="4" class="cursor-pointer transition-all duration-300 hover:opacity-95" onclick="window.selectCellPart('membrana')" />
+
+                                            <!-- Citoplasma Verde Menta Interno con punteado -->
+                                            <path d="M 238,113 L 562,113 L 587,310 L 562,507 L 238,507 L 213,310 Z" fill="#bbf7d0" opacity="0.95" />
+
+
+                                            <!-- ── 2. ORGANELOS INTERNOS UBICADOS DENTRO DE LA CÉLULA ── -->
+
+                                            <!-- A. GRAN VACUOLA CENTRAL (Azul frijol grande) -->
+                                            <path id="cell-svg-vacuola" d="M 410,240 C 400,180 500,150 540,210 C 580,270 560,420 500,450 C 440,470 410,400 420,330 Z" fill="url(#grad-vacuola-real)" stroke="#0284c7" stroke-width="3.5" class="cursor-pointer transition-all duration-300 hover:scale-105" onclick="window.selectCellPart('vacuola')">
+                                                <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+                                            </path>
+
+                                            <!-- B. NÚCLEO Y NUCLÉOLO (Morado/Naranja) -->
+                                            <g class="cursor-pointer" onclick="window.selectCellPart('nucleo')">
+                                                <!-- Núcleo externo -->
+                                                <circle id="cell-svg-nucleo" cx="320" cy="330" r="55" fill="url(#grad-nucleo-real)" stroke="#ea580c" stroke-width="3" />
+                                            </g>
+                                            <g class="cursor-pointer" onclick="window.selectCellPart('nucleolo')">
+                                                <!-- Nucléolo centro -->
+                                                <circle id="cell-svg-nucleolo" cx="320" cy="330" r="22" fill="url(#grad-nucleolo-real)" stroke="#ca8a04" stroke-width="2" />
+                                            </g>
+
+                                            <!-- C. RETÍCULO ENDOPLASMÁTICO (Canales azules envolviendo el núcleo) -->
+                                            <g id="cell-svg-reticulo" class="cursor-pointer transition-all duration-300" onclick="window.selectCellPart('reticulo')">
+                                                <path d="M 255,270 Q 300,240 350,250 M 245,290 Q 280,260 320,265 M 240,310 Q 275,290 300,305 M 240,350 Q 270,360 290,380 M 250,380 Q 290,400 340,400" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" />
+                                            </g>
+
+                                            <!-- D. CLOROPLASTOS VERDES CON DISCOS (3 repartidos) -->
+                                            <g id="cell-svg-cloroplasto" class="cursor-pointer transition-all duration-300 hover:scale-110" onclick="window.selectCellPart('cloroplasto')">
+                                                <!-- Cloroplasto 1 (Izquierda arriba) -->
+                                                <ellipse cx="280" cy="170" rx="28" ry="16" fill="url(#grad-cloroplasto-real)" stroke="#84cc16" stroke-width="2" />
+                                                <line x1="260" y1="170" x2="300" y2="170" stroke="#fef08a" stroke-width="2.5" />
+
+                                                <!-- Cloroplasto 2 (Derecha arriba) -->
+                                                <ellipse cx="500" cy="155" rx="26" ry="15" fill="url(#grad-cloroplasto-real)" stroke="#84cc16" stroke-width="2" />
+                                                <line x1="482" y1="155" x2="518" y2="155" stroke="#fef08a" stroke-width="2.5" />
+
+                                                <!-- Cloroplasto 3 (Izquierda abajo) -->
+                                                <ellipse cx="300" cy="460" rx="26" ry="15" fill="url(#grad-cloroplasto-real)" stroke="#84cc16" stroke-width="2" />
+                                                <line x1="282" y1="460" x2="318" y2="460" stroke="#fef08a" stroke-width="2.5" />
+
+                                                <!-- Cloroplasto 4 (Derecha abajo) -->
+                                                <ellipse cx="460" cy="475" rx="24" ry="14" fill="url(#grad-cloroplasto-real)" stroke="#84cc16" stroke-width="2" />
+                                                <line x1="444" y1="475" x2="476" y2="475" stroke="#fef08a" stroke-width="2.5" />
+                                            </g>
+
+                                            <!-- E. MITOCONDRIAS ROJAS 3D CON PLIEGUES (2 unidades) -->
+                                            <g id="cell-svg-mitocondria" class="cursor-pointer transition-all duration-300 hover:scale-110" onclick="window.selectCellPart('mitocondria')">
+                                                <!-- Mitocondria 1 (Izquierda abajo) -->
+                                                <ellipse cx="240" cy="420" rx="22" ry="13" fill="#dc2626" stroke="#b91c1c" stroke-width="2" transform="rotate(-30 240 420)" />
+                                                <path d="M 225,420 Q 240,412 255,420" stroke="#fee2e2" stroke-width="2" fill="none" />
+
+                                                <!-- Mitocondria 2 (Derecha centro) -->
+                                                <ellipse cx="440" cy="180" rx="22" ry="13" fill="#dc2626" stroke="#b91c1c" stroke-width="2" transform="rotate(20 440 180)" />
+                                                <path d="M 425,180 Q 440,172 455,180" stroke="#fee2e2" stroke-width="2" fill="none" />
+                                            </g>
+
+                                            <!-- F. APARATO DE GOLGI (Túbulos celestes/naranjas) -->
+                                            <path id="cell-svg-golgi" d="M 430,125 Q 460,110 490,130 M 435,138 Q 460,123 485,140 M 440,150 Q 460,135 480,150" fill="none" stroke="#0284c7" stroke-width="5" stroke-linecap="round" class="cursor-pointer" onclick="window.selectCellPart('golgi')" />
+
+                                            <!-- G. RIBOSOMAS Y AMILOPLASTOS (Puntos amarillos y violetas) -->
+                                            <circle id="cell-svg-ribosoma" cx="370" cy="160" r="5" fill="#eab308" stroke="#854d0e" class="cursor-pointer" onclick="window.selectCellPart('ribosoma')" />
+                                            <circle cx="390" cy="180" r="5" fill="#eab308" stroke="#854d0e" pointer-events="none" />
+                                            <circle id="cell-svg-lisosoma" cx="380" cy="440" r="8" fill="#a855f7" stroke="#581c87" stroke-width="1.5" class="cursor-pointer" onclick="window.selectCellPart('lisosoma')" />
+
+
+                                            <!-- ── 3. LÍNEAS DE ANOTACIÓN CONEXIÓN DIRECTA CON ETIQUETAS Y FLECHAS ── -->
+                                            <g id="cell-labels-container">
+                                                <!-- 1. Vacuola (Arriba centro) -->
+                                                <g id="label-group-vacuola" class="cursor-pointer" onclick="window.selectCellPart('vacuola')">
+                                                    <line id="line-vacuola" x1="480" y1="52" x2="480" y2="230" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="480" cy="230" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-vacuola" x="400" y="60" width="160" height="38" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+                                                    <text id="label-text-vacuola" x="480" y="84" fill="#0f172a" font-size="14" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Vacuola</text>
+                                                </g>
+
+                                                <!-- 2. Pared Celular (Arriba izquierda) -->
+                                                <g id="label-group-pared" class="cursor-pointer" onclick="window.selectCellPart('pared')">
+                                                    <line id="line-pared" x1="120" y1="95" x2="200" y2="95" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="200" cy="95" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-pared" x="30" y="75" width="140" height="38" rx="10" fill="#ffffff" stroke="#15803d" stroke-width="2" />
+                                                    <text id="label-text-pared" x="100" y="99" fill="#0f172a" font-size="14" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Pared celular</text>
+                                                </g>
+
+                                                <!-- 3. Membrana Celular (Izquierda alto) -->
+                                                <g id="label-group-membrana" class="cursor-pointer" onclick="window.selectCellPart('membrana')">
+                                                    <line id="line-membrana" x1="110" y1="180" x2="215" y2="180" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="215" cy="180" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-membrana" x="10" y="160" width="165" height="38" rx="10" fill="#ffffff" stroke="#22c55e" stroke-width="2" />
+                                                    <text id="label-text-membrana" x="92.5" y="184" fill="#0f172a" font-size="14" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Membrana celular</text>
+                                                </g>
+
+                                                <!-- 4. Retículo Endoplasmático (Izquierda medio) -->
+                                                <g id="label-group-reticulo" class="cursor-pointer" onclick="window.selectCellPart('reticulo')">
+                                                    <line id="line-reticulo" x1="100" y1="280" x2="260" y2="280" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="260" cy="280" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-reticulo" x="5" y="260" width="185" height="38" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2" />
+                                                    <text id="label-text-reticulo" x="97.5" y="284" fill="#0f172a" font-size="13.5" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Retículo endoplásmico</text>
+                                                </g>
+
+                                                <!-- 5. Mitocondrias (Izquierda abajo) -->
+                                                <g id="label-group-mitocondria" class="cursor-pointer" onclick="window.selectCellPart('mitocondria')">
+                                                    <line id="line-mitocondria" x1="110" y1="410" x2="235" y2="415" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="235" cy="415" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-mitocondria" x="15" y="390" width="145" height="38" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+                                                    <text id="label-text-mitocondria" x="87.5" y="414" fill="#0f172a" font-size="14" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Mitocondrias</text>
+                                                </g>
+
+                                                <!-- 6. Cloroplasto (Izquierda fondo) -->
+                                                <g id="label-group-cloroplasto" class="cursor-pointer" onclick="window.selectCellPart('cloroplasto')">
+                                                    <line id="line-cloroplasto" x1="120" y1="500" x2="285" y2="470" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="285" cy="470" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-cloroplasto" x="20" y="480" width="145" height="38" rx="10" fill="#ffffff" stroke="#65a30d" stroke-width="2" />
+                                                    <text id="label-text-cloroplasto" x="92.5" y="504" fill="#0f172a" font-size="14" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Cloroplasto</text>
+                                                </g>
+
+                                                <!-- 7. Aparato de Golgi (Derecha alto) -->
+                                                <g id="label-group-golgi" class="cursor-pointer" onclick="window.selectCellPart('golgi')">
+                                                    <line id="line-golgi" x1="680" y1="135" x2="480" y2="135" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="480" cy="135" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-golgi" x="625" y="115" width="165" height="38" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="2" />
+                                                    <text id="label-text-golgi" x="707.5" y="139" fill="#0f172a" font-size="13.5" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Aparato de Golgi</text>
+                                                </g>
+
+                                                <!-- 8. Núcleo y Nucléolo (Derecha centro) -->
+                                                <g id="label-group-nucleo" class="cursor-pointer" onclick="window.selectCellPart('nucleo')">
+                                                    <line id="line-nucleo" x1="680" y1="310" x2="365" y2="310" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="365" cy="310" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-nucleo" x="635" y="290" width="125" height="38" rx="10" fill="#ffffff" stroke="#9333ea" stroke-width="2" />
+                                                    <text id="label-text-nucleo" x="697.5" y="314" fill="#0f172a" font-size="14" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Núcleo</text>
+                                                </g>
+
+                                                <!-- Línea a Nucléolo -->
+                                                <g id="label-group-nucleolo" class="cursor-pointer" onclick="window.selectCellPart('nucleolo')">
+                                                    <line id="line-nucleolo" x1="680" y1="365" x2="335" y2="335" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="335" cy="335" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-nucleolo" x="635" y="345" width="130" height="38" rx="10" fill="#ffffff" stroke="#ca8a04" stroke-width="2" />
+                                                    <text id="label-text-nucleolo" x="700" y="369" fill="#0f172a" font-size="14" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Nucléolo</text>
+                                                </g>
+
+                                                <!-- 9. Ribosoma (Derecha abajo) -->
+                                                <g id="label-group-ribosoma" class="cursor-pointer" onclick="window.selectCellPart('ribosoma')">
+                                                    <line id="line-ribosoma" x1="660" y1="445" x2="375" y2="162" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="375" cy="162" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-ribosoma" x="620" y="425" width="130" height="38" rx="10" fill="#ffffff" stroke="#eab308" stroke-width="2" />
+                                                    <text id="label-text-ribosoma" x="685" y="449" fill="#0f172a" font-size="14" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Ribosoma</text>
+                                                </g>
+
+                                                <!-- 10. Lisosoma / Citoplasma (Abajo centro) -->
+                                                <g id="label-group-lisosoma" class="cursor-pointer" onclick="window.selectCellPart('lisosoma')">
+                                                    <line id="line-lisosoma" x1="410" y1="565" x2="380" y2="448" stroke="#0f172a" stroke-width="2" />
+                                                    <circle cx="380" cy="448" r="3.5" fill="#0f172a" />
+                                                    <rect id="label-bg-lisosoma" x="330" y="545" width="160" height="38" rx="10" fill="#ffffff" stroke="#a855f7" stroke-width="2" />
+                                                    <text id="label-text-lisosoma" x="410" y="569" fill="#0f172a" font-size="14" font-weight="bold" font-family="Fredoka, sans-serif" text-anchor="middle">Citoplasma</text>
+                                                </g>
+                                            </g>
+
+                                        </svg>
+                                    </div>
+
+                                    <!-- Barra de Filtros / Botones Directos -->
+                                    <div class="flex flex-wrap gap-1.5 mb-3 justify-center">
+                                        <button onclick="window.selectCellPart('cloroplasto')" id="cell-btn-cloroplasto" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 text-white font-fun transition-all shadow-sm">
+                                            🟢 Cloroplasto
+                                        </button>
+                                        <button onclick="window.selectCellPart('vacuola')" id="cell-btn-vacuola" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 font-fun transition-all">
+                                            💧 Vacuola
+                                        </button>
+                                        <button onclick="window.selectCellPart('pared')" id="cell-btn-pared" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 font-fun transition-all">
+                                            🧱 Pared Celular
+                                        </button>
+                                        <button onclick="window.selectCellPart('membrana')" id="cell-btn-membrana" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 font-fun transition-all">
+                                            🛡️ Membrana
+                                        </button>
+                                        <button onclick="window.selectCellPart('nucleo')" id="cell-btn-nucleo" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 font-fun transition-all">
+                                            🟣 Núcleo
+                                        </button>
+                                        <button onclick="window.selectCellPart('nucleolo')" id="cell-btn-nucleolo" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 font-fun transition-all">
+                                            🟡 Nucléolo
+                                        </button>
+                                        <button onclick="window.selectCellPart('mitocondria')" id="cell-btn-mitocondria" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 font-fun transition-all">
+                                            🔴 Mitocondria
+                                        </button>
+                                        <button onclick="window.selectCellPart('reticulo')" id="cell-btn-reticulo" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 font-fun transition-all">
+                                            🌀 Retículo
+                                        </button>
+                                        <button onclick="window.selectCellPart('golgi')" id="cell-btn-golgi" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 font-fun transition-all">
+                                            🟠 Golgi
+                                        </button>
+                                        <button onclick="window.selectCellPart('ribosoma')" id="cell-btn-ribosoma" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 font-fun transition-all">
+                                            🟡 Ribosoma
+                                        </button>
+                                    </div>
+
+                                    <!-- Tarjeta Pedagógica del Organelo Seleccionado -->
+                                    <div class="p-4 bg-emerald-50/70 rounded-2xl border border-emerald-200 flex items-start gap-3 shadow-inner">
+                                        <span id="cell-part-icon" class="text-3xl shrink-0">🟢</span>
+                                        <div class="flex-1">
+                                            <h5 id="cell-part-title" class="font-bold text-sm sm:text-base text-slate-900 font-fun">Cloroplastos (Sitio de la Fotosíntesis)</h5>
+                                            <p id="cell-part-desc" class="text-xs sm:text-sm text-slate-700 leading-relaxed mt-0.5 font-medium">Organelos de la célula vegetal ricos en clorofila verde. Contienen los tilacoides donde se capta la luz solar y el estroma donde se sintetiza la glucosa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUB-CONTENIDO: CONSTRUCTOR DE CADENAS TRÓFICAS -->
+                    <div id="lab-sub-content-cadenas" class="lab-sub-content hidden">
+                        <div class="bg-amber-50/60 p-5 rounded-3xl border-2 border-amber-200 space-y-6">
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+                                <div>
+                                    <h3 class="font-bold text-amber-950 text-lg font-fun">🔗 Constructor de Cadenas Alimenticias</h3>
+                                    <p class="text-xs text-amber-800">Conecta los eslabones del examen (Productores ➔ Primarios ➔ Secundarios ➔ Terciarios ➔ Descomponedores).</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button onclick="window.selectChainPreset(0)" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-600 text-white font-fun shadow-sm">
+                                        🥕 Cadena A
+                                    </button>
+                                    <button onclick="window.selectChainPreset(1)" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-100 text-amber-900 hover:bg-amber-200 font-fun">
+                                        🌱 Cadena B
+                                    </button>
+                                    <button onclick="window.resetChainOrder()" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-200 text-slate-700 hover:bg-slate-300 font-fun">
+                                        🔄 Reiniciar
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- 1. Organismos Disponibles (Opciones a seleccionar) -->
+                            <div class="bg-amber-100/50 p-4 rounded-2xl border border-amber-200 shadow-inner">
+                                <span class="text-xs font-bold text-amber-950 font-fun uppercase block mb-2.5 flex items-center gap-1.5">
+                                    <span>👆</span> <span>Toca los seres vivos para colocarlos en orden:</span>
+                                </span>
+                                <div id="cadena-available-container" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3">
+                                    <!-- Dinámico por JS -->
+                                </div>
+                            </div>
+
+                            <!-- 2. Contenedor del Diagrama Construido (Resultado abajo) -->
+                            <div>
+                                <span class="text-xs font-bold text-amber-900 font-fun uppercase block mb-2 flex items-center gap-1.5">
+                                    <span>🌿</span> <span>Tu Cadena Alimenticia en Construcción:</span>
+                                </span>
+                                <div class="bg-white p-4 rounded-2xl border border-amber-300 min-h-[120px] flex items-center justify-center shadow-sm">
+                                    <div id="cadena-builder-container" class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 w-full">
+                                        <!-- Dinámico por JS -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Feedback -->
+                            <div id="cadena-feedback" class="hidden"></div>
+                        </div>
+                    </div>
+
+                    <!-- SUB-CONTENIDO: DETECTIVE DE RELACIONES ECOLÓGICAS -->
+                    <div id="lab-sub-content-relaciones" class="lab-sub-content hidden">
+                        <div class="max-w-xl mx-auto space-y-4">
+                            <div id="relacion-card-container">
+                                <!-- Tarjeta interactiva por JS -->
+                            </div>
+                            <div class="flex justify-between gap-3">
+                                <button onclick="window.prevRelacionCard()" class="px-4 py-2 rounded-2xl bg-amber-100 text-amber-900 font-bold text-xs font-fun hover:bg-amber-200">
+                                    ◀ Anterior Escenario
+                                </button>
+                                <button onclick="window.nextRelacionCard()" class="px-4 py-2 rounded-2xl bg-amber-600 text-white font-bold text-xs font-fun hover:bg-amber-700 shadow-sm">
+                                    Siguiente Escenario ▶
+                                </button>
+                            </div>
+                            <div id="relaciones-feedback" class="hidden"></div>
+                        </div>
+                    </div>
+
+                    <!-- SUB-CONTENIDO: TALLER DE ABONO ORGÁNICO Y 5 R -->
+                    <div id="lab-sub-content-compost-5r" class="lab-sub-content hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                            <!-- Compostera -->
+                            <div class="md:col-span-6 bg-emerald-50/70 p-5 rounded-3xl border-2 border-emerald-200 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="text-3xl">🍂</span>
+                                        <div>
+                                            <h3 class="font-bold text-emerald-950 text-base font-fun">Compostera Orgánica</h3>
+                                            <p class="text-xs text-emerald-800">Selecciona únicamente residuos orgánicos biodegradables para tu abono.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="my-4">
+                                        <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase mb-1">
+                                            <span>Fertilidad del Abono:</span>
+                                        </div>
+                                        <div class="w-full bg-slate-200 rounded-full h-3">
+                                            <div id="compost-meter" class="bg-emerald-600 h-3 rounded-full transition-all duration-500" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div id="compost-items-container" class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                                        <!-- Items por JS -->
+                                    </div>
+                                </div>
+                                <div id="compost-feedback" class="hidden"></div>
+                                <button onclick="window.resetCompostLab()" class="mt-4 w-full bg-emerald-100 hover:bg-emerald-200 text-emerald-900 font-bold py-2 rounded-xl text-xs font-fun transition">
+                                    🔄 Vaciar Compostera
+                                </button>
+                            </div>
+
+                            <!-- Desafío de las 5 R -->
+                            <div class="md:col-span-6 bg-amber-50/70 p-5 rounded-3xl border-2 border-amber-200 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="text-3xl">♻️</span>
+                                        <div>
+                                            <h3 class="font-bold text-amber-950 text-base font-fun">Estrategia de las 5 R</h3>
+                                            <p class="text-xs text-amber-800">Repasa el significado ambiental de cada pilar de conservación.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-2 text-xs font-fun">
+                                        <div class="p-2.5 bg-white rounded-2xl border border-amber-200">
+                                            <span class="font-bold text-amber-800">1. Reducir:</span> Disminuir la cantidad de desechos generados en la fuente.
+                                        </div>
+                                        <div class="p-2.5 bg-white rounded-2xl border border-amber-200">
+                                            <span class="font-bold text-amber-800">2. Reutilizar:</span> Usar objetos o envases varias veces dándoles otra vida.
+                                        </div>
+                                        <div class="p-2.5 bg-white rounded-2xl border border-amber-200">
+                                            <span class="font-bold text-amber-800">3. Reciclar:</span> Transformar papel, plástico o vidrio en nueva materia prima.
+                                        </div>
+                                        <div class="p-2.5 bg-white rounded-2xl border border-amber-200">
+                                            <span class="font-bold text-amber-800">4. Rechazar:</span> Evitar comprar plásticos de un solo uso o productos dañinos.
+                                        </div>
+                                        <div class="p-2.5 bg-white rounded-2xl border border-amber-200">
+                                            <span class="font-bold text-amber-800">5. Reparar:</span> Arreglar objetos averiados antes de botarlos a la basura.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENEDORES DE LABS DE CIENCIAS (2ª EVALUACIÓN I SEMESTRE) -->
+                <div id="lab-contents-science-sem1-eval2" data-subject="ciencias" data-sem="1" data-eval="2" data-display="block" style="display: none;">
                     <!-- SUB-CONTENIDO: LABORATORIO DEL FILTRO RENAL (Canvas) -->
                     <div id="lab-sub-content-filtro-renal" class="lab-sub-content hidden">
                         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -1537,7 +2166,7 @@
                                 <div>
                                     <h3 class="font-bold text-emerald-900 text-lg font-fun mb-2">🔬 Filtro Renal</h3>
                                     <p class="text-xs text-emerald-800 leading-relaxed mb-4">Ajusta el slider de hidratación para ver cómo fluyen las toxinas amarillas pequeñas por la membrana del riñón, mientras que los nutrientes rojos grandes se mantienen en la sangre.</p>
-                                    
+
                                     <div class="space-y-4 pt-2 border-t border-emerald-200/50">
                                         <div>
                                             <div class="flex justify-between text-xs font-bold text-emerald-900 uppercase">
@@ -1550,7 +2179,7 @@
                                                 <span>Súper (3)</span>
                                             </div>
                                         </div>
-                                        
+
                                         <div id="filtro-renal-flow-container" class="mt-4 p-4 rounded-2xl bg-teal-50 border border-teal-100 transition-colors">
                                             <p id="filtro-renal-status" class="text-sm font-bold text-teal-600">Hidratación Regular 👍 (Flujo saludable)</p>
                                         </div>
@@ -1577,22 +2206,22 @@
                                 <div>
                                     <h3 class="font-bold text-emerald-900 text-lg font-fun mb-2">📋 Decisiones Médicas</h3>
                                     <p class="text-xs text-emerald-800 leading-relaxed mb-4">Lee el caso sintomático de la derecha y presiona la herramienta médica correcta para diagnosticar o tratar al paciente.</p>
-                                    
+
                                     <div class="space-y-4 pt-2 border-t border-emerald-200/50">
                                         <div class="grid grid-cols-2 gap-3">
-                                            <button onclick="chooseMedicalTool('Vacunas', this)" data-tool="Vacunas" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
+                                            <button onclick="window.chooseMedicalTool('Vacunas', this)" data-tool="Vacunas" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
                                                 <span class="text-3xl">💉</span>
                                                 <span>Vacunas</span>
                                             </button>
-                                            <button onclick="chooseMedicalTool('Antibióticos', this)" data-tool="Antibióticos" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
+                                            <button onclick="window.chooseMedicalTool('Antibióticos', this)" data-tool="Antibióticos" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
                                                 <span class="text-3xl">💊</span>
                                                 <span>Antibióticos</span>
                                             </button>
-                                            <button onclick="chooseMedicalTool('Rayos X', this)" data-tool="Rayos X" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
+                                            <button onclick="window.chooseMedicalTool('Rayos X', this)" data-tool="Rayos X" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
                                                 <span class="text-3xl">📸</span>
                                                 <span>Rayos X</span>
                                             </button>
-                                            <button onclick="chooseMedicalTool('Trasplantes', this)" data-tool="Trasplantes" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
+                                            <button onclick="window.chooseMedicalTool('Trasplantes', this)" data-tool="Trasplantes" class="medical-tool-btn p-4 bg-white hover:bg-emerald-50 border-2 border-slate-200 hover:border-emerald-400 rounded-2xl flex flex-col items-center gap-2 transition-all duration-300 font-fun text-slate-800 text-sm font-bold shadow-sm">
                                                 <span class="text-3xl">🫁</span>
                                                 <span>Trasplantes</span>
                                             </button>
@@ -1609,16 +2238,12 @@
                                     </div>
                                 </div>
 
-                                <div id="clinical-case-feedback" class="hidden mt-6 p-5 rounded-2xl border transition-all duration-300">
-                                    <!-- Feedback de acierto/error dinámico -->
-                                </div>
+                                <div id="clinical-case-feedback" class="hidden mt-6 p-5 rounded-2xl border transition-all duration-300"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- CONTENEDORES DE LABS DE ESPAÑOL -->
-                <div id="lab-contents-espanol" class="hidden">
+                <div id="lab-contents-espanol" data-subject="espanol" data-sem="2" data-eval="1" data-display="block" style="display: none;">
                     <!-- LAB 1: EL DETECTIVE DE ORACIONES -->
                     <div id="lab-sub-content-detector-oraciones" class="lab-sub-content block">
                         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
