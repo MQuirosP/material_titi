@@ -1,6 +1,7 @@
 /**
- * Banco Ampliado de Preguntas: Examen Teórico de Ciencias — II Semestre (1ª Evaluación)
+ * Banco Oficial de Preguntas: Examen Teórico de Ciencias — II Semestre (1ª Evaluación)
  * Escuela Riojalandia · 5º Grado · Maestra Florisel Olmazo López
+ * TEMAS: Célula Vegetal, Fotosíntesis, Cadena Trófica, Relaciones Ecológicas y Acciones Ambientales
  */
 export const quizTeoricoCienciasSem2Eval1 = [
     {
@@ -153,7 +154,7 @@ export const quizTeoricoCienciasSem2Eval1 = [
         options: [
             { text: "Transportar proteínas y lípidos a través de una amplia red de canales membanosos.", isCorrect: true, rationale: "¡Exacto! Funciona como la autopista interna de transporte molecular." },
             { text: "Expulsar toda el agua de la célula hasta secarla.", isCorrect: false, rationale: "Mantiene un equilibrio hídrico junto con el citoplasma y la vacuola." },
-            { text: "Filtrar la orina dentro del riñón vegetal.", isCorrect: false, rationale: "Las plantas no tienen riñones; el retículo es un organelo subcelular." }
+            { text: "Destruir las enzimas del citoplasma.", isCorrect: false, rationale: "El retículo transporta y procesa moléculas esenciales." }
         ]
     },
     {
@@ -217,60 +218,6 @@ export const quizTeoricoCienciasSem2Eval1 = [
             { text: "Depredación (+/-): caza y consume hormigas y termitas como su alimento principal.", isCorrect: true, rationale: "¡Muy bien! La rana actúa como depredador activo sobre sus presas." },
             { text: "Comensalismo (+/0): vive dentro de las hormigas sin tocarlas.", isCorrect: false, rationale: "Incorrecto. Las consume activamente como presa." },
             { text: "Fotosíntesis anoxigénica.", isCorrect: false, rationale: "Las ranas son animales heterótrofos." }
-        ]
-    },
-    {
-        topic: "Sistema Urinario Humano",
-        question: "¿Cuáles son los órganos encargados de filtrar la sangre para formar la orina?",
-        options: [
-            { text: "Los dos riñones", isCorrect: true, rationale: "¡Correcto! Filtran los desechos metabólicos (urea, ácido úrico) de la sangre." },
-            { text: "Los dos pulmones", isCorrect: false, rationale: "Los pulmones expulsan dióxido de carbono (CO₂)." },
-            { text: "El intestino delgado", isCorrect: false, rationale: "El intestino absorbante forma las heces fecales sólidas." }
-        ]
-    },
-    {
-        topic: "Nefrona Renal",
-        question: "¿Cómo se llama la unidad funcional y microscópica de filtración del riñón?",
-        options: [
-            { text: "Nefrona", isCorrect: true, rationale: "¡Exacto! Cada riñón posee aproximadamente 1 millón de nefronas que producen la orina." },
-            { text: "Neurona cerebral", isCorrect: false, rationale: "Las neuronas son las células del sistema nervioso." },
-            { text: "Alvéolo pulmonar", isCorrect: false, rationale: "Los alvéolos realizan el intercambio gaseoso en los pulmones." }
-        ]
-    },
-    {
-        topic: "Conductos Urinarios",
-        question: "¿Qué conductos transportan la orina desde los riñones hacia la vejiga?",
-        options: [
-            { text: "Los uréteres", isCorrect: true, rationale: "¡Excelente! Son dos tubos musculares delgados que bajan la orina a la vejiga." },
-            { text: "Las arterias coronarias", isCorrect: false, rationale: "Las coronarias irrigan de sangre al corazón." },
-            { text: "Los bronquios", isCorrect: false, rationale: "Los bronquios conducen el aire hacia los pulmones." }
-        ]
-    },
-    {
-        topic: "Vejiga Urinaria",
-        question: "¿Qué función cumple la vejiga urinaria en el cuerpo humano?",
-        options: [
-            { text: "Almacenar temporalmente la orina hasta el momento de la micción.", isCorrect: true, rationale: "¡Así es! Es un órgano muscular elástico que se expande para almacenar la orina." },
-            { text: "Digerir las grasas y azúcares del almuerzo.", isCorrect: false, rationale: "La digestión de nutrientes ocurre en el estómago e intestinos." },
-            { text: "Sintetizar la hormona insulina.", isCorrect: false, rationale: "La insulina es producida por el páncreas." }
-        ]
-    },
-    {
-        topic: "Acciones Ambientales",
-        question: "¿En qué consiste el compostaje o producción de abono orgánico?",
-        options: [
-            { text: "Mezclar cáscaras de frutas, broza de café y residuos vegetales para nutrir el suelo y reducir basura.", isCorrect: true, rationale: "¡Exacto! Transforma restos orgánicos en abono fértil disminuyendo desechos sólidos." },
-            { text: "Quemar plásticos en botaderos abiertos durante la noche.", isCorrect: false, rationale: "Quemar plástico contamina gravemente el aire y libera toxinas." },
-            { text: "Talar árboles ancianos para sembrar cemento.", isCorrect: false, rationale: "Eso degrada el ambiente y causa erosión." }
-        ]
-    },
-    {
-        topic: "Estrategia de las 5 R",
-        question: "¿Cuáles son las acciones de la estrategia ambiental de las 5 R?",
-        options: [
-            { text: "Reducir, Reutilizar, Reciclar, Rechazar y Reparar.", isCorrect: true, rationale: "¡Excelente! Son hábitos clave para el manejo responsable de recursos y desechos." },
-            { text: "Romper, Regalar, Rayar, Rociar y Recoger.", isCorrect: false, rationale: "Incorrecto. Esos verbos no forman la estrategia ecológica de las 5 R." },
-            { text: "Reforestar, Regar, Remover, Respirar y Reposar.", isCorrect: false, rationale: "Aunque reforestar y regar son positivos, las 5 R oficiales son Reducir, Reutilizar, Reciclar, Rechazar y Reparar." }
         ]
     }
 ];

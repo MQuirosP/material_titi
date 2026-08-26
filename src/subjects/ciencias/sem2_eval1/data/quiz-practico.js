@@ -1,6 +1,7 @@
 /**
- * Banco Ampliado de Preguntas: Examen Práctico de Ciencias — II Semestre (1ª Evaluación)
+ * Banco Oficial de Preguntas: Examen Práctico de Ciencias — II Semestre (1ª Evaluación)
  * Escuela Riojalandia · 5º Grado · Maestra Florisel Olmazo López
+ * TEMAS: Casos Prácticos de Célula Vegetal, Fotosíntesis, Cadenas Tróficas y Relaciones Ecológicas
  */
 export const quizPracticoCienciasSem2Eval1 = [
     {
@@ -94,24 +95,6 @@ export const quizPracticoCienciasSem2Eval1 = [
         ]
     },
     {
-        topic: "Diagnóstico Clínico Renal",
-        question: "Un paciente acude al hospital porque sus riñones dejaron de filtrar las toxinas de su sangre por completo. El médico le recomienda un tratamiento con una máquina purificadora. ¿Cómo se llama esa terapia?",
-        options: [
-            { text: "Diálisis o hemodiálisis médica.", isCorrect: true, rationale: "¡Correcto! La diálisis sustituye temporalmente la función filtradora de las nefronas del riñón." },
-            { text: "Fotosíntesis humana.", isCorrect: false, rationale: "Los seres humanos no realizan fotosíntesis." },
-            { text: "Compostaje celular.", isCorrect: false, rationale: "El compostaje es el tratamiento de desechos orgánicos vegetales." }
-        ]
-    },
-    {
-        topic: "Hábitos Saludables del Urinario",
-        question: "Un médico escolar recomienda beber entre 6 y 8 vasos de agua pura al día y no aguantar las ganas de orinar. ¿Por qué es fundamental esta recomendación?",
-        options: [
-            { text: "Previene infecciones urinarias y la formación de cálculos (piedras) en los riñones.", isCorrect: true, rationale: "¡Excelente! La hidratación constante diluye los minerales y favorece la micción limpia." },
-            { text: "Aumenta la clorofila de la piel humana.", isCorrect: false, rationale: "Los humanos no poseen clorofila." },
-            { text: "Destruye las neuronas cerebrales.", isCorrect: false, rationale: "El agua limpia beneficia a todos los órganos del cuerpo." }
-        ]
-    },
-    {
         topic: "Caso del Parque Nacional Corcovado",
         question: "En las selvas de Osa, los tapires (dantas) consumen semillas de frutas silvestres y al caminar defecan las semillas en otras zonas facilitando que germinen nuevos árboles. ¿Qué relación ocurre entre la danta y los árboles?",
         options: [
@@ -145,33 +128,6 @@ export const quizPracticoCienciasSem2Eval1 = [
             { text: "La Gran Vacuola Central.", isCorrect: true, rationale: "¡Así es! Almacena el agua manteniendo la turgencia y estructura vegetal." },
             { text: "El Flagelo bacteriano.", isCorrect: false, rationale: "Las células vegetales no poseen flagelos bacterianos." },
             { text: "El Glóbulo rojo.", isCorrect: false, rationale: "Los glóbulos rojos son células animales sin pared ni vacuola central." }
-        ]
-    },
-    {
-        topic: "Deficiencias Físicas en la Planta",
-        question: "Una planta en la huerta presenta hojas amarillentas y caídas por estar guardada en un ropero oscuro durante 2 semanas. ¿Qué ocurrió microscópicamente?",
-        options: [
-            { text: "Sin luz solar, los cloroplastos no pudieron captar fotones para la Fase Luminosa y la clorofila se degradó.", isCorrect: true, rationale: "¡Muy bien! Sin luz no hay fotosíntesis y la planta se etiola (amarillea y marchita)." },
-            { text: "La planta acumuló exceso de dióxido de carbono hirviendo.", isCorrect: false, rationale: "El amarillamiento se debe a la ausencia de radiación solar y degradación de pigmentos." },
-            { text: "La raíz se transformó en pez rémoras.", isCorrect: false, rationale: "Las plantas conservan sus órganos vegetales biológicos." }
-        ]
-    },
-    {
-        topic: "Rechazar en las 5 R",
-        question: "En la pulpería, Carlos rechaza las bolsas plásticas de un solo uso y guarda sus compras en una bolsa de tela reutilizable. ¿Qué principio ambiental aplicó?",
-        options: [
-            { text: "Rechazar empaques innecesarios y no biodegradables.", isCorrect: true, rationale: "¡Excelente! Evita la acumulación de plásticos desde el origen de la compra." },
-            { text: "Quemado de plásticos en la calle.", isCorrect: false, rationale: "Quemar plásticos es altamente tóxico." },
-            { text: "Fotosíntesis anoxigénica de la bolsa.", isCorrect: false, rationale: "Las bolsas no realizan fotosíntesis." }
-        ]
-    },
-    {
-        topic: "Donación de Órganos y Solidaridad",
-        question: "¿Por qué la donación voluntaria de órganos (como un riñón sano) representa un acto de alto valor humano en Costa Rica?",
-        options: [
-            { text: "Permite salvar la vida o mejorar la salud de una persona con insuficiencia renal crónica.", isCorrect: true, rationale: "¡Así es! Un riñón donado puede restaurar la función filtradora en un paciente en diálisis." },
-            { text: "Genera madera para construir viveros.", isCorrect: false, rationale: "La donación es un acto médico de salud humana entre personas." },
-            { text: "Elimina la fotosíntesis en los hospitales.", isCorrect: false, rationale: "La fotosíntesis es un proceso biológico vegetal de los bosques y cultivos." }
         ]
     },
     {
