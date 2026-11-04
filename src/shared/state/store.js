@@ -11,11 +11,13 @@ export function setActiveSubject(val) { activeSubject = val; }
 export const studiedCardsMath = new Set();
 export const studiedCardsScience = new Set();
 export const studiedCardsSpanish = new Set();
+export const studiedCardsEnglish = new Set();
 
 /** IDs (1-N) de flashcards que el estudiante ha volteado al menos una vez (apunta al set de la materia activa) */
 export let studiedCards = studiedCardsMath;
 
 export function getTotalCardsForActiveSubject() {
+  if (activeSubject === 'ingles') return 5;
   if (activeSubject === 'espanol') return 10;
   if (activeSubject === 'ciencias') return 10;
   return 6;
@@ -27,6 +29,8 @@ export function syncStudiedCardsSet(subject) {
     studiedCards = studiedCardsMath;
   } else if (subject === 'espanol') {
     studiedCards = studiedCardsSpanish;
+  } else if (subject === 'ingles') {
+    studiedCards = studiedCardsEnglish;
   } else {
     studiedCards = studiedCardsScience;
   }

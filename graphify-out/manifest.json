@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\quiz.js": {
-    "mtime": 1787781118.8624752,
-    "ast_hash": "5ce163ece401a147078bdde1eb4a4114",
+    "mtime": 1788232938.7858686,
+    "ast_hash": "0117053c7a454b56ef5b211d76f8ecb0",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\tabs.js": {
@@ -30,13 +30,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\state\\store.js": {
-    "mtime": 1787774817.8310246,
-    "ast_hash": "d6b37a427a4735d65bc785d96a157582",
+    "mtime": 1788232933.7169003,
+    "ast_hash": "c07cde061a09ff15cbc3521acc7439af",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\main.js": {
-    "mtime": 1787781456.7554479,
-    "ast_hash": "3e7a2b3a75777ddc3a2bccb32143158f",
+    "mtime": 1788232945.9747674,
+    "ast_hash": "4c146fc586bcd33a187345d2fe3deca9",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\data\\quiz-practico.js": {
@@ -75,8 +75,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\index.html": {
-    "mtime": 1787774657.8462348,
-    "ast_hash": "bcbf0e73494cb3fb31a16eff4a52862f",
+    "mtime": 1788232746.502775,
+    "ast_hash": "8e1c7d3add7d8b98d54e828e96621cae",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\rules\\graphify.md": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\audio.js": {
-    "mtime": 1782330459.9281778,
-    "ast_hash": "d1f56512d1e2cd8ec1816a5fbbc50b14",
+    "mtime": 1788232685.2179637,
+    "ast_hash": "07cf00906af47f0c019c4ea8b931ecad",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\data\\quiz-practico.js": {
@@ -145,8 +145,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\practica\\index.html": {
-    "mtime": 1787780712.8537974,
-    "ast_hash": "21d9be48fd53ce743e5b3d9c2ffccb13",
+    "mtime": 1788233559.0023952,
+    "ast_hash": "dc282c41d2f1158829a28d04650fdef3",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-add-quiz-questions\\SKILL.md": {
@@ -245,8 +245,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\subjectRegistry.js": {
-    "mtime": 1787778163.5586667,
-    "ast_hash": "141c2c75a862b63868369fb915b7f8d6",
+    "mtime": 1788232725.9095707,
+    "ast_hash": "f79d54e51c796ccc8a1b6ccb0094964e",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\sem1_eval2\\content.js": {
@@ -277,6 +277,26 @@
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\sem1_eval2\\data\\quiz-practico.js": {
     "mtime": 1787781444.8056648,
     "ast_hash": "a79edda5ac5eed8174a04e1c53833f79",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ingles\\sem2_eval1\\content.js": {
+    "mtime": 1788232706.082917,
+    "ast_hash": "e0568c75dac8f3ae348394c69847ffe6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ingles\\sem2_eval1\\data\\quiz-practico.js": {
+    "mtime": 1788233178.5785806,
+    "ast_hash": "fc933281544615747dc94e0fbc2524c7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ingles\\sem2_eval1\\data\\quiz-teorico.js": {
+    "mtime": 1788233170.199545,
+    "ast_hash": "986feb65fa84779b2d033ffc72375ff7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ingles\\sem2_eval1\\labs\\ingles-labs.js": {
+    "mtime": 1788232816.1625125,
+    "ast_hash": "5fa3ccf04e75c3e15dc7f24fded2cf0c",
     "semantic_hash": ""
   }
 }

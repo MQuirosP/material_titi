@@ -238,6 +238,15 @@
       "norm_label": "playtickwiththrottle()"
     },
     {
+      "label": "speakEnglishText()",
+      "file_type": "code",
+      "source_file": "src/shared/modules/audio.js",
+      "source_location": "L151",
+      "id": "modules_audio_speakenglishtext",
+      "community": 22,
+      "norm_label": "speakenglishtext()"
+    },
+    {
       "label": "flashcards.js",
       "file_type": "code",
       "source_file": "src/shared/modules/flashcards.js",
@@ -493,7 +502,7 @@
       "label": "checkSavedProgress()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L71",
+      "source_location": "L77",
       "id": "modules_quiz_checksavedprogress",
       "community": 0,
       "norm_label": "checksavedprogress()"
@@ -502,7 +511,7 @@
       "label": "renderQuestion()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L118",
+      "source_location": "L124",
       "id": "modules_quiz_renderquestion",
       "community": 0,
       "norm_label": "renderquestion()"
@@ -511,7 +520,7 @@
       "label": "selectOption()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L162",
+      "source_location": "L168",
       "id": "modules_quiz_selectoption",
       "community": 0,
       "norm_label": "selectoption()"
@@ -520,7 +529,7 @@
       "label": "nextQuestion()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L231",
+      "source_location": "L237",
       "id": "modules_quiz_nextquestion",
       "community": 0,
       "norm_label": "nextquestion()"
@@ -529,7 +538,7 @@
       "label": "resetQuiz()",
       "file_type": "code",
       "source_file": "src/shared/modules/quiz.js",
-      "source_location": "L287",
+      "source_location": "L293",
       "id": "modules_quiz_resetquiz",
       "community": 0,
       "norm_label": "resetquiz()"
@@ -547,7 +556,7 @@
       "label": "registry",
       "file_type": "code",
       "source_file": "src/shared/modules/subjectRegistry.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "modules_subjectregistry_registry",
       "community": 8,
       "norm_label": "registry"
@@ -556,7 +565,7 @@
       "label": "getSubjectModule()",
       "file_type": "code",
       "source_file": "src/shared/modules/subjectRegistry.js",
-      "source_location": "L13",
+      "source_location": "L15",
       "id": "modules_subjectregistry_getsubjectmodule",
       "community": 0,
       "norm_label": "getsubjectmodule()"
@@ -697,10 +706,19 @@
       "norm_label": "studiedcardsspanish"
     },
     {
+      "label": "studiedCardsEnglish",
+      "file_type": "code",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L14",
+      "id": "state_store_studiedcardsenglish",
+      "community": 23,
+      "norm_label": "studiedcardsenglish"
+    },
+    {
       "label": "getTotalCardsForActiveSubject()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "state_store_gettotalcardsforactivesubject",
       "community": 23,
       "norm_label": "gettotalcardsforactivesubject()"
@@ -709,7 +727,7 @@
       "label": "syncStudiedCardsSet()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L25",
+      "source_location": "L27",
       "id": "state_store_syncstudiedcardsset",
       "community": 0,
       "norm_label": "syncstudiedcardsset()"
@@ -718,7 +736,7 @@
       "label": "setUserHasUsedLab()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L37",
+      "source_location": "L41",
       "id": "state_store_setuserhasusedlab",
       "community": 23,
       "norm_label": "setuserhasusedlab()"
@@ -727,7 +745,7 @@
       "label": "setActiveTab()",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L41",
+      "source_location": "L45",
       "id": "state_store_setactivetab",
       "community": 23,
       "norm_label": "setactivetab()"
@@ -736,7 +754,7 @@
       "label": "quizState",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L44",
+      "source_location": "L48",
       "id": "state_store_quizstate",
       "community": 23,
       "norm_label": "quizstate"
@@ -745,7 +763,7 @@
       "label": "pulper\u00edaCart",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L62",
+      "source_location": "L66",
       "id": "state_store_pulper\u00edacart",
       "community": 20,
       "norm_label": "pulperiacart"
@@ -754,7 +772,7 @@
       "label": "pulper\u00edaPrices",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L70",
+      "source_location": "L74",
       "id": "state_store_pulper\u00edaprices",
       "community": 20,
       "norm_label": "pulperiaprices"
@@ -801,7 +819,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js",
-      "community": 21,
+      "community": 3,
       "norm_label": "decisiones-medicas.js"
     },
     {
@@ -810,7 +828,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L5",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js_labs_decisiones_medicas_casosmedicoslab",
-      "community": 21,
+      "community": 3,
       "norm_label": "casosmedicoslab"
     },
     {
@@ -819,7 +837,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L15",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js_labs_decisiones_medicas_initdecisionesmedicas",
-      "community": 21,
+      "community": 3,
       "norm_label": "initdecisionesmedicas()"
     },
     {
@@ -828,7 +846,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L21",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js_labs_decisiones_medicas_rendercaso",
-      "community": 21,
+      "community": 3,
       "norm_label": "rendercaso()"
     },
     {
@@ -837,7 +855,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L44",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js_labs_decisiones_medicas_choosemedicaltool",
-      "community": 21,
+      "community": 3,
       "norm_label": "choosemedicaltool()"
     },
     {
@@ -1638,7 +1656,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L1",
       "id": "src_subjects_espanol_labs_pulperia_refranes_js",
-      "community": 23,
+      "community": 24,
       "norm_label": "pulperia-refranes.js"
     },
     {
@@ -1647,7 +1665,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L10",
       "id": "labs_pulperia_refranes_refranesgamedata",
-      "community": 23,
+      "community": 24,
       "norm_label": "refranesgamedata"
     },
     {
@@ -1656,7 +1674,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L49",
       "id": "labs_pulperia_refranes_adivinanzasdata",
-      "community": 23,
+      "community": 24,
       "norm_label": "adivinanzasdata"
     },
     {
@@ -1665,7 +1683,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L70",
       "id": "labs_pulperia_refranes_bombasdata",
-      "community": 23,
+      "community": 24,
       "norm_label": "bombasdata"
     },
     {
@@ -1674,7 +1692,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L93",
       "id": "labs_pulperia_refranes_shuffledmeanings",
-      "community": 23,
+      "community": 24,
       "norm_label": "shuffledmeanings"
     },
     {
@@ -1683,7 +1701,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L95",
       "id": "labs_pulperia_refranes_shufflearray",
-      "community": 23,
+      "community": 24,
       "norm_label": "shufflearray()"
     },
     {
@@ -1692,7 +1710,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L114",
       "id": "labs_pulperia_refranes_resetrefranesgame",
-      "community": 23,
+      "community": 24,
       "norm_label": "resetrefranesgame()"
     },
     {
@@ -1701,7 +1719,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L122",
       "id": "labs_pulperia_refranes_initpulperiarefranes",
-      "community": 23,
+      "community": 24,
       "norm_label": "initpulperiarefranes()"
     },
     {
@@ -1710,7 +1728,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L129",
       "id": "labs_pulperia_refranes_renderrefranesgame",
-      "community": 23,
+      "community": 24,
       "norm_label": "renderrefranesgame()"
     },
     {
@@ -1719,7 +1737,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L170",
       "id": "labs_pulperia_refranes_selectrefrantomatch",
-      "community": 23,
+      "community": 24,
       "norm_label": "selectrefrantomatch()"
     },
     {
@@ -1737,7 +1755,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L241",
       "id": "labs_pulperia_refranes_renderadivinanza",
-      "community": 23,
+      "community": 24,
       "norm_label": "renderadivinanza()"
     },
     {
@@ -1746,7 +1764,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L277",
       "id": "labs_pulperia_refranes_revealhint",
-      "community": 23,
+      "community": 24,
       "norm_label": "revealhint()"
     },
     {
@@ -1764,7 +1782,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L299",
       "id": "labs_pulperia_refranes_nextadivinanza",
-      "community": 23,
+      "community": 24,
       "norm_label": "nextadivinanza()"
     },
     {
@@ -1773,7 +1791,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L305",
       "id": "labs_pulperia_refranes_renderbomba",
-      "community": 23,
+      "community": 24,
       "norm_label": "renderbomba()"
     },
     {
@@ -1791,7 +1809,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L362",
       "id": "labs_pulperia_refranes_nextbomba",
-      "community": 23,
+      "community": 24,
       "norm_label": "nextbomba()"
     },
     {
@@ -1858,6 +1876,240 @@
       "norm_label": "espanolsem2eval1module"
     },
     {
+      "label": "content.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/content.js",
+      "source_location": "L1",
+      "id": "src_subjects_ingles_sem2_eval1_content_js",
+      "community": 8,
+      "norm_label": "content.js"
+    },
+    {
+      "label": "inglesSem2Eval1Module",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/content.js",
+      "source_location": "L7",
+      "id": "sem2_eval1_content_inglessem2eval1module",
+      "community": 8,
+      "norm_label": "inglessem2eval1module"
+    },
+    {
+      "label": "quiz-practico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/data/quiz-practico.js",
+      "source_location": "L1",
+      "id": "src_subjects_ingles_sem2_eval1_data_quiz_practico_js",
+      "community": 0,
+      "norm_label": "quiz-practico.js"
+    },
+    {
+      "label": "quizPracticoInglesSem2Eval1",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/data/quiz-practico.js",
+      "source_location": "L7",
+      "id": "data_quiz_practico_quizpracticoinglessem2eval1",
+      "community": 0,
+      "norm_label": "quizpracticoinglessem2eval1"
+    },
+    {
+      "label": "quiz-teorico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/data/quiz-teorico.js",
+      "source_location": "L1",
+      "id": "src_subjects_ingles_sem2_eval1_data_quiz_teorico_js",
+      "community": 0,
+      "norm_label": "quiz-teorico.js"
+    },
+    {
+      "label": "quizTeoricoInglesSem2Eval1",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/data/quiz-teorico.js",
+      "source_location": "L7",
+      "id": "data_quiz_teorico_quizteoricoinglessem2eval1",
+      "community": 0,
+      "norm_label": "quizteoricoinglessem2eval1"
+    },
+    {
+      "label": "ingles-labs.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L1",
+      "id": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "community": 22,
+      "norm_label": "ingles-labs.js"
+    },
+    {
+      "label": "TECH_PRODUCTS",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L13",
+      "id": "labs_ingles_labs_tech_products",
+      "community": 22,
+      "norm_label": "tech_products"
+    },
+    {
+      "label": "storeState",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L22",
+      "id": "labs_ingles_labs_storestate",
+      "community": 22,
+      "norm_label": "storestate"
+    },
+    {
+      "label": "initTechStoreLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L29",
+      "id": "labs_ingles_labs_inittechstorelab",
+      "community": 22,
+      "norm_label": "inittechstorelab()"
+    },
+    {
+      "label": "renderTechStoreUI()",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L35",
+      "id": "labs_ingles_labs_rendertechstoreui",
+      "community": 22,
+      "norm_label": "rendertechstoreui()"
+    },
+    {
+      "label": "container",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L146",
+      "id": "labs_ingles_labs_container",
+      "community": 22,
+      "norm_label": "container"
+    },
+    {
+      "label": "fbCard",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L162",
+      "id": "labs_ingles_labs_fbcard",
+      "community": 22,
+      "norm_label": "fbcard"
+    },
+    {
+      "label": "WORD_BUILDER_DATA",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L184",
+      "id": "labs_ingles_labs_word_builder_data",
+      "community": 22,
+      "norm_label": "word_builder_data"
+    },
+    {
+      "label": "initWordBuilderLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L197",
+      "id": "labs_ingles_labs_initwordbuilderlab",
+      "community": 22,
+      "norm_label": "initwordbuilderlab()"
+    },
+    {
+      "label": "renderWordBuilderUI()",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L203",
+      "id": "labs_ingles_labs_renderwordbuilderui",
+      "community": 22,
+      "norm_label": "renderwordbuilderui()"
+    },
+    {
+      "label": "CARE_CARDS",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L294",
+      "id": "labs_ingles_labs_care_cards",
+      "community": 22,
+      "norm_label": "care_cards"
+    },
+    {
+      "label": "initDeviceCareLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L303",
+      "id": "labs_ingles_labs_initdevicecarelab",
+      "community": 22,
+      "norm_label": "initdevicecarelab()"
+    },
+    {
+      "label": "renderDeviceCareUI()",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L309",
+      "id": "labs_ingles_labs_renderdevicecareui",
+      "community": 22,
+      "norm_label": "renderdevicecareui()"
+    },
+    {
+      "label": "fb",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L387",
+      "id": "labs_ingles_labs_fb",
+      "community": 22,
+      "norm_label": "fb"
+    },
+    {
+      "label": "adState",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L409",
+      "id": "labs_ingles_labs_adstate",
+      "community": 22,
+      "norm_label": "adstate"
+    },
+    {
+      "label": "initAdCreatorLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L416",
+      "id": "labs_ingles_labs_initadcreatorlab",
+      "community": 22,
+      "norm_label": "initadcreatorlab()"
+    },
+    {
+      "label": "renderAdCreatorUI()",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L422",
+      "id": "labs_ingles_labs_renderadcreatorui",
+      "community": 22,
+      "norm_label": "renderadcreatorui()"
+    },
+    {
+      "label": "titleEl",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L519",
+      "id": "labs_ingles_labs_titleel",
+      "community": 22,
+      "norm_label": "titleel"
+    },
+    {
+      "label": "descEl",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L520",
+      "id": "labs_ingles_labs_descel",
+      "community": 22,
+      "norm_label": "descel"
+    },
+    {
+      "label": "fbDiv",
+      "file_type": "code",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L536",
+      "id": "labs_ingles_labs_fbdiv",
+      "community": 22,
+      "norm_label": "fbdiv"
+    },
+    {
       "label": "main.js",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
@@ -1870,7 +2122,7 @@
       "label": "hideElement()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L82",
+      "source_location": "L94",
       "id": "matematicas_main_hideelement",
       "community": 0,
       "norm_label": "hideelement()"
@@ -1879,7 +2131,7 @@
       "label": "showElement()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L87",
+      "source_location": "L99",
       "id": "matematicas_main_showelement",
       "community": 0,
       "norm_label": "showelement()"
@@ -1888,7 +2140,7 @@
       "label": "switchSubject()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L95",
+      "source_location": "L107",
       "id": "matematicas_main_switchsubject",
       "community": 0,
       "norm_label": "switchsubject()"
@@ -1897,7 +2149,7 @@
       "label": "initApp()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L252",
+      "source_location": "L267",
       "id": "matematicas_main_initapp",
       "community": 0,
       "norm_label": "initapp()"
@@ -1980,7 +2232,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_geometria_js",
-      "community": 24,
+      "community": 20,
       "norm_label": "geometria.js"
     },
     {
@@ -1989,7 +2241,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L4",
       "id": "labs_geometria_figurepresets",
-      "community": 24,
+      "community": 20,
       "norm_label": "figurepresets"
     },
     {
@@ -1998,7 +2250,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L52",
       "id": "labs_geometria_onlabfigurechange",
-      "community": 24,
+      "community": 20,
       "norm_label": "onlabfigurechange()"
     },
     {
@@ -2007,7 +2259,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L80",
       "id": "labs_geometria_onlabsliderinput",
-      "community": 24,
+      "community": 20,
       "norm_label": "onlabsliderinput()"
     },
     {
@@ -2016,7 +2268,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L88",
       "id": "labs_geometria_drawandcalculate",
-      "community": 24,
+      "community": 20,
       "norm_label": "drawandcalculate()"
     },
     {
@@ -2025,7 +2277,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L234",
       "id": "labs_geometria_svgel",
-      "community": 24,
+      "community": 20,
       "norm_label": "_svgel()"
     },
     {
@@ -2034,7 +2286,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L238",
       "id": "labs_geometria_svgline",
-      "community": 24,
+      "community": 20,
       "norm_label": "_svgline()"
     },
     {
@@ -2043,7 +2295,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L247",
       "id": "labs_geometria_svgrightangle",
-      "community": 24,
+      "community": 20,
       "norm_label": "_svgrightangle()"
     },
     {
@@ -2052,7 +2304,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L255",
       "id": "labs_geometria_addsvgtext",
-      "community": 24,
+      "community": 20,
       "norm_label": "addsvgtext()"
     },
     {
@@ -3058,7 +3310,7 @@
       "label": "studiedCards",
       "file_type": "code",
       "source_file": "src/shared/state/store.js",
-      "source_location": "L16",
+      "source_location": "L17",
       "id": "state_store_studiedcards",
       "community": 23,
       "norm_label": "studiedcards"
@@ -3122,7 +3374,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L5",
-      "community": 21,
+      "community": 3,
       "norm_label": "casosmedicoslab",
       "id": "labs_decisiones_medicas_casosmedicoslab"
     },
@@ -3131,7 +3383,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L15",
-      "community": 21,
+      "community": 3,
       "norm_label": "initdecisionesmedicas()",
       "id": "labs_decisiones_medicas_initdecisionesmedicas"
     },
@@ -3140,7 +3392,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L21",
-      "community": 21,
+      "community": 3,
       "norm_label": "rendercaso()",
       "id": "labs_decisiones_medicas_rendercaso"
     },
@@ -3149,7 +3401,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L44",
-      "community": 21,
+      "community": 3,
       "norm_label": "choosemedicaltool()",
       "id": "labs_decisiones_medicas_choosemedicaltool"
     },
@@ -4224,6 +4476,16 @@
       "target": "modules_audio_playtickwiththrottle"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/audio.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_shared_modules_audio_js",
+      "target": "modules_audio_speakenglishtext"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -4337,6 +4599,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "src_shared_modules_audio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L11",
       "weight": 1.0,
@@ -4408,6 +4681,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "modules_audio_playtickwiththrottle",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/audio.js",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "modules_audio_speakenglishtext",
       "target": "modules_audio_playsound"
     },
     {
@@ -4496,6 +4780,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
       "target": "modules_audio_playsound"
     },
     {
@@ -4898,6 +5193,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/matematicas/labs/divisores.js",
       "source_location": "L1",
       "weight": 1.0,
@@ -5148,6 +5454,17 @@
       "target": "modules_audio_playtickwiththrottle"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "modules_audio_speakenglishtext"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -5387,6 +5704,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "src_shared_modules_flashcards_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/matematicas/main.js",
       "source_location": "L9",
       "weight": 1.0,
@@ -5612,6 +5940,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "modules_flashcards_updatebadges"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
       "target": "modules_flashcards_updatebadges"
     },
     {
@@ -6626,6 +6965,28 @@
       "target": "sem1_eval2_content_matematicassem1eval2module"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/subjectRegistry.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_shared_modules_subjectregistry_js",
+      "target": "src_subjects_ingles_sem2_eval1_content_js"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/subjectRegistry.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_shared_modules_subjectregistry_js",
+      "target": "sem2_eval1_content_inglessem2eval1module"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/shared/modules/subjectRegistry.js",
@@ -6891,6 +7252,17 @@
       "target": "src_shared_services_gemini_js"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "src_shared_services_gemini_js"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -6910,6 +7282,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_espanol_labs_detector_oraciones_js",
+      "target": "services_gemini_analyzesentencewithai"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
       "target": "services_gemini_analyzesentencewithai"
     },
     {
@@ -6962,6 +7345,16 @@
       "confidence_score": 1.0,
       "source": "src_shared_state_store_js",
       "target": "state_store_studiedcardsspanish"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/state/store.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_shared_state_store_js",
+      "target": "state_store_studiedcardsenglish",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7064,6 +7457,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "src_shared_state_store_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
       "target": "src_shared_state_store_js"
     },
     {
@@ -7173,6 +7577,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_subjects_espanol_labs_taller_libro_js",
+      "target": "state_store_setuserhasusedlab"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
       "target": "state_store_setuserhasusedlab"
     },
     {
@@ -9505,6 +9920,369 @@
       "target": "sem2_eval1_content_espanolsem2eval1module"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/content.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_content_js",
+      "target": "sem2_eval1_content_inglessem2eval1module"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/data/quiz-practico.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_data_quiz_practico_js",
+      "target": "data_quiz_practico_quizpracticoinglessem2eval1"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ingles_sem2_eval1_data_quiz_practico_js"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_practico_quizpracticoinglessem2eval1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/data/quiz-teorico.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_data_quiz_teorico_js",
+      "target": "data_quiz_teorico_quizteoricoinglessem2eval1"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ingles_sem2_eval1_data_quiz_teorico_js"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_teorico_quizteoricoinglessem2eval1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_tech_products"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_storestate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_inittechstorelab"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_rendertechstoreui"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L403",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_container"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L162",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_fbcard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L184",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_word_builder_data"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L197",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_initwordbuilderlab"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L203",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_renderwordbuilderui"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L294",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_care_cards"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L303",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_initdevicecarelab"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L309",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_renderdevicecareui"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L387",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_fb"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L409",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_adstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L416",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_initadcreatorlab"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L422",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_renderadcreatorui"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L519",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_titleel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L520",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_descel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L536",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js",
+      "target": "labs_ingles_labs_fbdiv"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ingles_sem2_eval1_labs_ingles_labs_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_ingles_labs_inittechstorelab",
+      "target": "labs_ingles_labs_rendertechstoreui"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_ingles_labs_inittechstorelab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L200",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_ingles_labs_initwordbuilderlab",
+      "target": "labs_ingles_labs_renderwordbuilderui"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_ingles_labs_initwordbuilderlab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L306",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_ingles_labs_initdevicecarelab",
+      "target": "labs_ingles_labs_renderdevicecareui"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_ingles_labs_initdevicecarelab"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ingles/sem2_eval1/labs/ingles-labs.js",
+      "source_location": "L419",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "labs_ingles_labs_initadcreatorlab",
+      "target": "labs_ingles_labs_renderadcreatorui"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_ingles_labs_initadcreatorlab"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -11003,9 +11781,9 @@
       "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "riomate_clone_materia_skill_pasos_de_implementaci\u00f3n_estricta",
-      "target": "riomate_clone_materia_skill_3_crear_preguntas_exclusivas_en_src_subjects_materia_sem_eval_data",
-      "confidence_score": 1.0
+      "target": "riomate_clone_materia_skill_3_crear_preguntas_exclusivas_en_src_subjects_materia_sem_eval_data"
     },
     {
       "relation": "contains",
@@ -11013,9 +11791,9 @@
       "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "riomate_clone_materia_skill_pasos_de_implementaci\u00f3n_estricta",
-      "target": "riomate_clone_materia_skill_4_agregar_contenedores_segregados_en_practica_index_html",
-      "confidence_score": 1.0
+      "target": "riomate_clone_materia_skill_4_agregar_contenedores_segregados_en_practica_index_html"
     },
     {
       "relation": "contains",
@@ -11073,9 +11851,9 @@
       "source_file": ".agents/skills/riomate-clone-materia/SKILL.md",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "riomate_clone_materia_skill_3_crear_preguntas_exclusivas_en_src_subjects_materia_sem_eval_data",
-      "target": "riomate_clone_materia_skill_codeblock_4",
-      "confidence_score": 1.0
+      "target": "riomate_clone_materia_skill_codeblock_4"
     },
     {
       "relation": "contains",
@@ -12071,5 +12849,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7a654bad2de7064a5a1843bc283aaba0bdcf355e"
+  "built_at_commit": "a1581277973c9ca46e78728a97f50fe9ddb42053"
 }

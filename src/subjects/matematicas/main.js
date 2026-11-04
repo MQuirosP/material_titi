@@ -37,6 +37,11 @@ import { initDetectorOraciones, selectSampleSentence, nextSampleSentence, prevSa
 import { initTallerLibro, selectBookPart, switchCardGeneratorTab } from '../espanol/labs/taller-libro.js';
 import { initPulperiaRefranes, selectRefranToMatch, selectMeaningToMatch, resetRefranesGame, revealHint, revealAdivinanzaSolution, nextAdivinanza, checkBombaRhyme, nextBomba } from '../espanol/labs/pulperia-refranes.js';
 
+// Inglés Imports
+import { quizTeoricoInglesSem2Eval1 } from '../ingles/sem2_eval1/data/quiz-teorico.js';
+import { quizPracticoInglesSem2Eval1 } from '../ingles/sem2_eval1/data/quiz-practico.js';
+import { initTechStoreLab, initWordBuilderLab, initDeviceCareLab, initAdCreatorLab } from '../ingles/sem2_eval1/labs/ingles-labs.js';
+
 import { quizTeoricoQuestions }  from './data/quiz-teorico.js';
 import { quizPracticoQuestions } from './data/quiz-practico.js';
 import { quizState, activeSubject, setActiveSubject, syncStudiedCardsSet } from '../../shared/state/store.js';
@@ -68,6 +73,13 @@ onLabInit(() => {
     initDetectorOraciones();
     initTallerLibro();
     initPulperiaRefranes();
+  } else if (activeSubject === 'ingles') {
+    stopFiltroRenal();
+    stopFotosintesisLab();
+    initTechStoreLab();
+    initWordBuilderLab();
+    initDeviceCareLab();
+    initAdCreatorLab();
   } else {
     stopFiltroRenal();
     stopFotosintesisLab();
@@ -190,6 +202,9 @@ export function switchSubject(subject, sem = '2', evalNum = '1', force = false) 
   } else if (targetSubject === 'espanol') {
     quizState.teorico.questions = quizTeoricoEspanol;
     quizState.practico.questions = quizPracticoEspanol;
+  } else if (targetSubject === 'ingles') {
+    quizState.teorico.questions = quizTeoricoInglesSem2Eval1;
+    quizState.practico.questions = quizPracticoInglesSem2Eval1;
   } else {
     quizState.teorico.questions = quizTeoricoQuestions;
     quizState.practico.questions = quizPracticoQuestions;
@@ -277,6 +292,8 @@ function initApp() {
     switchSubject('ciencias', semParam, evalParam, true);
   } else if (subjectParam === 'espanol') {
     switchSubject('espanol', semParam, evalParam, true);
+  } else if (subjectParam === 'ingles') {
+    switchSubject('ingles', semParam, evalParam, true);
   } else {
     switchSubject('matematicas', semParam, evalParam, true);
   }

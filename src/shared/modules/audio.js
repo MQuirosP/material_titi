@@ -146,3 +146,36 @@ export function playTickWithThrottle() {
     playSound('tick');
   }
 }
+
+// ── SÍNTESIS DE VOZ EN INGLÉS (Web Speech API) ─────────────────────────────
+export function speakEnglishText(text) {
+  if (!text || typeof window === 'undefined' || !('speechSynthesis' in window)) {
+    console.warn("Speech Synthesis no soportado en este navegador.");
+    return;
+  }
+  try {
+    window.speechSynthesis.cancel(); // Cancelar cualquier audio previo en cola
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9; // Velocidad ligeramente pausada para niños de 5º grado
+    utterance.pitch = 1.0;
+    
+    // Intentar buscar una voz nativa en-US de alta calidad si está disponible
+    const voices = window.speechSynthesis.getVoices();
+    const enVoice = voices.find(v => v.lang && (v.lang.includes('en-US') || v.lang.includes('en_US')));
+    if (enVoice) {
+      utterance.voice = enVoice;
+    }
+    
+    window.speechSynthesis.speak(utterance);
+    playSound('tick');
+  } catch (e) {
+    console.error("Error al reproducir voz en inglés:", e);
+  }
+}
+
+// Exponer globalmente para uso en handlers onclick en HTML/Template Literals
+if (typeof window !== 'undefined') {
+  window.speakEnglishText = speakEnglishText;
+}
+

@@ -54,6 +54,12 @@ export function updateQuizIntroTexts(subject) {
     
     if (introTitleP) introTitleP.textContent = `Prueba Práctica y de Aplicación (${practicoCount} Preguntas)`;
     if (introDescP) introDescP.innerHTML = `Esta prueba contiene <strong>${practicoCount} problemas prácticos y lecturas</strong> de Español. Analizarás fragmentos de fábulas de Esopo, bombas guanacastecas, refranes y dichos costarricenses, fichas bibliográficas y clasificación de oraciones reales.`;
+  } else if (subject === 'ingles') {
+    if (introTitleT) introTitleT.textContent = `Prueba de Conceptos y Teoría (${teoricoCount} Preguntas)`;
+    if (introDescT) introDescT.innerHTML = `Esta prueba contiene <strong>${teoricoCount} preguntas teóricas</strong> de Inglés (Unit 3: Connecting Electronically). Evaluará vocabulario de dispositivos, tienda de tecnología, prefijos/sufijos, anuncios y normas de cuidado.`;
+    
+    if (introTitleP) introTitleP.textContent = `Prueba Práctica y de Aplicación (${practicoCount} Preguntas)`;
+    if (introDescP) introDescP.innerHTML = `Esta prueba contiene <strong>${practicoCount} problemas prácticos de aplicación</strong> de Inglés. Analizarás comprensión de lecturas cortas, comparaciones de precios, creación de anuncios y rutinas de cuidado.`;
   } else {
     if (introTitleT) introTitleT.textContent = `Prueba de Conceptos y Teoría (${teoricoCount} Preguntas)`;
     if (introDescT) introDescT.innerHTML = `Esta prueba contiene <strong>${teoricoCount} preguntas teóricas</strong> de Matemáticas. Evaluará definiciones, propiedades de múltiplos y divisores, tipos de fracciones y la teoría que rodea las fórmulas de perímetros y áreas.`;
