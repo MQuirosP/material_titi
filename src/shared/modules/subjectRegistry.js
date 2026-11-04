@@ -1,5 +1,6 @@
 import { cienciasSem1Eval2Module } from '../../subjects/ciencias/sem1_eval2/content.js';
 import { cienciasSem2Eval1Module } from '../../subjects/ciencias/sem2_eval1/content.js';
+import { cienciasSem2Eval2Module } from '../../subjects/ciencias/sem2_eval2/content.js';
 import { espanolSem2Eval1Module } from '../../subjects/espanol/sem2_eval1/content.js';
 import { matematicasSem1Eval2Module } from '../../subjects/matematicas/sem1_eval2/content.js';
 import { inglesSem2Eval1Module } from '../../subjects/ingles/sem2_eval1/content.js';
@@ -7,6 +8,7 @@ import { inglesSem2Eval1Module } from '../../subjects/ingles/sem2_eval1/content.
 const registry = [
   cienciasSem1Eval2Module,
   cienciasSem2Eval1Module,
+  cienciasSem2Eval2Module,
   espanolSem2Eval1Module,
   matematicasSem1Eval2Module,
   inglesSem2Eval1Module

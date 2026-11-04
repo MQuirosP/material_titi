@@ -1,16 +1,16 @@
-# Graph Report - rioja  (2026-08-31)
+# Graph Report - rioja  (2026-11-04)
 
 ## Corpus Check
-- 57 files · ~74,069 words
+- 64 files · ~93,356 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 471 nodes · 821 edges · 24 communities (21 shown, 3 thin omitted)
+- 501 nodes · 874 edges · 29 communities (26 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a1581277`
+- Built from commit: `b96a6654`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -36,13 +36,16 @@
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
 - [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `playSound()` - 42 edges
-2. `playTickWithThrottle()` - 32 edges
+1. `playSound()` - 48 edges
+2. `playTickWithThrottle()` - 35 edges
 3. `updateBadges()` - 24 edges
 4. `setUserHasUsedLab()` - 16 edges
 5. `switchSubject()` - 15 edges
@@ -53,6 +56,8 @@
 10. `Skill: Diagnóstico y Depuración de RíoMate` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `chooseMedicalTool()` --calls--> `playSound()`  [EXTRACTED]
+  src/subjects/ciencias/labs/decisiones-medicas.js → src/shared/modules/audio.js
 - `initApp()` --calls--> `playSound()`  [EXTRACTED]
   src/subjects/matematicas/main.js → src/shared/modules/audio.js
 - `selectOption()` --calls--> `playSound()`  [EXTRACTED]
@@ -61,14 +66,12 @@
   src/shared/modules/quiz.js → src/shared/modules/audio.js
 - `switchTab()` --calls--> `playSound()`  [EXTRACTED]
   src/shared/modules/tabs.js → src/shared/modules/audio.js
-- `switchLabSubTab()` --calls--> `playSound()`  [EXTRACTED]
-  src/shared/modules/tabs.js → src/shared/modules/audio.js
 
-## Communities (24 total, 3 thin omitted)
+## Communities (29 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.08
-Nodes (31): quizPracticoCiencias, quizPracticoCienciasSem1Eval2, quizPracticoCienciasSem2Eval1, quizPracticoEspanol, quizPracticoInglesSem2Eval1, quizPracticoQuestions, quizTeoricoCiencias, quizTeoricoCienciasSem1Eval2 (+23 more)
+Cohesion: 0.07
+Nodes (26): quizPracticoCiencias, quizPracticoCienciasSem1Eval2, quizPracticoCienciasSem2Eval1, quizPracticoCienciasSem2Eval2, quizPracticoEspanol, quizPracticoInglesSem2Eval1, quizPracticoQuestions, quizTeoricoCiencias (+18 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.10
@@ -80,7 +83,7 @@ Nodes (14): dependencies, canvas-confetti, devDependencies, gh-pages, tailwindcs
 
 ### Community 3 - "Community 3"
 Cohesion: 0.07
-Nodes (44): addChainOrganism(), answerRelacionType(), cadenasData, compostItems, compostSelected, fotosintesisState, GasParticle, initCadenasLab() (+36 more)
+Nodes (51): addChainOrganism(), answerRelacionType(), cadenasData, compostItems, compostSelected, energyPresets, flipMainMagnet(), fotosintesisState (+43 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.14
@@ -99,8 +102,8 @@ Cohesion: 0.17
 Nodes (12): Blueprint de Creación / Clonación, Blueprints por Materia, 🔬 Ciencias, Cuándo usar este skill, 📚 Español / Gramática, 🌍 Estudios Sociales, Mapeo Oficial de Docentes y Semestres, Pasos para clonar (+4 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.24
-Nodes (6): registry, cienciasSem1Eval2Module, matematicasSem1Eval2Module, cienciasSem2Eval1Module, espanolSem2Eval1Module, inglesSem2Eval1Module
+Cohesion: 0.21
+Nodes (7): registry, cienciasSem1Eval2Module, matematicasSem1Eval2Module, cienciasSem2Eval1Module, espanolSem2Eval1Module, inglesSem2Eval1Module, cienciasSem2Eval2Module
 
 ### Community 9 - "Community 9"
 Cohesion: 0.25
@@ -135,23 +138,35 @@ Cohesion: 0.17
 Nodes (20): analyzeCustomInput(), answerChallengeDetector(), challengeList, goToSampleSentence(), initDetectorOraciones(), nextSampleSentence(), prevSampleSentence(), renderChallenge() (+12 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.07
-Nodes (28): updateDivisoresLab(), initFiltroRenal(), Particle, particles, tick(), updateFraccionesLab(), addSvgText(), drawAndCalculate() (+20 more)
+Cohesion: 0.09
+Nodes (26): updateDivisoresLab(), updateFraccionesLab(), updateMultiplesLab(), calculatePulpería(), changePulperíaQty(), adivinanzasData, bombasData, initPulperiaRefranes() (+18 more)
+
+### Community 21 - "Community 21"
+Cohesion: 0.14
+Nodes (8): initFiltroRenal(), Particle, particles, tick(), initFiltroRenal(), Particle, particles, tick()
 
 ### Community 22 - "Community 22"
 Cohesion: 0.11
 Nodes (20): adState, CARE_CARDS, container, descEl, fb, fbCard, fbDiv, initAdCreatorLab() (+12 more)
 
 ### Community 23 - "Community 23"
-Cohesion: 0.12
-Nodes (35): checkBombaRhyme(), revealAdivinanzaSolution(), selectMeaningToMatch(), bookPartsData, initTallerLibro(), selectBookPart(), switchCardGeneratorTab(), getLimit() (+27 more)
+Cohesion: 0.10
+Nodes (42): checkBombaRhyme(), revealAdivinanzaSolution(), selectMeaningToMatch(), bookPartsData, initTallerLibro(), selectBookPart(), switchCardGeneratorTab(), getLimit() (+34 more)
 
 ### Community 24 - "Community 24"
-Cohesion: 0.22
-Nodes (14): adivinanzasData, bombasData, initPulperiaRefranes(), nextAdivinanza(), nextBomba(), refranesGameData, renderAdivinanza(), renderBomba() (+6 more)
+Cohesion: 0.28
+Nodes (8): casosMedicosLab, chooseMedicalTool(), initDecisionesMedicas(), renderCaso(), casosMedicosLab, chooseMedicalTool(), initDecisionesMedicas(), renderCaso()
+
+### Community 25 - "Community 25"
+Cohesion: 0.47
+Nodes (8): addSvgText(), drawAndCalculate(), figurePresets, onLabFigureChange(), onLabSliderInput(), _svgEl(), _svgLine(), _svgRightAngle()
+
+### Community 26 - "Community 26"
+Cohesion: 0.33
+Nodes (5): commentBeforeLab, commentBeforeTheory, content, labTargetIdx, theoryTargetIdx
 
 ## Knowledge Gaps
-- **161 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+156 more)
+- **168 isolated node(s):** `name`, `private`, `dev`, `build`, `preview` (+163 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -159,15 +174,15 @@ Nodes (14): adivinanzasData, bombasData, initPulperiaRefranes(), nextAdivinanza(
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `playSound()` connect `Community 3` to `Community 0`, `Community 19`, `Community 20`, `Community 22`, `Community 23`, `Community 24`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
-- **Why does `playTickWithThrottle()` connect `Community 20` to `Community 3`, `Community 19`, `Community 22`, `Community 23`, `Community 24`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `updateBadges()` connect `Community 23` to `Community 0`, `Community 24`, `Community 19`, `Community 22`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+  _High betweenness centrality (0.041) - this node is a cross-community bridge._
+- **Why does `playTickWithThrottle()` connect `Community 20` to `Community 3`, `Community 19`, `Community 21`, `Community 22`, `Community 23`, `Community 25`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `updateBadges()` connect `Community 23` to `Community 0`, `Community 19`, `Community 20`, `Community 22`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `dev` to the rest of the system?**
-  _161 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _168 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.07632850241545894 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0743321718931475 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.09956709956709957 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**

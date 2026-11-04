@@ -21,9 +21,12 @@ import { quizTeoricoCienciasSem1Eval2 } from '../ciencias/sem1_eval2/data/quiz-t
 import { quizPracticoCienciasSem1Eval2 } from '../ciencias/sem1_eval2/data/quiz-practico.js';
 import { quizTeoricoCienciasSem2Eval1 } from '../ciencias/sem2_eval1/data/quiz-teorico.js';
 import { quizPracticoCienciasSem2Eval1 } from '../ciencias/sem2_eval1/data/quiz-practico.js';
+import { quizTeoricoCienciasSem2Eval2 } from '../ciencias/sem2_eval2/data/quiz-teorico.js';
+import { quizPracticoCienciasSem2Eval2 } from '../ciencias/sem2_eval2/data/quiz-practico.js';
 import { initFiltroRenal, stopFiltroRenal } from '../ciencias/sem1_eval2/labs/filtro-renal.js';
 import { initDecisionesMedicas, chooseMedicalTool } from '../ciencias/sem1_eval2/labs/decisiones-medicas.js';
 import { initFotosintesisLab, stopFotosintesisLab, initCadenasLab, initRelacionesLab, initCompostLab } from '../ciencias/sem2_eval1/labs/ciencias-labs.js';
+import { initTransformadorLab, initMagnetismoLab, initElectroimanLab } from '../ciencias/sem2_eval2/labs/ciencias-labs.js';
 
 // Exponer handler de decisiones médicas para I Semestre
 if (typeof window !== 'undefined') {
@@ -60,6 +63,12 @@ onLabInit(() => {
       stopFotosintesisLab();
       initFiltroRenal();
       initDecisionesMedicas();
+    } else if (currentSem === '2' && currentEval === '2') {
+      stopFiltroRenal();
+      stopFotosintesisLab();
+      initTransformadorLab();
+      initMagnetismoLab();
+      initElectroimanLab();
     } else {
       stopFiltroRenal();
       initFotosintesisLab();
@@ -195,6 +204,9 @@ export function switchSubject(subject, sem = '2', evalNum = '1', force = false) 
     if (String(targetSem) === '1' && String(targetEval) === '2') {
       quizState.teorico.questions = quizTeoricoCienciasSem1Eval2;
       quizState.practico.questions = quizPracticoCienciasSem1Eval2;
+    } else if (String(targetSem) === '2' && String(targetEval) === '2') {
+      quizState.teorico.questions = quizTeoricoCienciasSem2Eval2;
+      quizState.practico.questions = quizPracticoCienciasSem2Eval2;
     } else {
       quizState.teorico.questions = quizTeoricoCienciasSem2Eval1;
       quizState.practico.questions = quizPracticoCienciasSem2Eval1;

@@ -157,6 +157,78 @@
       "norm_label": "__dirname"
     },
     {
+      "label": "audit_balance.ps1",
+      "file_type": "code",
+      "source_file": "scratch/audit_balance.ps1",
+      "source_location": "L1",
+      "id": "scratch_audit_balance_ps1",
+      "community": 27,
+      "norm_label": "audit_balance.ps1"
+    },
+    {
+      "label": "inject.mjs",
+      "file_type": "code",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L1",
+      "id": "scratch_inject_mjs",
+      "community": 26,
+      "norm_label": "inject.mjs"
+    },
+    {
+      "label": "content",
+      "file_type": "code",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L4",
+      "id": "scratch_inject_content",
+      "community": 26,
+      "norm_label": "content"
+    },
+    {
+      "label": "theoryTargetIdx",
+      "file_type": "code",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L501",
+      "id": "scratch_inject_theorytargetidx",
+      "community": 26,
+      "norm_label": "theorytargetidx"
+    },
+    {
+      "label": "commentBeforeTheory",
+      "file_type": "code",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L508",
+      "id": "scratch_inject_commentbeforetheory",
+      "community": 26,
+      "norm_label": "commentbeforetheory"
+    },
+    {
+      "label": "labTargetIdx",
+      "file_type": "code",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L513",
+      "id": "scratch_inject_labtargetidx",
+      "community": 26,
+      "norm_label": "labtargetidx"
+    },
+    {
+      "label": "commentBeforeLab",
+      "file_type": "code",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L519",
+      "id": "scratch_inject_commentbeforelab",
+      "community": 26,
+      "norm_label": "commentbeforelab"
+    },
+    {
+      "label": "inject_ciencias_sem2_eval2.ps1",
+      "file_type": "code",
+      "source_file": "scratch/inject_ciencias_sem2_eval2.ps1",
+      "source_location": "L1",
+      "id": "scratch_inject_ciencias_sem2_eval2_ps1",
+      "community": 28,
+      "norm_label": "inject_ciencias_sem2_eval2.ps1"
+    },
+    {
       "label": "main.js",
       "file_type": "code",
       "source_file": "src/hub/main.js",
@@ -468,7 +540,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L1",
       "id": "src_shared_modules_quiz_js",
-      "community": 0,
+      "community": 23,
       "norm_label": "quiz.js"
     },
     {
@@ -486,7 +558,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L16",
       "id": "modules_quiz_startquiz",
-      "community": 0,
+      "community": 23,
       "norm_label": "startquiz()"
     },
     {
@@ -495,7 +567,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L36",
       "id": "modules_quiz_updatequizintrotexts",
-      "community": 0,
+      "community": 23,
       "norm_label": "updatequizintrotexts()"
     },
     {
@@ -504,7 +576,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L77",
       "id": "modules_quiz_checksavedprogress",
-      "community": 0,
+      "community": 23,
       "norm_label": "checksavedprogress()"
     },
     {
@@ -513,7 +585,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L124",
       "id": "modules_quiz_renderquestion",
-      "community": 0,
+      "community": 23,
       "norm_label": "renderquestion()"
     },
     {
@@ -522,7 +594,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L168",
       "id": "modules_quiz_selectoption",
-      "community": 0,
+      "community": 23,
       "norm_label": "selectoption()"
     },
     {
@@ -531,7 +603,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L237",
       "id": "modules_quiz_nextquestion",
-      "community": 0,
+      "community": 23,
       "norm_label": "nextquestion()"
     },
     {
@@ -540,7 +612,7 @@
       "source_file": "src/shared/modules/quiz.js",
       "source_location": "L293",
       "id": "modules_quiz_resetquiz",
-      "community": 0,
+      "community": 23,
       "norm_label": "resetquiz()"
     },
     {
@@ -556,7 +628,7 @@
       "label": "registry",
       "file_type": "code",
       "source_file": "src/shared/modules/subjectRegistry.js",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "modules_subjectregistry_registry",
       "community": 8,
       "norm_label": "registry"
@@ -565,7 +637,7 @@
       "label": "getSubjectModule()",
       "file_type": "code",
       "source_file": "src/shared/modules/subjectRegistry.js",
-      "source_location": "L15",
+      "source_location": "L17",
       "id": "modules_subjectregistry_getsubjectmodule",
       "community": 0,
       "norm_label": "getsubjectmodule()"
@@ -819,7 +891,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js",
-      "community": 3,
+      "community": 24,
       "norm_label": "decisiones-medicas.js"
     },
     {
@@ -828,7 +900,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L5",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js_labs_decisiones_medicas_casosmedicoslab",
-      "community": 3,
+      "community": 24,
       "norm_label": "casosmedicoslab"
     },
     {
@@ -837,7 +909,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L15",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js_labs_decisiones_medicas_initdecisionesmedicas",
-      "community": 3,
+      "community": 24,
       "norm_label": "initdecisionesmedicas()"
     },
     {
@@ -846,7 +918,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L21",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js_labs_decisiones_medicas_rendercaso",
-      "community": 3,
+      "community": 24,
       "norm_label": "rendercaso()"
     },
     {
@@ -855,7 +927,7 @@
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L44",
       "id": "src_subjects_ciencias_labs_decisiones_medicas_js_labs_decisiones_medicas_choosemedicaltool",
-      "community": 3,
+      "community": 24,
       "norm_label": "choosemedicaltool()"
     },
     {
@@ -864,7 +936,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L1",
       "id": "src_subjects_ciencias_labs_filtro_renal_js",
-      "community": 20,
+      "community": 21,
       "norm_label": "filtro-renal.js"
     },
     {
@@ -873,7 +945,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L7",
       "id": "src_subjects_ciencias_labs_filtro_renal_js_labs_filtro_renal_particles",
-      "community": 20,
+      "community": 21,
       "norm_label": "particles"
     },
     {
@@ -882,7 +954,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L10",
       "id": "src_subjects_ciencias_labs_filtro_renal_js_labs_filtro_renal_particle",
-      "community": 20,
+      "community": 21,
       "norm_label": "particle"
     },
     {
@@ -891,7 +963,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L11",
       "id": "src_subjects_ciencias_labs_filtro_renal_js_labs_filtro_renal_particle_constructor",
-      "community": 20,
+      "community": 21,
       "norm_label": ".constructor()"
     },
     {
@@ -900,7 +972,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L21",
       "id": "src_subjects_ciencias_labs_filtro_renal_js_labs_filtro_renal_particle_update",
-      "community": 20,
+      "community": 21,
       "norm_label": ".update()"
     },
     {
@@ -909,7 +981,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L81",
       "id": "src_subjects_ciencias_labs_filtro_renal_js_labs_filtro_renal_particle_draw",
-      "community": 20,
+      "community": 21,
       "norm_label": ".draw()"
     },
     {
@@ -918,7 +990,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L108",
       "id": "src_subjects_ciencias_labs_filtro_renal_js_labs_filtro_renal_initfiltrorenal",
-      "community": 20,
+      "community": 21,
       "norm_label": "initfiltrorenal()"
     },
     {
@@ -927,7 +999,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L149",
       "id": "src_subjects_ciencias_labs_filtro_renal_js_labs_filtro_renal_tick",
-      "community": 20,
+      "community": 21,
       "norm_label": "tick()"
     },
     {
@@ -936,7 +1008,7 @@
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L224",
       "id": "src_subjects_ciencias_labs_filtro_renal_js_labs_filtro_renal_stopfiltrorenal",
-      "community": 20,
+      "community": 21,
       "norm_label": "stopfiltrorenal()"
     },
     {
@@ -1498,6 +1570,204 @@
       "norm_label": "rendercompostui()"
     },
     {
+      "label": "content.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/content.js",
+      "source_location": "L1",
+      "id": "src_subjects_ciencias_sem2_eval2_content_js",
+      "community": 8,
+      "norm_label": "content.js"
+    },
+    {
+      "label": "cienciasSem2Eval2Module",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/content.js",
+      "source_location": "L7",
+      "id": "sem2_eval2_content_cienciassem2eval2module",
+      "community": 8,
+      "norm_label": "cienciassem2eval2module"
+    },
+    {
+      "label": "quiz-practico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/data/quiz-practico.js",
+      "source_location": "L1",
+      "id": "src_subjects_ciencias_sem2_eval2_data_quiz_practico_js",
+      "community": 0,
+      "norm_label": "quiz-practico.js"
+    },
+    {
+      "label": "quizPracticoCienciasSem2Eval2",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/data/quiz-practico.js",
+      "source_location": "L7",
+      "id": "data_quiz_practico_quizpracticocienciassem2eval2",
+      "community": 0,
+      "norm_label": "quizpracticocienciassem2eval2"
+    },
+    {
+      "label": "quiz-teorico.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/data/quiz-teorico.js",
+      "source_location": "L1",
+      "id": "src_subjects_ciencias_sem2_eval2_data_quiz_teorico_js",
+      "community": 0,
+      "norm_label": "quiz-teorico.js"
+    },
+    {
+      "label": "quizTeoricoCienciasSem2Eval2",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/data/quiz-teorico.js",
+      "source_location": "L7",
+      "id": "data_quiz_teorico_quizteoricocienciassem2eval2",
+      "community": 0,
+      "norm_label": "quizteoricocienciassem2eval2"
+    },
+    {
+      "label": "ciencias-labs.js",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L1",
+      "id": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "community": 3,
+      "norm_label": "ciencias-labs.js"
+    },
+    {
+      "label": "energyPresets",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L9",
+      "id": "labs_ciencias_labs_energypresets",
+      "community": 3,
+      "norm_label": "energypresets"
+    },
+    {
+      "label": "initTransformadorLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L74",
+      "id": "labs_ciencias_labs_inittransformadorlab",
+      "community": 3,
+      "norm_label": "inittransformadorlab()"
+    },
+    {
+      "label": "selectEnergyPreset()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L78",
+      "id": "labs_ciencias_labs_selectenergypreset",
+      "community": 3,
+      "norm_label": "selectenergypreset()"
+    },
+    {
+      "label": "renderEnergyLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L85",
+      "id": "labs_ciencias_labs_renderenergylab",
+      "community": 3,
+      "norm_label": "renderenergylab()"
+    },
+    {
+      "label": "testMaterials",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L131",
+      "id": "labs_ciencias_labs_testmaterials",
+      "community": 3,
+      "norm_label": "testmaterials"
+    },
+    {
+      "label": "initMagnetismoLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L142",
+      "id": "labs_ciencias_labs_initmagnetismolab",
+      "community": 3,
+      "norm_label": "initmagnetismolab()"
+    },
+    {
+      "label": "flipMainMagnet()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L146",
+      "id": "labs_ciencias_labs_flipmainmagnet",
+      "community": 3,
+      "norm_label": "flipmainmagnet()"
+    },
+    {
+      "label": "setSecondMagnetPole()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L155",
+      "id": "labs_ciencias_labs_setsecondmagnetpole",
+      "community": 3,
+      "norm_label": "setsecondmagnetpole()"
+    },
+    {
+      "label": "toggleFieldLines()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L161",
+      "id": "labs_ciencias_labs_togglefieldlines",
+      "community": 3,
+      "norm_label": "togglefieldlines()"
+    },
+    {
+      "label": "testMaterialOnMagnet()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L167",
+      "id": "labs_ciencias_labs_testmaterialonmagnet",
+      "community": 3,
+      "norm_label": "testmaterialonmagnet()"
+    },
+    {
+      "label": "renderMagnetismoUI()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L178",
+      "id": "labs_ciencias_labs_rendermagnetismoui",
+      "community": 3,
+      "norm_label": "rendermagnetismoui()"
+    },
+    {
+      "label": "initElectroimanLab()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L249",
+      "id": "labs_ciencias_labs_initelectroimanlab",
+      "community": 3,
+      "norm_label": "initelectroimanlab()"
+    },
+    {
+      "label": "toggleCircuitSwitch()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L253",
+      "id": "labs_ciencias_labs_togglecircuitswitch",
+      "community": 3,
+      "norm_label": "togglecircuitswitch()"
+    },
+    {
+      "label": "setCoilTurns()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L263",
+      "id": "labs_ciencias_labs_setcoilturns",
+      "community": 3,
+      "norm_label": "setcoilturns()"
+    },
+    {
+      "label": "renderElectroimanUI()",
+      "file_type": "code",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L269",
+      "id": "labs_ciencias_labs_renderelectroimanui",
+      "community": 3,
+      "norm_label": "renderelectroimanui()"
+    },
+    {
       "label": "quiz-practico.js",
       "file_type": "code",
       "source_file": "src/subjects/espanol/data/quiz-practico.js",
@@ -1656,7 +1926,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L1",
       "id": "src_subjects_espanol_labs_pulperia_refranes_js",
-      "community": 24,
+      "community": 20,
       "norm_label": "pulperia-refranes.js"
     },
     {
@@ -1665,7 +1935,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L10",
       "id": "labs_pulperia_refranes_refranesgamedata",
-      "community": 24,
+      "community": 20,
       "norm_label": "refranesgamedata"
     },
     {
@@ -1674,7 +1944,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L49",
       "id": "labs_pulperia_refranes_adivinanzasdata",
-      "community": 24,
+      "community": 20,
       "norm_label": "adivinanzasdata"
     },
     {
@@ -1683,7 +1953,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L70",
       "id": "labs_pulperia_refranes_bombasdata",
-      "community": 24,
+      "community": 20,
       "norm_label": "bombasdata"
     },
     {
@@ -1692,7 +1962,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L93",
       "id": "labs_pulperia_refranes_shuffledmeanings",
-      "community": 24,
+      "community": 20,
       "norm_label": "shuffledmeanings"
     },
     {
@@ -1701,7 +1971,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L95",
       "id": "labs_pulperia_refranes_shufflearray",
-      "community": 24,
+      "community": 20,
       "norm_label": "shufflearray()"
     },
     {
@@ -1710,7 +1980,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L114",
       "id": "labs_pulperia_refranes_resetrefranesgame",
-      "community": 24,
+      "community": 20,
       "norm_label": "resetrefranesgame()"
     },
     {
@@ -1719,7 +1989,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L122",
       "id": "labs_pulperia_refranes_initpulperiarefranes",
-      "community": 24,
+      "community": 20,
       "norm_label": "initpulperiarefranes()"
     },
     {
@@ -1728,7 +1998,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L129",
       "id": "labs_pulperia_refranes_renderrefranesgame",
-      "community": 24,
+      "community": 20,
       "norm_label": "renderrefranesgame()"
     },
     {
@@ -1737,7 +2007,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L170",
       "id": "labs_pulperia_refranes_selectrefrantomatch",
-      "community": 24,
+      "community": 20,
       "norm_label": "selectrefrantomatch()"
     },
     {
@@ -1755,7 +2025,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L241",
       "id": "labs_pulperia_refranes_renderadivinanza",
-      "community": 24,
+      "community": 20,
       "norm_label": "renderadivinanza()"
     },
     {
@@ -1764,7 +2034,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L277",
       "id": "labs_pulperia_refranes_revealhint",
-      "community": 24,
+      "community": 20,
       "norm_label": "revealhint()"
     },
     {
@@ -1782,7 +2052,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L299",
       "id": "labs_pulperia_refranes_nextadivinanza",
-      "community": 24,
+      "community": 20,
       "norm_label": "nextadivinanza()"
     },
     {
@@ -1791,7 +2061,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L305",
       "id": "labs_pulperia_refranes_renderbomba",
-      "community": 24,
+      "community": 20,
       "norm_label": "renderbomba()"
     },
     {
@@ -1809,7 +2079,7 @@
       "source_file": "src/subjects/espanol/labs/pulperia-refranes.js",
       "source_location": "L362",
       "id": "labs_pulperia_refranes_nextbomba",
-      "community": 24,
+      "community": 20,
       "norm_label": "nextbomba()"
     },
     {
@@ -2122,7 +2392,7 @@
       "label": "hideElement()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L94",
+      "source_location": "L103",
       "id": "matematicas_main_hideelement",
       "community": 0,
       "norm_label": "hideelement()"
@@ -2131,7 +2401,7 @@
       "label": "showElement()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L99",
+      "source_location": "L108",
       "id": "matematicas_main_showelement",
       "community": 0,
       "norm_label": "showelement()"
@@ -2140,7 +2410,7 @@
       "label": "switchSubject()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L107",
+      "source_location": "L116",
       "id": "matematicas_main_switchsubject",
       "community": 0,
       "norm_label": "switchsubject()"
@@ -2149,7 +2419,7 @@
       "label": "initApp()",
       "file_type": "code",
       "source_file": "src/subjects/matematicas/main.js",
-      "source_location": "L267",
+      "source_location": "L279",
       "id": "matematicas_main_initapp",
       "community": 0,
       "norm_label": "initapp()"
@@ -2232,7 +2502,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L1",
       "id": "src_subjects_matematicas_labs_geometria_js",
-      "community": 20,
+      "community": 25,
       "norm_label": "geometria.js"
     },
     {
@@ -2241,7 +2511,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L4",
       "id": "labs_geometria_figurepresets",
-      "community": 20,
+      "community": 25,
       "norm_label": "figurepresets"
     },
     {
@@ -2250,7 +2520,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L52",
       "id": "labs_geometria_onlabfigurechange",
-      "community": 20,
+      "community": 25,
       "norm_label": "onlabfigurechange()"
     },
     {
@@ -2259,7 +2529,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L80",
       "id": "labs_geometria_onlabsliderinput",
-      "community": 20,
+      "community": 25,
       "norm_label": "onlabsliderinput()"
     },
     {
@@ -2268,7 +2538,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L88",
       "id": "labs_geometria_drawandcalculate",
-      "community": 20,
+      "community": 25,
       "norm_label": "drawandcalculate()"
     },
     {
@@ -2277,7 +2547,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L234",
       "id": "labs_geometria_svgel",
-      "community": 20,
+      "community": 25,
       "norm_label": "_svgel()"
     },
     {
@@ -2286,7 +2556,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L238",
       "id": "labs_geometria_svgline",
-      "community": 20,
+      "community": 25,
       "norm_label": "_svgline()"
     },
     {
@@ -2295,7 +2565,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L247",
       "id": "labs_geometria_svgrightangle",
-      "community": 20,
+      "community": 25,
       "norm_label": "_svgrightangle()"
     },
     {
@@ -2304,7 +2574,7 @@
       "source_file": "src/subjects/matematicas/labs/geometria.js",
       "source_location": "L255",
       "id": "labs_geometria_addsvgtext",
-      "community": 20,
+      "community": 25,
       "norm_label": "addsvgtext()"
     },
     {
@@ -3374,7 +3644,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L5",
-      "community": 3,
+      "community": 24,
       "norm_label": "casosmedicoslab",
       "id": "labs_decisiones_medicas_casosmedicoslab"
     },
@@ -3383,7 +3653,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L15",
-      "community": 3,
+      "community": 24,
       "norm_label": "initdecisionesmedicas()",
       "id": "labs_decisiones_medicas_initdecisionesmedicas"
     },
@@ -3392,7 +3662,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L21",
-      "community": 3,
+      "community": 24,
       "norm_label": "rendercaso()",
       "id": "labs_decisiones_medicas_rendercaso"
     },
@@ -3401,7 +3671,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/decisiones-medicas.js",
       "source_location": "L44",
-      "community": 3,
+      "community": 24,
       "norm_label": "choosemedicaltool()",
       "id": "labs_decisiones_medicas_choosemedicaltool"
     },
@@ -3410,7 +3680,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L7",
-      "community": 20,
+      "community": 21,
       "norm_label": "particles",
       "id": "labs_filtro_renal_particles"
     },
@@ -3419,7 +3689,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L10",
-      "community": 20,
+      "community": 21,
       "norm_label": "particle",
       "id": "labs_filtro_renal_particle"
     },
@@ -3428,7 +3698,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L11",
-      "community": 20,
+      "community": 21,
       "norm_label": ".constructor()",
       "id": "labs_filtro_renal_particle_constructor"
     },
@@ -3437,7 +3707,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L21",
-      "community": 20,
+      "community": 21,
       "norm_label": ".update()",
       "id": "labs_filtro_renal_particle_update"
     },
@@ -3446,7 +3716,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L81",
-      "community": 20,
+      "community": 21,
       "norm_label": ".draw()",
       "id": "labs_filtro_renal_particle_draw"
     },
@@ -3455,7 +3725,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L108",
-      "community": 20,
+      "community": 21,
       "norm_label": "initfiltrorenal()",
       "id": "labs_filtro_renal_initfiltrorenal"
     },
@@ -3464,7 +3734,7 @@
       "file_type": "code",
       "source_file": "src/subjects/ciencias/labs/filtro-renal.js",
       "source_location": "L149",
-      "community": 20,
+      "community": 21,
       "norm_label": "tick()",
       "id": "labs_filtro_renal_tick"
     },
@@ -4397,6 +4667,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scratch_inject_mjs",
+      "target": "scratch_inject_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L501",
+      "weight": 1.0,
+      "source": "scratch_inject_mjs",
+      "target": "scratch_inject_theorytargetidx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L508",
+      "weight": 1.0,
+      "source": "scratch_inject_mjs",
+      "target": "scratch_inject_commentbeforetheory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L513",
+      "weight": 1.0,
+      "source": "scratch_inject_mjs",
+      "target": "scratch_inject_labtargetidx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/inject.mjs",
+      "source_location": "L519",
+      "weight": 1.0,
+      "source": "scratch_inject_mjs",
+      "target": "scratch_inject_commentbeforelab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/hub/main.js",
       "source_location": "L4",
       "weight": 1.0,
@@ -4561,6 +4881,17 @@
       "confidence_score": 1.0,
       "source": "src_subjects_ciencias_sem2_eval1_labs_ciencias_labs_js",
       "target": "src_shared_modules_audio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "src_shared_modules_audio_js",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4748,6 +5079,17 @@
       "confidence_score": 1.0,
       "source": "src_subjects_ciencias_sem2_eval1_labs_ciencias_labs_js",
       "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "modules_audio_playsound",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -5018,6 +5360,61 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_selectenergypreset",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_setsecondmagnetpole",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_togglefieldlines",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_testmaterialonmagnet",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L256",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_togglecircuitswitch",
+      "target": "modules_audio_playsound"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
       "source_location": "L220",
       "weight": 1.0,
@@ -5160,6 +5557,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "modules_audio_playtickwiththrottle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/subjects/espanol/labs/detector-oraciones.js",
       "source_location": "L6",
       "weight": 1.0,
@@ -5286,6 +5694,28 @@
       "source_location": "L161",
       "weight": 1.0,
       "source": "labs_ciencias_labs_setfotosintesisslider",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_flipmainmagnet",
+      "target": "modules_audio_playtickwiththrottle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L264",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_setcoilturns",
       "target": "modules_audio_playtickwiththrottle"
     },
     {
@@ -6927,6 +7357,28 @@
       "source_file": "src/shared/modules/subjectRegistry.js",
       "source_location": "L3",
       "weight": 1.0,
+      "source": "src_shared_modules_subjectregistry_js",
+      "target": "src_subjects_ciencias_sem2_eval2_content_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/subjectRegistry.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_shared_modules_subjectregistry_js",
+      "target": "sem2_eval2_content_cienciassem2eval2module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/shared/modules/subjectRegistry.js",
+      "source_location": "L3",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_shared_modules_subjectregistry_js",
       "target": "src_subjects_espanol_sem2_eval1_content_js"
@@ -7352,9 +7804,9 @@
       "source_file": "src/shared/state/store.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_shared_state_store_js",
-      "target": "state_store_studiedcardsenglish",
-      "confidence_score": 1.0
+      "target": "state_store_studiedcardsenglish"
     },
     {
       "relation": "contains",
@@ -8987,6 +9439,384 @@
       "confidence_score": 1.0,
       "source": "labs_ciencias_labs_resetcompostlab",
       "target": "labs_ciencias_labs_rendercompostui"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/content.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_content_js",
+      "target": "sem2_eval2_content_cienciassem2eval2module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/data/quiz-practico.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_data_quiz_practico_js",
+      "target": "data_quiz_practico_quizpracticocienciassem2eval2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ciencias_sem2_eval2_data_quiz_practico_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_practico_quizpracticocienciassem2eval2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/data/quiz-teorico.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_data_quiz_teorico_js",
+      "target": "data_quiz_teorico_quizteoricocienciassem2eval2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ciencias_sem2_eval2_data_quiz_teorico_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "data_quiz_teorico_quizteoricocienciassem2eval2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_energypresets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_inittransformadorlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_selectenergypreset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_renderenergylab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_testmaterials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_initmagnetismolab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_flipmainmagnet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_setsecondmagnetpole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_togglefieldlines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_testmaterialonmagnet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_rendermagnetismoui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L249",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_initelectroimanlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_togglecircuitswitch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_setcoilturns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L269",
+      "weight": 1.0,
+      "source": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "target": "labs_ciencias_labs_renderelectroimanui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "src_subjects_ciencias_sem2_eval2_labs_ciencias_labs_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_inittransformadorlab",
+      "target": "labs_ciencias_labs_renderenergylab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_ciencias_labs_inittransformadorlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_selectenergypreset",
+      "target": "labs_ciencias_labs_renderenergylab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_initmagnetismolab",
+      "target": "labs_ciencias_labs_rendermagnetismoui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_ciencias_labs_initmagnetismolab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_flipmainmagnet",
+      "target": "labs_ciencias_labs_rendermagnetismoui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_setsecondmagnetpole",
+      "target": "labs_ciencias_labs_rendermagnetismoui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_togglefieldlines",
+      "target": "labs_ciencias_labs_rendermagnetismoui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_testmaterialonmagnet",
+      "target": "labs_ciencias_labs_rendermagnetismoui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_initelectroimanlab",
+      "target": "labs_ciencias_labs_renderelectroimanui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/matematicas/main.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_subjects_matematicas_main_js",
+      "target": "labs_ciencias_labs_initelectroimanlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_togglecircuitswitch",
+      "target": "labs_ciencias_labs_renderelectroimanui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/subjects/ciencias/sem2_eval2/labs/ciencias-labs.js",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "labs_ciencias_labs_setcoilturns",
+      "target": "labs_ciencias_labs_renderelectroimanui",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12849,5 +13679,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a1581277973c9ca46e78728a97f50fe9ddb42053"
+  "built_at_commit": "b96a6654b16bb0386b35abfd86f2d5e1a4749fa3"
 }

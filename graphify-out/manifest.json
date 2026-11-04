@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\main.js": {
-    "mtime": 1788232945.9747674,
-    "ast_hash": "4c146fc586bcd33a187345d2fe3deca9",
+    "mtime": 1793825660.7132854,
+    "ast_hash": "8689f57ba3acb0c49364f8aae851ea6f",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\matematicas\\data\\quiz-practico.js": {
@@ -75,8 +75,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\index.html": {
-    "mtime": 1788232746.502775,
-    "ast_hash": "8e1c7d3add7d8b98d54e828e96621cae",
+    "mtime": 1793826097.3229778,
+    "ast_hash": "35d56e812b62bc7d115e588f4e7e2a4d",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\rules\\graphify.md": {
@@ -145,8 +145,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\practica\\index.html": {
-    "mtime": 1788233559.0023952,
-    "ast_hash": "dc282c41d2f1158829a28d04650fdef3",
+    "mtime": 1793826190.2594266,
+    "ast_hash": "d395aeb4f03ea0cdeb51f3aac91a1d8d",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\.agents\\skills\\riomate-add-quiz-questions\\SKILL.md": {
@@ -245,8 +245,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\shared\\modules\\subjectRegistry.js": {
-    "mtime": 1788232725.9095707,
-    "ast_hash": "f79d54e51c796ccc8a1b6ccb0094964e",
+    "mtime": 1793825630.5129495,
+    "ast_hash": "5411696c12936cb6135910d7a1d9a595",
     "semantic_hash": ""
   },
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\sem1_eval2\\content.js": {
@@ -297,6 +297,41 @@
   "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ingles\\sem2_eval1\\labs\\ingles-labs.js": {
     "mtime": 1788232816.1625125,
     "ast_hash": "5fa3ccf04e75c3e15dc7f24fded2cf0c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\scratch\\audit_balance.ps1": {
+    "mtime": 1793826062.3019693,
+    "ast_hash": "a4505d0de2502d96a80bc0c5bbdeecf1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\scratch\\inject.mjs": {
+    "mtime": 1793826183.7349823,
+    "ast_hash": "1d79c1cd0ef0c8679c90cee69245c352",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\scratch\\inject_ciencias_sem2_eval2.ps1": {
+    "mtime": 1793826037.7323055,
+    "ast_hash": "98b7d65a15f5037b6335258a6ff8e6e4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\sem2_eval2\\content.js": {
+    "mtime": 1793825480.1967995,
+    "ast_hash": "0f1b588087dd87058d8a37dc4f88ecbc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\sem2_eval2\\data\\quiz-practico.js": {
+    "mtime": 1793825574.8163073,
+    "ast_hash": "b18c1e1f8b8d543342b1d00713bb8741",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\sem2_eval2\\data\\quiz-teorico.js": {
+    "mtime": 1793825526.8006124,
+    "ast_hash": "ad663e2cb3ed65d37893440ffdc0e17a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\mquir\\Proyectos\\rioja\\src\\subjects\\ciencias\\sem2_eval2\\labs\\ciencias-labs.js": {
+    "mtime": 1793826201.315628,
+    "ast_hash": "b4cc887fc157d9055801a8989026760e",
     "semantic_hash": ""
   }
 }
